@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
+		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
 		F47CB71A1987D9CC00398293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7191987D9CC00398293 /* UIKit.framework */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CB7151987D9CC00398293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F47CB7171987D9CC00398293 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */,
+				7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */,
 				F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */,
 				F47CB71A1987D9CC00398293 /* UIKit.framework in Frameworks */,
 				F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */,
@@ -114,6 +120,8 @@
 		F47CB7141987D9CC00398293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7771A4331987E9B100CD6BA8 /* MapKit.framework */,
+				7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */,
 				F47CB7151987D9CC00398293 /* Foundation.framework */,
 				F47CB7171987D9CC00398293 /* CoreGraphics.framework */,
 				F47CB7191987D9CC00398293 /* UIKit.framework */,
@@ -514,6 +522,7 @@
 				F47CB7461987D9CD00398293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F47CB7471987D9CD00398293 /* Build configuration list for PBXNativeTarget "DowntownAllianceHistoryTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				F47CB7491987D9CD00398293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
