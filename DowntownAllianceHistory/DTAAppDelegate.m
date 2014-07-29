@@ -16,12 +16,6 @@
 {
     // Override point for customization after application launch.
     
-    NSArray *locationsArray = [DTADataFetchFromCSV importCSV];
-
-    Location *sampleLocation = locationsArray[1];
-    
-    
-    
     return YES;
 }
 							

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gR6-D0-Xnc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home View Controller - Map-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="DTAHomeViewController" sceneMemberID="viewController">
@@ -23,14 +23,152 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="NFz-Dl-4fB"/>
                     <connections>
                         <outlet property="mapOutlet" destination="XPo-cL-qjT" id="srO-ky-798"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="944" y="780"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ecQ-iL-dWX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gR6-D0-Xnc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="tZc-Mm-ISh">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pWs-P5-k3C" kind="relationship" relationship="viewControllers" id="ofN-DY-mmE"/>
+                        <segue destination="JjU-F8-xe0" kind="relationship" relationship="viewControllers" id="Czl-qP-Kup"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Afd-oa-oSO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZH-BQ-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="-16"/>
+        </scene>
+        <!--View Controller - By Theme-->
+        <scene sceneID="Zdy-JI-GGc">
+            <objects>
+                <viewController id="JjU-F8-xe0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MY0-MQ-RmF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vf6-xQ-cp6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qQ4-nf-5jl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sports.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pYi-hV-VTW">
+                                <rect key="frame" x="0.0" y="28" width="161" height="246"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Military.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-wq-tFF">
+                                <rect key="frame" x="159" y="28" width="161" height="246"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Science.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5lp-ez-E0J">
+                                <rect key="frame" x="0.0" y="272" width="161" height="246"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Culture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BX1-Cp-pmX">
+                                <rect key="frame" x="159" y="272" width="161" height="246"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="By Theme" id="Nhg-aO-v63"/>
+                    <navigationItem key="navigationItem" id="Ru5-M3-VHd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52o-Fe-d9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="61"/>
+        </scene>
+        <!--View Controller - By Decade-->
+        <scene sceneID="Apg-mu-kZQ">
+            <objects>
+                <viewController id="pWs-P5-k3C" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dsm-gj-i3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBF-6C-ORG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ial-Xu-NaC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1900s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Lq-qx-K69">
+                                <rect key="frame" x="0.0" y="36" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1910s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m3V-H2-0i8">
+                                <rect key="frame" x="160" y="36" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1920s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="N5T-zI-Yvm">
+                                <rect key="frame" x="0.0" y="132" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1930s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6eP-MP-ubs">
+                                <rect key="frame" x="160" y="132" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1940s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-d8-zKD">
+                                <rect key="frame" x="0.0" y="228" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1950s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-wJ-GMO">
+                                <rect key="frame" x="160" y="228" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1960s.gif" translatesAutoresizingMaskIntoConstraints="NO" id="y6g-Dd-3or">
+                                <rect key="frame" x="0.0" y="324" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1970s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1gR-dT-GYj">
+                                <rect key="frame" x="160" y="324" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1980s.png" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-tC-9Ws">
+                                <rect key="frame" x="0.0" y="421" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1990s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cuq-IU-mcO">
+                                <rect key="frame" x="160" y="421" width="160" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="By Decade" id="fn4-TV-Wwp"/>
+                    <navigationItem key="navigationItem" id="ETv-ag-nEg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihE-Pi-jrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-659"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1900s.jpg" width="570" height="380"/>
+        <image name="1910s.jpg" width="296" height="170"/>
+        <image name="1920s.jpg" width="1024" height="768"/>
+        <image name="1930s.jpg" width="432" height="323"/>
+        <image name="1940s.jpg" width="225" height="225"/>
+        <image name="1950s.jpg" width="300" height="300"/>
+        <image name="1960s.gif" width="300" height="257"/>
+        <image name="1970s.jpg" width="400" height="382"/>
+        <image name="1980s.png" width="350" height="278"/>
+        <image name="1990s.jpg" width="600" height="300"/>
+        <image name="Culture.jpg" width="261" height="193"/>
+        <image name="Military.jpg" width="265" height="396"/>
+        <image name="Science.jpg" width="360" height="504"/>
+        <image name="Sports.jpg" width="198" height="254"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
