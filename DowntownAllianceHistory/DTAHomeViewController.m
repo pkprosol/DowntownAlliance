@@ -6,13 +6,13 @@
 //
 //
 
-#import "DTAViewController.h"
+#import "DTAHomeViewController.h"
 
-@interface DTAViewController ()
+@interface DTAHomeViewController ()
 
 @end
 
-@implementation DTAViewController
+@implementation DTAHomeViewController
 
 - (void)viewDidLoad
 {

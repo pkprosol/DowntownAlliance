@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTAViewController : UIViewController
+@interface DTAHomeViewController : UIViewController
 
 @end

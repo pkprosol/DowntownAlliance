@@ -14,7 +14,7 @@
 		F47CB7221987D9CC00398293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7211987D9CC00398293 /* main.m */; };
 		F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7251987D9CC00398293 /* DTAAppDelegate.m */; };
 		F47CB7291987D9CC00398293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CB7271987D9CC00398293 /* Main.storyboard */; };
-		F47CB72C1987D9CC00398293 /* DTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB72B1987D9CC00398293 /* DTAViewController.m */; };
+		F47CB72C1987D9CC00398293 /* DTAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB72B1987D9CC00398293 /* DTAHomeViewController.m */; };
 		F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47CB72D1987D9CC00398293 /* Images.xcassets */; };
 		F47CB7351987D9CD00398293 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7341987D9CD00398293 /* XCTest.framework */; };
 		F47CB7361987D9CD00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
@@ -22,6 +22,10 @@
 		F47CB73F1987D9CD00398293 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47CB73D1987D9CD00398293 /* InfoPlist.strings */; };
 		F47CB7411987D9CD00398293 /* DowntownAllianceHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */; };
 		F47CB74B1987D9E100398293 /* DowntownAlliance.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = F47CB74A1987D9E100398293 /* DowntownAlliance.xcdatamodel */; };
+		F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */ = {isa = PBXBuildFile; fileRef = F47CB74C1987DBE300398293 /* COH_Coordinates.csv */; };
+		F47CB7571987DE4200398293 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7561987DE4200398293 /* Location.m */; };
+		F47CB75A1987DE5E00398293 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7591987DE5E00398293 /* DTADataStore.m */; };
+		F47CB7601987E09C00398293 /* DTADataFetchFromCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +50,8 @@
 		F47CB7241987D9CC00398293 /* DTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAAppDelegate.h; sourceTree = "<group>"; };
 		F47CB7251987D9CC00398293 /* DTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAAppDelegate.m; sourceTree = "<group>"; };
 		F47CB7281987D9CC00398293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F47CB72A1987D9CC00398293 /* DTAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAViewController.h; sourceTree = "<group>"; };
-		F47CB72B1987D9CC00398293 /* DTAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAViewController.m; sourceTree = "<group>"; };
+		F47CB72A1987D9CC00398293 /* DTAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAHomeViewController.h; sourceTree = "<group>"; };
+		F47CB72B1987D9CC00398293 /* DTAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAHomeViewController.m; sourceTree = "<group>"; };
 		F47CB72D1987D9CC00398293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F47CB7331987D9CD00398293 /* DowntownAllianceHistoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowntownAllianceHistoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CB7341987D9CD00398293 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -55,6 +59,13 @@
 		F47CB73E1987D9CD00398293 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DowntownAllianceHistoryTests.m; sourceTree = "<group>"; };
 		F47CB74A1987D9E100398293 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
+		F47CB74C1987DBE300398293 /* COH_Coordinates.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH_Coordinates.csv; sourceTree = "<group>"; };
+		F47CB7551987DE4200398293 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		F47CB7561987DE4200398293 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		F47CB7581987DE5E00398293 /* DTADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataStore.h; sourceTree = "<group>"; };
+		F47CB7591987DE5E00398293 /* DTADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataStore.m; sourceTree = "<group>"; };
+		F47CB75E1987E09C00398293 /* DTADataFetchFromCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataFetchFromCSV.h; sourceTree = "<group>"; };
+		F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataFetchFromCSV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +125,10 @@
 		F47CB71B1987D9CC00398293 /* DowntownAllianceHistory */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB7241987D9CC00398293 /* DTAAppDelegate.h */,
-				F47CB7251987D9CC00398293 /* DTAAppDelegate.m */,
-				F47CB7271987D9CC00398293 /* Main.storyboard */,
-				F47CB72A1987D9CC00398293 /* DTAViewController.h */,
-				F47CB72B1987D9CC00398293 /* DTAViewController.m */,
-				F47CB74A1987D9E100398293 /* DowntownAlliance.xcdatamodel */,
+				F47CB75D1987DE8300398293 /* Other */,
+				F47CB75C1987DE7600398293 /* Controller */,
+				F47CB75B1987DE7100398293 /* View */,
+				F47CB7511987DD3000398293 /* Model */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
 			);
@@ -129,6 +138,7 @@
 		F47CB71C1987D9CC00398293 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
 				F47CB71D1987D9CC00398293 /* DowntownAllianceHistory-Info.plist */,
 				F47CB71E1987D9CC00398293 /* InfoPlist.strings */,
 				F47CB7211987D9CC00398293 /* main.m */,
@@ -153,6 +163,46 @@
 				F47CB73D1987D9CD00398293 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F47CB7511987DD3000398293 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F47CB7581987DE5E00398293 /* DTADataStore.h */,
+				F47CB7591987DE5E00398293 /* DTADataStore.m */,
+				F47CB75E1987E09C00398293 /* DTADataFetchFromCSV.h */,
+				F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */,
+				F47CB74A1987D9E100398293 /* DowntownAlliance.xcdatamodel */,
+				F47CB7551987DE4200398293 /* Location.h */,
+				F47CB7561987DE4200398293 /* Location.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F47CB75B1987DE7100398293 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F47CB7271987D9CC00398293 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F47CB75C1987DE7600398293 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F47CB72A1987D9CC00398293 /* DTAHomeViewController.h */,
+				F47CB72B1987D9CC00398293 /* DTAHomeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F47CB75D1987DE8300398293 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F47CB7241987D9CC00398293 /* DTAAppDelegate.h */,
+				F47CB7251987D9CC00398293 /* DTAAppDelegate.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
+				F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */,
 				F47CB7201987D9CC00398293 /* InfoPlist.strings in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
 			);
@@ -253,9 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */,
+				F47CB75A1987DE5E00398293 /* DTADataStore.m in Sources */,
+				F47CB7571987DE4200398293 /* Location.m in Sources */,
 				F47CB74B1987D9E100398293 /* DowntownAlliance.xcdatamodel in Sources */,
-				F47CB72C1987D9CC00398293 /* DTAViewController.m in Sources */,
+				F47CB72C1987D9CC00398293 /* DTAHomeViewController.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
+				F47CB7601987E09C00398293 /* DTADataFetchFromCSV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
