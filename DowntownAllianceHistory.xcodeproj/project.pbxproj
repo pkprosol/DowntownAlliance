@@ -42,6 +42,8 @@
 		F47CB778198807FE00398293 /* Military.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB777198807FE00398293 /* Military.jpg */; };
 		F47CB77A1988082E00398293 /* Science.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB7791988082E00398293 /* Science.jpg */; };
 		F47CB77C1988085600398293 /* Culture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB77B1988085600398293 /* Culture.jpg */; };
+		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
+		F47CB78119881A9E00398293 /* 2000s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB78019881A9E00398293 /* 2000s.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,9 @@
 		F47CB777198807FE00398293 /* Military.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Military.jpg; sourceTree = "<group>"; };
 		F47CB7791988082E00398293 /* Science.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Science.jpg; sourceTree = "<group>"; };
 		F47CB77B1988085600398293 /* Culture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Culture.jpg; sourceTree = "<group>"; };
+		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
+		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
+		F47CB78019881A9E00398293 /* 2000s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2000s.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				F47CB75D1987DE8300398293 /* Other */,
-				F47CB75C1987DE7600398293 /* Controller */,
+				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB75B1987DE7100398293 /* View */,
 				F47CB7511987DD3000398293 /* Model */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
@@ -184,6 +189,7 @@
 				F47CB76F1988066800398293 /* 1970s.jpg */,
 				F47CB771198806C500398293 /* 1980s.png */,
 				F47CB773198806E100398293 /* 1990s.jpg */,
+				F47CB78019881A9E00398293 /* 2000s.jpg */,
 				F47CB775198807DA00398293 /* Sports.jpg */,
 				F47CB777198807FE00398293 /* Military.jpg */,
 				F47CB7791988082E00398293 /* Science.jpg */,
@@ -237,13 +243,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		F47CB75C1987DE7600398293 /* Controller */ = {
+		F47CB75C1987DE7600398293 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F47CB72A1987D9CC00398293 /* DTAHomeViewController.h */,
 				F47CB72B1987D9CC00398293 /* DTAHomeViewController.m */,
+				F47CB77D198812EF00398293 /* DTADecadesViewController.h */,
+				F47CB77E198812EF00398293 /* DTADecadesViewController.m */,
 			);
-			name = Controller;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F47CB75D1987DE8300398293 /* Other */ = {
@@ -346,6 +354,7 @@
 				F47CB778198807FE00398293 /* Military.jpg in Resources */,
 				F47CB77A1988082E00398293 /* Science.jpg in Resources */,
 				F47CB76E1988064900398293 /* 1960s.gif in Resources */,
+				F47CB78119881A9E00398293 /* 2000s.jpg in Resources */,
 				F47CB7201987D9CC00398293 /* InfoPlist.strings in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
 				F47CB7641988057E00398293 /* 1910s.jpg in Resources */,
@@ -373,6 +382,7 @@
 				F47CB74B1987D9E100398293 /* DowntownAlliance.xcdatamodel in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAHomeViewController.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
+				F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */,
 				F47CB7601987E09C00398293 /* DTADataFetchFromCSV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
