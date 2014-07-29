@@ -22,10 +22,11 @@
 @dynamic decade;
 @dynamic theme;
 
-- (void)setLocationDecade:(Decade *)decade Theme:(Theme *)theme
+- (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray
 {
-    self.decade = decade;
-    self.theme = theme;
+    self.idNumber = componentArray[0];
+    self.latitude = componentArray[2];
+    self.longitude = componentArray[3];
 }
 
 @end

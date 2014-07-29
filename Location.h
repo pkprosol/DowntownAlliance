@@ -22,6 +22,6 @@
 @property (nonatomic, retain) Decade *decade;
 @property (nonatomic, retain) Theme *theme;
 
-- (void)setLocationDecade:(Decade *)decade Theme:(Theme *)theme;
+- (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray;
 
 @end

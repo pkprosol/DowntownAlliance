@@ -7,6 +7,7 @@
 //
 
 #import "DTAHomeViewController.h"
+#import "DTADataStore.h"
 
 @interface DTAHomeViewController ()
 
@@ -20,7 +21,9 @@
 {
     [super viewDidLoad];
     
-    self.arrayOfLocations = [DTADataFetchFromCSV importCSV];
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    
+    self.arrayOfLocations = [store fetchData];
     
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
   

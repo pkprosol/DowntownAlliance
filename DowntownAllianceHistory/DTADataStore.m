@@ -22,6 +22,14 @@
     return _sharedDataStore;
 }
 
+- (NSArray *)fetchData
+{
+    NSFetchRequest *fetchLocationData = [NSFetchRequest fetchRequestWithEntityName:@"Location"];
+    NSArray *fetchedData = [self.managedObjectContext executeFetchRequest:fetchLocationData error:nil];
+    
+    return fetchedData;
+}
+
 - (void)saveContext
 {
     NSError *error = nil;
