@@ -10,6 +10,9 @@
 
 @interface DTADetailViewController ()
 
+@property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
+
 @end
 
 @implementation DTADetailViewController
@@ -26,6 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _mapOutlet.delegate = self;
+    _tableViewOutlet.delegate = self;
+    _tableViewOutlet.dataSource = self;
     // Do any additional setup after loading the view.
 }
 
@@ -34,7 +40,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    // Return the number of rows in the section.
+    return [self.arrayOfLocations count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
+    
+    
+    return cell;
+}
 /*
 #pragma mark - Navigation
 
