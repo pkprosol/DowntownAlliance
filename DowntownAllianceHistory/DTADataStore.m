@@ -46,7 +46,7 @@
         return _managedObjectContext;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"DowntownAllianceHistory.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"DowntownAlliance.sqlite"];
     
     NSError *error = nil;
     
