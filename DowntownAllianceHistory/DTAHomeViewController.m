@@ -36,13 +36,13 @@
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
-    //CGFloat latitudeFloat = locationToBePlotted.latitude;
-    //CGFloat longitudeFloat = locationToBePlotted.longitude;
+    CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
+    CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
-    //pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
-    //pointToAnnotate.title = locationToBePlotted.idNumber;
+    pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
+    pointToAnnotate.title = locationToBePlotted.idNumber;
     
-    //[self.mapOutlet addAnnotation:pointToAnnotate];
+    [self.mapOutlet addAnnotation:pointToAnnotate];
 }
 
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations

@@ -22,4 +22,10 @@
 @dynamic decade;
 @dynamic theme;
 
+- (void)setLocationDecade:(Decade *)decade Theme:(Theme *)theme
+{
+    self.decade = decade;
+    self.theme = theme;
+}
+
 @end
