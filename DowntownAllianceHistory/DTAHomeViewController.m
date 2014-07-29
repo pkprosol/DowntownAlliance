@@ -43,8 +43,8 @@
     pointToAnnotate.title = locationToBePlotted.idNumber;
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
-    
 }
+
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
 {
     for (Location *location in arrayOfLocations)
