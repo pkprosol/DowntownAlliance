@@ -9,7 +9,7 @@
 #import "Location.h"
 #import "Decade.h"
 #import "Theme.h"
-
+#import "DTADataStore.h"
 
 @implementation Location
 
@@ -41,7 +41,20 @@
     if (self.day) {
         self.hasData = [NSNumber numberWithBool:YES];
     }
+    
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    
+    Decade *decadeForLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Decade" inManagedObjectContext:store.managedObjectContext];
+    
 }
+
+- (NSString *)getDecadeNameForYear:(NSNumber *)year
+//{
+//    NSinteger *yearInteger = ..... year;
+//    if (year > 1899 && < year <1910) {
+//        return @"1900s";
+//    } etc.
+//}
 
 - (NSNumber *)convertStringWithIntegerToNSNumber:(NSString *)string
 {
