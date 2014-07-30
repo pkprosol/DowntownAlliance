@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Decade" syncable="YES"/>
+    <entity name="Location" syncable="YES"/>
+    <entity name="Theme" syncable="YES"/>
+    <elements>
+        <element name="Location" positionX="-36" positionY="9" width="128" height="45"/>
+        <element name="Theme" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="Decade" positionX="27" positionY="72" width="128" height="45"/>
+    </elements>
+</model>
