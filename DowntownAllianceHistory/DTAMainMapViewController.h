@@ -12,7 +12,7 @@
 #import "DTADataFetchFromCSV.h"
 #import "Location.h"
 
-@interface DTAHomeViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface DTAMainMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 
 @property (strong, nonatomic) CLLocationManager *locationManager;

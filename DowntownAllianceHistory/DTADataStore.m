@@ -54,11 +54,12 @@
         return _managedObjectContext;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"DowntownAlliance.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"DowntownAllianceHistory.sqlite"];
     
     NSError *error = nil;
     
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"DowntownAlliance" withExtension:@"momd"];
+    
     NSManagedObjectModel *managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
     

@@ -58,36 +58,48 @@
 */
 
 - (IBAction)pre1920sTapped:(id)sender {
-    [self performSegueWithIdentifier:@"detailSegue" sender:self];
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenTwentiesTapped:(id)sender {
-    [self performSegueWithIdentifier:@"detailSegue" sender:self];
-
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenThirtiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenFortiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenFiftiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenSixtiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenSeventiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenEightiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)nineteenNinetiesTapped:(id)sender {
+    [self triggerSegue];
 }
 
 - (IBAction)twoThousandsToPresentTapped:(id)sender {
+    [self triggerSegue];
+}
+
+- (void)triggerSegue
+{
+    [self performSegueWithIdentifier:@"detailSegue" sender:self];
 }
 
 @end

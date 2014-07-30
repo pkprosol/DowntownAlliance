@@ -6,16 +6,16 @@
 //
 //
 
-#import "DTAHomeViewController.h"
+#import "DTAMainMapViewController.h"
 #import "DTADataStore.h"
 
-@interface DTAHomeViewController ()
+@interface DTAMainMapViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
 
 @end
 
-@implementation DTAHomeViewController
+@implementation DTAMainMapViewController
 
 - (void)viewDidLoad
 {
