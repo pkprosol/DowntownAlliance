@@ -14,6 +14,21 @@
 		F433CF4819883A7100D77905 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F433CF4719883A7100D77905 /* Theme.m */; };
 		F433CF4B19883A7100D77905 /* Decade.m in Sources */ = {isa = PBXBuildFile; fileRef = F433CF4A19883A7100D77905 /* Decade.m */; };
 		F433CF4E19883A7200D77905 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F433CF4D19883A7200D77905 /* Location.m */; };
+		F440A71219893CBC00D057F6 /* 1970s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70319893CBC00D057F6 /* 1970s.jpg */; };
+		F440A71319893CBC00D057F6 /* Military.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70419893CBC00D057F6 /* Military.jpg */; };
+		F440A71419893CBC00D057F6 /* Culture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70519893CBC00D057F6 /* Culture.jpg */; };
+		F440A71519893CBC00D057F6 /* 1960s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F440A70619893CBC00D057F6 /* 1960s.gif */; };
+		F440A71619893CBC00D057F6 /* Science.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70719893CBC00D057F6 /* Science.jpg */; };
+		F440A71719893CBC00D057F6 /* 1920s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70819893CBC00D057F6 /* 1920s.jpg */; };
+		F440A71819893CBC00D057F6 /* 2000s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70919893CBC00D057F6 /* 2000s.jpg */; };
+		F440A71919893CBC00D057F6 /* 1950s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70A19893CBC00D057F6 /* 1950s.jpg */; };
+		F440A71A19893CBC00D057F6 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = F440A70B19893CBC00D057F6 /* 1980s.png */; };
+		F440A71B19893CBC00D057F6 /* 1940s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70C19893CBC00D057F6 /* 1940s.jpg */; };
+		F440A71C19893CBC00D057F6 /* 1910s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70D19893CBC00D057F6 /* 1910s.jpg */; };
+		F440A71D19893CBC00D057F6 /* 1990s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70E19893CBC00D057F6 /* 1990s.jpg */; };
+		F440A71E19893CBC00D057F6 /* 1900s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70F19893CBC00D057F6 /* 1900s.jpg */; };
+		F440A71F19893CBC00D057F6 /* 1930s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A71019893CBC00D057F6 /* 1930s.jpg */; };
+		F440A72019893CBC00D057F6 /* Sports.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A71119893CBC00D057F6 /* Sports.jpg */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
 		F47CB71A1987D9CC00398293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7191987D9CC00398293 /* UIKit.framework */; };
@@ -32,11 +47,7 @@
 		F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */ = {isa = PBXBuildFile; fileRef = F47CB74C1987DBE300398293 /* COH_Coordinates.csv */; };
 		F47CB75A1987DE5E00398293 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7591987DE5E00398293 /* DTADataStore.m */; };
 		F47CB7601987E09C00398293 /* DTADataFetchFromCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */; };
-		F47CB76E1988064900398293 /* 1960s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F47CB76D1988064900398293 /* 1960s.gif */; };
-		F47CB778198807FE00398293 /* Military.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB777198807FE00398293 /* Military.jpg */; };
-		F47CB77A1988082E00398293 /* Science.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB7791988082E00398293 /* Science.jpg */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
-		F47CB78119881A9E00398293 /* 2000s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47CB78019881A9E00398293 /* 2000s.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +73,21 @@
 		F433CF4A19883A7100D77905 /* Decade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Decade.m; path = ../Decade.m; sourceTree = "<group>"; };
 		F433CF4C19883A7200D77905 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../Location.h; sourceTree = "<group>"; };
 		F433CF4D19883A7200D77905 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = ../Location.m; sourceTree = "<group>"; };
+		F440A70319893CBC00D057F6 /* 1970s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1970s.jpg; sourceTree = "<group>"; };
+		F440A70419893CBC00D057F6 /* Military.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Military.jpg; sourceTree = "<group>"; };
+		F440A70519893CBC00D057F6 /* Culture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Culture.jpg; sourceTree = "<group>"; };
+		F440A70619893CBC00D057F6 /* 1960s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1960s.gif; sourceTree = "<group>"; };
+		F440A70719893CBC00D057F6 /* Science.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Science.jpg; sourceTree = "<group>"; };
+		F440A70819893CBC00D057F6 /* 1920s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1920s.jpg; sourceTree = "<group>"; };
+		F440A70919893CBC00D057F6 /* 2000s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2000s.jpg; sourceTree = "<group>"; };
+		F440A70A19893CBC00D057F6 /* 1950s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1950s.jpg; sourceTree = "<group>"; };
+		F440A70B19893CBC00D057F6 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
+		F440A70C19893CBC00D057F6 /* 1940s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1940s.jpg; sourceTree = "<group>"; };
+		F440A70D19893CBC00D057F6 /* 1910s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1910s.jpg; sourceTree = "<group>"; };
+		F440A70E19893CBC00D057F6 /* 1990s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1990s.jpg; sourceTree = "<group>"; };
+		F440A70F19893CBC00D057F6 /* 1900s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1900s.jpg; sourceTree = "<group>"; };
+		F440A71019893CBC00D057F6 /* 1930s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1930s.jpg; sourceTree = "<group>"; };
+		F440A71119893CBC00D057F6 /* Sports.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sports.jpg; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CB7151987D9CC00398293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F47CB7171987D9CC00398293 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,23 +113,8 @@
 		F47CB7591987DE5E00398293 /* DTADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataStore.m; sourceTree = "<group>"; };
 		F47CB75E1987E09C00398293 /* DTADataFetchFromCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataFetchFromCSV.h; sourceTree = "<group>"; };
 		F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataFetchFromCSV.m; sourceTree = "<group>"; };
-		F47CB7611988055000398293 /* 1900s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1900s.jpg; sourceTree = "<group>"; };
-		F47CB7631988057E00398293 /* 1910s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1910s.jpg; sourceTree = "<group>"; };
-		F47CB7651988059E00398293 /* 1920s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1920s.jpg; sourceTree = "<group>"; };
-		F47CB767198805F300398293 /* 1930s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1930s.jpg; sourceTree = "<group>"; };
-		F47CB7691988060C00398293 /* 1940s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1940s.jpg; sourceTree = "<group>"; };
-		F47CB76B1988062F00398293 /* 1950s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1950s.jpg; sourceTree = "<group>"; };
-		F47CB76D1988064900398293 /* 1960s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1960s.gif; sourceTree = "<group>"; };
-		F47CB76F1988066800398293 /* 1970s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1970s.jpg; sourceTree = "<group>"; };
-		F47CB771198806C500398293 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
-		F47CB773198806E100398293 /* 1990s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1990s.jpg; sourceTree = "<group>"; };
-		F47CB775198807DA00398293 /* Sports.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sports.jpg; sourceTree = "<group>"; };
-		F47CB777198807FE00398293 /* Military.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Military.jpg; sourceTree = "<group>"; };
-		F47CB7791988082E00398293 /* Science.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Science.jpg; sourceTree = "<group>"; };
-		F47CB77B1988085600398293 /* Culture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Culture.jpg; sourceTree = "<group>"; };
 		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
 		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
-		F47CB78019881A9E00398293 /* 2000s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2000s.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,21 +191,21 @@
 		F47CB71C1987D9CC00398293 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB7611988055000398293 /* 1900s.jpg */,
-				F47CB7631988057E00398293 /* 1910s.jpg */,
-				F47CB7651988059E00398293 /* 1920s.jpg */,
-				F47CB767198805F300398293 /* 1930s.jpg */,
-				F47CB7691988060C00398293 /* 1940s.jpg */,
-				F47CB76B1988062F00398293 /* 1950s.jpg */,
-				F47CB76D1988064900398293 /* 1960s.gif */,
-				F47CB76F1988066800398293 /* 1970s.jpg */,
-				F47CB771198806C500398293 /* 1980s.png */,
-				F47CB773198806E100398293 /* 1990s.jpg */,
-				F47CB78019881A9E00398293 /* 2000s.jpg */,
-				F47CB775198807DA00398293 /* Sports.jpg */,
-				F47CB777198807FE00398293 /* Military.jpg */,
-				F47CB7791988082E00398293 /* Science.jpg */,
-				F47CB77B1988085600398293 /* Culture.jpg */,
+				F440A70319893CBC00D057F6 /* 1970s.jpg */,
+				F440A70419893CBC00D057F6 /* Military.jpg */,
+				F440A70519893CBC00D057F6 /* Culture.jpg */,
+				F440A70619893CBC00D057F6 /* 1960s.gif */,
+				F440A70719893CBC00D057F6 /* Science.jpg */,
+				F440A70819893CBC00D057F6 /* 1920s.jpg */,
+				F440A70919893CBC00D057F6 /* 2000s.jpg */,
+				F440A70A19893CBC00D057F6 /* 1950s.jpg */,
+				F440A70B19893CBC00D057F6 /* 1980s.png */,
+				F440A70C19893CBC00D057F6 /* 1940s.jpg */,
+				F440A70D19893CBC00D057F6 /* 1910s.jpg */,
+				F440A70E19893CBC00D057F6 /* 1990s.jpg */,
+				F440A70F19893CBC00D057F6 /* 1900s.jpg */,
+				F440A71019893CBC00D057F6 /* 1930s.jpg */,
+				F440A71119893CBC00D057F6 /* Sports.jpg */,
 				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
 				F47CB71D1987D9CC00398293 /* DowntownAllianceHistory-Info.plist */,
 				F47CB71E1987D9CC00398293 /* InfoPlist.strings */,
@@ -348,14 +359,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F440A71519893CBC00D057F6 /* 1960s.gif in Resources */,
+				F440A71A19893CBC00D057F6 /* 1980s.png in Resources */,
+				F440A71719893CBC00D057F6 /* 1920s.jpg in Resources */,
+				F440A71619893CBC00D057F6 /* Science.jpg in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
+				F440A71219893CBC00D057F6 /* 1970s.jpg in Resources */,
+				F440A71F19893CBC00D057F6 /* 1930s.jpg in Resources */,
+				F440A71C19893CBC00D057F6 /* 1910s.jpg in Resources */,
+				F440A71319893CBC00D057F6 /* Military.jpg in Resources */,
+				F440A71919893CBC00D057F6 /* 1950s.jpg in Resources */,
+				F440A71819893CBC00D057F6 /* 2000s.jpg in Resources */,
+				F440A71B19893CBC00D057F6 /* 1940s.jpg in Resources */,
+				F440A71E19893CBC00D057F6 /* 1900s.jpg in Resources */,
 				F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */,
-				F47CB778198807FE00398293 /* Military.jpg in Resources */,
-				F47CB77A1988082E00398293 /* Science.jpg in Resources */,
-				F47CB76E1988064900398293 /* 1960s.gif in Resources */,
-				F47CB78119881A9E00398293 /* 2000s.jpg in Resources */,
+				F440A72019893CBC00D057F6 /* Sports.jpg in Resources */,
 				F47CB7201987D9CC00398293 /* InfoPlist.strings in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
+				F440A71D19893CBC00D057F6 /* 1990s.jpg in Resources */,
+				F440A71419893CBC00D057F6 /* Culture.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

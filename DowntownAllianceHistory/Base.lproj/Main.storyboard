@@ -46,7 +46,6 @@
                         <segue destination="pWs-P5-k3C" kind="relationship" relationship="viewControllers" id="ofN-DY-mmE"/>
                         <segue destination="JjU-F8-xe0" kind="relationship" relationship="viewControllers" id="Czl-qP-Kup"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Afd-oa-oSO"/>
-                        <segue destination="bFT-ip-T9H" kind="push" id="G8k-5B-bvr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZH-BQ-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -62,22 +61,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5uz-iV-zQ3">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailTablecell" id="5uz-iV-zQ3">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5uz-iV-zQ3" id="wHW-GA-KFu">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2V-f4-Y4Z">
-                                            <rect key="frame" x="147" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="62" y="11" width="226" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Y-VF-x2x">
-                                            <rect key="frame" x="20" y="3" width="44" height="38"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="54" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -90,10 +89,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gmf-M7-Ij0"/>
+                    <connections>
+                        <segue destination="iG7-ft-mWB" kind="modal" id="Lhn-Zr-bix"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qI8-6d-jXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="719"/>
+            <point key="canvasLocation" x="1517" y="-327"/>
         </scene>
         <!--View Controller - By Theme-->
         <scene sceneID="Zdy-JI-GGc">
@@ -128,6 +130,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="By Theme" id="Nhg-aO-v63"/>
                     <navigationItem key="navigationItem" id="Ru5-M3-VHd"/>
+                    <connections>
+                        <segue destination="bFT-ip-T9H" kind="modal" identifier="detailSegue" id="FiB-Kd-sGp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52o-Fe-d9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,7 +296,7 @@
                     <tabBarItem key="tabBarItem" title="By Decade" id="fn4-TV-Wwp"/>
                     <navigationItem key="navigationItem" id="ETv-ag-nEg"/>
                     <connections>
-                        <segue destination="iG7-ft-mWB" kind="modal" identifier="detailSegue" id="oHC-pz-nw2"/>
+                        <segue destination="bFT-ip-T9H" kind="modal" identifier="detailSegue" id="zWq-nP-TKs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihE-Pi-jrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -330,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAV-6e-yPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="-659"/>
+            <point key="canvasLocation" x="2102" y="-335"/>
         </scene>
     </scenes>
     <resources>
@@ -354,4 +359,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="FiB-Kd-sGp"/>
+    </inferredMetricsTieBreakers>
 </document>
