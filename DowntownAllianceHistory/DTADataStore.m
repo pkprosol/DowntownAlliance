@@ -7,6 +7,7 @@
 ////
 
 #import "DTADataStore.h"
+#import "DTADataFetchFromCSV.h"
 
 @implementation DTADataStore
 
@@ -17,6 +18,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedDataStore= [[DTADataStore alloc] init];
+        [DTADataFetchFromCSV importCSV];
     });
     
     return _sharedDataStore;

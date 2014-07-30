@@ -262,10 +262,10 @@
 		F47CB75C1987DE7600398293 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
-				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				F47CB77D198812EF00398293 /* DTADecadesViewController.h */,
 				F47CB77E198812EF00398293 /* DTADecadesViewController.m */,
+				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
+				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
 				7771A43B1988162600CD6BA8 /* DTADetailViewController.m */,
 				A42B281519892E8800DDB4F6 /* DTATableViewController.h */,
