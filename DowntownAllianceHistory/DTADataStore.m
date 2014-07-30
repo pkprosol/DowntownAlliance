@@ -18,7 +18,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedDataStore= [[DTADataStore alloc] init];
-        [DTADataFetchFromCSV importCSV];
     });
     
     return _sharedDataStore;
@@ -28,6 +27,11 @@
 {
     NSFetchRequest *fetchLocationData = [NSFetchRequest fetchRequestWithEntityName:@"Location"];
     NSArray *fetchedData = [self.managedObjectContext executeFetchRequest:fetchLocationData error:nil];
+    
+    if ([fetchedData count] == 0) {
+        [DTADataFetchFromCSV importCSV];
+        fetchedData = [self.managedObjectContext executeFetchRequest:fetchLocationData error:nil];
+    }
     
     return fetchedData;
 }

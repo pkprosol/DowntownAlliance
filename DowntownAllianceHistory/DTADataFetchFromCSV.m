@@ -63,9 +63,11 @@
     DTADataStore *store = [DTADataStore sharedDataStore];
     
     for (NSArray *locationItemComponentsArray in componentsArray) {
-        Location *newLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:store.managedObjectContext];
-        [newLocation setUpLocationDataWithComponentArray:locationItemComponentsArray];
-        NSLog(@"%@", newLocation);
+        if (![locationItemComponentsArray[0] isEqualToString:@"ID"]) {
+            Location *newLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:store.managedObjectContext];
+            [newLocation setUpLocationDataWithComponentArray:locationItemComponentsArray];
+            NSLog(@"%@", newLocation);
+        }
     }
     
     
