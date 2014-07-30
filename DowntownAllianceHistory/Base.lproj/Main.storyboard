@@ -100,6 +100,9 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="iG7-ft-mWB" kind="push" id="NBv-VY-RE9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -108,9 +111,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gmf-M7-Ij0"/>
-                    <connections>
-                        <segue destination="iG7-ft-mWB" kind="modal" id="Lhn-Zr-bix"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qI8-6d-jXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
