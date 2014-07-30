@@ -14,6 +14,7 @@
 
 + (instancetype) sharedDataStore;
 
+- (NSArray *)fetchData;
 - (void) saveContext;
 
 @end

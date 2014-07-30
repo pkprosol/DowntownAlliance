@@ -8,17 +8,16 @@
 
 #import "DTADataFetchFromCSV.h"
 #import "Location.h"
+#import "DTADataStore.h"
 
 @implementation DTADataFetchFromCSV
 
-+ (NSArray *)importCSV
++ (void)importCSV
 {
     NSString *rawCSVString = [DTADataFetchFromCSV getCSVFileAndConvertToString];
     NSArray *cleanArray = [DTADataFetchFromCSV getCleanArrayOfCSVFileFromString:rawCSVString];
     NSArray *componentsArray = [DTADataFetchFromCSV getArrayOfArraysWithComponentsFromArray:cleanArray];
-    NSArray *locationsArray = [DTADataFetchFromCSV createArrayOfLocationObjectsFromComponentsArray:componentsArray];
-    
-    return locationsArray;
+    [DTADataFetchFromCSV createLocationObjectsInCoreDataFromComponentsArray:componentsArray];
 }
 
 + (NSString *)getCSVFileAndConvertToString
@@ -59,16 +58,17 @@
     return componentsArray;
 }
 
-+ (NSArray *)createArrayOfLocationObjectsFromComponentsArray:(NSArray *)componentsArray
++ (void)createLocationObjectsInCoreDataFromComponentsArray:(NSArray *)componentsArray
 {
-    NSMutableArray *locationsArray = [NSMutableArray new];
+    DTADataStore *store = [DTADataStore sharedDataStore];
     
     for (NSArray *locationItemComponentsArray in componentsArray) {
-        Location *newLocation = [[Location alloc] initWithComponentStringArray:locationItemComponentsArray];
-        [locationsArray addObject:newLocation];
+        Location *newLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:store.managedObjectContext];
+        [newLocation setUpLocationDataWithComponentArray:locationItemComponentsArray];
+        NSLog(@"%@", newLocation);
     }
     
-    return locationsArray;
+    
 }
 
 @end

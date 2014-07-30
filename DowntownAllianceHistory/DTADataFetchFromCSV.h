@@ -10,6 +10,6 @@
 
 @interface DTADataFetchFromCSV : NSObject
 
-+ (NSArray *)importCSV;
++ (void)importCSV;
 
 @end

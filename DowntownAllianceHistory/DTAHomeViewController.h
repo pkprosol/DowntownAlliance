@@ -22,6 +22,4 @@
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted;
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations;
 
-
-
 @end

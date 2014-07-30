@@ -7,6 +7,7 @@
 //
 
 #import "DTAHomeViewController.h"
+#import "DTADataStore.h"
 
 @interface DTAHomeViewController ()
 
@@ -20,7 +21,9 @@
 {
     [super viewDidLoad];
     
-    self.arrayOfLocations = [DTADataFetchFromCSV importCSV];
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    
+    self.arrayOfLocations = [store fetchData];
     
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
   
@@ -36,8 +39,8 @@
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
-    CGFloat latitudeFloat = locationToBePlotted.latitude;
-    CGFloat longitudeFloat = locationToBePlotted.longitude;
+    CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
+    CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
     pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
     pointToAnnotate.title = locationToBePlotted.idNumber;
