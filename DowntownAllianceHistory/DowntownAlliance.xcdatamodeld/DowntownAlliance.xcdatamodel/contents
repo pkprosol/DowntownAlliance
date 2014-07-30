@@ -23,8 +23,8 @@
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="theme" inverseEntity="Location" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Decade" positionX="180" positionY="-45" width="128" height="73"/>
         <element name="Location" positionX="-135" positionY="81" width="128" height="223"/>
         <element name="Theme" positionX="97" positionY="216" width="128" height="73"/>
-        <element name="Decade" positionX="180" positionY="-45" width="128" height="73"/>
     </elements>
 </model>

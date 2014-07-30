@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTADecadeCell : UITableViewCell
-
-@property (weak, nonatomic) IBOutlet UIImageView *decadeCellImageView;
+@interface DTAFilterCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *filterCellImageView;
 
 @end

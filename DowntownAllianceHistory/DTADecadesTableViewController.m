@@ -7,7 +7,7 @@
 //
 
 #import "DTADecadesTableViewController.h"
-#import "DTADecadeCell.h"
+#import "DTAFilterCell.h"
 
 @interface DTADecadesTableViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *decadeImageView;
@@ -30,9 +30,8 @@
     [super viewDidLoad];
 
     NSMutableArray *arrayOfDecadesPhotos = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"1900s.jpg"],[UIImage imageNamed:@"1910s.jpg"],[UIImage imageNamed:@"1920s.jpg"],[UIImage imageNamed:@"1930s.jpg"], [UIImage imageNamed:@"1940s.jpg"], [UIImage imageNamed:@"1950s.jpg"], [UIImage imageNamed:@"1960s.gif"], [UIImage imageNamed:@"1970s.jpg"], [UIImage imageNamed:@"1980s"], [UIImage imageNamed:@"1990s.jpg"], [UIImage imageNamed:@"2000s.jpg"], nil];
-    
 
-    _decadesPhotoArray = arrayOfDecadesPhotos;
+    self.decadesPhotoArray = arrayOfDecadesPhotos;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -68,7 +67,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DTADecadeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
+    DTAFilterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
