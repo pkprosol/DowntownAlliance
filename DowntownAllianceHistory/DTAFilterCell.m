@@ -6,9 +6,9 @@
 //
 //
 
-#import "DTADecadeCell.h"
+#import "DTAFilterCell.h"
 
-@implementation DTADecadeCell
+@implementation DTAFilterCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -21,7 +21,7 @@
 
 - (void)awakeFromNib
 {
-    self.decadeCellImageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
     // Initialization code
 }
 
