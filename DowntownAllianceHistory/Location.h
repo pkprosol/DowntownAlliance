@@ -22,6 +22,7 @@
 @property (nonatomic, retain) NSNumber * day;
 @property (nonatomic, retain) NSNumber * year;
 @property (nonatomic, retain) NSString * details;
+@property (nonatomic, retain) NSNumber * hasData;
 @property (nonatomic, retain) Theme *theme;
 @property (nonatomic, retain) Decade *decade;
 

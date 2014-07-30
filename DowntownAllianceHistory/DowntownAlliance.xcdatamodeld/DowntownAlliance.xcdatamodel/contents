@@ -7,6 +7,7 @@
     <entity name="Location" representedClassName="Location" syncable="YES">
         <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasData" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="idNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -22,7 +23,7 @@
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="theme" inverseEntity="Location" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Location" positionX="-135" positionY="81" width="128" height="208"/>
+        <element name="Location" positionX="-135" positionY="81" width="128" height="223"/>
         <element name="Theme" positionX="97" positionY="216" width="128" height="73"/>
         <element name="Decade" positionX="180" positionY="-45" width="128" height="73"/>
     </elements>

@@ -22,14 +22,41 @@
 @dynamic day;
 @dynamic year;
 @dynamic details;
+@dynamic hasData;
 @dynamic theme;
 @dynamic decade;
 
 - (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray
 {
     self.idNumber = componentArray[0];
-    self.latitude = [NSNumber numberWithFloat:[componentArray[2] floatValue]];
-    self.longitude = [NSNumber numberWithFloat:[componentArray[3] floatValue]];
+    self.symbolValue = componentArray[1];
+    self.latitude = [self convertStringWithFloatToNSNumber:componentArray[2]];
+    self.longitude = [self convertStringWithFloatToNSNumber:componentArray[3]];
+    self.month = [self convertStringWithIntegerToNSNumber:componentArray[4]];
+    self.day = [self convertStringWithIntegerToNSNumber:componentArray[5]];
+    self.year = [self convertStringWithIntegerToNSNumber:componentArray[6]];
+    self.name = componentArray[7];
+    self.details = componentArray[8];
+    
+    if (self.day) {
+        self.hasData = [NSNumber numberWithBool:YES];
+    }
+}
+
+- (NSNumber *)convertStringWithIntegerToNSNumber:(NSString *)string
+{
+    NSInteger integerFromString = [string integerValue];
+    NSNumber *numberFromInteger = [NSNumber numberWithInteger:integerFromString];
+    
+    return numberFromInteger;
+}
+
+- (NSNumber *)convertStringWithFloatToNSNumber:(NSString *)string
+{
+    CGFloat floatFromString = [string floatValue];
+    NSNumber *numberFromFloat = [NSNumber numberWithFloat:floatFromString];
+    
+    return numberFromFloat;
 }
 
 @end

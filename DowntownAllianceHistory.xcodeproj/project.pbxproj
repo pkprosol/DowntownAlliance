@@ -29,7 +29,8 @@
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A7391989656A00D057F6 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A7381989656A00D057F6 /* Theme.m */; };
 		F440A73C1989656A00D057F6 /* Decade.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* Decade.m */; };
-		F440A73F1989656A00D057F6 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73E1989656A00D057F6 /* Location.m */; };
+		F440A74119896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */; };
+		F440A7441989714F00D057F6 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A7431989714F00D057F6 /* Location.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
 		F47CB71A1987D9CC00398293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7191987D9CC00398293 /* UIKit.framework */; };
@@ -87,8 +88,9 @@
 		F440A7381989656A00D057F6 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		F440A73A1989656A00D057F6 /* Decade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decade.h; sourceTree = "<group>"; };
 		F440A73B1989656A00D057F6 /* Decade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decade.m; sourceTree = "<group>"; };
-		F440A73D1989656A00D057F6 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		F440A73E1989656A00D057F6 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH_Coordinates_with_sample_data.csv; sourceTree = "<group>"; };
+		F440A7421989714F00D057F6 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		F440A7431989714F00D057F6 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CB7151987D9CC00398293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F47CB7171987D9CC00398293 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,6 +209,7 @@
 				F440A71019893CBC00D057F6 /* 1930s.jpg */,
 				F440A71119893CBC00D057F6 /* Sports.jpg */,
 				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
+				F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */,
 				F47CB71D1987D9CC00398293 /* DowntownAllianceHistory-Info.plist */,
 				F47CB71E1987D9CC00398293 /* InfoPlist.strings */,
 				F47CB7211987D9CC00398293 /* main.m */,
@@ -237,8 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */,
-				F440A73D1989656A00D057F6 /* Location.h */,
-				F440A73E1989656A00D057F6 /* Location.m */,
+				F440A7421989714F00D057F6 /* Location.h */,
+				F440A7431989714F00D057F6 /* Location.m */,
 				F440A73A1989656A00D057F6 /* Decade.h */,
 				F440A73B1989656A00D057F6 /* Decade.m */,
 				F440A7371989656A00D057F6 /* Theme.h */,
@@ -378,6 +381,7 @@
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
 				F440A71D19893CBC00D057F6 /* 1990s.jpg in Resources */,
 				F440A71419893CBC00D057F6 /* Culture.jpg in Resources */,
+				F440A74119896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */,
-				F440A73F1989656A00D057F6 /* Location.m in Sources */,
 				F440A73C1989656A00D057F6 /* Decade.m in Sources */,
 				F47CB75A1987DE5E00398293 /* DTADataStore.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
@@ -407,6 +410,7 @@
 				A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */,
 				F47CB7601987E09C00398293 /* DTADataFetchFromCSV.m in Sources */,
 				F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */,
+				F440A7441989714F00D057F6 /* Location.m in Sources */,
 				7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
