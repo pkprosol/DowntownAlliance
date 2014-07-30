@@ -2,7 +2,7 @@
 //  Location.m
 //  DowntownAllianceHistory
 //
-//  Created by Piotr K Prosol on 7/29/14.
+//  Created by Piotr K Prosol on 7/30/14.
 //
 //
 
@@ -13,14 +13,17 @@
 
 @implementation Location
 
-@dynamic details;
+@dynamic name;
 @dynamic idNumber;
+@dynamic symbolValue;
 @dynamic latitude;
 @dynamic longitude;
-@dynamic name;
-@dynamic symbolValue;
-@dynamic decade;
+@dynamic month;
+@dynamic day;
+@dynamic year;
+@dynamic details;
 @dynamic theme;
+@dynamic decade;
 
 - (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray
 {
