@@ -28,8 +28,8 @@
 - (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray
 {
     self.idNumber = componentArray[0];
-    self.latitude = componentArray[2];
-    self.longitude = componentArray[3];
+    self.latitude = [NSNumber numberWithFloat:[componentArray[2] floatValue]];
+    self.longitude = [NSNumber numberWithFloat:[componentArray[3] floatValue]];
 }
 
 @end
