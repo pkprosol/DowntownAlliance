@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DTADecadeCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *decadeCellImageView;
 
 @end

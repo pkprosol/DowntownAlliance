@@ -62,7 +62,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 225.f;
+    return 250.0f;
 }
 
 
@@ -74,7 +74,9 @@
     
     UIImage *imageOfDecade = self.decadesPhotoArray[indexPath.row];
     
-    cell.imageView.image = imageOfDecade;
+    cell.decadeCellImageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    cell.decadeCellImageView.image = imageOfDecade;
     
     return cell;
 }
