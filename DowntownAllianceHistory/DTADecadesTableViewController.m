@@ -73,9 +73,9 @@
     
     UIImage *imageOfDecade = self.decadesPhotoArray[indexPath.row];
     
-    cell.decadeCellImageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
     
-    cell.decadeCellImageView.image = imageOfDecade;
+    cell.filterCellImageView.image = imageOfDecade;
     
     return cell;
 }

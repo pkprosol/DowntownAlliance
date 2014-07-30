@@ -63,7 +63,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 225.f;
+    return 250.0f;
 }
 
 
@@ -75,7 +75,9 @@
     
     UIImage *imageOfCategory = self.categoriesPhotoArray[indexPath.row];
     
-    cell.imageView.image = imageOfCategory;
+    cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    cell.filterCellImageView.image = imageOfCategory;
     
     return cell;
 }
