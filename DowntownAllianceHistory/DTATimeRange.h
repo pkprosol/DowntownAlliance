@@ -14,4 +14,7 @@
 @property (nonatomic) NSInteger beginningTime;
 @property (nonatomic) NSInteger lengthOfTime;
 
+- (instancetype)init;
+- (instancetype)initWithName:(NSString *)nameOfRange BeginningTime:(NSInteger)beginningTime LengthOfTime:(NSInteger)lengthOfTime;
+
 @end

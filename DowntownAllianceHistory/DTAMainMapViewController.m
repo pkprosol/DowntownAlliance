@@ -9,6 +9,7 @@
 #import "DTAMainMapViewController.h"
 #import "DTADataStore.h"
 #import "UITabBarController+hidableTab.h"
+
 @interface DTAMainMapViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
