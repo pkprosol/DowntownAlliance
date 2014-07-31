@@ -8,14 +8,16 @@
 
 #import "DTADecadesTableViewController.h"
 #import "DTAFilterCell.h"
+#import "DTATableViewController.h"
 #import "UITabBarController+hidableTab.h"
+
 @interface DTADecadesTableViewController ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *decadeImageView;
 
 @end
 
 @implementation DTADecadesTableViewController
-
 
 {
     CGFloat startContentOffset;
@@ -128,9 +130,7 @@
     CGFloat differenceFromStart = startContentOffset - currentOffset;
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
     lastContentOffset = currentOffset;
-    
-    
-    
+        
     if((differenceFromStart) < 0)
     {
         // scroll up
@@ -251,7 +251,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -259,7 +258,12 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"decadesDetails"]) {
+        DTATableViewController *nextVC = [segue destinationViewController];
+        NSIndexPath *indexSelected = [self.tableView indexPathForSelectedRow];
+//        nextVC.title = self.arrayOfDecades[indexSelected.row];
+    }
 }
-*/
 
 @end

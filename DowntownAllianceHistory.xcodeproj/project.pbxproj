@@ -53,6 +53,8 @@
 		F47CB75A1987DE5E00398293 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7591987DE5E00398293 /* DTADataStore.m */; };
 		F47CB7601987E09C00398293 /* DTADataFetchFromCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
+		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
+		F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,10 @@
 		F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataFetchFromCSV.m; sourceTree = "<group>"; };
 		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
 		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
+		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
+		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
+		F4BB9A25198A969B00956381 /* DTAManageTimeRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAManageTimeRanges.h; sourceTree = "<group>"; };
+		F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAManageTimeRanges.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +267,12 @@
 			isa = PBXGroup;
 			children = (
 				F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */,
+				F47CB7581987DE5E00398293 /* DTADataStore.h */,
+				F47CB7591987DE5E00398293 /* DTADataStore.m */,
+				F4BB9A25198A969B00956381 /* DTAManageTimeRanges.h */,
+				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
+				F47CB75E1987E09C00398293 /* DTADataFetchFromCSV.h */,
+				F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */,
 				F440A7421989714F00D057F6 /* Location.h */,
 				F440A7431989714F00D057F6 /* Location.m */,
 				F440A73A1989656A00D057F6 /* Decade.h */,
@@ -292,14 +304,16 @@
 				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
 				7771A43B1988162600CD6BA8 /* DTADetailViewController.m */,
-				A42B281519892E8800DDB4F6 /* DTATableViewController.h */,
-				A42B281619892E8800DDB4F6 /* DTATableViewController.m */,
 				7749C4CA19896765009D1F23 /* DTADecadesTableViewController.h */,
 				7749C4CB19896765009D1F23 /* DTADecadesTableViewController.m */,
 				F41C72E319897B1300DD15DF /* DTACategoriesTableViewController.h */,
 				F41C72E419897B1300DD15DF /* DTACategoriesTableViewController.m */,
+				A42B281519892E8800DDB4F6 /* DTATableViewController.h */,
+				A42B281619892E8800DDB4F6 /* DTATableViewController.m */,
 				7749C4D019896D02009D1F23 /* DTAFilterCell.h */,
 				7749C4D119896D02009D1F23 /* DTAFilterCell.m */,
+				F4BB9A22198A922600956381 /* DTATimeRange.h */,
+				F4BB9A23198A922600956381 /* DTATimeRange.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -443,6 +457,8 @@
 				F41C72E519897B1300DD15DF /* DTACategoriesTableViewController.m in Sources */,
 				F440A7441989714F00D057F6 /* Location.m in Sources */,
 				7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */,
+				F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */,
+				F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */,
 				7749C4CC19896765009D1F23 /* DTADecadesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
