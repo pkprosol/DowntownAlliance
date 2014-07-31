@@ -11,9 +11,9 @@
 
 @interface DTAManageTimeRanges : NSObject
 
-+ (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate AndEndDate:(NSDate *)endDate;
++ (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 
 // Receives array with beginning, intermediate, and final dates and generates time intervals
-+ (NSArray *)generateDefaultTimeIntervals;
++ (NSArray *)generateDefaultTimeIntervalsFromArrayOfDates:(NSDictionary *)intervalsSetting;
 
 @end

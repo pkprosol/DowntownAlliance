@@ -10,31 +10,51 @@
 
 @implementation DTAManageTimeRanges
 
-+ (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate AndEndDate:(NSDate *)endDate;
++ (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 {
     DTATimeRange *newTimeRange = [[DTATimeRange alloc] initWithName:name BeginningDate:startDate EndDate:endDate];
     
     return newTimeRange;
 }
 
-+ (NSArray *)generateDefaultTimeIntervalsFromArrayOfDates:(NSArray *)dates
++ (NSArray *)generateDefaultTimeIntervalsFromArrayOfDates:(NSDictionary *)intervalsSetting
 {
     NSMutableArray *resultingTimeIntervals = [NSMutableArray new];
     
-    // Decades input dictionary takes label for time period and start date string
-    NSDictionary *decadesInputDictionary = @{@"pre-1920s":@"01-01-1899",
-                                             @"1920s":@"01-01-1920",
-                                             @"1930s":@"01-01-1930",
-                                             @"1940s":@"01-01-1940",
-                                             @"1950s":@"01-01-1950",
-                                             @"1960s":@"01-01-1960",
-                                             @"1970s":@"01-01-1970",
-                                             @"1980s":@"01-01-1980",
-                                             @"1990s":@"01-01-1990",
-                                             @"2000s":@"01-01-2000"};
     
-    for (NSInteger i=0; i < ([dates count] - 1); i++) {
-       // DTATimeRange *newRange = [DTAManageTimeRanges generateTimeRangeWithName:<#(NSString *)#> StartDate:<#(NSDate *)#> AndEndDate:<#(NSDate *)#>
+    NSArray *startingDatesKeys = [[intervalsSetting allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat: @"MM-dd-yyyy"];
+    
+    for (NSInteger i=0; i < ([startingDatesKeys count]); i++) {
+        NSString *currentKey = startingDatesKeys[i];
+        NSString *nextKey = [NSString new];
+        
+        if (i == [startingDatesKeys count] - 1) {
+            nextKey = @"01-01-2161";
+        } else {
+            nextKey = startingDatesKeys[i+1];
+        }
+        
+        NSString *nameOfInterval = intervalsSetting[currentKey];
+        NSString *startDateString = currentKey;
+        NSString *endDateString = nextKey;
+        
+        // Need to reduce endDate by one so intervals don't overlap
+        
+        NSDate *startDate = [dateFormat dateFromString:startDateString];
+        
+        NSDate *endDateUnadjusted = [dateFormat dateFromString:endDateString];
+        NSDate *endDate = [endDateUnadjusted dateByAddingTimeInterval:-43200]; // Half a day
+        
+        DTATimeRange *newRange = [DTAManageTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:<#(UIImage *)#>];
+        
+        [resultingTimeIntervals addObject:newRange];
+    }
+    
+    for (DTATimeRange *timeRange in resultingTimeIntervals) {
+        NSLog(@"Name: %@, Start date: %@, End date: %@", timeRange.nameOfRange, timeRange.beginningDate, timeRange.endDate);
     }
     
     return resultingTimeIntervals;
