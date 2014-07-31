@@ -30,7 +30,7 @@
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
     
     
-    
+    //Region of a middle-ish 1950's point
     CGFloat latitudeFloat = 40.7089005;
     CGFloat longitudeFloat = -74.0105972;
     
