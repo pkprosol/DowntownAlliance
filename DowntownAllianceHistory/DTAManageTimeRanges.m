@@ -7,6 +7,10 @@
 //
 
 #import "DTAManageTimeRanges.h"
+#import "DTAGenerateDefaultTimeRanges.h"
+#import "DTADataStore.h"
+#import "Location.h"
+#import "DTADateFormatterAssistant.h"
 
 @implementation DTAManageTimeRanges
 
@@ -17,10 +21,13 @@
     return newTimeRange;
 }
 
-+ (NSArray *)generateDefaultTimeIntervalsFromDictionaryOfDates:(NSDictionary *)intervalsSetting ArrayOfImages:(NSArray *)imagesArray
++ (NSArray *)getAndProcessDefaultTimeRanges
 {
-    NSMutableArray *resultingTimeIntervals = [NSMutableArray new];
+    NSDictionary *intervalsSetting = [DTAGenerateDefaultTimeRanges generateDefaultDictionaryOfTimeIntervals];
     
+    NSArray *imagesArray = [DTAGenerateDefaultTimeRanges generateDefaultArrayOfImagesToMatchTimeIntervals];
+    
+    NSMutableArray *resultingTimeIntervals = [NSMutableArray new];
     
     NSArray *startingDatesKeys = [[intervalsSetting allKeys] sortedArrayUsingSelector:@selector(compare:)];
     
@@ -46,19 +53,41 @@
         
         NSDate *startDate = [dateFormat dateFromString:startDateString];
         
-        NSDate *endDateUnadjusted = [dateFormat dateFromString:endDateString];
-        NSDate *endDate = [endDateUnadjusted dateByAddingTimeInterval:-43200]; // Half a day
+        NSDate *endDate = [dateFormat dateFromString:endDateString];
+//        NSDate *endDate = [endDateUnadjusted dateByAddingTimeInterval:-43200]; // Half a day
         
         DTATimeRange *newRange = [DTAManageTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:imageForTimeRange];
         
         [resultingTimeIntervals addObject:newRange];
     }
     
-    for (DTATimeRange *timeRange in resultingTimeIntervals) {
-        NSLog(@"Name: %@, Start date: %@, End date: %@", timeRange.nameOfRange, timeRange.beginningDate, timeRange.endDate);
-    }
-    
     return resultingTimeIntervals;
 }
+
++ (NSArray *)findItemsInTimeRange:(DTATimeRange *)range
+{
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    NSArray *allItems = [store fetchData];
+  
+    NSMutableArray *itemsInRange = [NSMutableArray new];
+    
+    NSDate *beginningDate = range.beginningDate;
+    NSDate *endDate = range.endDate;
+    
+    for (Location *currentLocation in allItems) {
+        NSDate *year = [DTADateFormatterAssistant returnDateWithYearOnlyFrom:currentLocation.year];
+        
+        NSTimeInterval timeIntervalOfLocation = [year timeIntervalSinceReferenceDate];
+        NSTimeInterval timeIntervalOfBeginningDate = [beginningDate timeIntervalSinceReferenceDate];
+        NSTimeInterval timeIntervalOfEndDate = [endDate timeIntervalSinceReferenceDate];
+        
+        if (timeIntervalOfLocation >= timeIntervalOfBeginningDate && timeIntervalOfLocation < timeIntervalOfEndDate) {
+            [itemsInRange addObject:currentLocation];
+        }
+    }
+    
+    return itemsInRange;
+}
+
 
 @end

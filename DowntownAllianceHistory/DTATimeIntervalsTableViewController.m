@@ -6,18 +6,18 @@
 //
 //
 
-#import "DTADecadesTableViewController.h"
+#import "DTATimeIntervalsTableViewController.h"
 #import "DTAFilterCell.h"
 #import "DTATableViewController.h"
 #import "UITabBarController+hidableTab.h"
+#import "DTATimeRange.h"
+#import "DTAManageTimeRanges.h"
 
-@interface DTADecadesTableViewController ()
-
-@property (weak, nonatomic) IBOutlet UIImageView *decadeImageView;
+@interface DTATimeIntervalsTableViewController ()
 
 @end
 
-@implementation DTADecadesTableViewController
+@implementation DTATimeIntervalsTableViewController
 
 {
     CGFloat startContentOffset;
@@ -39,13 +39,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-//    NSMutableArray *arrayOfDecadesPhotos = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"1900s.jpg"],[UIImage imageNamed:@"1910s.jpg"],[UIImage imageNamed:@"1920s.jpg"],[UIImage imageNamed:@"1930s.jpg"], [UIImage imageNamed:@"1940s.jpg"], [UIImage imageNamed:@"1950s.jpg"], [UIImage imageNamed:@"1960s.gif"], [UIImage imageNamed:@"1970s.jpg"], [UIImage imageNamed:@"1980s"], [UIImage imageNamed:@"1990s.jpg"], [UIImage imageNamed:@"2000s.jpg"], nil];
     
-    NSMutableArray *arrayOfDecadesPhotos = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"1910s"],[UIImage imageNamed:@"1920s"],[UIImage imageNamed:@"1930s"],[UIImage imageNamed:@"1940s"], [UIImage imageNamed:@"1950's"], [UIImage imageNamed:@"1960s"], [UIImage imageNamed:@"1970s"], [UIImage imageNamed:@"1980s"], [UIImage imageNamed:@"1990s"], [UIImage imageNamed:@"2000s"],[UIImage imageNamed:@"2010s"], nil] ;
-
-    self.decadesPhotoArray = arrayOfDecadesPhotos;
-
+    self.arrayOfTimeIntervals = [DTAManageTimeRanges getAndProcessDefaultTimeRanges];
+    self.arrayOfImages = [NSMutableArray new];
+    
+    for (DTATimeRange *timeRange in self.arrayOfTimeIntervals) {
+        [self.arrayOfImages addObject:timeRange.imageForRange];
+    }
+        
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -70,7 +71,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.decadesPhotoArray count];
+    return [self.arrayOfImages count];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -84,7 +85,7 @@
     
     // Configure the cell...
     
-    UIImage *imageOfDecade = self.decadesPhotoArray[indexPath.row];
+    UIImage *imageOfDecade = self.arrayOfImages[indexPath.row];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
     
@@ -253,7 +254,10 @@
     if ([segue.identifier isEqualToString:@"decadesDetails"]) {
         DTATableViewController *nextVC = [segue destinationViewController];
         NSIndexPath *indexSelected = [self.tableView indexPathForSelectedRow];
-//        nextVC.title = self.arrayOfDecades[indexSelected.row];
+        DTATimeRange *timeRangeSelected = self.arrayOfTimeIntervals[indexSelected.row];
+        
+        nextVC.title = timeRangeSelected.nameOfRange;
+        nextVC.locationsToShow = [DTAManageTimeRanges findItemsInTimeRange:timeRangeSelected];
     }
 }
 

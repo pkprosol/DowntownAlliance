@@ -14,6 +14,8 @@
 + (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 
 // Receives array with beginning, intermediate, and final dates and generates time intervals
-+ (NSArray *)generateDefaultTimeIntervalsFromDictionaryOfDates:(NSDictionary *)intervalsSetting ArrayOfImages:(NSArray *)imagesArray;
++ (NSArray *)getAndProcessDefaultTimeRanges;
 
-@end
++ (NSArray *)findItemsInTimeRange:(DTATimeRange *)range;
+
+@end 

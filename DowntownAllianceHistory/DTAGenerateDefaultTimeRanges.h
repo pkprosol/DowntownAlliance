@@ -10,8 +10,8 @@
 
 @interface DTAGenerateDefaultTimeRanges : NSObject
 
-+ (NSDictionary *)provideDefaultDictionaryOfTimeIntervals;
++ (NSDictionary *)generateDefaultDictionaryOfTimeIntervals;
 
-+ (NSArray *)provideDefaultArrayOfImagesToMatchTimeIntervals;
++ (NSArray *)generateDefaultArrayOfImagesToMatchTimeIntervals;
 
 @end

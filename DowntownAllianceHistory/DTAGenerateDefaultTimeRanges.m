@@ -10,7 +10,7 @@
 
 @implementation DTAGenerateDefaultTimeRanges
 
-+ (NSDictionary *)provideDefaultDictionaryOfTimeIntervals
++ (NSDictionary *)generateDefaultDictionaryOfTimeIntervals
 {
     // Decades input dictionary takes a start date string (must be in format "mm-dd-yyyy" and label for the time period
     
@@ -28,7 +28,7 @@
     return datesDictionary;
 }
 
-+ (NSArray *)provideDefaultArrayOfImagesToMatchTimeIntervals
++ (NSArray *)generateDefaultArrayOfImagesToMatchTimeIntervals
 {
     // Images must match the order of and correspond to the time labels in default dictionary of time intervals
     

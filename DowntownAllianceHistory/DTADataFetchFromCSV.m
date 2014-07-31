@@ -66,11 +66,8 @@
         if (![locationItemComponentsArray[0] isEqualToString:@"ID"]) {
             Location *newLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:store.managedObjectContext];
             [newLocation setUpLocationDataWithComponentArray:locationItemComponentsArray];
-            NSLog(@"%@", newLocation);
         }
     }
-    
-    
 }
 
 @end

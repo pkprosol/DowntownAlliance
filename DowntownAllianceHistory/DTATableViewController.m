@@ -7,6 +7,7 @@
 //
 
 #import "DTATableViewController.h"
+#import "Location.h"
 
 @interface DTATableViewController ()
 
@@ -60,6 +61,9 @@
     
     self.navigationItem.title = self.title;
     
+    NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES];
+    self.locationsToShow = [self.locationsToShow sortedArrayUsingDescriptors:@[nameSort]];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -84,19 +88,20 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [self.locationsToShow count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailTablecell" forIndexPath:indexPath];
     
     // Configure the cell...
+    Location *currentLocation = self.locationsToShow[indexPath.row];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",currentLocation.year];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

@@ -36,11 +36,6 @@
     return fetchedData;
 }
 
-- (NSArray *)fetchLocationsForDecade:(NSString *)decadeName
-{
-    return nil;
-}
-
 - (void)saveContext
 {
     NSError *error = nil;
