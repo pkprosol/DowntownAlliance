@@ -11,7 +11,7 @@
 		77220806198ABA3B000BED66 /* 1920s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FB198ABA3B000BED66 /* 1920s.png */; };
 		77220807198ABA3B000BED66 /* 1930s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FC198ABA3B000BED66 /* 1930s.png */; };
 		77220808198ABA3B000BED66 /* 1940s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FD198ABA3B000BED66 /* 1940s.png */; };
-		77220809198ABA3B000BED66 /* 1950's.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FE198ABA3B000BED66 /* 1950's.png */; };
+		77220809198ABA3B000BED66 /* 1950s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FE198ABA3B000BED66 /* 1950s.png */; };
 		7722080A198ABA3B000BED66 /* 1960s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FF198ABA3B000BED66 /* 1960s.png */; };
 		7722080B198ABA3B000BED66 /* 1970s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220800198ABA3B000BED66 /* 1970s.png */; };
 		7722080C198ABA3B000BED66 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220801198ABA3B000BED66 /* 1980s.png */; };
@@ -51,6 +51,7 @@
 		F47CB7411987D9CD00398293 /* DowntownAllianceHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */; };
 		F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */ = {isa = PBXBuildFile; fileRef = F47CB74C1987DBE300398293 /* COH_Coordinates.csv */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
+		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
 		F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
@@ -72,7 +73,7 @@
 		772207FB198ABA3B000BED66 /* 1920s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920s.png; sourceTree = "<group>"; };
 		772207FC198ABA3B000BED66 /* 1930s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930s.png; sourceTree = "<group>"; };
 		772207FD198ABA3B000BED66 /* 1940s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1940s.png; sourceTree = "<group>"; };
-		772207FE198ABA3B000BED66 /* 1950's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1950's.png"; sourceTree = "<group>"; };
+		772207FE198ABA3B000BED66 /* 1950s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1950s.png; sourceTree = "<group>"; };
 		772207FF198ABA3B000BED66 /* 1960s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1960s.png; sourceTree = "<group>"; };
 		77220800198ABA3B000BED66 /* 1970s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1970s.png; sourceTree = "<group>"; };
 		77220801198ABA3B000BED66 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
@@ -129,6 +130,8 @@
 		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
 		F483CF7B198AAB7300CE6718 /* DTADataFetchFromCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTADataFetchFromCSV.h; sourceTree = "<group>"; };
 		F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAManageTimeRanges.h; sourceTree = "<group>"; };
+		F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultTimeRanges.h; sourceTree = "<group>"; };
+		F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultTimeRanges.m; sourceTree = "<group>"; };
 		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
 		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
 		F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAManageTimeRanges.m; sourceTree = "<group>"; };
@@ -224,7 +227,7 @@
 				772207FB198ABA3B000BED66 /* 1920s.png */,
 				772207FC198ABA3B000BED66 /* 1930s.png */,
 				772207FD198ABA3B000BED66 /* 1940s.png */,
-				772207FE198ABA3B000BED66 /* 1950's.png */,
+				772207FE198ABA3B000BED66 /* 1950s.png */,
 				772207FF198ABA3B000BED66 /* 1960s.png */,
 				77220800198ABA3B000BED66 /* 1970s.png */,
 				77220801198ABA3B000BED66 /* 1980s.png */,
@@ -269,10 +272,12 @@
 				F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */,
 				F4BB9A2B198AAA9100956381 /* DTADataStore.h */,
 				F4BB9A2C198AAA9100956381 /* DTADataStore.m */,
-				F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */,
-				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
 				F483CF7B198AAB7300CE6718 /* DTADataFetchFromCSV.h */,
 				F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */,
+				F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */,
+				F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */,
+				F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */,
+				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
 				F4BB9A22198A922600956381 /* DTATimeRange.h */,
 				F4BB9A23198A922600956381 /* DTATimeRange.m */,
 				F440A7421989714F00D057F6 /* Location.h */,
@@ -412,7 +417,7 @@
 				7722080A198ABA3B000BED66 /* 1960s.png in Resources */,
 				F440A72019893CBC00D057F6 /* Sports.jpg in Resources */,
 				F47CB7201987D9CC00398293 /* InfoPlist.strings in Resources */,
-				77220809198ABA3B000BED66 /* 1950's.png in Resources */,
+				77220809198ABA3B000BED66 /* 1950s.png in Resources */,
 				77220805198ABA3B000BED66 /* 1910s.png in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
 				77220808198ABA3B000BED66 /* 1940s.png in Resources */,
@@ -441,6 +446,7 @@
 				F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */,
 				F440A73C1989656A00D057F6 /* Decade.m in Sources */,
 				A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */,
+				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
 				F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */,

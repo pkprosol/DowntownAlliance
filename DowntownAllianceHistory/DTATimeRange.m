@@ -10,13 +10,14 @@
 
 @implementation DTATimeRange
 
-- (instancetype)initWithName:(NSString *)nameOfRange BeginningDate:(NSDate *)beginningDate EndDate:(NSDate *)endDate;
+- (instancetype)initWithName:(NSString *)nameOfRange BeginningDate:(NSDate *)beginningDate EndDate:(NSDate *)endDate Image:(UIImage *)imageForRange
 {
     self = [super init];
     if (self) {
         _nameOfRange = nameOfRange;
         _beginningDate = beginningDate;
         _endDate = endDate;
+        _imageForRange = imageForRange;
     }
     
     return self;
@@ -24,7 +25,7 @@
 
 - (instancetype)init
 {
-    return [self initWithName:@"" BeginningDate:nil EndDate:nil];
+    return [self initWithName:@"" BeginningDate:nil EndDate:nil Image:nil];
 }
 
 @end

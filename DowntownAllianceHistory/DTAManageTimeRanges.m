@@ -12,12 +12,12 @@
 
 + (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 {
-    DTATimeRange *newTimeRange = [[DTATimeRange alloc] initWithName:name BeginningDate:startDate EndDate:endDate];
+    DTATimeRange *newTimeRange = [[DTATimeRange alloc] initWithName:name BeginningDate:startDate EndDate:endDate Image:image];
     
     return newTimeRange;
 }
 
-+ (NSArray *)generateDefaultTimeIntervalsFromArrayOfDates:(NSDictionary *)intervalsSetting
++ (NSArray *)generateDefaultTimeIntervalsFromDictionaryOfDates:(NSDictionary *)intervalsSetting ArrayOfImages:(NSArray *)imagesArray
 {
     NSMutableArray *resultingTimeIntervals = [NSMutableArray new];
     
@@ -40,6 +40,7 @@
         NSString *nameOfInterval = intervalsSetting[currentKey];
         NSString *startDateString = currentKey;
         NSString *endDateString = nextKey;
+        UIImage *imageForTimeRange = imagesArray[i];
         
         // Need to reduce endDate by one so intervals don't overlap
         
@@ -48,7 +49,7 @@
         NSDate *endDateUnadjusted = [dateFormat dateFromString:endDateString];
         NSDate *endDate = [endDateUnadjusted dateByAddingTimeInterval:-43200]; // Half a day
         
-        DTATimeRange *newRange = [DTAManageTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:<#(UIImage *)#>];
+        DTATimeRange *newRange = [DTAManageTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:imageForTimeRange];
         
         [resultingTimeIntervals addObject:newRange];
     }

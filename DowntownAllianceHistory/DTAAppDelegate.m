@@ -16,21 +16,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Decades input dictionary takes a start date string and label for the time period
-    
-    NSDictionary *datesDictionary = @{@"01-01-1899":@"pre-1920s",
-                                      @"01-01-1920":@"1920s",
-                                      @"01-01-1930":@"1930s",
-                                      @"01-01-1940":@"1940s",
-                                      @"01-01-1950":@"1950s",
-                                      @"01-01-1960":@"1960s",
-                                      @"01-01-1970":@"1970s",
-                                      @"01-01-1980":@"1980s",
-                                      @"01-01-1990":@"1990s",
-                                      @"01-01-2000":@"2000s"};
-    
-    [DTAManageTimeRanges generateDefaultTimeIntervalsFromArrayOfDates:datesDictionary];
-    
     return YES;
 }
 							

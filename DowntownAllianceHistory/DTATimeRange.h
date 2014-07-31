@@ -13,8 +13,9 @@
 @property (strong, nonatomic) NSString *nameOfRange;
 @property (nonatomic) NSDate *beginningDate;
 @property (nonatomic) NSDate *endDate;
+@property (strong, nonatomic) UIImage *imageForRange;
 
 - (instancetype)init;
-- (instancetype)initWithName:(NSString *)nameOfRange BeginningDate:(NSDate *)beginningDate EndDate:(NSDate *)endDate;
+- (instancetype)initWithName:(NSString *)nameOfRange BeginningDate:(NSDate *)beginningDate EndDate:(NSDate *)endDate Image:(UIImage *)imageForRange;
 
 @end
