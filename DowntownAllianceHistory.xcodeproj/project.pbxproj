@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77220805198ABA3B000BED66 /* 1910s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FA198ABA3B000BED66 /* 1910s.png */; };
+		77220806198ABA3B000BED66 /* 1920s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FB198ABA3B000BED66 /* 1920s.png */; };
+		77220807198ABA3B000BED66 /* 1930s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FC198ABA3B000BED66 /* 1930s.png */; };
+		77220808198ABA3B000BED66 /* 1940s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FD198ABA3B000BED66 /* 1940s.png */; };
+		77220809198ABA3B000BED66 /* 1950's.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FE198ABA3B000BED66 /* 1950's.png */; };
+		7722080A198ABA3B000BED66 /* 1960s.png in Resources */ = {isa = PBXBuildFile; fileRef = 772207FF198ABA3B000BED66 /* 1960s.png */; };
+		7722080B198ABA3B000BED66 /* 1970s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220800198ABA3B000BED66 /* 1970s.png */; };
+		7722080C198ABA3B000BED66 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220801198ABA3B000BED66 /* 1980s.png */; };
+		7722080D198ABA3B000BED66 /* 1990s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220802198ABA3B000BED66 /* 1990s.png */; };
+		7722080E198ABA3B000BED66 /* 2000s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220803198ABA3B000BED66 /* 2000s.png */; };
+		7722080F198ABA3B000BED66 /* 2010s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77220804198ABA3B000BED66 /* 2010s.png */; };
 		7749C4CC19896765009D1F23 /* DTADecadesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTADecadesTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
@@ -15,20 +26,9 @@
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		F41C72E519897B1300DD15DF /* DTACategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTACategoriesTableViewController.m */; };
-		F440A71219893CBC00D057F6 /* 1970s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70319893CBC00D057F6 /* 1970s.jpg */; };
 		F440A71319893CBC00D057F6 /* Military.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70419893CBC00D057F6 /* Military.jpg */; };
 		F440A71419893CBC00D057F6 /* Culture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70519893CBC00D057F6 /* Culture.jpg */; };
-		F440A71519893CBC00D057F6 /* 1960s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F440A70619893CBC00D057F6 /* 1960s.gif */; };
 		F440A71619893CBC00D057F6 /* Science.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70719893CBC00D057F6 /* Science.jpg */; };
-		F440A71719893CBC00D057F6 /* 1920s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70819893CBC00D057F6 /* 1920s.jpg */; };
-		F440A71819893CBC00D057F6 /* 2000s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70919893CBC00D057F6 /* 2000s.jpg */; };
-		F440A71919893CBC00D057F6 /* 1950s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70A19893CBC00D057F6 /* 1950s.jpg */; };
-		F440A71A19893CBC00D057F6 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = F440A70B19893CBC00D057F6 /* 1980s.png */; };
-		F440A71B19893CBC00D057F6 /* 1940s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70C19893CBC00D057F6 /* 1940s.jpg */; };
-		F440A71C19893CBC00D057F6 /* 1910s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70D19893CBC00D057F6 /* 1910s.jpg */; };
-		F440A71D19893CBC00D057F6 /* 1990s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70E19893CBC00D057F6 /* 1990s.jpg */; };
-		F440A71E19893CBC00D057F6 /* 1900s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70F19893CBC00D057F6 /* 1900s.jpg */; };
-		F440A71F19893CBC00D057F6 /* 1930s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A71019893CBC00D057F6 /* 1930s.jpg */; };
 		F440A72019893CBC00D057F6 /* Sports.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A71119893CBC00D057F6 /* Sports.jpg */; };
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A7391989656A00D057F6 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A7381989656A00D057F6 /* Theme.m */; };
@@ -68,6 +68,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		772207FA198ABA3B000BED66 /* 1910s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1910s.png; sourceTree = "<group>"; };
+		772207FB198ABA3B000BED66 /* 1920s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920s.png; sourceTree = "<group>"; };
+		772207FC198ABA3B000BED66 /* 1930s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930s.png; sourceTree = "<group>"; };
+		772207FD198ABA3B000BED66 /* 1940s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1940s.png; sourceTree = "<group>"; };
+		772207FE198ABA3B000BED66 /* 1950's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1950's.png"; sourceTree = "<group>"; };
+		772207FF198ABA3B000BED66 /* 1960s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1960s.png; sourceTree = "<group>"; };
+		77220800198ABA3B000BED66 /* 1970s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1970s.png; sourceTree = "<group>"; };
+		77220801198ABA3B000BED66 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
+		77220802198ABA3B000BED66 /* 1990s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1990s.png; sourceTree = "<group>"; };
+		77220803198ABA3B000BED66 /* 2000s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2000s.png; sourceTree = "<group>"; };
+		77220804198ABA3B000BED66 /* 2010s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2010s.png; sourceTree = "<group>"; };
 		7749C4CA19896765009D1F23 /* DTADecadesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesTableViewController.h; sourceTree = "<group>"; };
 		7749C4CB19896765009D1F23 /* DTADecadesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesTableViewController.m; sourceTree = "<group>"; };
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
@@ -82,20 +93,9 @@
 		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		F41C72E319897B1300DD15DF /* DTACategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTACategoriesTableViewController.h; sourceTree = "<group>"; };
 		F41C72E419897B1300DD15DF /* DTACategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTACategoriesTableViewController.m; sourceTree = "<group>"; };
-		F440A70319893CBC00D057F6 /* 1970s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1970s.jpg; sourceTree = "<group>"; };
 		F440A70419893CBC00D057F6 /* Military.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Military.jpg; sourceTree = "<group>"; };
 		F440A70519893CBC00D057F6 /* Culture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Culture.jpg; sourceTree = "<group>"; };
-		F440A70619893CBC00D057F6 /* 1960s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1960s.gif; sourceTree = "<group>"; };
 		F440A70719893CBC00D057F6 /* Science.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Science.jpg; sourceTree = "<group>"; };
-		F440A70819893CBC00D057F6 /* 1920s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1920s.jpg; sourceTree = "<group>"; };
-		F440A70919893CBC00D057F6 /* 2000s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2000s.jpg; sourceTree = "<group>"; };
-		F440A70A19893CBC00D057F6 /* 1950s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1950s.jpg; sourceTree = "<group>"; };
-		F440A70B19893CBC00D057F6 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
-		F440A70C19893CBC00D057F6 /* 1940s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1940s.jpg; sourceTree = "<group>"; };
-		F440A70D19893CBC00D057F6 /* 1910s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1910s.jpg; sourceTree = "<group>"; };
-		F440A70E19893CBC00D057F6 /* 1990s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1990s.jpg; sourceTree = "<group>"; };
-		F440A70F19893CBC00D057F6 /* 1900s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1900s.jpg; sourceTree = "<group>"; };
-		F440A71019893CBC00D057F6 /* 1930s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1930s.jpg; sourceTree = "<group>"; };
 		F440A71119893CBC00D057F6 /* Sports.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sports.jpg; sourceTree = "<group>"; };
 		F440A72C1989619900D057F6 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
 		F440A7371989656A00D057F6 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
@@ -220,20 +220,20 @@
 		F47CB71C1987D9CC00398293 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F440A70319893CBC00D057F6 /* 1970s.jpg */,
+				772207FA198ABA3B000BED66 /* 1910s.png */,
+				772207FB198ABA3B000BED66 /* 1920s.png */,
+				772207FC198ABA3B000BED66 /* 1930s.png */,
+				772207FD198ABA3B000BED66 /* 1940s.png */,
+				772207FE198ABA3B000BED66 /* 1950's.png */,
+				772207FF198ABA3B000BED66 /* 1960s.png */,
+				77220800198ABA3B000BED66 /* 1970s.png */,
+				77220801198ABA3B000BED66 /* 1980s.png */,
+				77220802198ABA3B000BED66 /* 1990s.png */,
+				77220803198ABA3B000BED66 /* 2000s.png */,
+				77220804198ABA3B000BED66 /* 2010s.png */,
 				F440A70419893CBC00D057F6 /* Military.jpg */,
 				F440A70519893CBC00D057F6 /* Culture.jpg */,
-				F440A70619893CBC00D057F6 /* 1960s.gif */,
 				F440A70719893CBC00D057F6 /* Science.jpg */,
-				F440A70819893CBC00D057F6 /* 1920s.jpg */,
-				F440A70919893CBC00D057F6 /* 2000s.jpg */,
-				F440A70A19893CBC00D057F6 /* 1950s.jpg */,
-				F440A70B19893CBC00D057F6 /* 1980s.png */,
-				F440A70C19893CBC00D057F6 /* 1940s.jpg */,
-				F440A70D19893CBC00D057F6 /* 1910s.jpg */,
-				F440A70E19893CBC00D057F6 /* 1990s.jpg */,
-				F440A70F19893CBC00D057F6 /* 1900s.jpg */,
-				F440A71019893CBC00D057F6 /* 1930s.jpg */,
 				F440A71119893CBC00D057F6 /* Sports.jpg */,
 				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
 				F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */,
@@ -400,25 +400,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F440A71519893CBC00D057F6 /* 1960s.gif in Resources */,
-				F440A71A19893CBC00D057F6 /* 1980s.png in Resources */,
-				F440A71719893CBC00D057F6 /* 1920s.jpg in Resources */,
+				7722080B198ABA3B000BED66 /* 1970s.png in Resources */,
+				77220807198ABA3B000BED66 /* 1930s.png in Resources */,
+				7722080E198ABA3B000BED66 /* 2000s.png in Resources */,
 				F440A71619893CBC00D057F6 /* Science.jpg in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
-				F440A71219893CBC00D057F6 /* 1970s.jpg in Resources */,
-				F440A71F19893CBC00D057F6 /* 1930s.jpg in Resources */,
-				F440A71C19893CBC00D057F6 /* 1910s.jpg in Resources */,
+				77220806198ABA3B000BED66 /* 1920s.png in Resources */,
 				F440A71319893CBC00D057F6 /* Military.jpg in Resources */,
-				F440A71919893CBC00D057F6 /* 1950s.jpg in Resources */,
-				F440A71819893CBC00D057F6 /* 2000s.jpg in Resources */,
-				F440A71B19893CBC00D057F6 /* 1940s.jpg in Resources */,
-				F440A71E19893CBC00D057F6 /* 1900s.jpg in Resources */,
+				7722080D198ABA3B000BED66 /* 1990s.png in Resources */,
 				F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */,
+				7722080A198ABA3B000BED66 /* 1960s.png in Resources */,
 				F440A72019893CBC00D057F6 /* Sports.jpg in Resources */,
 				F47CB7201987D9CC00398293 /* InfoPlist.strings in Resources */,
+				77220809198ABA3B000BED66 /* 1950's.png in Resources */,
+				77220805198ABA3B000BED66 /* 1910s.png in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
-				F440A71D19893CBC00D057F6 /* 1990s.jpg in Resources */,
+				77220808198ABA3B000BED66 /* 1940s.png in Resources */,
 				F440A71419893CBC00D057F6 /* Culture.jpg in Resources */,
+				7722080C198ABA3B000BED66 /* 1980s.png in Resources */,
+				7722080F198ABA3B000BED66 /* 2010s.png in Resources */,
 				F440A74119896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
