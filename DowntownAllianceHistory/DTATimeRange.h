@@ -11,10 +11,10 @@
 @interface DTATimeRange : NSObject
 
 @property (strong, nonatomic) NSString *nameOfRange;
-@property (nonatomic) NSInteger beginningTime;
-@property (nonatomic) NSInteger lengthOfTime;
+@property (nonatomic) NSDate *beginningDate;
+@property (nonatomic) NSDate *endDate;
 
 - (instancetype)init;
-- (instancetype)initWithName:(NSString *)nameOfRange BeginningTime:(NSInteger)beginningTime LengthOfTime:(NSInteger)lengthOfTime;
+- (instancetype)initWithName:(NSString *)nameOfRange BeginningDate:(NSDate *)beginningDate EndDate:(NSDate *)endDate;
 
 @end
