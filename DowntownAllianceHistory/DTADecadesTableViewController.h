@@ -10,6 +10,7 @@
 
 @interface DTADecadesTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSDictionary *arrayOfDecades;
 @property (strong, nonatomic) NSMutableArray *decadesPhotoArray;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "DTADecadesTableViewController.h"
 #import "DTAFilterCell.h"
+#import "DTATableViewController.h"
 
 @interface DTADecadesTableViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *decadeImageView;
@@ -118,7 +119,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -126,7 +126,12 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"decadesDetails"]) {
+        DTATableViewController *nextVC = [segue destinationViewController];
+        NSIndexPath *indexSelected = [self.tableView indexPathForSelectedRow];
+//        nextVC.title = self.arrayOfDecades[indexSelected.row];
+    }
 }
-*/
 
 @end

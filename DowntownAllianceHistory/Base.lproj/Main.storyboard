@@ -56,7 +56,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="filterCellImageView" destination="sbH-3F-o9f" id="UcB-uc-lVe"/>
-                                    <segue destination="bFT-ip-T9H" kind="push" id="p07-Qj-wZk"/>
+                                    <segue destination="bFT-ip-T9H" kind="push" identifier="decadesDetails" id="p07-Qj-wZk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -487,6 +487,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bmN-em-O7i"/>
+        <segue reference="p07-Qj-wZk"/>
     </inferredMetricsTieBreakers>
 </document>
