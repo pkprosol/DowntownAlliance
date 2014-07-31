@@ -12,6 +12,7 @@
 
 + (DTATimeRange *)generateTimeRangeWithStartDate:(NSDate *)startDate AndEndDate:(NSDate *)endDate
 {
+    DTATimeRange *newTimeRange = [
     return nil;
 }
 
