@@ -56,7 +56,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="filterCellImageView" destination="sbH-3F-o9f" id="UcB-uc-lVe"/>
-                                    <segue destination="bFT-ip-T9H" kind="push" identifier="decadesDetails" id="p07-Qj-wZk"/>
+                                    <segue destination="bFT-ip-T9H" kind="push" id="p07-Qj-wZk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,7 +74,7 @@
         <!--Table View Controller-->
         <scene sceneID="lkv-Fd-ZxZ">
             <objects>
-                <tableViewController id="bFT-ip-T9H" customClass="DTATableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tableViewIdentifier" id="bFT-ip-T9H" customClass="DTATableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vnG-nB-d9g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -449,7 +449,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="filterCellImageView" destination="DDc-tq-zW3" id="0mB-t8-Kbf"/>
-                                    <segue destination="bFT-ip-T9H" kind="push" id="bmN-em-O7i"/>
+                                    <segue destination="bFT-ip-T9H" kind="push" id="kwI-zS-36s"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -462,7 +462,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dju-D0-tb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="19"/>
+            <point key="canvasLocation" x="2494" y="19"/>
         </scene>
     </scenes>
     <resources>

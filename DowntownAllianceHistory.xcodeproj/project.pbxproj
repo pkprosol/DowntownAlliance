@@ -13,6 +13,7 @@
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
+		A48F73B5198A83E600274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73B4198A83E600274EB5 /* UITabBarController+hidableTab.m */; };
 		F41C72E519897B1300DD15DF /* DTACategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTACategoriesTableViewController.m */; };
 		F440A71219893CBC00D057F6 /* 1970s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70319893CBC00D057F6 /* 1970s.jpg */; };
 		F440A71319893CBC00D057F6 /* Military.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70419893CBC00D057F6 /* Military.jpg */; };
@@ -77,6 +78,8 @@
 		7771A43B1988162600CD6BA8 /* DTADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADetailViewController.m; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
+		A48F73B3198A83E600274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+hidableTab.h"; path = "../../../Documents/UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
+		A48F73B4198A83E600274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+hidableTab.m"; path = "../../../Documents/UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		F41C72E319897B1300DD15DF /* DTACategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTACategoriesTableViewController.h; sourceTree = "<group>"; };
 		F41C72E419897B1300DD15DF /* DTACategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTACategoriesTableViewController.m; sourceTree = "<group>"; };
 		F440A70319893CBC00D057F6 /* 1970s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1970s.jpg; sourceTree = "<group>"; };
@@ -276,6 +279,12 @@
 				F440A73B1989656A00D057F6 /* Decade.m */,
 				F440A7371989656A00D057F6 /* Theme.h */,
 				F440A7381989656A00D057F6 /* Theme.m */,
+				F47CB7581987DE5E00398293 /* DTADataStore.h */,
+				F47CB7591987DE5E00398293 /* DTADataStore.m */,
+				F47CB75E1987E09C00398293 /* DTADataFetchFromCSV.h */,
+				F47CB75F1987E09C00398293 /* DTADataFetchFromCSV.m */,
+				A48F73B3198A83E600274EB5 /* UITabBarController+hidableTab.h */,
+				A48F73B4198A83E600274EB5 /* UITabBarController+hidableTab.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -436,6 +445,7 @@
 				F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */,
 				F440A73C1989656A00D057F6 /* Decade.m in Sources */,
 				F47CB75A1987DE5E00398293 /* DTADataStore.m in Sources */,
+				A48F73B5198A83E600274EB5 /* UITabBarController+hidableTab.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
 				F440A7391989656A00D057F6 /* Theme.m in Sources */,

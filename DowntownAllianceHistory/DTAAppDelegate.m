@@ -9,13 +9,25 @@
 #import "DTAAppDelegate.h"
 #import "DTADataFetchFromCSV.h"
 #import "Location.h"
-
+#import "DTACategoriesTableViewController.h"
 @implementation DTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    
+//    self.tabbar = [[UITabBarController alloc] init];
+//    
+//    self.window.rootViewController = self.tabbar;
+//    
+//    DTACategoriesTableViewController   *mainController = [[DTACategoriesTableViewController alloc] init];
+//    UINavigationController      *mainNav = [[UINavigationController alloc] initWithRootViewController:mainController];
+//    [self.tabbar setViewControllers:[NSArray arrayWithObject:mainNav]];
+//    
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor redColor];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 							
