@@ -21,11 +21,26 @@
 {
     [super viewDidLoad];
     
+    self.mapOutlet.delegate = self;
+    
     DTADataStore *store = [DTADataStore sharedDataStore];
     
     self.arrayOfLocations = [store fetchData];
     
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
+    
+    
+    
+    CGFloat latitudeFloat = 40.7089005;
+    CGFloat longitudeFloat = -74.0105972;
+    
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
+    
+//    [self.mapOutlet setCenterCoordinate:self.mapOutlet.userLocation.location.coordinate animated:YES];
+    
+    
+    [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
   
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -39,6 +54,8 @@
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
+    
+    
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
@@ -47,6 +64,7 @@
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
+
 
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
 {
