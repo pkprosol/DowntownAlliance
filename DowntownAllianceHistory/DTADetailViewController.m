@@ -30,15 +30,20 @@
 {
     [super viewDidLoad];
 
+    //Plot Passed Locations
     [self plotLocationsOnMap:self.locationToBePLotted];
     
+
+    //Float Values for coordinates
     CGFloat latitudeCenterPoint = [self.locationToBePLotted.latitude floatValue];
     CGFloat longitudeCenterPoint = [self.locationToBePLotted.longitude floatValue];
     
+    //make coordinate
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeCenterPoint, longitudeCenterPoint);
-    
+    //set Region To zoom
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 150.0, 150.0);
     
+    //Set region to map
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
     
     
@@ -65,13 +70,20 @@
 {
     
     // Return the number of rows in the section.
-    return [self.arrayOfLocations count];
+    return 2;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
+    
+    if (indexPath.row == 0) {
+        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
+    }
+    else if (indexPath.row == 1) {
+        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
+    }
     
     
     return cell;
