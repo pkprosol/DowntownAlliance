@@ -182,11 +182,11 @@
             </objects>
             <point key="canvasLocation" x="1390" y="19"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - By Era-->
         <scene sceneID="LG7-Xq-tEI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eTg-pW-Spe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="1910s.jpg" id="1A7-XV-uyc"/>
+                    <tabBarItem key="tabBarItem" title="By Era" id="1A7-XV-uyc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="In1-bA-9Dm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -282,9 +282,6 @@
             <point key="canvasLocation" x="2494" y="19"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1910s.jpg" width="296" height="170"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
