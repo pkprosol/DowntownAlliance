@@ -49,7 +49,6 @@
 - (void)setUpLocationImage
 {
     self.image = [UIImage imageNamed:@"1910s.png"];
-    NSLog(@"%@", self.idNumber);
     
     // Keys are the idNumber and image name
     NSDictionary *imageMatch = @{@"coh10-28-1886": @"001.tif",
@@ -57,7 +56,8 @@
                                  };
     
     if (imageMatch[self.idNumber]) {
-        self.image = imageMatch[self.idNumber];
+        NSString *imageName = imageMatch[self.idNumber];
+        self.image = [UIImage imageNamed:imageName];
     }
 }
 

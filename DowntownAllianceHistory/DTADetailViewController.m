@@ -83,26 +83,24 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
     
+    DTAImageViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
+    
     if (indexPath.row == 0) {
         cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
+        return imageCell;
     }
     else if (indexPath.row == 1) {
         cell.textLabel.text = self.locationToBePLotted.brochureDescription;
+        return imageCell;
     }
     else if (indexPath.row ==2) {
-        
-        DTAImageViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
-        
-        UIImage *pictureTest = [UIImage imageNamed:@"1910s"];
-        
-        
-        cell.imageView.image = pictureTest;
-        
+        imageCell.imageView.image = self.locationToBePLotted.image;
+        return imageCell;
+    } else {
+        return imageCell;
     }
-    
-    
-    return cell;
 }
+
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];

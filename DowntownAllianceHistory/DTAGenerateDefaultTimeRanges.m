@@ -14,7 +14,7 @@
 {
     // Decades input dictionary takes a start date string (must be in format "mm-dd-yyyy") and label for the time period
     
-    NSDictionary *datesDictionary = @{@"01-01-1899":@"pre-1920s",
+    NSDictionary *datesDictionary = @{@"01-01-1800":@"pre-1920s",
                                       @"01-01-1920":@"1920s",
                                       @"01-01-1930":@"1930s",
                                       @"01-01-1940":@"1940s",
