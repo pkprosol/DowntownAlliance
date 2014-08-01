@@ -7,7 +7,7 @@
 //
 
 #import "DTADetailViewController.h"
-#import "DTAImageViewCell.h"
+#import "DTAImageTableViewCell.h"
 
 
 @interface DTADetailViewController ()
@@ -49,7 +49,7 @@
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
     
     //load XiB
-    [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"DTAImageTableViewCell" bundle:nil]forCellReuseIdentifier:@"pictureImage"];
+    [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"DTAImageTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"pictureImage"];
     
     
     _mapOutlet.delegate = self;
@@ -91,12 +91,13 @@
     }
     else if (indexPath.row ==2) {
         
-        DTAImageViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
+        DTAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
         
         UIImage *pictureTest = [UIImage imageNamed:@"1910s"];
         
+        cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
         
-        cell.imageView.image = pictureTest;
+        cell.pictureImage.image = pictureTest;
         
     }
     
