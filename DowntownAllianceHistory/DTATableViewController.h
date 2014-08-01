@@ -15,4 +15,5 @@
 @property (strong, nonatomic) NSArray *locationsToShow;
 @property (strong, nonatomic) NSString *title;
 
+
 @end

@@ -29,6 +29,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [self plotLocationsOnMap:self.locationToBePLotted];
+    
+    CGFloat latitudeCenterPoint = [self.locationToBePLotted.latitude floatValue];
+    CGFloat longitudeCenterPoint = [self.locationToBePLotted.longitude floatValue];
+    
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeCenterPoint, longitudeCenterPoint);
+    
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 150.0, 150.0);
+    
+    [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
+    
+    
     _mapOutlet.delegate = self;
     _tableViewOutlet.delegate = self;
     _tableViewOutlet.dataSource = self;
@@ -62,6 +75,18 @@
     
     
     return cell;
+}
+-(void)plotLocationsOnMap:(Location *)locationToBePlotted
+{
+    MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
+    
+    CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
+    CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
+    
+    pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
+    pointToAnnotate.title = locationToBePlotted.idNumber;
+    
+    [self.mapOutlet addAnnotation:pointToAnnotate];
 }
 /*
 #pragma mark - Navigation
