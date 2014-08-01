@@ -113,8 +113,8 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.tabBarController setTabBarHidden:hidden
-                                  animated:NO];
+//    [self.tabBarController setTabBarHidden:hidden
+//                                  animated:NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -134,76 +134,76 @@
 
 #pragma mark - The Magic!
 
--(void)expand
-{
-    if(hidden)
-        return;
-    
-    hidden = YES;
-    
-    [self.tabBarController setTabBarHidden:YES
-                                  animated:YES];
-    
-    [self.navigationController setNavigationBarHidden:YES
-                                             animated:YES];
-}
+//-(void)expand
+//{
+//    if(hidden)
+//        return;
+//    
+//    hidden = YES;
+//    
+////    [self.tabBarController setTabBarHidden:YES
+////                                  animated:YES];
+//    
+//    [self.navigationController setNavigationBarHidden:YES
+//                                             animated:YES];
+//}
 
--(void)contract
-{
-    if(!hidden)
-        return;
-    
-    hidden = NO;
-    
-    [self.tabBarController setTabBarHidden:NO
-                                  animated:YES];
-    
-    [self.navigationController setNavigationBarHidden:NO
-                                             animated:YES];
-}
+//-(void)contract
+//{
+//    if(!hidden)
+//        return;
+//    
+//    hidden = NO;
+//    
+////    [self.tabBarController setTabBarHidden:NO
+////                                  animated:YES];
+//    
+//    [self.navigationController setNavigationBarHidden:NO
+//                                             animated:YES];
+//}
 
 #pragma mark -
 #pragma mark UIScrollViewDelegate Methods
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
-    //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    CGFloat currentOffset = scrollView.contentOffset.y;
-    CGFloat differenceFromStart = startContentOffset - currentOffset;
-    CGFloat differenceFromLast = lastContentOffset - currentOffset;
-    lastContentOffset = currentOffset;
-    
-    if((differenceFromStart) < 0)
-    {
-        // scroll up
-        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-            [self expand];
-    }
-    else {
-        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-            [self contract];
-    }
-    
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-}
-
-- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
-{
-    [self contract];
-    return YES;
-}
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+//{
+//    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
+//    //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
+//}
+//
+////- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+////{
+////    CGFloat currentOffset = scrollView.contentOffset.y;
+////    CGFloat differenceFromStart = startContentOffset - currentOffset;
+////    CGFloat differenceFromLast = lastContentOffset - currentOffset;
+////    lastContentOffset = currentOffset;
+////    
+////    if((differenceFromStart) < 0)
+////    {
+////        // scroll up
+////        if(scrollView.isTracking && (abs(differenceFromLast)>1))
+////            [self expand];
+////    }
+////    else {
+////        if(scrollView.isTracking && (abs(differenceFromLast)>1))
+////            [self contract];
+////    }
+////    
+////}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+//{
+//}
+//
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//}
+//
+//- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
+//{
+//    [self contract];
+//    return YES;
+//}
 
 /*
 // Override to support conditional editing of the table view.

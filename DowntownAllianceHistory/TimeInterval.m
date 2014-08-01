@@ -6,11 +6,11 @@
 //
 //
 
-#import "Decade.h"
+#import "TimeInterval.h"
 #import "Location.h"
 
 
-@implementation Decade
+@implementation TimeInterval
 
 @dynamic name;
 @dynamic locations;

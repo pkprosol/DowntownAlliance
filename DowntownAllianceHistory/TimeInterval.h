@@ -11,13 +11,13 @@
 
 @class Location;
 
-@interface Decade : NSManagedObject
+@interface TimeInterval : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *locations;
 @end
 
-@interface Decade (CoreDataGeneratedAccessors)
+@interface TimeInterval (CoreDataGeneratedAccessors)
 
 - (void)addLocationsObject:(Location *)value;
 - (void)removeLocationsObject:(Location *)value;

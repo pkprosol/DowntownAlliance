@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Decade.h"
+#import "TimeInterval.h"
 #import "Theme.h"
 
 @interface DTATableViewController : UITableViewController

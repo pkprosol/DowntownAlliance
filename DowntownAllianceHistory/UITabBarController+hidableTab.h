@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITabBarController (hidableTab)
-
-- (void)setTabBarHidden:(BOOL)hidden animated:(BOOL)animated;
-
-@end
+//@interface UITabBarController (hidableTab)
+//
+//- (void)setTabBarHidden:(BOOL)hidden animated:(BOOL)animated;
+//
+//@end

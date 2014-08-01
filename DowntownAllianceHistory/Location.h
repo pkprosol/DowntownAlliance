@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Decade, Theme;
+@class TimeInterval, Theme;
 
 @interface Location : NSManagedObject
 
@@ -24,7 +24,7 @@
 @property (nonatomic, retain) NSString * titleOfPlaque;
 @property (nonatomic, retain) NSNumber * year;
 @property (nonatomic, retain) id image;
-@property (nonatomic, retain) Decade *decade;
+@property (nonatomic, retain) TimeInterval *decade;
 @property (nonatomic, retain) Theme *theme;
 
 - (void)setUpLocationDataWithComponentArrayAndImage:(NSArray *)componentArray;

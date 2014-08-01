@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Decade" representedClassName="Decade" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="decade" inverseEntity="Location" syncable="YES"/>
-    </entity>
     <entity name="Location" representedClassName="Location" syncable="YES">
         <attribute name="brochureDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -16,7 +12,7 @@
         <attribute name="symbolValue" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="titleOfPlaque" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="decade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Decade" inverseName="locations" inverseEntity="Decade" syncable="YES"/>
+        <relationship name="decade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimeInterval" inverseName="locations" inverseEntity="TimeInterval" syncable="YES"/>
         <relationship name="theme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" inverseName="locations" inverseEntity="Theme" syncable="YES"/>
     </entity>
     <entity name="Theme" representedClassName="Theme" syncable="YES">
@@ -24,9 +20,13 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="theme" inverseEntity="Location" syncable="YES"/>
     </entity>
+    <entity name="TimeInterval" representedClassName="TimeInterval" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="decade" inverseEntity="Location" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Decade" positionX="0" positionY="0" width="128" height="75"/>
-        <element name="Location" positionX="0" positionY="0" width="128" height="240"/>
-        <element name="Theme" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="TimeInterval" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Location" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Theme" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

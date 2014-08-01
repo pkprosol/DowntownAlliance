@@ -6,43 +6,39 @@
 //
 //
 
-#import "DTACategoriesTableViewController.h"
+#import "DTAThemesTableViewController.h"
 #import "DTAFilterCell.h"
 #import "DTATableViewController.h"
 #import "UITabBarController+hidableTab.h"
+#import "DTAManageDefaultThemes.h"
 
-@interface DTACategoriesTableViewController ()
-
-@property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
+@interface DTAThemesTableViewController ()
 
 @end
 
-@implementation DTACategoriesTableViewController
+@implementation DTAThemesTableViewController
 
-{
-    CGFloat startContentOffset;
-    CGFloat lastContentOffset;
-    BOOL hidden;
-}
+//{
+//    CGFloat startContentOffset;
+//    CGFloat lastContentOffset;
+//    BOOL hidden;
+//}
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-        self.title = NSLocalizedString(@"SOCIAL APP!", @"");
-        hidden = NO;
-    }
-    return self;
-}
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        // Custom initialization
+//        hidden = NO;
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    NSMutableArray *arrayOfCategoriesPhotos = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"Military.jpg"],[UIImage imageNamed:@"Culture.jpg"],[UIImage imageNamed:@"Science.jpg"],[UIImage imageNamed:@"Sports.jpg"], nil];
-    
-    self.categoriesPhotoArray = arrayOfCategoriesPhotos;
+    self.themesArray = [DTAManageDefaultThemes setUpArrayOfThemesWithNameAndImage];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -59,20 +55,20 @@
     // e.g. self.myOutlet = nil;
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:hidden
-                                             animated:YES];
-    
-}
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    
+//    [self.navigationController setNavigationBarHidden:hidden
+//                                             animated:YES];
+//    
+//}
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.tabBarController setTabBarHidden:hidden
-                                  animated:NO];
+//    [self.tabBarController setTabBarHidden:hidden
+//                                  animated:NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -89,84 +85,82 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
 }
 
 #pragma mark - The Magic!
 
--(void)expand
-{
-    if(hidden)
-        return;
-    
-    hidden = YES;
-    
-    [self.tabBarController setTabBarHidden:YES
-                                  animated:YES];
-    
-    [self.navigationController setNavigationBarHidden:YES
-                                             animated:YES];
-}
+//-(void)expand
+//{
+//    if(hidden)
+//        return;
+//    
+//    hidden = YES;
+//    
+//    [self.tabBarController setTabBarHidden:YES
+//                                  animated:YES];
+//    
+//    [self.navigationController setNavigationBarHidden:YES
+//                                             animated:YES];
+//}
 
--(void)contract
-{
-    if(!hidden)
-        return;
-    
-    hidden = NO;
-    
-    [self.tabBarController setTabBarHidden:NO
-                                  animated:YES];
-    
-    [self.navigationController setNavigationBarHidden:NO
-                                             animated:YES];
-}
+//-(void)contract
+//{
+//    if(!hidden)
+//        return;
+//    
+//    hidden = NO;
+//    
+//    [self.tabBarController setTabBarHidden:NO
+//                                  animated:YES];
+//    
+//    [self.navigationController setNavigationBarHidden:NO
+//                                             animated:YES];
+//}
 
 #pragma mark -
 #pragma mark UIScrollViewDelegate Methods
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+//{
+//    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
     //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
-}
+//}
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    CGFloat currentOffset = scrollView.contentOffset.y;
-    CGFloat differenceFromStart = startContentOffset - currentOffset;
-    CGFloat differenceFromLast = lastContentOffset - currentOffset;
-    lastContentOffset = currentOffset;
-    
-    
-    
-    if((differenceFromStart) < 0)
-    {
-        // scroll up
-        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-            [self expand];
-    }
-    else {
-        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-            [self contract];
-    }
-    
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-}
-
-- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
-{
-    [self contract];
-    return YES;
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+//{
+//    CGFloat currentOffset = scrollView.contentOffset.y;
+//    CGFloat differenceFromStart = startContentOffset - currentOffset;
+//    CGFloat differenceFromLast = lastContentOffset - currentOffset;
+//    lastContentOffset = currentOffset;
+//    
+//    
+//    
+//    if((differenceFromStart) < 0)
+//    {
+//        // scroll up
+//        if(scrollView.isTracking && (abs(differenceFromLast)>1))
+//            [self expand];
+//    }
+//    else {
+//        if(scrollView.isTracking && (abs(differenceFromLast)>1))
+//            [self contract];
+//    }
+//    
+//}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+//{
+//}
+//
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//}
+//
+//- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
+//{
+//    [self contract];
+//    return YES;
+//}
 
 
 - (void)didReceiveMemoryWarning
@@ -186,12 +180,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.categoriesPhotoArray count];
+    return [self.themesArray count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 250.0f;
+    return 100.0f;
 }
 
 
@@ -201,11 +195,11 @@
     
     // Configure the cell...
     
-    UIImage *imageOfCategory = self.categoriesPhotoArray[indexPath.row];
+    Theme *themeInCell = self.themesArray[indexPath.row];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
     
-    cell.filterCellImageView.image = imageOfCategory;
+    cell.filterCellImageView.image = themeInCell.image;
     
     return cell;
 }

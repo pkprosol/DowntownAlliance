@@ -65,9 +65,9 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.tabBarController setTabBarHidden:hidden
-                                  animated:NO];
-    [self.navigationController setNavigationBarHidden:YES];
+//    [self.tabBarController setTabBarHidden:hidden
+//                                  animated:NO];
+//    [self.navigationController setNavigationBarHidden:YES];
     
 }
 
@@ -96,11 +96,11 @@
     
     hidden = YES;
     
-    [self.tabBarController setTabBarHidden:YES
-                                  animated:YES];
+//    [self.tabBarController setTabBarHidden:YES
+//                                  animated:YES];
     
-    [self.navigationController setNavigationBarHidden:YES
-                                             animated:YES];
+//    [self.navigationController setNavigationBarHidden:YES
+//                                             animated:YES];
 }
 
 -(void)contract
@@ -110,11 +110,11 @@
     
     hidden = NO;
     
-    [self.tabBarController setTabBarHidden:NO
-                                  animated:YES];
+//    [self.tabBarController setTabBarHidden:NO
+//                                  animated:YES];
     
-    [self.navigationController setNavigationBarHidden:NO
-                                             animated:YES];
+//    [self.navigationController setNavigationBarHidden:NO
+//                                             animated:YES];
 }
 
 #pragma mark -

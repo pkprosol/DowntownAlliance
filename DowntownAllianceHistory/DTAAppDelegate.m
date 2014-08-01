@@ -9,7 +9,7 @@
 #import "DTAAppDelegate.h"
 #import "DTADataFetchFromCSV.h"
 #import "Location.h"
-#import "DTACategoriesTableViewController.h"
+#import "DTAThemesTableViewController.h"
 #import "DTAManageTimeRanges.h"
 
 @implementation DTAAppDelegate

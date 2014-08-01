@@ -16,17 +16,16 @@
 @dynamic image;
 @dynamic locations;
 
-+ (NSArray *)setUpThemeWithNameAndImage
++ (Theme *)setUpThemeWithName:(NSString *)name Image:(UIImage *)image
 {
     DTADataStore *store = [DTADataStore sharedDataStore];
-    NSMutableArray *themes = [NSMutableArray new];
-    
-    NSDictionary *themesDictionary = 
     
     Theme *newTheme = [NSEntityDescription insertNewObjectForEntityForName:@"Theme" inManagedObjectContext:store.managedObjectContext];
     
     newTheme.name = name;
     newTheme.image = image;
+    
+    return newTheme;
 }
 
 @end

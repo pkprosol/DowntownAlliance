@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTACategoriesTableViewController : UITableViewController
+@interface DTAThemesTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSMutableArray *categoriesPhotoArray;
+@property (strong, nonatomic) NSArray *themesArray;
 
 @end
