@@ -7,6 +7,8 @@
 //
 
 #import "DTADetailViewController.h"
+#import "DTAImageViewCell.h"
+
 
 @interface DTADetailViewController ()
 
@@ -46,6 +48,9 @@
     //Set region to map
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
     
+    //load XiB
+    [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"DTAImageTableViewCell" bundle:nil]forCellReuseIdentifier:@"pictureImage"];
+    
     
     _mapOutlet.delegate = self;
     _tableViewOutlet.delegate = self;
@@ -70,7 +75,7 @@
 {
     
     // Return the number of rows in the section.
-    return 2;
+    return 3;
 }
 
 
@@ -83,6 +88,16 @@
     }
     else if (indexPath.row == 1) {
         cell.textLabel.text = self.locationToBePLotted.brochureDescription;
+    }
+    else if (indexPath.row ==2) {
+        
+        DTAImageViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
+        
+        UIImage *pictureTest = [UIImage imageNamed:@"1910s"];
+        
+        
+        cell.imageView.image = pictureTest;
+        
     }
     
     
