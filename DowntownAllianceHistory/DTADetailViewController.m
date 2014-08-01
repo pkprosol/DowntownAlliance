@@ -98,12 +98,11 @@
         cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
         
         cell.pictureImage.image = pictureTest;
-        
     }
-    
     
     return cell;
 }
+
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];

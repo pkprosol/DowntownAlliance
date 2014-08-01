@@ -65,7 +65,7 @@
     for (NSArray *locationItemComponentsArray in componentsArray) {
         if (![locationItemComponentsArray[0] isEqualToString:@"ID"]) {
             Location *newLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Location" inManagedObjectContext:store.managedObjectContext];
-            [newLocation setUpLocationDataWithComponentArray:locationItemComponentsArray];
+            [newLocation setUpLocationDataWithComponentArrayAndImage:locationItemComponentsArray];
         }
     }
 }
