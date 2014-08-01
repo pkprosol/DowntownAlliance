@@ -2,7 +2,7 @@
 //  Location.h
 //  DowntownAllianceHistory
 //
-//  Created by Piotr K Prosol on 7/30/14.
+//  Created by Piotr K Prosol on 8/1/14.
 //
 //
 
@@ -13,19 +13,20 @@
 
 @interface Location : NSManagedObject
 
-@property (nonatomic, retain) NSString * titleOfPlaque;
+@property (nonatomic, retain) NSString * brochureDescription;
+@property (nonatomic, retain) NSNumber * day;
+@property (nonatomic, retain) NSNumber * hasData;
 @property (nonatomic, retain) NSString * idNumber;
-@property (nonatomic, retain) NSString * symbolValue;
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSNumber * longitude;
 @property (nonatomic, retain) NSNumber * month;
-@property (nonatomic, retain) NSNumber * day;
+@property (nonatomic, retain) NSString * symbolValue;
+@property (nonatomic, retain) NSString * titleOfPlaque;
 @property (nonatomic, retain) NSNumber * year;
-@property (nonatomic, retain) NSString * brochureDescription;
-@property (nonatomic, retain) NSNumber * hasData;
-@property (nonatomic, retain) Theme *theme;
+@property (nonatomic, retain) id image;
 @property (nonatomic, retain) Decade *decade;
+@property (nonatomic, retain) Theme *theme;
 
-- (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray;
+- (void)setUpLocationDataWithComponentArrayAndImage:(NSArray *)componentArray;
 
 @end

@@ -2,31 +2,32 @@
 //  Location.m
 //  DowntownAllianceHistory
 //
-//  Created by Piotr K Prosol on 7/30/14.
+//  Created by Piotr K Prosol on 8/1/14.
 //
 //
 
 #import "Location.h"
 #import "Decade.h"
 #import "Theme.h"
-#import "DTADataStore.h"
+
 
 @implementation Location
 
-@dynamic titleOfPlaque;
+@dynamic brochureDescription;
+@dynamic day;
+@dynamic hasData;
 @dynamic idNumber;
-@dynamic symbolValue;
 @dynamic latitude;
 @dynamic longitude;
 @dynamic month;
-@dynamic day;
+@dynamic symbolValue;
+@dynamic titleOfPlaque;
 @dynamic year;
-@dynamic brochureDescription;
-@dynamic hasData;
-@dynamic theme;
+@dynamic image;
 @dynamic decade;
+@dynamic theme;
 
-- (void)setUpLocationDataWithComponentArray:(NSArray *)componentArray
+- (void)setUpLocationDataWithComponentArrayAndImage:(NSArray *)componentArray
 {
     self.idNumber = componentArray[0];
     self.symbolValue = componentArray[1];
@@ -42,19 +43,23 @@
         self.hasData = [NSNumber numberWithBool:YES];
     }
     
-    DTADataStore *store = [DTADataStore sharedDataStore];
-    
-    Decade *decadeForLocation = [NSEntityDescription insertNewObjectForEntityForName:@"Decade" inManagedObjectContext:store.managedObjectContext];
-    
+    [self setUpLocationImage];
 }
 
-//- (NSString *)getDecadeNameForYear:(NSNumber *)year
-//{
-//    NSinteger *yearInteger = ..... year;
-//    if (year > 1899 && < year <1910) {
-//        return @"1900s";
-//    } etc.
-//}
+- (void)setUpLocationImage
+{
+    self.image = [UIImage imageNamed:@"1910s.png"];
+    NSLog(@"%@", self.idNumber);
+    
+    // Keys are the idNumber and image name
+    NSDictionary *imageMatch = @{@"coh10-28-1886": @"001.tif",
+                                 @"coh4-29-1889": @"002.tif",
+                                 };
+    
+    if (imageMatch[self.idNumber]) {
+        self.image = imageMatch[self.idNumber];
+    }
+}
 
 - (NSNumber *)convertStringWithIntegerToNSNumber:(NSString *)string
 {
