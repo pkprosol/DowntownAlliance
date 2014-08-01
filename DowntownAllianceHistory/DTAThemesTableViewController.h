@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DTAThemeCell.h"
 
 @interface DTAThemesTableViewController : UITableViewController
 

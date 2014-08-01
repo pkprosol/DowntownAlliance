@@ -32,6 +32,7 @@
 		77A75B7C198C276D007D135F /* USLeaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B78198C276D007D135F /* USLeaders.png */; };
 		77A75B7E198C2A19007D135F /* ForeignDignitaries.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B7D198C2A19007D135F /* ForeignDignitaries.png */; };
 		77A75B80198C2A21007D135F /* USHistory.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B7F198C2A21007D135F /* USHistory.png */; };
+		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
@@ -244,6 +245,8 @@
 		77A75B78198C276D007D135F /* USLeaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USLeaders.png; sourceTree = "<group>"; };
 		77A75B7D198C2A19007D135F /* ForeignDignitaries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForeignDignitaries.png; sourceTree = "<group>"; };
 		77A75B7F198C2A21007D135F /* USHistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USHistory.png; sourceTree = "<group>"; };
+		77A75B81198C3DBE007D135F /* DTAThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemeCell.h; sourceTree = "<group>"; };
+		77A75B82198C3DBE007D135F /* DTAThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemeCell.m; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
@@ -467,6 +470,8 @@
 			children = (
 				7749C4D019896D02009D1F23 /* DTAFilterCell.h */,
 				7749C4D119896D02009D1F23 /* DTAFilterCell.m */,
+				77A75B81198C3DBE007D135F /* DTAThemeCell.h */,
+				77A75B82198C3DBE007D135F /* DTAThemeCell.m */,
 				77A75B6D198C14C9007D135F /* DTAImageTableViewCell.h */,
 				77A75B6E198C14C9007D135F /* DTAImageTableViewCell.m */,
 				77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */,
@@ -1084,6 +1089,7 @@
 				F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */,
 				A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */,
 				F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */,
+				77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */,
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
 				F490D3CB198C2C42001BAF2C /* DTAManageDefaultThemes.m in Sources */,
