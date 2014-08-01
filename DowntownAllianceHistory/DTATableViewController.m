@@ -8,6 +8,7 @@
 
 #import "DTATableViewController.h"
 #import "Location.h"
+#import "DTADetailViewController.h"
 
 @interface DTATableViewController ()
 
@@ -141,15 +142,24 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    DTADetailViewController *nextVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    Location *selectedLocation = self.locationsToShow[indexPath.row];
+    
+    nextVC.locationToBePLotted = selectedLocation;
+    
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
