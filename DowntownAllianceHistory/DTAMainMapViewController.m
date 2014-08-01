@@ -208,7 +208,7 @@
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
     pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
-    pointToAnnotate.title = locationToBePlotted.idNumber;
+    pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }

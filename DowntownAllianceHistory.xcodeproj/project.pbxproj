@@ -38,7 +38,6 @@
 		F440A71619893CBC00D057F6 /* Science.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A70719893CBC00D057F6 /* Science.jpg */; };
 		F440A72019893CBC00D057F6 /* Sports.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F440A71119893CBC00D057F6 /* Sports.jpg */; };
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
-		F440A7391989656A00D057F6 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A7381989656A00D057F6 /* Theme.m */; };
 		F440A73C1989656A00D057F6 /* Decade.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* Decade.m */; };
 		F440A74119896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */; };
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
@@ -200,6 +199,8 @@
 		F490D3BC198C1A35001BAF2C /* 194.tif in Resources */ = {isa = PBXBuildFile; fileRef = F490D331198C1A35001BAF2C /* 194.tif */; };
 		F490D3BD198C1A35001BAF2C /* 192.tif in Resources */ = {isa = PBXBuildFile; fileRef = F490D332198C1A35001BAF2C /* 192.tif */; };
 		F490D3BE198C1A35001BAF2C /* 191.tif in Resources */ = {isa = PBXBuildFile; fileRef = F490D333198C1A35001BAF2C /* 191.tif */; };
+		F490D3C1198C281B001BAF2C /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C0198C281B001BAF2C /* Theme.m */; };
+		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
 		F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
@@ -255,8 +256,6 @@
 		F440A70719893CBC00D057F6 /* Science.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Science.jpg; sourceTree = "<group>"; };
 		F440A71119893CBC00D057F6 /* Sports.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sports.jpg; sourceTree = "<group>"; };
 		F440A72C1989619900D057F6 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
-		F440A7371989656A00D057F6 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
-		F440A7381989656A00D057F6 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		F440A73A1989656A00D057F6 /* Decade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decade.h; sourceTree = "<group>"; };
 		F440A73B1989656A00D057F6 /* Decade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decade.m; sourceTree = "<group>"; };
 		F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH_Coordinates_with_sample_data.csv; sourceTree = "<group>"; };
@@ -430,6 +429,10 @@
 		F490D331198C1A35001BAF2C /* 194.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 194.tif; path = COHPhotos/194.tif; sourceTree = "<group>"; };
 		F490D332198C1A35001BAF2C /* 192.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 192.tif; path = COHPhotos/192.tif; sourceTree = "<group>"; };
 		F490D333198C1A35001BAF2C /* 191.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 191.tif; path = COHPhotos/191.tif; sourceTree = "<group>"; };
+		F490D3BF198C281B001BAF2C /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = ../Theme.h; sourceTree = "<group>"; };
+		F490D3C0198C281B001BAF2C /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = ../Theme.m; sourceTree = "<group>"; };
+		F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultThemes.h; sourceTree = "<group>"; };
+		F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultThemes.m; sourceTree = "<group>"; };
 		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
 		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
 		F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAManageTimeRanges.m; sourceTree = "<group>"; };
@@ -599,12 +602,14 @@
 				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
 				F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */,
 				F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */,
+				F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */,
+				F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */,
 				F490D2A5198C1635001BAF2C /* Location.h */,
 				F490D2A6198C1635001BAF2C /* Location.m */,
 				F440A73A1989656A00D057F6 /* Decade.h */,
 				F440A73B1989656A00D057F6 /* Decade.m */,
-				F440A7371989656A00D057F6 /* Theme.h */,
-				F440A7381989656A00D057F6 /* Theme.m */,
+				F490D3BF198C281B001BAF2C /* Theme.h */,
+				F490D3C0198C281B001BAF2C /* Theme.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1053,15 +1058,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F490D3C1198C281B001BAF2C /* Theme.m in Sources */,
 				F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */,
 				F440A73C1989656A00D057F6 /* Decade.m in Sources */,
 				A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */,
+				F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */,
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
 				F490D2A7198C1635001BAF2C /* Location.m in Sources */,
 				F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */,
-				F440A7391989656A00D057F6 /* Theme.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
 				F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */,
 				A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */,
