@@ -13,7 +13,7 @@
 
 @implementation Location
 
-@dynamic name;
+@dynamic titleOfPlaque;
 @dynamic idNumber;
 @dynamic symbolValue;
 @dynamic latitude;
@@ -21,7 +21,7 @@
 @dynamic month;
 @dynamic day;
 @dynamic year;
-@dynamic details;
+@dynamic brochureDescription;
 @dynamic hasData;
 @dynamic theme;
 @dynamic decade;
@@ -35,8 +35,8 @@
     self.month = [self convertStringWithIntegerToNSNumber:componentArray[4]];
     self.day = [self convertStringWithIntegerToNSNumber:componentArray[5]];
     self.year = [self convertStringWithIntegerToNSNumber:componentArray[6]];
-    self.name = componentArray[7];
-    self.details = componentArray[8];
+    self.titleOfPlaque = componentArray[7];
+    self.brochureDescription = componentArray[8];
     
     if (self.day) {
         self.hasData = [NSNumber numberWithBool:YES];

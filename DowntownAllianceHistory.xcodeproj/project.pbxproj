@@ -53,6 +53,7 @@
 		F47CB74D1987DBE300398293 /* COH_Coordinates.csv in Resources */ = {isa = PBXBuildFile; fileRef = F47CB74C1987DBE300398293 /* COH_Coordinates.csv */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
+		F490D2A4198BCD14001BAF2C /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F490D2A3198BCD14001BAF2C /* COH.csv */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
 		F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
@@ -135,6 +136,7 @@
 		F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAManageTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultTimeRanges.m; sourceTree = "<group>"; };
+		F490D2A3198BCD14001BAF2C /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH.csv; sourceTree = "<group>"; };
 		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
 		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
 		F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAManageTimeRanges.m; sourceTree = "<group>"; };
@@ -241,8 +243,9 @@
 				F440A70519893CBC00D057F6 /* Culture.jpg */,
 				F440A70719893CBC00D057F6 /* Science.jpg */,
 				F440A71119893CBC00D057F6 /* Sports.jpg */,
-				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
+				F490D2A3198BCD14001BAF2C /* COH.csv */,
 				F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */,
+				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
 				F47CB71D1987D9CC00398293 /* DowntownAllianceHistory-Info.plist */,
 				F47CB71E1987D9CC00398293 /* InfoPlist.strings */,
 				F47CB7211987D9CC00398293 /* main.m */,
@@ -277,12 +280,12 @@
 				F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */,
 				F4BB9A2B198AAA9100956381 /* DTADataStore.h */,
 				F4BB9A2C198AAA9100956381 /* DTADataStore.m */,
+				F4BB9A22198A922600956381 /* DTATimeRange.h */,
+				F4BB9A23198A922600956381 /* DTATimeRange.m */,
 				F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */,
 				F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */,
 				F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */,
 				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
-				F4BB9A22198A922600956381 /* DTATimeRange.h */,
-				F4BB9A23198A922600956381 /* DTATimeRange.m */,
 				F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */,
 				F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */,
 				F440A7421989714F00D057F6 /* Location.h */,
@@ -410,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F490D2A4198BCD14001BAF2C /* COH.csv in Resources */,
 				7722080B198ABA3B000BED66 /* 1970s.png in Resources */,
 				77220807198ABA3B000BED66 /* 1930s.png in Resources */,
 				7722080E198ABA3B000BED66 /* 2000s.png in Resources */,

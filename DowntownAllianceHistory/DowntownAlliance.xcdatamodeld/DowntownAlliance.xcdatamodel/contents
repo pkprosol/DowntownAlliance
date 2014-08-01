@@ -5,15 +5,15 @@
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="decade" inverseEntity="Location" syncable="YES"/>
     </entity>
     <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="brochureDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasData" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="idNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="month" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="symbolValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleOfPlaque" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="decade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Decade" inverseName="locations" inverseEntity="Decade" syncable="YES"/>
         <relationship name="theme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" inverseName="locations" inverseEntity="Theme" syncable="YES"/>
@@ -23,8 +23,8 @@
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="theme" inverseEntity="Location" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Decade" positionX="180" positionY="-45" width="128" height="73"/>
-        <element name="Location" positionX="-135" positionY="81" width="128" height="223"/>
-        <element name="Theme" positionX="97" positionY="216" width="128" height="73"/>
+        <element name="Decade" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Location" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Theme" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -98,7 +98,7 @@
     // Configure the cell...
     Location *currentLocation = self.locationsToShow[indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",currentLocation.year];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",currentLocation.titleOfPlaque];
     
     return cell;
 }

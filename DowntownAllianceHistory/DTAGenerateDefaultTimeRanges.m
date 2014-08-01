@@ -12,7 +12,7 @@
 
 + (NSDictionary *)generateDefaultDictionaryOfTimeIntervals
 {
-    // Decades input dictionary takes a start date string (must be in format "mm-dd-yyyy" and label for the time period
+    // Decades input dictionary takes a start date string (must be in format "mm-dd-yyyy") and label for the time period
     
     NSDictionary *datesDictionary = @{@"01-01-1899":@"pre-1920s",
                                       @"01-01-1920":@"1920s",
