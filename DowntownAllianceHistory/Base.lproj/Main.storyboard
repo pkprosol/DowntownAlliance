@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6N0-CF-4sg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6N0-CF-4sg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -210,11 +210,16 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTL-Xx-6z6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Category" id="2Ir-sJ-Yqr"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A4g-kM-56Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="A4g-kM-56Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="K7p-Yy-bOx">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Vi5-JB-l18" kind="relationship" relationship="rootViewController" id="SwA-iJ-1r8"/>
                     </connections>
@@ -242,17 +247,17 @@
             </objects>
             <point key="canvasLocation" x="1958" y="698"/>
         </scene>
-        <!--Categories Table View Controller-->
+        <!--Categories Table View Controller - By Category-->
         <scene sceneID="5UO-ij-4wa">
             <objects>
                 <tableViewController id="Vi5-JB-l18" customClass="DTACategoriesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KFU-s6-EK7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="basicCell" id="jWU-Pe-AJJ" customClass="DTAFilterCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jWU-Pe-AJJ" id="Spn-8L-7cC">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -275,7 +280,7 @@
                             <outlet property="delegate" destination="Vi5-JB-l18" id="yc4-6M-e96"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="QkL-NJ-cAq"/>
+                    <navigationItem key="navigationItem" title="By Category" id="QkL-NJ-cAq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dju-D0-tb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,6 +293,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="p07-Qj-wZk"/>
+        <segue reference="kwI-zS-36s"/>
     </inferredMetricsTieBreakers>
 </document>
