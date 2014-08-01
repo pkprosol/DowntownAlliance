@@ -30,6 +30,8 @@
 		77A75B7A198C276D007D135F /* military4.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B76198C276D007D135F /* military4.png */; };
 		77A75B7B198C276D007D135F /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B77198C276D007D135F /* sports.png */; };
 		77A75B7C198C276D007D135F /* USleaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B78198C276D007D135F /* USleaders.png */; };
+		77A75B7E198C2A19007D135F /* ForeignDig.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B7D198C2A19007D135F /* ForeignDig.png */; };
+		77A75B80198C2A21007D135F /* UnitedStates.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B7F198C2A21007D135F /* UnitedStates.png */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		F41C72E519897B1300DD15DF /* DTACategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTACategoriesTableViewController.m */; };
@@ -245,6 +247,8 @@
 		77A75B76198C276D007D135F /* military4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = military4.png; sourceTree = "<group>"; };
 		77A75B77198C276D007D135F /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
 		77A75B78198C276D007D135F /* USleaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USleaders.png; sourceTree = "<group>"; };
+		77A75B7D198C2A19007D135F /* ForeignDig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForeignDig.png; sourceTree = "<group>"; };
+		77A75B7F198C2A21007D135F /* UnitedStates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnitedStates.png; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
@@ -557,6 +561,8 @@
 				77A75B76198C276D007D135F /* military4.png */,
 				77A75B77198C276D007D135F /* sports.png */,
 				77A75B78198C276D007D135F /* USleaders.png */,
+				77A75B7D198C2A19007D135F /* ForeignDig.png */,
+				77A75B7F198C2A21007D135F /* UnitedStates.png */,
 				F490D2A3198BCD14001BAF2C /* COH.csv */,
 				F440A74019896EBF00D057F6 /* COH_Coordinates_with_sample_data.csv */,
 				F47CB74C1987DBE300398293 /* COH_Coordinates.csv */,
@@ -954,6 +960,7 @@
 				F490D363198C1A35001BAF2C /* 110.tif in Resources */,
 				F490D393198C1A35001BAF2C /* 049a.tif in Resources */,
 				F490D374198C1A35001BAF2C /* 090.tif in Resources */,
+				77A75B80198C2A21007D135F /* UnitedStates.png in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
 				F440A72019893CBC00D057F6 /* Sports.jpg in Resources */,
 				F490D34F198C1A35001BAF2C /* 156.tif in Resources */,
@@ -1031,6 +1038,7 @@
 				F490D35A198C1A35001BAF2C /* 136.tif in Resources */,
 				F490D34D198C1A35001BAF2C /* 158.tif in Resources */,
 				F490D3AB198C1A35001BAF2C /* Streetscape.tif in Resources */,
+				77A75B7E198C2A19007D135F /* ForeignDig.png in Resources */,
 				F490D3A5198C1A35001BAF2C /* 004b.tif in Resources */,
 				F490D38A198C1A35001BAF2C /* 066(Pearson).tif in Resources */,
 				F490D373198C1A35001BAF2C /* 089.tif in Resources */,
