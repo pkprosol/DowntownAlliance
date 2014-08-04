@@ -194,7 +194,7 @@
         <scene sceneID="LG7-Xq-tEI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eTg-pW-Spe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="By Era" id="1A7-XV-uyc"/>
+                    <tabBarItem key="tabBarItem" title="By Era" image="overtime-25.png" id="1A7-XV-uyc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="In1-bA-9Dm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -219,7 +219,7 @@
         <scene sceneID="6eR-RE-0Di">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTL-Xx-6z6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="By Category" id="2Ir-sJ-Yqr"/>
+                    <tabBarItem key="tabBarItem" title="By Category" image="survey-25.png" id="2Ir-sJ-Yqr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="A4g-kM-56Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -243,7 +243,7 @@
         <scene sceneID="w2e-OI-8E1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nmw-rd-ICq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main Map" id="nv1-te-qZB"/>
+                    <tabBarItem key="tabBarItem" title="Main Map" image="map_marker-25.png" id="nv1-te-qZB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zr3-qT-9Uv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -298,6 +298,11 @@
             <point key="canvasLocation" x="2494" y="19"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map_marker-25.png" width="25" height="25"/>
+        <image name="overtime-25.png" width="25" height="25"/>
+        <image name="survey-25.png" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

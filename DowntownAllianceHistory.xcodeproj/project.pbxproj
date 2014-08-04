@@ -25,6 +25,9 @@
 		77402DB6198FE13600F255A6 /* USHistory.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DB0198FE13600F255A6 /* USHistory.png */; };
 		77402DB7198FE13600F255A6 /* USleaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DB1198FE13600F255A6 /* USleaders.png */; };
 		77402DB9198FFB2B00F255A6 /* 1990s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DB8198FFB2B00F255A6 /* 1990s.png */; };
+		77402DBB198FFFB100F255A6 /* overtime-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DBA198FFFB100F255A6 /* overtime-25.png */; };
+		77402DC11990008C00F255A6 /* survey-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC01990008C00F255A6 /* survey-25.png */; };
+		77402DC31990009600F255A6 /* map_marker-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC21990009600F255A6 /* map_marker-25.png */; };
 		7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
@@ -234,6 +237,9 @@
 		77402DB0198FE13600F255A6 /* USHistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USHistory.png; sourceTree = "<group>"; };
 		77402DB1198FE13600F255A6 /* USleaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USleaders.png; sourceTree = "<group>"; };
 		77402DB8198FFB2B00F255A6 /* 1990s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1990s.png; sourceTree = "<group>"; };
+		77402DBA198FFFB100F255A6 /* overtime-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overtime-25.png"; sourceTree = "<group>"; };
+		77402DC01990008C00F255A6 /* survey-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "survey-25.png"; sourceTree = "<group>"; };
+		77402DC21990009600F255A6 /* map_marker-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_marker-25.png"; sourceTree = "<group>"; };
 		7749C4CA19896765009D1F23 /* DTATimeIntervalsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeIntervalsTableViewController.h; sourceTree = "<group>"; };
 		7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeIntervalsTableViewController.m; sourceTree = "<group>"; };
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
@@ -535,6 +541,9 @@
 				F47CB75B1987DE7100398293 /* View */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
+				77402DBA198FFFB100F255A6 /* overtime-25.png */,
+				77402DC01990008C00F255A6 /* survey-25.png */,
+				77402DC21990009600F255A6 /* map_marker-25.png */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
 			);
 			path = DowntownAllianceHistory;
@@ -991,6 +1000,7 @@
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
 				F490D34F198C1A35001BAF2C /* 156.tif in Resources */,
 				F490D3A2198C1A35001BAF2C /* 011.psd in Resources */,
+				77402DBB198FFFB100F255A6 /* overtime-25.png in Resources */,
 				F490D39C198C1A35001BAF2C /* 022a.tif in Resources */,
 				F490D35C198C1A35001BAF2C /* 135.tif in Resources */,
 				F490D377198C1A35001BAF2C /* 086.tif in Resources */,
@@ -1050,6 +1060,7 @@
 				F490D369198C1A35001BAF2C /* 101.tif in Resources */,
 				F490D386198C1A35001BAF2C /* 070.tif in Resources */,
 				F490D33B198C1A35001BAF2C /* 182.tif in Resources */,
+				77402DC31990009600F255A6 /* map_marker-25.png in Resources */,
 				F490D34A198C1A35001BAF2C /* 159.tif in Resources */,
 				F490D387198C1A35001BAF2C /* 068.tif in Resources */,
 				F490D343198C1A35001BAF2C /* 168.tif in Resources */,
@@ -1069,6 +1080,7 @@
 				F490D3A5198C1A35001BAF2C /* 004b.tif in Resources */,
 				F490D38A198C1A35001BAF2C /* 066(Pearson).tif in Resources */,
 				F490D373198C1A35001BAF2C /* 089.tif in Resources */,
+				77402DC11990008C00F255A6 /* survey-25.png in Resources */,
 				F490D392198C1A35001BAF2C /* 052.tif in Resources */,
 				F490D33F198C1A35001BAF2C /* 174.tif in Resources */,
 				F490D33D198C1A35001BAF2C /* 179.tif in Resources */,
