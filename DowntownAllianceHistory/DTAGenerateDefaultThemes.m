@@ -18,7 +18,7 @@
                                                 @"Military": @"military.png",
                                                 @"Sports": @"sports.png",
                                                 @"USHistory": @"USHistory.png",
-                                                @"USLeaders": @"USLeaders.png"};
+                                                @"USLeaders": @"USleaders.png"};
                                                 
     return defaultThemeAndImageNames;
 }
