@@ -14,10 +14,10 @@
 {
     // Key is the theme name, and the value is the image for each
     NSDictionary *defaultThemeAndImageNames = @{@"Aviation": @"Aviation.png",
-                                                @"ForeignDignitaries": @"foreigners.png",
+                                                @"ForeignDignitaries": @"foreignDig.png",
                                                 @"Military": @"military.png",
                                                 @"Sports": @"sports.png",
-                                                @"USHistory": @"UnitedStatesHistory.png",
+                                                @"USHistory": @"USHistory.png",
                                                 @"USLeaders": @"USLeaders.png"};
                                                 
     return defaultThemeAndImageNames;
