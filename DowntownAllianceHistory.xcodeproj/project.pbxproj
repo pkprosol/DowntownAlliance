@@ -25,14 +25,13 @@
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
 		77A75B70198C14C9007D135F /* DTAImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B6E198C14C9007D135F /* DTAImageTableViewCell.m */; };
 		77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */; };
-		77A75B74198C207A007D135F /* pre1900s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B73198C207A007D135F /* pre1900s.png */; };
-		77A75B79198C276D007D135F /* Aviation.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B75198C276C007D135F /* Aviation.png */; };
-		77A75B7A198C276D007D135F /* Military.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B76198C276D007D135F /* Military.png */; };
-		77A75B7B198C276D007D135F /* Sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B77198C276D007D135F /* Sports.png */; };
-		77A75B7C198C276D007D135F /* USLeaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B78198C276D007D135F /* USLeaders.png */; };
-		77A75B7E198C2A19007D135F /* ForeignDignitaries.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B7D198C2A19007D135F /* ForeignDignitaries.png */; };
-		77A75B80198C2A21007D135F /* USHistory.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B7F198C2A21007D135F /* USHistory.png */; };
 		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
+		77A75B8B198C45CF007D135F /* aviation.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B85198C45CF007D135F /* aviation.png */; };
+		77A75B8C198C45CF007D135F /* ForeignDig.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B86198C45CF007D135F /* ForeignDig.png */; };
+		77A75B8D198C45CF007D135F /* military4.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B87198C45CF007D135F /* military4.png */; };
+		77A75B8E198C45CF007D135F /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B88198C45CF007D135F /* sports.png */; };
+		77A75B8F198C45CF007D135F /* UnitedStates.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B89198C45CF007D135F /* UnitedStates.png */; };
+		77A75B90198C45CF007D135F /* USleaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B8A198C45CF007D135F /* USleaders.png */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
@@ -238,15 +237,14 @@
 		77A75B6D198C14C9007D135F /* DTAImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTAImageTableViewCell.h; path = ../DTAImageTableViewCell.h; sourceTree = "<group>"; };
 		77A75B6E198C14C9007D135F /* DTAImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTAImageTableViewCell.m; path = ../DTAImageTableViewCell.m; sourceTree = "<group>"; };
 		77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DTAImageTableViewCell.xib; path = ../DTAImageTableViewCell.xib; sourceTree = "<group>"; };
-		77A75B73198C207A007D135F /* pre1900s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1900s.png; sourceTree = "<group>"; };
-		77A75B75198C276C007D135F /* Aviation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aviation.png; sourceTree = "<group>"; };
-		77A75B76198C276D007D135F /* Military.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Military.png; sourceTree = "<group>"; };
-		77A75B77198C276D007D135F /* Sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sports.png; sourceTree = "<group>"; };
-		77A75B78198C276D007D135F /* USLeaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USLeaders.png; sourceTree = "<group>"; };
-		77A75B7D198C2A19007D135F /* ForeignDignitaries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForeignDignitaries.png; sourceTree = "<group>"; };
-		77A75B7F198C2A21007D135F /* USHistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USHistory.png; sourceTree = "<group>"; };
 		77A75B81198C3DBE007D135F /* DTAThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemeCell.h; sourceTree = "<group>"; };
 		77A75B82198C3DBE007D135F /* DTAThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemeCell.m; sourceTree = "<group>"; };
+		77A75B85198C45CF007D135F /* aviation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aviation.png; sourceTree = "<group>"; };
+		77A75B86198C45CF007D135F /* ForeignDig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForeignDig.png; sourceTree = "<group>"; };
+		77A75B87198C45CF007D135F /* military4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = military4.png; sourceTree = "<group>"; };
+		77A75B88198C45CF007D135F /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
+		77A75B89198C45CF007D135F /* UnitedStates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnitedStates.png; sourceTree = "<group>"; };
+		77A75B8A198C45CF007D135F /* USleaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USleaders.png; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
@@ -477,6 +475,19 @@
 				77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */,
 			);
 			name = "Cells and Xibs";
+			sourceTree = "<group>";
+		};
+		77A75B84198C45CF007D135F /* CategoryCells */ = {
+			isa = PBXGroup;
+			children = (
+				77A75B85198C45CF007D135F /* aviation.png */,
+				77A75B86198C45CF007D135F /* ForeignDig.png */,
+				77A75B87198C45CF007D135F /* military4.png */,
+				77A75B88198C45CF007D135F /* sports.png */,
+				77A75B89198C45CF007D135F /* UnitedStates.png */,
+				77A75B8A198C45CF007D135F /* USleaders.png */,
+			);
+			path = CategoryCells;
 			sourceTree = "<group>";
 		};
 		F41C72E21989757800DD15DF /* Archive */ = {
@@ -773,6 +784,7 @@
 				F490D331198C1A35001BAF2C /* 194.tif */,
 				F490D332198C1A35001BAF2C /* 192.tif */,
 				F490D333198C1A35001BAF2C /* 191.tif */,
+				77A75B84198C45CF007D135F /* CategoryCells */,
 			);
 			name = "COH Images";
 			sourceTree = "<group>";
@@ -780,7 +792,6 @@
 		F490D3C5198C2A65001BAF2C /* Time Interval Images */ = {
 			isa = PBXGroup;
 			children = (
-				77A75B73198C207A007D135F /* pre1900s.png */,
 				772207FA198ABA3B000BED66 /* 1910s.png */,
 				772207FB198ABA3B000BED66 /* 1920s.png */,
 				772207FC198ABA3B000BED66 /* 1930s.png */,
@@ -799,12 +810,6 @@
 		F490D3C6198C2A75001BAF2C /* Theme Images */ = {
 			isa = PBXGroup;
 			children = (
-				77A75B75198C276C007D135F /* Aviation.png */,
-				77A75B7D198C2A19007D135F /* ForeignDignitaries.png */,
-				77A75B76198C276D007D135F /* Military.png */,
-				77A75B77198C276D007D135F /* Sports.png */,
-				77A75B7F198C2A21007D135F /* USHistory.png */,
-				77A75B78198C276D007D135F /* USLeaders.png */,
 			);
 			name = "Theme Images";
 			sourceTree = "<group>";
@@ -914,7 +919,6 @@
 				F490D35F198C1A35001BAF2C /* 120.tif in Resources */,
 				F490D371198C1A35001BAF2C /* 091.tif in Resources */,
 				F490D36C198C1A35001BAF2C /* 098.tif in Resources */,
-				77A75B7C198C276D007D135F /* USLeaders.png in Resources */,
 				F490D2A4198BCD14001BAF2C /* COH.csv in Resources */,
 				7722080B198ABA3B000BED66 /* 1970s.png in Resources */,
 				F490D34E198C1A35001BAF2C /* 155.tif in Resources */,
@@ -943,16 +947,15 @@
 				F490D3A3198C1A35001BAF2C /* 007.eps in Resources */,
 				F490D344198C1A35001BAF2C /* 166.tif in Resources */,
 				F490D367198C1A35001BAF2C /* 105.tif in Resources */,
-				77A75B7B198C276D007D135F /* Sports.png in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
 				F490D35D198C1A35001BAF2C /* 133.tif in Resources */,
 				F490D36E198C1A35001BAF2C /* 095.tif in Resources */,
+				77A75B8C198C45CF007D135F /* ForeignDig.png in Resources */,
 				F490D3A8198C1A35001BAF2C /* 002.tif in Resources */,
 				F490D39B198C1A35001BAF2C /* 024.tif in Resources */,
 				F490D35E198C1A35001BAF2C /* 134.tif in Resources */,
 				F490D338198C1A35001BAF2C /* 183.tif in Resources */,
 				F490D398198C1A35001BAF2C /* 035.tif in Resources */,
-				77A75B7A198C276D007D135F /* Military.png in Resources */,
 				F490D36A198C1A35001BAF2C /* 102.tif in Resources */,
 				F490D3B3198C1A35001BAF2C /* G01Big.tif in Resources */,
 				F490D350198C1A35001BAF2C /* 154.tif in Resources */,
@@ -971,6 +974,7 @@
 				F490D362198C1A35001BAF2C /* 109.tif in Resources */,
 				F490D372198C1A35001BAF2C /* 092.tif in Resources */,
 				F490D38F198C1A35001BAF2C /* 055.tif in Resources */,
+				77A75B8B198C45CF007D135F /* aviation.png in Resources */,
 				F490D397198C1A35001BAF2C /* 028(Earhart).tif in Resources */,
 				F490D37B198C1A35001BAF2C /* 083.tif in Resources */,
 				F490D380198C1A35001BAF2C /* 077.tif in Resources */,
@@ -978,10 +982,10 @@
 				F490D389198C1A35001BAF2C /* 067.tif in Resources */,
 				7722080A198ABA3B000BED66 /* 1960s.png in Resources */,
 				F490D399198C1A35001BAF2C /* 025.tif in Resources */,
+				77A75B8F198C45CF007D135F /* UnitedStates.png in Resources */,
 				F490D363198C1A35001BAF2C /* 110.tif in Resources */,
 				F490D393198C1A35001BAF2C /* 049a.tif in Resources */,
 				F490D374198C1A35001BAF2C /* 090.tif in Resources */,
-				77A75B80198C2A21007D135F /* USHistory.png in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
 				F490D34F198C1A35001BAF2C /* 156.tif in Resources */,
 				F490D3A2198C1A35001BAF2C /* 011.psd in Resources */,
@@ -995,6 +999,7 @@
 				F490D3A4198C1A35001BAF2C /* 007.tif in Resources */,
 				F490D3AC198C1A35001BAF2C /* Intro(Lindsay).tif in Resources */,
 				F490D3B8198C1A35001BAF2C /* CoverShadow.tif in Resources */,
+				77A75B90198C45CF007D135F /* USleaders.png in Resources */,
 				77220809198ABA3B000BED66 /* 1950s.png in Resources */,
 				F490D365198C1A35001BAF2C /* 108.tif in Resources */,
 				F490D3A1198C1A35001BAF2C /* 008.tif in Resources */,
@@ -1009,10 +1014,11 @@
 				F490D366198C1A35001BAF2C /* 104.tif in Resources */,
 				F490D3A0198C1A35001BAF2C /* 019.tif in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
-				77A75B74198C207A007D135F /* pre1900s.png in Resources */,
+				77A75B8E198C45CF007D135F /* sports.png in Resources */,
 				F490D3B1198C1A35001BAF2C /* G03.tif in Resources */,
 				F490D383198C1A35001BAF2C /* 071.tif in Resources */,
 				F490D356198C1A35001BAF2C /* 146.tif in Resources */,
+				77A75B8D198C45CF007D135F /* military4.png in Resources */,
 				F490D352198C1A35001BAF2C /* 153.tif in Resources */,
 				F490D33E198C1A35001BAF2C /* 177.tif in Resources */,
 				F490D390198C1A35001BAF2C /* 053.tif in Resources */,
@@ -1033,7 +1039,6 @@
 				F490D364198C1A35001BAF2C /* 107.tif in Resources */,
 				F490D37C198C1A35001BAF2C /* 079.tif in Resources */,
 				F490D37A198C1A35001BAF2C /* 081.tif in Resources */,
-				77A75B79198C276D007D135F /* Aviation.png in Resources */,
 				F490D3AE198C1A35001BAF2C /* gulfwar.JPG in Resources */,
 				F490D345198C1A35001BAF2C /* 167.tif in Resources */,
 				F490D3AD198C1A35001BAF2C /* Pearson.tif in Resources */,
@@ -1057,7 +1062,6 @@
 				F490D35A198C1A35001BAF2C /* 136.tif in Resources */,
 				F490D34D198C1A35001BAF2C /* 158.tif in Resources */,
 				F490D3AB198C1A35001BAF2C /* Streetscape.tif in Resources */,
-				77A75B7E198C2A19007D135F /* ForeignDignitaries.png in Resources */,
 				F490D3A5198C1A35001BAF2C /* 004b.tif in Resources */,
 				F490D38A198C1A35001BAF2C /* 066(Pearson).tif in Resources */,
 				F490D373198C1A35001BAF2C /* 089.tif in Resources */,

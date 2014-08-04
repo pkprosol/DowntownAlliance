@@ -21,6 +21,7 @@
 
 - (void)awakeFromNib
 {
+    self.themeImageView.contentMode = UIViewContentModeScaleAspectFill;
     // Initialization code
 }
 
