@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DTAThemeCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *themeImageView;
 
 @end

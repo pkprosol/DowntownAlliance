@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DTAFilterCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *filterCellImageView;
 
 @end

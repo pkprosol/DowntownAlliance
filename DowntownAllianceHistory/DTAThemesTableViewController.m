@@ -11,6 +11,7 @@
 #import "DTATableViewController.h"
 #import "UITabBarController+hidableTab.h"
 #import "DTAManageDefaultThemes.h"
+#import "DTAThemeCell.h"
 
 
 @interface DTAThemesTableViewController ()
@@ -192,15 +193,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DTAThemeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"themeCell" forIndexPath:indexPath];
+    DTAFilterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"themeCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
     Theme *themeInCell = self.themesArray[indexPath.row];
     
-    cell.themeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
     
-    cell.themeImageView.image = themeInCell.image;
+    cell.filterCellImageView.image = themeInCell.image;
     
     return cell;
 }
