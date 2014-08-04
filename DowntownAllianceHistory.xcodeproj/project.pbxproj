@@ -28,6 +28,7 @@
 		77402DBB198FFFB100F255A6 /* overtime-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DBA198FFFB100F255A6 /* overtime-25.png */; };
 		77402DC11990008C00F255A6 /* survey-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC01990008C00F255A6 /* survey-25.png */; };
 		77402DC31990009600F255A6 /* map_marker-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC21990009600F255A6 /* map_marker-25.png */; };
+		77402DC5199002CC00F255A6 /* map_marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC4199002CC00F255A6 /* map_marker-50.png */; };
 		7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
@@ -240,6 +241,7 @@
 		77402DBA198FFFB100F255A6 /* overtime-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overtime-25.png"; sourceTree = "<group>"; };
 		77402DC01990008C00F255A6 /* survey-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "survey-25.png"; sourceTree = "<group>"; };
 		77402DC21990009600F255A6 /* map_marker-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_marker-25.png"; sourceTree = "<group>"; };
+		77402DC4199002CC00F255A6 /* map_marker-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_marker-50.png"; sourceTree = "<group>"; };
 		7749C4CA19896765009D1F23 /* DTATimeIntervalsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeIntervalsTableViewController.h; sourceTree = "<group>"; };
 		7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeIntervalsTableViewController.m; sourceTree = "<group>"; };
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 				F47CB75B1987DE7100398293 /* View */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
+				77402DC4199002CC00F255A6 /* map_marker-50.png */,
 				77402DBA198FFFB100F255A6 /* overtime-25.png */,
 				77402DC01990008C00F255A6 /* survey-25.png */,
 				77402DC21990009600F255A6 /* map_marker-25.png */,
@@ -1076,6 +1079,7 @@
 				F490D3BE198C1A35001BAF2C /* 191.tif in Resources */,
 				F490D35A198C1A35001BAF2C /* 136.tif in Resources */,
 				F490D34D198C1A35001BAF2C /* 158.tif in Resources */,
+				77402DC5199002CC00F255A6 /* map_marker-50.png in Resources */,
 				F490D3AB198C1A35001BAF2C /* Streetscape.tif in Resources */,
 				F490D3A5198C1A35001BAF2C /* 004b.tif in Resources */,
 				F490D38A198C1A35001BAF2C /* 066(Pearson).tif in Resources */,
