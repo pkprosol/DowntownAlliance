@@ -19,6 +19,7 @@
 
 @implementation DTATimeIntervalsTableViewController
 
+
 {
     CGFloat startContentOffset;
     CGFloat lastContentOffset;
@@ -39,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    hidden=NO;
     
     self.arrayOfTimeIntervals = [DTAManageTimeRanges getAndProcessDefaultTimeRanges];
     self.arrayOfImages = [NSMutableArray new];
@@ -46,7 +48,7 @@
     for (DTATimeRange *timeRange in self.arrayOfTimeIntervals) {
         [self.arrayOfImages addObject:timeRange.imageForRange];
     }
-        
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -103,19 +105,19 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:hidden
-                                             animated:YES];
-    
+{//maybe
+    //    [super viewWillAppear:animated];
+    //
+    //    [self.navigationController setNavigationBarHidden:hidden
+    //                                             animated:YES];
+    //
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-//    [self.tabBarController setTabBarHidden:hidden
-//                                  animated:NO];
+    //    [self.tabBarController setTabBarHidden:hidden
+    //                                  animated:NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -132,6 +134,78 @@
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
     
 }
+
+#pragma mark - The Magic!
+
+-(void)expand
+{
+    if(hidden)
+        return;
+    
+    hidden = YES;
+    
+    //    [self.tabBarController setTabBarHidden:YES
+    //                                  animated:YES];
+    
+    [self.navigationController setNavigationBarHidden:YES
+                                             animated:YES];
+}
+
+-(void)contract
+{
+    if(!hidden)
+    {
+        return;
+    }
+    
+    hidden = NO;
+    
+    //    [self.tabBarController setTabBarHidden:NO
+    //                                  animated:YES];
+    
+    [self.navigationController setNavigationBarHidden:NO
+                                             animated:YES];
+}
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate Methods
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
+    //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat currentOffset = scrollView.contentOffset.y;
+    CGFloat differenceFromStart = startContentOffset - currentOffset;
+    CGFloat differenceFromLast = lastContentOffset - currentOffset;
+    lastContentOffset = currentOffset;
+    
+    NSLog(@"Offest: %f",currentOffset);
+    NSLog(@"start: %f", differenceFromStart);
+    NSLog(@"last: %f",differenceFromLast);
+    
+    if((differenceFromStart) < 0)
+    {
+        // scroll up
+        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        {
+            [self expand];
+            NSLog(@"Expanding");
+        }
+    }
+    else {
+        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        {
+            [self contract];
+            NSLog(@"contracting");
+        }
+    }
+    
+}
+
 
 #pragma mark - The Magic!
 

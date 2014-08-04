@@ -20,21 +20,21 @@
 
 @implementation DTAThemesTableViewController
 
-//{
-//    CGFloat startContentOffset;
-//    CGFloat lastContentOffset;
-//    BOOL hidden;
-//}
+{
+    CGFloat startContentOffset;
+    CGFloat lastContentOffset;
+    BOOL hidden;
+}
 
-//- (id)initWithStyle:(UITableViewStyle)style
-//{
-//    self = [super initWithStyle:style];
-//    if (self) {
-//        // Custom initialization
-//        hidden = NO;
-//    }
-//    return self;
-//}
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+        hidden = NO;
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -57,14 +57,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-//-(void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//    
-//    [self.navigationController setNavigationBarHidden:hidden
-//                                             animated:YES];
-//    
-//}
 
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -78,77 +70,93 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark - Table view data source
-
-
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 
 #pragma mark - The Magic!
 
-//-(void)expand
-//{
-//    if(hidden)
-//        return;
-//    
-//    hidden = YES;
-//    
-//    [self.tabBarController setTabBarHidden:YES
-//                                  animated:YES];
-//    
-//    [self.navigationController setNavigationBarHidden:YES
-//                                             animated:YES];
-//}
+-(void)expand
+{
+    if(hidden)
+        return;
+    
+    hidden = YES;
+    
+    //    [self.tabBarController setTabBarHidden:YES
+    //                                  animated:YES];
+    
+    [self.navigationController setNavigationBarHidden:YES
+                                             animated:YES];
+}
 
-//-(void)contract
-//{
-//    if(!hidden)
-//        return;
-//    
-//    hidden = NO;
-//    
-//    [self.tabBarController setTabBarHidden:NO
-//                                  animated:YES];
-//    
-//    [self.navigationController setNavigationBarHidden:NO
-//                                             animated:YES];
-//}
+-(void)contract
+{
+    if(!hidden)
+    {
+        return;
+    }
+    
+    hidden = NO;
+    
+    //    [self.tabBarController setTabBarHidden:NO
+    //                                  animated:YES];
+    
+    [self.navigationController setNavigationBarHidden:NO
+                                             animated:YES];
+}
 
 #pragma mark -
 #pragma mark UIScrollViewDelegate Methods
 
-//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-//{
-//    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
     //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
-//}
+}
 
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
-//    CGFloat currentOffset = scrollView.contentOffset.y;
-//    CGFloat differenceFromStart = startContentOffset - currentOffset;
-//    CGFloat differenceFromLast = lastContentOffset - currentOffset;
-//    lastContentOffset = currentOffset;
-//    
-//    
-//    
-//    if((differenceFromStart) < 0)
-//    {
-//        // scroll up
-//        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-//            [self expand];
-//    }
-//    else {
-//        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-//            [self contract];
-//    }
-//    
-//}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat currentOffset = scrollView.contentOffset.y;
+    CGFloat differenceFromStart = startContentOffset - currentOffset;
+    CGFloat differenceFromLast = lastContentOffset - currentOffset;
+    lastContentOffset = currentOffset;
+    
+    NSLog(@"Offest: %f",currentOffset);
+    NSLog(@"start: %f", differenceFromStart);
+    NSLog(@"last: %f",differenceFromLast);
+    
+    if((differenceFromStart) < 0)
+    {
+        // scroll up
+        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        {
+            [self expand];
+            NSLog(@"Expanding");
+        }
+    }
+    else {
+        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        {
+            [self contract];
+            NSLog(@"contracting");
+        }
+    }
+    
+}
+
+
+#pragma mark - Table view delegate
+
+
+
+#pragma mark - The Magic!
+
 //
 //- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 //{
