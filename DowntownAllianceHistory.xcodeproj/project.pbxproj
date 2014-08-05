@@ -39,6 +39,7 @@
 		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
+		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
@@ -259,6 +260,8 @@
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
 		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
+		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
+		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
 		F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemesTableViewController.h; sourceTree = "<group>"; };
 		F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemesTableViewController.m; sourceTree = "<group>"; };
 		F440A72C1989619900D057F6 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
@@ -608,6 +611,8 @@
 				F440A73B1989656A00D057F6 /* TimeInterval.m */,
 				F490D3BF198C281B001BAF2C /* Theme.h */,
 				F490D3C0198C281B001BAF2C /* Theme.m */,
+				A4A9077D199125F9004AF18C /* DTAGeoFencing.h */,
+				A4A9077E199125F9004AF18C /* DTAGeoFencing.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -895,6 +900,13 @@
 				CLASSPREFIX = DTA;
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					F47CB7111987D9CC00398293 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					F47CB7321987D9CD00398293 = {
 						TestTargetID = F47CB7111987D9CC00398293;
 					};
@@ -1122,6 +1134,7 @@
 				F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
 				F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */,
+				A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */,
 				A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */,
 				F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */,
 				F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */,

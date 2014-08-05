@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+@interface DTAGeoFencing : NSObject <CLLocationManagerDelegate>
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) NSMutableArray *geofences;
 
-@interface DTAGeoFencing : NSObject
+-(void)getGeofence;
 
 @end

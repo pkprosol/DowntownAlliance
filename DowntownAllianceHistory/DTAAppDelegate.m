@@ -11,7 +11,7 @@
 #import "Location.h"
 #import "DTAThemesTableViewController.h"
 #import "DTAManageTimeRanges.h"
-
+#import "DTAGeoFencing.h"
 @implementation DTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -23,7 +23,23 @@
     
     return YES;
 }
-							
+  -(void)setUpFromGeoFence
+{
+    DTAGeoFencing *geoFence = [[DTAGeoFencing alloc]init];
+    
+    // Initialize Location Manager
+    geoFence.locationManager = [[CLLocationManager alloc] init];
+    
+    // Configure Location Manager
+    [geoFence.locationManager setDelegate:geoFence];
+    [geoFence.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    
+    // Load Geofences
+    geoFence.geofences = [NSMutableArray arrayWithArray:[[geoFence.locationManager monitoredRegions] allObjects]];
+    
+    [geoFence getGeofence];
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

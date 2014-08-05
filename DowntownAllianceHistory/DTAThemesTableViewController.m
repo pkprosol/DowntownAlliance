@@ -12,7 +12,7 @@
 #import "UITabBarController+hidableTab.h"
 #import "DTAManageDefaultThemes.h"
 #import "DTAThemeCell.h"
-
+#import "DTAAppDelegate.h"
 
 @interface DTAThemesTableViewController ()
 
@@ -41,6 +41,8 @@
     [super viewDidLoad];
     
     self.themesArray = [DTAManageDefaultThemes setUpArrayOfThemesWithNameAndImage];
+    
+   
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
