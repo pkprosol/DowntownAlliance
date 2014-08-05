@@ -11,7 +11,6 @@
 		77402DA1198FDF7200F255A6 /* 1920s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D95198FDF7200F255A6 /* 1920s.png */; };
 		77402DA2198FDF7200F255A6 /* 1930s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D96198FDF7200F255A6 /* 1930s.png */; };
 		77402DA3198FDF7200F255A6 /* 1940s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D97198FDF7200F255A6 /* 1940s.png */; };
-		77402DA4198FDF7200F255A6 /* 1950's.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D98198FDF7200F255A6 /* 1950's.png */; };
 		77402DA5198FDF7200F255A6 /* 1960s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D99198FDF7200F255A6 /* 1960s.png */; };
 		77402DA6198FDF7200F255A6 /* 1970s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9A198FDF7200F255A6 /* 1970s.png */; };
 		77402DA7198FDF7200F255A6 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9B198FDF7200F255A6 /* 1980s.png */; };
@@ -31,6 +30,7 @@
 		77402DC5199002CC00F255A6 /* map_marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC4199002CC00F255A6 /* map_marker-50.png */; };
 		7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
+		775AA292199129C600FC0A87 /* 1950.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA291199129C600FC0A87 /* 1950.png */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
@@ -224,7 +224,6 @@
 		77402D95198FDF7200F255A6 /* 1920s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920s.png; sourceTree = "<group>"; };
 		77402D96198FDF7200F255A6 /* 1930s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930s.png; sourceTree = "<group>"; };
 		77402D97198FDF7200F255A6 /* 1940s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1940s.png; sourceTree = "<group>"; };
-		77402D98198FDF7200F255A6 /* 1950's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1950's.png"; sourceTree = "<group>"; };
 		77402D99198FDF7200F255A6 /* 1960s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1960s.png; sourceTree = "<group>"; };
 		77402D9A198FDF7200F255A6 /* 1970s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1970s.png; sourceTree = "<group>"; };
 		77402D9B198FDF7200F255A6 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
@@ -246,6 +245,7 @@
 		7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeIntervalsTableViewController.m; sourceTree = "<group>"; };
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
 		7749C4D119896D02009D1F23 /* DTAFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAFilterCell.m; sourceTree = "<group>"; };
+		775AA291199129C600FC0A87 /* 1950.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1950.png; sourceTree = "<group>"; };
 		7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7771A43A1988162600CD6BA8 /* DTADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADetailViewController.h; sourceTree = "<group>"; };
@@ -804,7 +804,7 @@
 				77402D95198FDF7200F255A6 /* 1920s.png */,
 				77402D96198FDF7200F255A6 /* 1930s.png */,
 				77402D97198FDF7200F255A6 /* 1940s.png */,
-				77402D98198FDF7200F255A6 /* 1950's.png */,
+				775AA291199129C600FC0A87 /* 1950.png */,
 				77402D99198FDF7200F255A6 /* 1960s.png */,
 				77402D9A198FDF7200F255A6 /* 1970s.png */,
 				77402D9B198FDF7200F255A6 /* 1980s.png */,
@@ -996,6 +996,7 @@
 				F490D388198C1A35001BAF2C /* 066.tif in Resources */,
 				77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */,
 				F490D389198C1A35001BAF2C /* 067.tif in Resources */,
+				775AA292199129C600FC0A87 /* 1950.png in Resources */,
 				F490D399198C1A35001BAF2C /* 025.tif in Resources */,
 				F490D363198C1A35001BAF2C /* 110.tif in Resources */,
 				F490D393198C1A35001BAF2C /* 049a.tif in Resources */,
@@ -1008,7 +1009,6 @@
 				F490D35C198C1A35001BAF2C /* 135.tif in Resources */,
 				F490D377198C1A35001BAF2C /* 086.tif in Resources */,
 				F47CB7201987D9CC00398293 /* InfoPlist.strings in Resources */,
-				77402DA4198FDF7200F255A6 /* 1950's.png in Resources */,
 				F490D37F198C1A35001BAF2C /* 076.tif in Resources */,
 				F490D358198C1A35001BAF2C /* 142.tif in Resources */,
 				F490D36D198C1A35001BAF2C /* 099.tif in Resources */,
