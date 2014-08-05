@@ -55,7 +55,30 @@
         [componentsArray addObject:componentsSeparatedByString];
     }
     
-    return componentsArray;
+    NSArray *cleanComponentsArray = [DTADataFetchFromCSV cleanAsterisksFromArray:componentsArray];
+    
+    return cleanComponentsArray;
+}
+
++ (NSArray *)cleanAsterisksFromArray:(NSArray *)componentsArray
+{
+    NSMutableArray *cleanArrayOfComponentArrays = [NSMutableArray new];
+    
+    for (NSArray *locationComponents in componentsArray) {
+        
+        NSMutableArray *cleanLocationComponentsArray = [NSMutableArray new];
+    
+        for (NSString *component in locationComponents) {
+            
+            NSString *cleanComponent = [component stringByReplacingOccurrencesOfString:@"#" withString:@","];
+            [cleanLocationComponentsArray addObject:cleanComponent];
+
+        }
+        
+        [cleanArrayOfComponentArrays addObject:cleanLocationComponentsArray];
+    }
+    
+    return cleanArrayOfComponentArrays;
 }
 
 + (void)createLocationObjectsInCoreDataFromComponentsArray:(NSArray *)componentsArray
@@ -69,5 +92,6 @@
         }
     }
 }
+
 
 @end

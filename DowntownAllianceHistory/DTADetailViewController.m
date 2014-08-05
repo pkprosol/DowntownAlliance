@@ -93,11 +93,8 @@
         
         DTAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
         
-        UIImage *pictureTest = [UIImage imageNamed:@"1910s"];
-        
         cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
-        
-        cell.pictureImage.image = pictureTest;
+        cell.pictureImage.image = self.locationToBePLotted.image;
     }
     
     return cell;

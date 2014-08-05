@@ -9,6 +9,7 @@
 #import "Location.h"
 #import "TimeInterval.h"
 #import "Theme.h"
+#import "DTAGetRandomNumber.h"
 
 
 @implementation Location
@@ -38,27 +39,33 @@
     self.year = [self convertStringWithIntegerToNSNumber:componentArray[6]];
     self.titleOfPlaque = componentArray[7];
     self.brochureDescription = componentArray[8];
+
+    NSString *imageNamesString = componentArray[9];
+    
+    [self setImageFromNamesString:imageNamesString];
     
     if (self.day) {
         self.hasData = [NSNumber numberWithBool:YES];
     }
-    
-    [self setUpLocationImage];
 }
 
-- (void)setUpLocationImage
+- (void)setImageFromNamesString:(NSString *)imageNames
 {
-    self.image = [UIImage imageNamed:@"1910s.png"];
-    
-    // Keys are the idNumber and image name
-    NSDictionary *imageMatch = @{@"coh10-28-1886": @"001.tif",
-                                 @"coh4-29-1889": @"002.tif",
-                                 };
-    
-    if (imageMatch[self.idNumber]) {
-        NSString *imageName = imageMatch[self.idNumber];
-        self.image = [UIImage imageNamed:imageName];
+    if ([imageNames length] > 0) {
+        NSArray *imageNamesArray = [self imageNameComponentsFromString:imageNames];
+        NSString *randomImageName = [DTAGetRandomNumber getRandomEntryInArray:imageNamesArray];
+        self.image = [UIImage imageNamed:randomImageName];
+    } else {
+        self.image = nil;
     }
+}
+
+- (NSArray *)imageNameComponentsFromString:(NSString *)imageNames
+{
+    imageNames = [imageNames stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSArray *imageNamesArray = [imageNames componentsSeparatedByString:@","];
+    
+    return imageNamesArray;
 }
 
 - (NSNumber *)convertStringWithIntegerToNSNumber:(NSString *)string
