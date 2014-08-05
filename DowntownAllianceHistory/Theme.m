@@ -17,7 +17,7 @@
 @dynamic order;
 @dynamic locations;
 
-+ (Theme *)setUpThemeWithName:(NSString *)name Image:(UIImage *)image
++ (Theme *)setUpThemeWithName:(NSString *)name Image:(UIImage *)image Order:(NSInteger)order
 {
     DTADataStore *store = [DTADataStore sharedDataStore];
     
@@ -25,6 +25,7 @@
     
     newTheme.name = name;
     newTheme.image = image;
+    newTheme.order = [NSNumber numberWithInteger: order];
     
     return newTheme;
 }

@@ -27,6 +27,6 @@
 - (void)addLocations:(NSSet *)values;
 - (void)removeLocations:(NSSet *)values;
 
-+ (Theme *)setUpThemeWithName:(NSString *)name Image:(UIImage *)image;
++ (Theme *)setUpThemeWithName:(NSString *)name Image:(UIImage *)image Order:(NSInteger)order;
 
 @end
