@@ -32,6 +32,80 @@
             </objects>
             <point key="canvasLocation" x="2484" y="698"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="t9r-Wg-R2C">
+            <objects>
+                <viewController id="s0p-CD-eXM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ScV-6u-kR8"/>
+                        <viewControllerLayoutGuide type="bottom" id="DVB-8y-j7B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5yB-MZ-ZUf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tickerTack.png" translatesAutoresizingMaskIntoConstraints="NO" id="de6-mD-han">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.74999999999999978" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="waw-Ns-Woj">
+                                <rect key="frame" x="174" y="70" width="118" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The granite panels found on Broadway commemorate the New York City ticker-tape parades. These panels can be found up and down broadway from The Battery to City Hall.                        This celebrated route is called the Canyon of Heroes</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R3y-n8-4U1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eye-tU-n9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2425" y="1423"/>
+        </scene>
+        <!--View Controller - About-->
+        <scene sceneID="lVc-0i-jde">
+            <objects>
+                <viewController id="yFy-vh-E3w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GoL-Le-1wC"/>
+                        <viewControllerLayoutGuide type="bottom" id="bcw-Md-kNH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oZ0-CJ-BhH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-Jx-0dy">
+                                <rect key="frame" x="0.0" y="242" width="320" height="189"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">These granite panels commemorate the New York City of ticker-tape parades up broadway from The Battery to City Hall. This celebrated route is called the Canyon of the Heroes</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="While walking on Broadway in Manhattan you may encounter a plague, that looks something  like this:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-lX-b9z">
+                                <rect key="frame" x="0.0" y="66" width="320" height="71"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="canyon.png" translatesAutoresizingMaskIntoConstraints="NO" id="n8D-NY-DTO">
+                                <rect key="frame" x="0.0" y="140" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="gLh-aI-S3c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKB-4u-hh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2816" y="1391"/>
+        </scene>
         <!--Time Intervals Table View Controller - By Era-->
         <scene sceneID="NFh-P0-0mJ">
             <objects>
@@ -122,11 +196,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-Zb-dSp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97J-cY-367">
-                                <rect key="frame" x="0.0" y="257" width="320" height="247"/>
+                                <rect key="frame" x="0.0" y="160" width="320" height="344"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -157,6 +231,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UR8-Ou-FX1">
+                                <rect key="frame" x="160" y="0.0" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -184,11 +262,12 @@
                         <segue destination="eTg-pW-Spe" kind="relationship" relationship="viewControllers" id="eBP-Ey-HwH"/>
                         <segue destination="hTL-Xx-6z6" kind="relationship" relationship="viewControllers" id="VNK-K3-id9"/>
                         <segue destination="nmw-rd-ICq" kind="relationship" relationship="viewControllers" id="ESc-n2-oxF"/>
+                        <segue destination="aBy-1T-msG" kind="relationship" relationship="viewControllers" id="28x-LN-x7F"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2D-jg-2qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1390" y="19"/>
+            <point key="canvasLocation" x="1384" y="117"/>
         </scene>
         <!--Navigation Controller - By Era-->
         <scene sceneID="LG7-Xq-tEI">
@@ -297,11 +376,34 @@
             </objects>
             <point key="canvasLocation" x="2494" y="19"/>
         </scene>
+        <!--Navigation Controller - About -->
+        <scene sceneID="ORK-aP-OlB">
+            <objects>
+                <navigationController title="About " automaticallyAdjustsScrollViewInsets="NO" id="aBy-1T-msG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="about-25" id="zVq-VH-RHo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="eCs-s3-XY3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s0p-CD-eXM" kind="relationship" relationship="rootViewController" id="Ipo-kx-7Rv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhy-s6-Wmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963" y="1417"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="about-25" width="25" height="25"/>
+        <image name="canyon.png" width="320" height="86"/>
         <image name="map_marker-25.png" width="25" height="25"/>
         <image name="overtime-25.png" width="25" height="25"/>
         <image name="survey-25.png" width="25" height="25"/>
+        <image name="tickerTack.png" width="320" height="440"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
