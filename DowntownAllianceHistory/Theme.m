@@ -2,7 +2,7 @@
 //  Theme.m
 //  DowntownAllianceHistory
 //
-//  Created by Piotr K Prosol on 8/1/14.
+//  Created by Piotr K Prosol on 8/5/14.
 //
 //
 
@@ -12,8 +12,9 @@
 
 @implementation Theme
 
-@dynamic name;
 @dynamic image;
+@dynamic name;
+@dynamic order;
 @dynamic locations;
 
 + (Theme *)setUpThemeWithName:(NSString *)name Image:(UIImage *)image
