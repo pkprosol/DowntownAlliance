@@ -16,10 +16,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//         UIColor *downtownAllianceRed =[UIColor colorWithRed:(237/255.0) green:(26/255.0) blue:(44/255.0) alpha:1];
+    
+    // Add this if you only want to change Selected Image color
+    // and/or selected image text
+//    [[UITabBar appearance] setTintColor:downtownAllianceRed];
+//    
+////    [[UINavigationBar appearance] setBarTintColor:downtownAllianceRed];
+//    
+//    // Add this code to change StateNormal text Color,
+//    
+//    [UITabBarItem.appearance setTitleTextAttributes:
+//     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+//                                           forState:UIControlStateNormal];
+//    
+//    // then if StateSelected should be different, you should add this code
+//    [UITabBarItem.appearance setTitleTextAttributes:
+//     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+//                                           forState:UIControlStateSelected];
+    
+
+    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+   
     
     return YES;
 }

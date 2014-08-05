@@ -31,7 +31,6 @@
 		7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
 		775AA292199129C600FC0A87 /* 1950.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA291199129C600FC0A87 /* 1950.png */; };
-		775AA29419913AAB00FC0A87 /* about-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29319913AAB00FC0A87 /* about-25.png */; };
 		775AA29619913C8300FC0A87 /* canyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29519913C8300FC0A87 /* canyon.png */; };
 		775AA29819913FAE00FC0A87 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29719913FAE00FC0A87 /* Background.jpg */; };
 		775AA29A199151C800FC0A87 /* tickerTack.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA299199151C800FC0A87 /* tickerTack.png */; };
@@ -41,6 +40,8 @@
 		77A75B70198C14C9007D135F /* DTAImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B6E198C14C9007D135F /* DTAImageTableViewCell.m */; };
 		77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */; };
 		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
+		77AC835419916D4B009E278B /* white25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835319916D4B009E278B /* white25.png */; };
+		77AC835619916D6A009E278B /* white50i.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835519916D6A009E278B /* white50i.png */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
@@ -250,7 +251,6 @@
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
 		7749C4D119896D02009D1F23 /* DTAFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAFilterCell.m; sourceTree = "<group>"; };
 		775AA291199129C600FC0A87 /* 1950.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1950.png; sourceTree = "<group>"; };
-		775AA29319913AAB00FC0A87 /* about-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-25.png"; sourceTree = "<group>"; };
 		775AA29519913C8300FC0A87 /* canyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canyon.png; sourceTree = "<group>"; };
 		775AA29719913FAE00FC0A87 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		775AA299199151C800FC0A87 /* tickerTack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickerTack.png; sourceTree = "<group>"; };
@@ -263,6 +263,8 @@
 		77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DTAImageTableViewCell.xib; path = ../DTAImageTableViewCell.xib; sourceTree = "<group>"; };
 		77A75B81198C3DBE007D135F /* DTAThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemeCell.h; sourceTree = "<group>"; };
 		77A75B82198C3DBE007D135F /* DTAThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemeCell.m; sourceTree = "<group>"; };
+		77AC835319916D4B009E278B /* white25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white25.png; sourceTree = "<group>"; };
+		77AC835519916D6A009E278B /* white50i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white50i.png; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
@@ -551,11 +553,12 @@
 				F47CB75B1987DE7100398293 /* View */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
+				77AC835319916D4B009E278B /* white25.png */,
+				77AC835519916D6A009E278B /* white50i.png */,
 				77402DC4199002CC00F255A6 /* map_marker-50.png */,
 				77402DBA198FFFB100F255A6 /* overtime-25.png */,
 				77402DC01990008C00F255A6 /* survey-25.png */,
 				77402DC21990009600F255A6 /* map_marker-25.png */,
-				775AA29319913AAB00FC0A87 /* about-25.png */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
 			);
 			path = DowntownAllianceHistory;
@@ -941,6 +944,7 @@
 				F490D378198C1A35001BAF2C /* 084.tif in Resources */,
 				F490D38E198C1A35001BAF2C /* 054.tif in Resources */,
 				F490D3B7198C1A35001BAF2C /* CoverwShadow.tif in Resources */,
+				77AC835619916D6A009E278B /* white50i.png in Resources */,
 				F490D3B2198C1A35001BAF2C /* G04.tif in Resources */,
 				F490D351198C1A35001BAF2C /* 152.tif in Resources */,
 				F490D349198C1A35001BAF2C /* 162.tif in Resources */,
@@ -1050,6 +1054,7 @@
 				77402DA0198FDF7200F255A6 /* 1910s.png in Resources */,
 				F490D3B1198C1A35001BAF2C /* G03.tif in Resources */,
 				F490D383198C1A35001BAF2C /* 071.tif in Resources */,
+				77AC835419916D4B009E278B /* white25.png in Resources */,
 				F490D356198C1A35001BAF2C /* 146.tif in Resources */,
 				77402DA2198FDF7200F255A6 /* 1930s.png in Resources */,
 				F490D352198C1A35001BAF2C /* 153.tif in Resources */,
@@ -1093,7 +1098,6 @@
 				F490D376198C1A35001BAF2C /* 088.tif in Resources */,
 				F490D3BE198C1A35001BAF2C /* 191.tif in Resources */,
 				F490D35A198C1A35001BAF2C /* 136.tif in Resources */,
-				775AA29419913AAB00FC0A87 /* about-25.png in Resources */,
 				F490D34D198C1A35001BAF2C /* 158.tif in Resources */,
 				77402DC5199002CC00F255A6 /* map_marker-50.png in Resources */,
 				F490D3AB198C1A35001BAF2C /* Streetscape.tif in Resources */,
