@@ -49,6 +49,10 @@
         [self.arrayOfImages addObject:timeRange.imageForRange];
     }
     
+    DTAAppDelegate *appDelegate = (DTAAppDelegate *)[[UIApplication sharedApplication ] delegate];
+    
+    [appDelegate setUpFromGeoFence];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

@@ -25,8 +25,8 @@
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="decade" inverseEntity="Location" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TimeInterval" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Location" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Theme" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Location" positionX="0" positionY="0" width="128" height="240"/>
+        <element name="Theme" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="TimeInterval" positionX="0" positionY="0" width="128" height="75"/>
     </elements>
 </model>
