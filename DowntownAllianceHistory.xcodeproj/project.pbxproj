@@ -11,7 +11,6 @@
 		77402DA1198FDF7200F255A6 /* 1920s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D95198FDF7200F255A6 /* 1920s.png */; };
 		77402DA2198FDF7200F255A6 /* 1930s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D96198FDF7200F255A6 /* 1930s.png */; };
 		77402DA3198FDF7200F255A6 /* 1940s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D97198FDF7200F255A6 /* 1940s.png */; };
-		77402DA4198FDF7200F255A6 /* 1950's.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D98198FDF7200F255A6 /* 1950's.png */; };
 		77402DA5198FDF7200F255A6 /* 1960s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D99198FDF7200F255A6 /* 1960s.png */; };
 		77402DA6198FDF7200F255A6 /* 1970s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9A198FDF7200F255A6 /* 1970s.png */; };
 		77402DA7198FDF7200F255A6 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9B198FDF7200F255A6 /* 1980s.png */; };
@@ -31,12 +30,18 @@
 		77402DC5199002CC00F255A6 /* map_marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC4199002CC00F255A6 /* map_marker-50.png */; };
 		7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
+		775AA292199129C600FC0A87 /* 1950.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA291199129C600FC0A87 /* 1950.png */; };
+		775AA29619913C8300FC0A87 /* canyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29519913C8300FC0A87 /* canyon.png */; };
+		775AA29819913FAE00FC0A87 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29719913FAE00FC0A87 /* Background.jpg */; };
+		775AA29A199151C800FC0A87 /* tickerTack.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA299199151C800FC0A87 /* tickerTack.png */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
 		77A75B70198C14C9007D135F /* DTAImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B6E198C14C9007D135F /* DTAImageTableViewCell.m */; };
 		77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */; };
 		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
+		77AC835419916D4B009E278B /* white25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835319916D4B009E278B /* white25.png */; };
+		77AC835619916D6A009E278B /* white50i.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835519916D6A009E278B /* white50i.png */; };
 		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		F410E9BF19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */; };
@@ -165,6 +170,7 @@
 		F410EAB619914B7900A8EA36 /* 194.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410EA3A19914B7900A8EA36 /* 194.tif */; };
 		F410EAB719914B7900A8EA36 /* 197.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410EA3B19914B7900A8EA36 /* 197.tif */; };
 		F410EAB819914B7900A8EA36 /* 198.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410EA3C19914B7900A8EA36 /* 198.tif */; };
+		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
@@ -211,7 +217,6 @@
 		77402D95198FDF7200F255A6 /* 1920s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920s.png; sourceTree = "<group>"; };
 		77402D96198FDF7200F255A6 /* 1930s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930s.png; sourceTree = "<group>"; };
 		77402D97198FDF7200F255A6 /* 1940s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1940s.png; sourceTree = "<group>"; };
-		77402D98198FDF7200F255A6 /* 1950's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1950's.png"; sourceTree = "<group>"; };
 		77402D99198FDF7200F255A6 /* 1960s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1960s.png; sourceTree = "<group>"; };
 		77402D9A198FDF7200F255A6 /* 1970s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1970s.png; sourceTree = "<group>"; };
 		77402D9B198FDF7200F255A6 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
@@ -233,6 +238,10 @@
 		7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeIntervalsTableViewController.m; sourceTree = "<group>"; };
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
 		7749C4D119896D02009D1F23 /* DTAFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAFilterCell.m; sourceTree = "<group>"; };
+		775AA291199129C600FC0A87 /* 1950.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1950.png; sourceTree = "<group>"; };
+		775AA29519913C8300FC0A87 /* canyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canyon.png; sourceTree = "<group>"; };
+		775AA29719913FAE00FC0A87 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		775AA299199151C800FC0A87 /* tickerTack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickerTack.png; sourceTree = "<group>"; };
 		7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7771A43A1988162600CD6BA8 /* DTADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADetailViewController.h; sourceTree = "<group>"; };
@@ -242,6 +251,8 @@
 		77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DTAImageTableViewCell.xib; path = ../DTAImageTableViewCell.xib; sourceTree = "<group>"; };
 		77A75B81198C3DBE007D135F /* DTAThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemeCell.h; sourceTree = "<group>"; };
 		77A75B82198C3DBE007D135F /* DTAThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemeCell.m; sourceTree = "<group>"; };
+		77AC835319916D4B009E278B /* white25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white25.png; sourceTree = "<group>"; };
+		77AC835519916D6A009E278B /* white50i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white50i.png; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
@@ -372,6 +383,8 @@
 		F410EA3A19914B7900A8EA36 /* 194.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 194.tif; path = COHPhotos/ItemPhotos/194.tif; sourceTree = "<group>"; };
 		F410EA3B19914B7900A8EA36 /* 197.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 197.tif; path = COHPhotos/ItemPhotos/197.tif; sourceTree = "<group>"; };
 		F410EA3C19914B7900A8EA36 /* 198.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 198.tif; path = COHPhotos/ItemPhotos/198.tif; sourceTree = "<group>"; };
+		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
+		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
 		F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemesTableViewController.h; sourceTree = "<group>"; };
 		F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemesTableViewController.m; sourceTree = "<group>"; };
 		F440A72C1989619900D057F6 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
@@ -529,6 +542,12 @@
 				F47CB75B1987DE7100398293 /* View */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
+				77AC835319916D4B009E278B /* white25.png */,
+				77AC835519916D6A009E278B /* white50i.png */,
+				77402DC4199002CC00F255A6 /* map_marker-50.png */,
+				77402DBA198FFFB100F255A6 /* overtime-25.png */,
+				77402DC01990008C00F255A6 /* survey-25.png */,
+				77402DC21990009600F255A6 /* map_marker-25.png */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
 			);
 			path = DowntownAllianceHistory;
@@ -594,6 +613,8 @@
 				F440A73B1989656A00D057F6 /* TimeInterval.m */,
 				F490D3BF198C281B001BAF2C /* Theme.h */,
 				F490D3C0198C281B001BAF2C /* Theme.m */,
+				A4A9077D199125F9004AF18C /* DTAGeoFencing.h */,
+				A4A9077E199125F9004AF18C /* DTAGeoFencing.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -763,6 +784,149 @@
 				F410EA3A19914B7900A8EA36 /* 194.tif */,
 				F410EA3B19914B7900A8EA36 /* 197.tif */,
 				F410EA3C19914B7900A8EA36 /* 198.tif */,
+				775AA299199151C800FC0A87 /* tickerTack.png */,
+				775AA29719913FAE00FC0A87 /* Background.jpg */,
+				775AA29519913C8300FC0A87 /* canyon.png */,
+				F490D2A9198C1A34001BAF2C /* 189.tif */,
+				F490D2AA198C1A34001BAF2C /* 187.tif */,
+				F490D2AB198C1A34001BAF2C /* 188.tif */,
+				F490D2AC198C1A34001BAF2C /* 186.tif */,
+				F490D2AD198C1A34001BAF2C /* 183.tif */,
+				F490D2AE198C1A34001BAF2C /* 184.tif */,
+				F490D2AF198C1A34001BAF2C /* 180.tif */,
+				F490D2B0198C1A34001BAF2C /* 182.tif */,
+				F490D2B1198C1A34001BAF2C /* 178.tif */,
+				F490D2B2198C1A34001BAF2C /* 179.tif */,
+				F490D2B3198C1A34001BAF2C /* 177.tif */,
+				F490D2B4198C1A34001BAF2C /* 174.tif */,
+				F490D2B5198C1A34001BAF2C /* 175.tif */,
+				F490D2B6198C1A34001BAF2C /* 173.tif */,
+				F490D2B7198C1A34001BAF2C /* 169.tif */,
+				F490D2B8198C1A34001BAF2C /* 168.tif */,
+				F490D2B9198C1A34001BAF2C /* 166.tif */,
+				F490D2BA198C1A34001BAF2C /* 167.tif */,
+				F490D2BB198C1A34001BAF2C /* 164.tif */,
+				F490D2BC198C1A34001BAF2C /* 165.tif */,
+				F490D2BD198C1A34001BAF2C /* 161.tif */,
+				F490D2BE198C1A34001BAF2C /* 162.tif */,
+				F490D2BF198C1A34001BAF2C /* 159.tif */,
+				F490D2C0198C1A34001BAF2C /* 160.tif */,
+				F490D2C1198C1A34001BAF2C /* 157.tif */,
+				F490D2C2198C1A34001BAF2C /* 158.tif */,
+				F490D2C3198C1A34001BAF2C /* 155.tif */,
+				F490D2C4198C1A34001BAF2C /* 156.tif */,
+				F490D2C5198C1A34001BAF2C /* 154.tif */,
+				F490D2C6198C1A34001BAF2C /* 152.tif */,
+				F490D2C7198C1A34001BAF2C /* 153.tif */,
+				F490D2C8198C1A34001BAF2C /* 147.tif */,
+				F490D2C9198C1A34001BAF2C /* 149.tif */,
+				F490D2CA198C1A34001BAF2C /* 145.tif */,
+				F490D2CB198C1A34001BAF2C /* 146.tif */,
+				F490D2CC198C1A34001BAF2C /* 140.tif */,
+				F490D2CD198C1A34001BAF2C /* 142.tif */,
+				F490D2CE198C1A34001BAF2C /* 137.tif */,
+				F490D2CF198C1A34001BAF2C /* 136.tif */,
+				F490D2D0198C1A34001BAF2C /* 136(Queen).tif */,
+				F490D2D1198C1A34001BAF2C /* 135.tif */,
+				F490D2D2198C1A34001BAF2C /* 133.tif */,
+				F490D2D3198C1A34001BAF2C /* 134.tif */,
+				F490D2D4198C1A34001BAF2C /* 120.tif */,
+				F490D2D5198C1A34001BAF2C /* 111.tif */,
+				F490D2D6198C1A34001BAF2C /* 118.tif */,
+				F490D2D7198C1A34001BAF2C /* 109.tif */,
+				F490D2D8198C1A34001BAF2C /* 110.tif */,
+				F490D2D9198C1A34001BAF2C /* 107.tif */,
+				F490D2DA198C1A34001BAF2C /* 108.tif */,
+				F490D2DB198C1A34001BAF2C /* 104.tif */,
+				F490D2DC198C1A34001BAF2C /* 105.tif */,
+				F490D2DD198C1A34001BAF2C /* 103.tif */,
+				F490D2DE198C1A34001BAF2C /* 101.tif */,
+				F490D2DF198C1A34001BAF2C /* 102.tif */,
+				F490D2E0198C1A34001BAF2C /* 100.tif */,
+				F490D2E1198C1A34001BAF2C /* 098.tif */,
+				F490D2E2198C1A34001BAF2C /* 099.tif */,
+				F490D2E3198C1A34001BAF2C /* 095.tif */,
+				F490D2E4198C1A34001BAF2C /* 096.tif */,
+				F490D2E5198C1A34001BAF2C /* 093.tif */,
+				F490D2E6198C1A34001BAF2C /* 091.tif */,
+				F490D2E7198C1A34001BAF2C /* 092.tif */,
+				F490D2E8198C1A34001BAF2C /* 089.tif */,
+				F490D2E9198C1A34001BAF2C /* 090.tif */,
+				F490D2EA198C1A34001BAF2C /* 087.tif */,
+				F490D2EB198C1A34001BAF2C /* 088.tif */,
+				F490D2EC198C1A34001BAF2C /* 086.tif */,
+				F490D2ED198C1A34001BAF2C /* 084.tif */,
+				F490D2EE198C1A34001BAF2C /* 085.tif */,
+				F490D2EF198C1A34001BAF2C /* 081.tif */,
+				F490D2F0198C1A34001BAF2C /* 083.tif */,
+				F490D2F1198C1A34001BAF2C /* 079.tif */,
+				F490D2F2198C1A34001BAF2C /* 080.tif */,
+				F490D2F3198C1A34001BAF2C /* 078.tif */,
+				F490D2F4198C1A34001BAF2C /* 076.tif */,
+				F490D2F5198C1A34001BAF2C /* 077.tif */,
+				F490D2F6198C1A34001BAF2C /* 074.tif */,
+				F490D2F7198C1A34001BAF2C /* 075.tif */,
+				F490D2F8198C1A34001BAF2C /* 071.tif */,
+				F490D2F9198C1A34001BAF2C /* 073.tif */,
+				F490D2FA198C1A34001BAF2C /* 069.tif */,
+				F490D2FB198C1A34001BAF2C /* 070.tif */,
+				F490D2FC198C1A34001BAF2C /* 068.tif */,
+				F490D2FD198C1A34001BAF2C /* 066.tif */,
+				F490D2FE198C1A34001BAF2C /* 067.tif */,
+				F490D2FF198C1A34001BAF2C /* 066(Pearson).tif */,
+				F490D300198C1A34001BAF2C /* 063.tif */,
+				F490D301198C1A34001BAF2C /* 056.tif */,
+				F490D302198C1A34001BAF2C /* 058.tif */,
+				F490D303198C1A34001BAF2C /* 054.tif */,
+				F490D304198C1A34001BAF2C /* 055.tif */,
+				F490D305198C1A34001BAF2C /* 053.tif */,
+				F490D306198C1A34001BAF2C /* 049b.tif */,
+				F490D307198C1A34001BAF2C /* 052.tif */,
+				F490D308198C1A34001BAF2C /* 049a.tif */,
+				F490D309198C1A34001BAF2C /* 048.tif */,
+				F490D30A198C1A34001BAF2C /* 038.tif */,
+				F490D30B198C1A34001BAF2C /* 047.tif */,
+				F490D30C198C1A34001BAF2C /* 028(Earhart).tif */,
+				F490D30D198C1A34001BAF2C /* 035.tif */,
+				F490D30E198C1A34001BAF2C /* 025.tif */,
+				F490D30F198C1A34001BAF2C /* 026.tif */,
+				F490D310198C1A34001BAF2C /* 024.tif */,
+				F490D311198C1A34001BAF2C /* 022a.tif */,
+				F490D312198C1A34001BAF2C /* 022b.tif */,
+				F490D313198C1A34001BAF2C /* 021.tif */,
+				F490D314198C1A34001BAF2C /* 016.tif */,
+				F490D315198C1A34001BAF2C /* 019.tif */,
+				F490D316198C1A34001BAF2C /* 008.tif */,
+				F490D317198C1A34001BAF2C /* 011.psd */,
+				F490D318198C1A34001BAF2C /* 007.eps */,
+				F490D319198C1A34001BAF2C /* 007.tif */,
+				F490D31A198C1A34001BAF2C /* 004b.tif */,
+				F490D31B198C1A34001BAF2C /* 006.tif */,
+				F490D31C198C1A34001BAF2C /* 004a.tif */,
+				F490D31D198C1A34001BAF2C /* 002.tif */,
+				F490D31E198C1A34001BAF2C /* 001.tif */,
+				F490D31F198C1A34001BAF2C /* VanCliburn.jpg */,
+				F490D320198C1A34001BAF2C /* Streetscape.tif */,
+				F490D321198C1A34001BAF2C /* Intro(Lindsay).tif */,
+				F490D322198C1A34001BAF2C /* Pearson.tif */,
+				F490D323198C1A34001BAF2C /* gulfwar.JPG */,
+				F490D324198C1A34001BAF2C /* Intro(Car).tif */,
+				F490D325198C1A34001BAF2C /* GulfShadow1.eps */,
+				F490D326198C1A34001BAF2C /* G03.tif */,
+				F490D327198C1A35001BAF2C /* G04.tif */,
+				F490D328198C1A35001BAF2C /* G01Big.tif */,
+				F490D329198C1A35001BAF2C /* G02.tif */,
+				F490D32A198C1A35001BAF2C /* G01.tif */,
+				F490D32B198C1A35001BAF2C /* Effect3.tif */,
+				F490D32C198C1A35001BAF2C /* CoverwShadow.tif */,
+				F490D32D198C1A35001BAF2C /* CoverShadow.tif */,
+				F490D32E198C1A35001BAF2C /* Cover.tif */,
+				F490D32F198C1A35001BAF2C /* 198.tif */,
+				F490D330198C1A35001BAF2C /* 197.tif */,
+				F490D331198C1A35001BAF2C /* 194.tif */,
+				F490D332198C1A35001BAF2C /* 192.tif */,
+				F490D333198C1A35001BAF2C /* 191.tif */,
+				77A75B84198C45CF007D135F /* CategoryCells */,
 			);
 			name = "COH Images";
 			sourceTree = "<group>";
@@ -774,7 +938,7 @@
 				77402D95198FDF7200F255A6 /* 1920s.png */,
 				77402D96198FDF7200F255A6 /* 1930s.png */,
 				77402D97198FDF7200F255A6 /* 1940s.png */,
-				77402D98198FDF7200F255A6 /* 1950's.png */,
+				775AA291199129C600FC0A87 /* 1950.png */,
 				77402D99198FDF7200F255A6 /* 1960s.png */,
 				77402D9A198FDF7200F255A6 /* 1970s.png */,
 				77402D9B198FDF7200F255A6 /* 1980s.png */,
@@ -866,6 +1030,13 @@
 				CLASSPREFIX = DTA;
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					F47CB7111987D9CC00398293 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					F47CB7321987D9CD00398293 = {
 						TestTargetID = F47CB7111987D9CC00398293;
 					};
@@ -914,6 +1085,24 @@
 				F410EA6B19914B7900A8EA36 /* 080.tif in Resources */,
 				F410EA4B19914B7900A8EA36 /* 022b.tif in Resources */,
 				F410EAB819914B7900A8EA36 /* 198.tif in Resources */,
+				F490D39F198C1A35001BAF2C /* 016.tif in Resources */,
+				F490D378198C1A35001BAF2C /* 084.tif in Resources */,
+				F490D38E198C1A35001BAF2C /* 054.tif in Resources */,
+				F490D3B7198C1A35001BAF2C /* CoverwShadow.tif in Resources */,
+				77AC835619916D6A009E278B /* white50i.png in Resources */,
+				F490D3B2198C1A35001BAF2C /* G04.tif in Resources */,
+				F490D351198C1A35001BAF2C /* 152.tif in Resources */,
+				F490D349198C1A35001BAF2C /* 162.tif in Resources */,
+				F490D35F198C1A35001BAF2C /* 120.tif in Resources */,
+				F490D371198C1A35001BAF2C /* 091.tif in Resources */,
+				F490D36C198C1A35001BAF2C /* 098.tif in Resources */,
+				F490D2A4198BCD14001BAF2C /* COH.csv in Resources */,
+				F490D34E198C1A35001BAF2C /* 155.tif in Resources */,
+				F490D39E198C1A35001BAF2C /* 021.tif in Resources */,
+				F490D3AF198C1A35001BAF2C /* Intro(Car).tif in Resources */,
+				F490D353198C1A35001BAF2C /* 147.tif in Resources */,
+				F490D360198C1A35001BAF2C /* 111.tif in Resources */,
+				F490D355198C1A35001BAF2C /* 145.tif in Resources */,
 				77402DAA198FDF7200F255A6 /* 2010s.png in Resources */,
 				77402DA7198FDF7200F255A6 /* 1980s.png in Resources */,
 				F410EA5B19914B7900A8EA36 /* 058.tif in Resources */,
@@ -926,6 +1115,12 @@
 				F410E9BF19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
 				F410EA7519914B7900A8EA36 /* 091.tif in Resources */,
+				775AA29A199151C800FC0A87 /* tickerTack.png in Resources */,
+				F490D35D198C1A35001BAF2C /* 133.tif in Resources */,
+				F490D36E198C1A35001BAF2C /* 095.tif in Resources */,
+				F490D3A8198C1A35001BAF2C /* 002.tif in Resources */,
+				F490D39B198C1A35001BAF2C /* 024.tif in Resources */,
+				F490D35E198C1A35001BAF2C /* 134.tif in Resources */,
 				77402DB2198FE13600F255A6 /* Aviation.png in Resources */,
 				F410EA3D19914B7900A8EA36 /* 001.tif in Resources */,
 				F410EA9319914B7900A8EA36 /* 147.tif in Resources */,
@@ -948,6 +1143,12 @@
 				F410EA5619914B7900A8EA36 /* 052.tif in Resources */,
 				F410EA9119914B7900A8EA36 /* 145.tif in Resources */,
 				F410EAB119914B7900A8EA36 /* 187.tif in Resources */,
+				F490D389198C1A35001BAF2C /* 067.tif in Resources */,
+				775AA292199129C600FC0A87 /* 1950.png in Resources */,
+				F490D399198C1A35001BAF2C /* 025.tif in Resources */,
+				F490D363198C1A35001BAF2C /* 110.tif in Resources */,
+				F490D393198C1A35001BAF2C /* 049a.tif in Resources */,
+				F490D374198C1A35001BAF2C /* 090.tif in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
 				F410EA7219914B7900A8EA36 /* 088.tif in Resources */,
 				F410EAA919914B7900A8EA36 /* 177.tif in Resources */,
@@ -991,6 +1192,12 @@
 				F410EA9219914B7900A8EA36 /* 146.tif in Resources */,
 				F410EAAB19914B7900A8EA36 /* 179.tif in Resources */,
 				F410EA6919914B7900A8EA36 /* 078.tif in Resources */,
+				F490D37F198C1A35001BAF2C /* 076.tif in Resources */,
+				F490D358198C1A35001BAF2C /* 142.tif in Resources */,
+				F490D36D198C1A35001BAF2C /* 099.tif in Resources */,
+				F490D3A4198C1A35001BAF2C /* 007.tif in Resources */,
+				F490D3AC198C1A35001BAF2C /* Intro(Lindsay).tif in Resources */,
+				F490D3B8198C1A35001BAF2C /* CoverShadow.tif in Resources */,
 				77402DB7198FE13600F255A6 /* USleaders.png in Resources */,
 				F410EA5E19914B7900A8EA36 /* 066(Pearson).tif in Resources */,
 				F410EA8819914B7900A8EA36 /* 120.tif in Resources */,
@@ -1014,6 +1221,13 @@
 				77402DA5198FDF7200F255A6 /* 1960s.png in Resources */,
 				F410EA5C19914B7900A8EA36 /* 063.tif in Resources */,
 				F410EA4319914B7900A8EA36 /* 007.tif in Resources */,
+				F490D342198C1A35001BAF2C /* 169.tif in Resources */,
+				775AA29619913C8300FC0A87 /* canyon.png in Resources */,
+				F490D385198C1A35001BAF2C /* 069.tif in Resources */,
+				F490D391198C1A35001BAF2C /* 049b.tif in Resources */,
+				F490D396198C1A35001BAF2C /* 047.tif in Resources */,
+				F490D366198C1A35001BAF2C /* 104.tif in Resources */,
+				F490D3A0198C1A35001BAF2C /* 019.tif in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
 				F410EA4E19914B7900A8EA36 /* 026.tif in Resources */,
 				F410EAA519914B7900A8EA36 /* 169.tif in Resources */,
@@ -1029,6 +1243,37 @@
 				77402DA2198FDF7200F255A6 /* 1930s.png in Resources */,
 				F410EA9919914B7900A8EA36 /* 156.tif in Resources */,
 				F410EA6419914B7900A8EA36 /* 073.tif in Resources */,
+				F490D3B1198C1A35001BAF2C /* G03.tif in Resources */,
+				F490D383198C1A35001BAF2C /* 071.tif in Resources */,
+				77AC835419916D4B009E278B /* white25.png in Resources */,
+				F490D356198C1A35001BAF2C /* 146.tif in Resources */,
+				77402DA2198FDF7200F255A6 /* 1930s.png in Resources */,
+				F490D352198C1A35001BAF2C /* 153.tif in Resources */,
+				F490D33E198C1A35001BAF2C /* 177.tif in Resources */,
+				F490D390198C1A35001BAF2C /* 053.tif in Resources */,
+				F490D359198C1A35001BAF2C /* 137.tif in Resources */,
+				F490D36B198C1A35001BAF2C /* 100.tif in Resources */,
+				F490D39A198C1A35001BAF2C /* 026.tif in Resources */,
+				F490D33C198C1A35001BAF2C /* 178.tif in Resources */,
+				F490D348198C1A35001BAF2C /* 161.tif in Resources */,
+				F490D34C198C1A35001BAF2C /* 157.tif in Resources */,
+				F490D3BD198C1A35001BAF2C /* 192.tif in Resources */,
+				F490D381198C1A35001BAF2C /* 074.tif in Resources */,
+				F490D382198C1A35001BAF2C /* 075.tif in Resources */,
+				F490D38D198C1A35001BAF2C /* 058.tif in Resources */,
+				F490D357198C1A35001BAF2C /* 140.tif in Resources */,
+				F490D3B9198C1A35001BAF2C /* Cover.tif in Resources */,
+				F490D3BC198C1A35001BAF2C /* 194.tif in Resources */,
+				F490D364198C1A35001BAF2C /* 107.tif in Resources */,
+				F490D37C198C1A35001BAF2C /* 079.tif in Resources */,
+				775AA29819913FAE00FC0A87 /* Background.jpg in Resources */,
+				F490D37A198C1A35001BAF2C /* 081.tif in Resources */,
+				F490D3AE198C1A35001BAF2C /* gulfwar.JPG in Resources */,
+				F490D345198C1A35001BAF2C /* 167.tif in Resources */,
+				F490D3AD198C1A35001BAF2C /* Pearson.tif in Resources */,
+				F490D369198C1A35001BAF2C /* 101.tif in Resources */,
+				F490D386198C1A35001BAF2C /* 070.tif in Resources */,
+				F490D33B198C1A35001BAF2C /* 182.tif in Resources */,
 				77402DC31990009600F255A6 /* map_marker-25.png in Resources */,
 				F410EA4819914B7900A8EA36 /* 019.tif in Resources */,
 				77402DA1198FDF7200F255A6 /* 1920s.png in Resources */,
@@ -1080,6 +1325,7 @@
 				F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
 				F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */,
+				A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */,
 				A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */,
 				F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */,
 				F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */,

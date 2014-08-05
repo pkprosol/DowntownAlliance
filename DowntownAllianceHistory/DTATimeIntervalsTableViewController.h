@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DTAAppDelegate.h"
 @interface DTATimeIntervalsTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *arrayOfTimeIntervals;

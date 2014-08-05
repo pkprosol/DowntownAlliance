@@ -39,7 +39,7 @@
                         [UIImage imageNamed:@"1920s.png"],
                         [UIImage imageNamed:@"1930s.png"],
                         [UIImage imageNamed:@"1940s.png"],
-                        [UIImage imageNamed:@"1950s.png"],
+                        [UIImage imageNamed:@"1950.png"],
                         [UIImage imageNamed:@"1960s.png"],
                         [UIImage imageNamed:@"1970s.png"],
                         [UIImage imageNamed:@"1980s.png"],

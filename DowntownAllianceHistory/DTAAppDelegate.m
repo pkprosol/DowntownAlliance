@@ -11,19 +11,58 @@
 #import "Location.h"
 #import "DTAThemesTableViewController.h"
 #import "DTAManageTimeRanges.h"
-
+#import "DTAGeoFencing.h"
 @implementation DTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//         UIColor *downtownAllianceRed =[UIColor colorWithRed:(237/255.0) green:(26/255.0) blue:(44/255.0) alpha:1];
+    
+    // Add this if you only want to change Selected Image color
+    // and/or selected image text
+//    [[UITabBar appearance] setTintColor:downtownAllianceRed];
+//    
+////    [[UINavigationBar appearance] setBarTintColor:downtownAllianceRed];
+//    
+//    // Add this code to change StateNormal text Color,
+//    
+//    [UITabBarItem.appearance setTitleTextAttributes:
+//     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+//                                           forState:UIControlStateNormal];
+//    
+//    // then if StateSelected should be different, you should add this code
+//    [UITabBarItem.appearance setTitleTextAttributes:
+//     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
+//                                           forState:UIControlStateSelected];
+    
+
+    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
+   
+    
     return YES;
 }
-							
+  -(void)setUpFromGeoFence
+{
+    DTAGeoFencing *geoFence = [[DTAGeoFencing alloc]init];
+    
+    // Initialize Location Manager
+    geoFence.locationManager = [[CLLocationManager alloc] init];
+    
+    // Configure Location Manager
+    [geoFence.locationManager setDelegate:geoFence];
+    [geoFence.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    
+    // Load Geofences
+    geoFence.geofences = [NSMutableArray arrayWithArray:[[geoFence.locationManager monitoredRegions] allObjects]];
+    
+    [geoFence getGeofence];
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
