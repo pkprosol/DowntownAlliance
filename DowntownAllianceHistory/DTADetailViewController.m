@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
+@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
 
 @end
 
@@ -52,9 +53,9 @@
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"DTAImageTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"pictureImage"];
     
     
-    _mapOutlet.delegate = self;
-    _tableViewOutlet.delegate = self;
-    _tableViewOutlet.dataSource = self;
+    self.mapOutlet.delegate = self;
+    self.tableViewOutlet.delegate = self;
+    self.tableViewOutlet.dataSource = self;
     self.tableViewOutlet.backgroundColor = [UIColor clearColor];
     // Do any additional setup after loading the view.
 }
@@ -76,7 +77,7 @@
 {
     
     // Return the number of rows in the section.
-    return 3;
+    return 15;
 }
 
 
@@ -84,23 +85,19 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
     
-//    if (indexPath.row == 0) {
-//        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
-//    }
-//    else if (indexPath.row == 1) {
-//        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
-//    }
-//    else if (indexPath.row ==2) {
-//        
-//        DTAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
-//        
-//        cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
-//        cell.pictureImage.image = self.locationToBePLotted.image;
-//    }
-    NSString *shit = [NSString stringWithFormat:@"%d", indexPath.row];
+    if (indexPath.row == 0) {
+        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
+    }
+    else if (indexPath.row == 1) {
+        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
+    }
+    else if (indexPath.row ==2) {
     
-    cell.textLabel.text = shit;
+        DTAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
     
+        cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
+        self.cellImageView = self.locationToBePLotted.image;
+    }
     return cell;
 }
 
@@ -128,6 +125,13 @@
         [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, self.mapOutlet.frame.size.height*-1)];
         
     }
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    self.tableViewOutlet.delegate = nil;
+    self.tableViewOutlet.dataSource = nil;
 }
 /*
 #pragma mark - Navigation
