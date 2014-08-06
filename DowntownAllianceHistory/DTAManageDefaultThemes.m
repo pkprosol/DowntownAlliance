@@ -21,14 +21,19 @@
     
     for (NSString *key in allKeys) {
         NSString *name = key;
-        UIImage *image = [UIImage imageNamed:themesDictionary[key]];
+        UIImage *image = [UIImage imageNamed:themesDictionary[key][0]];
         
-        Theme *newTheme = [Theme setUpThemeWithName:name Image:image];
+        NSInteger order = [themesDictionary[key][1] integerValue];
+        
+        Theme *newTheme = [Theme setUpThemeWithName:name Image:image Order:order];
         
         [themes addObject:newTheme];
     }
     
-    return themes;
+    NSSortDescriptor *sortByOrder = [NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES];
+    NSArray *sortedThemes = [themes sortedArrayUsingDescriptors:@[sortByOrder]];
+    
+    return sortedThemes;
 }
 
 @end

@@ -7,18 +7,19 @@
 //
 
 #import "DTAGenerateDefaultThemes.h"
+#import "Theme.h"
 
 @implementation DTAGenerateDefaultThemes
 
 + (NSDictionary *)generateDefaultDictionaryOfThemesAndImages
 {
-    // Key is the theme name, and the value is the image for each
-    NSDictionary *defaultThemeAndImageNames = @{@"Aviation": @"Aviation.png",
-                                                @"ForeignDignitaries": @"foreignDig.png",
-                                                @"Military": @"military.png",
-                                                @"Sports": @"sports.png",
-                                                @"USHistory": @"USHistory.png",
-                                                @"USLeaders": @"USleaders.png"};
+    // Key is the theme name, and the value is the image, and priority for each (lowest numbers first)
+    NSDictionary *defaultThemeAndImageNames = @{@"Aviation": @[@"Aviation.png", @0],
+                                                @"ForeignDignitaries": @[@"foreignDig.png", @3],
+                                                @"Military": @[@"military.png", @4],
+                                                @"Sports": @[@"sports.png", @5],
+                                                @"USHistory": @[@"USHistory.png", @1],
+                                                @"USLeaders": @[@"USleaders.png", @2]};
                                                 
     return defaultThemeAndImageNames;
 }

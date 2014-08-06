@@ -176,6 +176,7 @@
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
+		F44664B119917906004B497D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664B019917906004B497D /* Theme.m */; };
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
@@ -194,7 +195,6 @@
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
 		F490D2A7198C1635001BAF2C /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D2A6198C1635001BAF2C /* Location.m */; };
-		F490D3C1198C281B001BAF2C /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C0198C281B001BAF2C /* Theme.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
 		F490D3CB198C2C42001BAF2C /* DTAManageDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CA198C2C42001BAF2C /* DTAManageDefaultThemes.m */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
@@ -395,6 +395,8 @@
 		F440A73B1989656A00D057F6 /* TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeInterval.m; sourceTree = "<group>"; };
 		F44664A919915ECD004B497D /* DTAGetRandomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGetRandomNumber.h; sourceTree = "<group>"; };
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
+		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
 		F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADateFormatterAssistant.m; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -424,8 +426,6 @@
 		F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultTimeRanges.m; sourceTree = "<group>"; };
 		F490D2A5198C1635001BAF2C /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		F490D2A6198C1635001BAF2C /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		F490D3BF198C281B001BAF2C /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = ../Theme.h; sourceTree = "<group>"; };
-		F490D3C0198C281B001BAF2C /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = ../Theme.m; sourceTree = "<group>"; };
 		F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultThemes.h; sourceTree = "<group>"; };
 		F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultThemes.m; sourceTree = "<group>"; };
 		F490D3C9198C2C42001BAF2C /* DTAManageDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAManageDefaultThemes.h; sourceTree = "<group>"; };
@@ -503,6 +503,68 @@
 				F47CB77E198812EF00398293 /* DTADecadesViewController.m */,
 			);
 			name = Archive;
+			sourceTree = "<group>";
+		};
+		F44664B219917A78004B497D /* Helper Methods */ = {
+			isa = PBXGroup;
+			children = (
+				F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */,
+				F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */,
+				F44664A919915ECD004B497D /* DTAGetRandomNumber.h */,
+				F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */,
+			);
+			name = "Helper Methods";
+			sourceTree = "<group>";
+		};
+		F44664B319917A8A004B497D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */,
+				F490D2A5198C1635001BAF2C /* Location.h */,
+				F490D2A6198C1635001BAF2C /* Location.m */,
+				F440A73A1989656A00D057F6 /* TimeInterval.h */,
+				F440A73B1989656A00D057F6 /* TimeInterval.m */,
+				F44664AF19917906004B497D /* Theme.h */,
+				F44664B019917906004B497D /* Theme.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		F44664B419917AA0004B497D /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				F4BB9A2B198AAA9100956381 /* DTADataStore.h */,
+				F4BB9A2C198AAA9100956381 /* DTADataStore.m */,
+			);
+			name = "Data Store";
+			sourceTree = "<group>";
+		};
+		F44664B519917ABD004B497D /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				F483CF7B198AAB7300CE6718 /* DTADataFetchFromCSV.h */,
+				F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */,
+				F4BB9A22198A922600956381 /* DTATimeRange.h */,
+				F4BB9A23198A922600956381 /* DTATimeRange.m */,
+				F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */,
+				F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */,
+				F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */,
+				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
+				F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */,
+				F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */,
+				F490D3C9198C2C42001BAF2C /* DTAManageDefaultThemes.h */,
+				F490D3CA198C2C42001BAF2C /* DTAManageDefaultThemes.m */,
+			);
+			name = Inputs;
+			sourceTree = "<group>";
+		};
+		F44664B619917AEF004B497D /* Location Management */ = {
+			isa = PBXGroup;
+			children = (
+				A4A9077D199125F9004AF18C /* DTAGeoFencing.h */,
+				A4A9077E199125F9004AF18C /* DTAGeoFencing.m */,
+			);
+			name = "Location Management";
 			sourceTree = "<group>";
 		};
 		F47CB7091987D9CC00398293 = {
@@ -591,33 +653,11 @@
 		F47CB7511987DD3000398293 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */,
-				F483CF7B198AAB7300CE6718 /* DTADataFetchFromCSV.h */,
-				F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */,
-				F4BB9A2B198AAA9100956381 /* DTADataStore.h */,
-				F4BB9A2C198AAA9100956381 /* DTADataStore.m */,
-				F4BB9A22198A922600956381 /* DTATimeRange.h */,
-				F4BB9A23198A922600956381 /* DTATimeRange.m */,
-				F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */,
-				F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */,
-				F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */,
-				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
-				F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */,
-				F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */,
-				F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */,
-				F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */,
-				F490D3C9198C2C42001BAF2C /* DTAManageDefaultThemes.h */,
-				F490D3CA198C2C42001BAF2C /* DTAManageDefaultThemes.m */,
-				F490D2A5198C1635001BAF2C /* Location.h */,
-				F490D2A6198C1635001BAF2C /* Location.m */,
-				F44664A919915ECD004B497D /* DTAGetRandomNumber.h */,
-				F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */,
-				F440A73A1989656A00D057F6 /* TimeInterval.h */,
-				F440A73B1989656A00D057F6 /* TimeInterval.m */,
-				F490D3BF198C281B001BAF2C /* Theme.h */,
-				F490D3C0198C281B001BAF2C /* Theme.m */,
-				A4A9077D199125F9004AF18C /* DTAGeoFencing.h */,
-				A4A9077E199125F9004AF18C /* DTAGeoFencing.m */,
+				F44664B519917ABD004B497D /* Inputs */,
+				F44664B319917A8A004B497D /* Core Data */,
+				F44664B419917AA0004B497D /* Data Store */,
+				F44664B619917AEF004B497D /* Location Management */,
+				F44664B219917A78004B497D /* Helper Methods */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1108,7 +1148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F490D3C1198C281B001BAF2C /* Theme.m in Sources */,
 				F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */,
 				F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */,
 				F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */,
@@ -1119,6 +1158,7 @@
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
 				F490D3CB198C2C42001BAF2C /* DTAManageDefaultThemes.m in Sources */,
+				F44664B119917906004B497D /* Theme.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
 				F490D2A7198C1635001BAF2C /* Location.m in Sources */,
 				F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */,
