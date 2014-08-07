@@ -7,7 +7,7 @@
 //
 
 #import "DTADetailViewController.h"
-#import "DTAImageTableViewCell.h"
+#import "DTAPlaqueImageCell.h"
 
 
 @interface DTADetailViewController ()
@@ -32,11 +32,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     //Plot Passed Locations
     [self plotLocationsOnMap:self.locationToBePLotted];
     
-
+    
     //Float Values for coordinates
     CGFloat latitudeCenterPoint = [self.locationToBePLotted.latitude floatValue];
     CGFloat longitudeCenterPoint = [self.locationToBePLotted.longitude floatValue];
@@ -77,7 +77,7 @@
 {
     
     // Return the number of rows in the section.
-    return 15;
+    return 3;
 }
 
 
@@ -91,16 +91,25 @@
     else if (indexPath.row == 1) {
         cell.textLabel.text = self.locationToBePLotted.brochureDescription;
     }
-    else if (indexPath.row ==2) {
-    
-        DTAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
-    
-        cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
-        self.cellImageView = self.locationToBePLotted.image;
+    else if (indexPath.row == 2) {
+        
+        DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
+        
+        cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
+        cell.plaqueImageView.image = self.locationToBePLotted.image;
+
     }
+    
     return cell;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row == 2)
+    {
+        return 250;
+    }
+    return 44;
+}
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
@@ -113,13 +122,16 @@
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
+
 #pragma mark - Overlap
 
+//Content inset so that the tableview starts below the map
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.tableViewOutlet.contentInset = UIEdgeInsetsMake(self.tableViewOutlet.frame.size.height-40, 0, 0, 0);
 }
 
+//checks for it going below the map, hides white space
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (scrollView.contentOffset.y < self.mapOutlet.frame.size.height*-1 ) {
         [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, self.mapOutlet.frame.size.height*-1)];
@@ -134,14 +146,14 @@
     self.tableViewOutlet.dataSource = nil;
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
