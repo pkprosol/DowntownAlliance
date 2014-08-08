@@ -74,7 +74,11 @@
     self.stuffToDisplay = [[NSMutableArray alloc]init];
     [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];
     [self.stuffToDisplay addObject:self.locationToBePLotted.brochureDescription];
-//    [self.stuffToDisplay addObject:self.locationToBePLotted.day];
+    
+    if (self.locationToBePLotted.image) {
+        [self.stuffToDisplay addObject:self.locationToBePLotted.image];
+    }
+
     // Do any additional setup after loading the view.
 }
 
@@ -112,22 +116,23 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
+    
+    if (indexPath.row <2)
+    {
+    
     [self configureCell:cell forRowAtIndexPath:indexPath];
+    }
+ 
     
-
+    if (indexPath.row == 2) {
+        if(self.locationToBePLotted.image){
     
-//    if (indexPath.row == 0) {
-//        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
-//    }
-//    else if (indexPath.row == 1) {
-//        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
-//    }
-    if (indexPath.row == 4) {
-        
         DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
         
         cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
         cell.plaqueImageView.image = self.locationToBePLotted.image;
+        }
+        
 
     }
     
@@ -138,7 +143,7 @@
     if ([cell isKindOfClass:[DTAResizingCell class]])
     {
         DTAResizingCell *textCell = (DTAResizingCell *)cell;
-
+    
         textCell.lineLabel.text = [self.stuffToDisplay objectAtIndex:indexPath.row];
         textCell.lineLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     }
@@ -146,7 +151,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 3)
+    if(indexPath.row == 2)
     {
         return 250;
     }
