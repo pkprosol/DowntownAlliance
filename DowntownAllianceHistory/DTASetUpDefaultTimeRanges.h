@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DTATimeRange.h"
 
-@interface DTAManageTimeRanges : NSObject
+@interface DTASetUpDefaultTimeRanges : NSObject
 
 + (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 

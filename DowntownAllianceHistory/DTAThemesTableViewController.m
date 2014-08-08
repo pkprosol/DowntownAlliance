@@ -8,11 +8,12 @@
 
 #import "DTAThemesTableViewController.h"
 #import "DTAFilterCell.h"
-#import "DTATableViewController.h"
+#import "DTALocationsTableViewController.h"
 #import "UITabBarController+hidableTab.h"
-#import "DTAManageDefaultThemes.h"
+#import "DTADataStore.h"
 #import "DTAThemeCell.h"
 #import "DTAAppDelegate.h"
+#import "Theme.h"
 
 @interface DTAThemesTableViewController ()
 
@@ -40,9 +41,8 @@
 {
     [super viewDidLoad];
     
-    self.themesArray = [DTAManageDefaultThemes setUpArrayOfThemesWithNameAndImage];
-    
-   
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    self.themesArray = store.defaultThemesArray;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

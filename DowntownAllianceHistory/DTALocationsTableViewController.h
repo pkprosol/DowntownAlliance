@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TimeInterval.h"
-#import "Theme.h"
 
-@interface DTATableViewController : UITableViewController
+@interface DTALocationsTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *locationsToShow;
 @property (strong, nonatomic) NSString *title;
-
 
 @end

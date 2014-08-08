@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "DTADataFetchFromCSV.h"
+#import "DTASetUpDefaultData.h"
 #import "Location.h"
 
 @interface DTAMainMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>

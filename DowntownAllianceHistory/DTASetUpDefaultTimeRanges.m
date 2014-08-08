@@ -6,13 +6,13 @@
 //
 //
 
-#import "DTAManageTimeRanges.h"
+#import "DTASetUpDefaultTimeRanges.h"
 #import "DTAGenerateDefaultTimeRanges.h"
 #import "DTADataStore.h"
 #import "Location.h"
 #import "DTADateFormatterAssistant.h"
 
-@implementation DTAManageTimeRanges
+@implementation DTASetUpDefaultTimeRanges
 
 + (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 {
@@ -56,7 +56,7 @@
         NSDate *endDate = [dateFormat dateFromString:endDateString];
 //        NSDate *endDate = [endDateUnadjusted dateByAddingTimeInterval:-43200]; // Half a day
         
-        DTATimeRange *newRange = [DTAManageTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:imageForTimeRange];
+        DTATimeRange *newRange = [DTASetUpDefaultTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:imageForTimeRange];
         
         [resultingTimeIntervals addObject:newRange];
     }
@@ -67,7 +67,7 @@
 + (NSArray *)findItemsInTimeRange:(DTATimeRange *)range
 {
     DTADataStore *store = [DTADataStore sharedDataStore];
-    NSArray *allItems = [store fetchData];
+    NSArray *allItems = [store fetchDataForEntityName:@"Location"];
   
     NSMutableArray *itemsInRange = [NSMutableArray new];
     

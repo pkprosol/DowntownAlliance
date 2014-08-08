@@ -12,22 +12,22 @@
         <attribute name="symbolValue" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="titleOfPlaque" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="decade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimeInterval" inverseName="locations" inverseEntity="TimeInterval" syncable="YES"/>
-        <relationship name="theme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" inverseName="locations" inverseEntity="Theme" syncable="YES"/>
+        <relationship name="themes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Theme" inverseName="locations" inverseEntity="Theme" syncable="YES"/>
+        <relationship name="timeInterval" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimeInterval" inverseName="locations" inverseEntity="TimeInterval" syncable="YES"/>
     </entity>
     <entity name="Theme" representedClassName="Theme" syncable="YES">
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="theme" inverseEntity="Location" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="themes" inverseEntity="Location" syncable="YES"/>
     </entity>
     <entity name="TimeInterval" representedClassName="TimeInterval" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="decade" inverseEntity="Location" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="timeInterval" inverseEntity="Location" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Location" positionX="0" positionY="0" width="128" height="240"/>
-        <element name="Theme" positionX="0" positionY="0" width="128" height="105"/>
-        <element name="TimeInterval" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="Location" positionX="0" positionY="0" width="128" height="238"/>
+        <element name="Theme" positionX="-234" positionY="207" width="128" height="105"/>
+        <element name="TimeInterval" positionX="234" positionY="240" width="128" height="75"/>
     </elements>
 </model>
