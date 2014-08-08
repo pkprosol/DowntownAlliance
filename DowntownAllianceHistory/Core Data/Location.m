@@ -37,7 +37,10 @@
     self.month = [self convertStringWithIntegerToNSNumber:componentArray[4]];
     self.day = [self convertStringWithIntegerToNSNumber:componentArray[5]];
     self.year = [self convertStringWithIntegerToNSNumber:componentArray[6]];
-    self.titleOfPlaque = componentArray[7];
+
+    NSString *allCapsTitle = componentArray[7];
+    
+    self.titleOfPlaque = [allCapsTitle capitalizedString];
     self.brochureDescription = componentArray[8];
     
     NSString *imageNamesString = componentArray[9];

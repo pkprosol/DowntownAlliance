@@ -195,8 +195,8 @@
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
 		F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */; };
-		F4B691A719956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */; };
-		F4B691A819956952001E23BE /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A619956952001E23BE /* COH.csv */; };
+		F4B691AB19956F10001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A919956F10001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */; };
+		F4B691AC19956F10001E23BE /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F4B691AA19956F10001E23BE /* COH.csv */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
 		F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
@@ -428,8 +428,8 @@
 		F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultThemes.m; sourceTree = "<group>"; };
 		F490D3C9198C2C42001BAF2C /* DTASetUpDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultThemes.h; sourceTree = "<group>"; };
 		F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultThemes.m; sourceTree = "<group>"; };
-		F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Canyon of Heroes Locations and Descriptions.numbers"; sourceTree = "<group>"; };
-		F4B691A619956952001E23BE /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH.csv; sourceTree = "<group>"; };
+		F4B691A919956F10001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Canyon of Heroes Locations and Descriptions.numbers"; path = "CSV/Canyon of Heroes Locations and Descriptions.numbers"; sourceTree = "<group>"; };
+		F4B691AA19956F10001E23BE /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COH.csv; path = CSV/COH.csv; sourceTree = "<group>"; };
 		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
 		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
 		F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultTimeRanges.m; sourceTree = "<group>"; };
@@ -872,8 +872,8 @@
 		F490D3C7198C2AA5001BAF2C /* CSV */ = {
 			isa = PBXGroup;
 			children = (
-				F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */,
-				F4B691A619956952001E23BE /* COH.csv */,
+				F4B691A919956F10001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */,
+				F4B691AA19956F10001E23BE /* COH.csv */,
 			);
 			name = CSV;
 			sourceTree = "<group>";
@@ -1124,12 +1124,12 @@
 				F410EA9519914B7900A8EA36 /* 152.tif in Resources */,
 				F410EA9719914B7900A8EA36 /* 154.tif in Resources */,
 				F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */,
-				F4B691A719956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
+				F4B691AB19956F10001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
 				F410EA6119914B7900A8EA36 /* 069.tif in Resources */,
 				F410EA9D19914B7900A8EA36 /* 160.tif in Resources */,
 				F410EA9F19914B7900A8EA36 /* 162.tif in Resources */,
 				F410EAB219914B7900A8EA36 /* 188.tif in Resources */,
-				F4B691A819956952001E23BE /* COH.csv in Resources */,
+				F4B691AC19956F10001E23BE /* COH.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
