@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DTAManageDefaultThemes : NSObject
+@interface DTASetUpDefaultThemes : NSObject
 
-+ (NSArray *)setUpArrayOfThemesWithNameAndImage;
++ (void)setUpArrayOfThemesWithNameAndImage;
 
 @end

@@ -8,10 +8,10 @@
 
 #import "DTATimeIntervalsTableViewController.h"
 #import "DTAFilterCell.h"
-#import "DTATableViewController.h"
+#import "DTALocationsTableViewController.h"
 #import "UITabBarController+hidableTab.h"
 #import "DTATimeRange.h"
-#import "DTAManageTimeRanges.h"
+#import "DTASetUpDefaultTimeRanges.h"
 
 @interface DTATimeIntervalsTableViewController ()
 
@@ -42,7 +42,7 @@
     [super viewDidLoad];
     hidden=NO;
     
-    self.arrayOfTimeIntervals = [DTAManageTimeRanges getAndProcessDefaultTimeRanges];
+    self.arrayOfTimeIntervals = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
     self.arrayOfImages = [NSMutableArray new];
     
     for (DTATimeRange *timeRange in self.arrayOfTimeIntervals) {
@@ -187,9 +187,9 @@
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
     lastContentOffset = currentOffset;
     
-    NSLog(@"Offest: %f",currentOffset);
-    NSLog(@"start: %f", differenceFromStart);
-    NSLog(@"last: %f",differenceFromLast);
+//    NSLog(@"Offest: %f",currentOffset);
+//    NSLog(@"start: %f", differenceFromStart);
+//    NSLog(@"last: %f",differenceFromLast);
     
     if((differenceFromStart) < 0)
     {
@@ -331,12 +331,12 @@
     // Pass the selected object to the new view controller.
     
     if ([segue.identifier isEqualToString:@"decadesDetails"]) {
-        DTATableViewController *nextVC = [segue destinationViewController];
+        DTALocationsTableViewController *nextVC = [segue destinationViewController];
         NSIndexPath *indexSelected = [self.tableView indexPathForSelectedRow];
         DTATimeRange *timeRangeSelected = self.arrayOfTimeIntervals[indexSelected.row];
         
         nextVC.title = timeRangeSelected.nameOfRange;
-        nextVC.locationsToShow = [DTAManageTimeRanges findItemsInTimeRange:timeRangeSelected];
+        nextVC.locationsToShow = [DTASetUpDefaultTimeRanges findItemsInTimeRange:timeRangeSelected];
     }
 }
 

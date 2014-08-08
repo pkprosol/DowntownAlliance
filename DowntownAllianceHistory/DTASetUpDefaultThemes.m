@@ -6,13 +6,14 @@
 //
 //
 
-#import "DTAManageDefaultThemes.h"
+#import "DTASetUpDefaultThemes.h"
 #import "DTAGenerateDefaultThemes.h"
 #import "Theme.h"
+#import "DTADataStore.h"
 
-@implementation DTAManageDefaultThemes
+@implementation DTASetUpDefaultThemes
 
-+ (NSArray *)setUpArrayOfThemesWithNameAndImage
++ (void)setUpArrayOfThemesWithNameAndImage
 {
     NSMutableArray *themes = [NSMutableArray new];
     
@@ -33,7 +34,8 @@
     NSSortDescriptor *sortByOrder = [NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES];
     NSArray *sortedThemes = [themes sortedArrayUsingDescriptors:@[sortByOrder]];
     
-    return sortedThemes;
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    store.defaultThemesArray = sortedThemes;
 }
 
 @end

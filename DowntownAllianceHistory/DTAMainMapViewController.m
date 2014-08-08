@@ -173,7 +173,7 @@
     
     DTADataStore *store = [DTADataStore sharedDataStore];
     
-    self.arrayOfLocations = [store fetchData];
+    self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
     
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
     

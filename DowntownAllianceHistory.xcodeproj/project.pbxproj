@@ -43,11 +43,9 @@
 		77AC835619916D6A009E278B /* white50i.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835519916D6A009E278B /* white50i.png */; };
 		77AC835C19929BC3009E278B /* DTAScrollingDetailTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */; };
 		77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */; };
-		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
+		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
-		F410E9BF19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */; };
-		F410E9C019914B2E00A8EA36 /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F410E9BE19914B2E00A8EA36 /* COH.csv */; };
 		F410EA3D19914B7900A8EA36 /* 001.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C119914B7900A8EA36 /* 001.tif */; };
 		F410EA3E19914B7900A8EA36 /* 002.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C219914B7900A8EA36 /* 002.tif */; };
 		F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C319914B7900A8EA36 /* 004a.tif */; };
@@ -173,6 +171,7 @@
 		F410EAB719914B7900A8EA36 /* 197.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410EA3B19914B7900A8EA36 /* 197.tif */; };
 		F410EAB819914B7900A8EA36 /* 198.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410EA3C19914B7900A8EA36 /* 198.tif */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
+		F436AEDD1993FD9A00511331 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F436AEDC1993FD9A00511331 /* Location.m */; };
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
@@ -194,13 +193,14 @@
 		F47CB7411987D9CD00398293 /* DowntownAllianceHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
-		F490D2A7198C1635001BAF2C /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D2A6198C1635001BAF2C /* Location.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
-		F490D3CB198C2C42001BAF2C /* DTAManageDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CA198C2C42001BAF2C /* DTAManageDefaultThemes.m */; };
+		F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */; };
+		F4B691A719956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */; };
+		F4B691A819956952001E23BE /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A619956952001E23BE /* COH.csv */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
-		F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */; };
+		F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
-		F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */; };
+		F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,14 +256,12 @@
 		77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAScrollingDetailTable.m; sourceTree = "<group>"; };
 		77AC835D1993C322009E278B /* DTAPlaqueImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAPlaqueImageCell.h; sourceTree = "<group>"; };
 		77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAPlaqueImageCell.m; sourceTree = "<group>"; };
-		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
-		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
+		A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTALocationsTableViewController.h; sourceTree = "<group>"; };
+		A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTALocationsTableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
 		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
 		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
-		F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Canyon of Heroes Locations and Descriptions.numbers"; path = "CSV/Canyon of Heroes Locations and Descriptions.numbers"; sourceTree = "<group>"; };
-		F410E9BE19914B2E00A8EA36 /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COH.csv; path = CSV/COH.csv; sourceTree = "<group>"; };
 		F410E9C119914B7900A8EA36 /* 001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 001.tif; path = COHPhotos/ItemPhotos/001.tif; sourceTree = "<group>"; };
 		F410E9C219914B7900A8EA36 /* 002.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 002.tif; path = COHPhotos/ItemPhotos/002.tif; sourceTree = "<group>"; };
 		F410E9C319914B7900A8EA36 /* 004a.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 004a.tif; path = COHPhotos/ItemPhotos/004a.tif; sourceTree = "<group>"; };
@@ -390,6 +388,8 @@
 		F410EA3C19914B7900A8EA36 /* 198.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 198.tif; path = COHPhotos/ItemPhotos/198.tif; sourceTree = "<group>"; };
 		F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemesTableViewController.h; sourceTree = "<group>"; };
 		F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemesTableViewController.m; sourceTree = "<group>"; };
+		F436AEDB1993FD9A00511331 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = "Core Data/Location.h"; sourceTree = "<group>"; };
+		F436AEDC1993FD9A00511331 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = "Core Data/Location.m"; sourceTree = "<group>"; };
 		F440A72C1989619900D057F6 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
 		F440A73A1989656A00D057F6 /* TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeInterval.h; sourceTree = "<group>"; };
 		F440A73B1989656A00D057F6 /* TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeInterval.m; sourceTree = "<group>"; };
@@ -420,22 +420,22 @@
 		F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DowntownAllianceHistoryTests.m; sourceTree = "<group>"; };
 		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
 		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
-		F483CF7B198AAB7300CE6718 /* DTADataFetchFromCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTADataFetchFromCSV.h; sourceTree = "<group>"; };
-		F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAManageTimeRanges.h; sourceTree = "<group>"; };
+		F483CF7B198AAB7300CE6718 /* DTASetUpDefaultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultData.h; sourceTree = "<group>"; };
+		F483CF7C198AAB7E00CE6718 /* DTASetUpDefaultTimeRanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultTimeRanges.m; sourceTree = "<group>"; };
-		F490D2A5198C1635001BAF2C /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		F490D2A6198C1635001BAF2C /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultThemes.h; sourceTree = "<group>"; };
 		F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultThemes.m; sourceTree = "<group>"; };
-		F490D3C9198C2C42001BAF2C /* DTAManageDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAManageDefaultThemes.h; sourceTree = "<group>"; };
-		F490D3CA198C2C42001BAF2C /* DTAManageDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAManageDefaultThemes.m; sourceTree = "<group>"; };
+		F490D3C9198C2C42001BAF2C /* DTASetUpDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultThemes.h; sourceTree = "<group>"; };
+		F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultThemes.m; sourceTree = "<group>"; };
+		F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Canyon of Heroes Locations and Descriptions.numbers"; sourceTree = "<group>"; };
+		F4B691A619956952001E23BE /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH.csv; sourceTree = "<group>"; };
 		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
 		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
-		F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAManageTimeRanges.m; sourceTree = "<group>"; };
+		F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultTimeRanges.m; sourceTree = "<group>"; };
 		F4BB9A2B198AAA9100956381 /* DTADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataStore.h; sourceTree = "<group>"; };
 		F4BB9A2C198AAA9100956381 /* DTADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataStore.m; sourceTree = "<group>"; };
-		F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataFetchFromCSV.m; sourceTree = "<group>"; };
+		F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +488,12 @@
 		F410EAB919914B9700A8EA36 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				77AC835319916D4B009E278B /* white25.png */,
+				77AC835519916D6A009E278B /* white50i.png */,
+				77402DC4199002CC00F255A6 /* map_marker-50.png */,
+				77402DBA198FFFB100F255A6 /* overtime-25.png */,
+				77402DC01990008C00F255A6 /* survey-25.png */,
+				77402DC21990009600F255A6 /* map_marker-25.png */,
 				77402DC4199002CC00F255A6 /* map_marker-50.png */,
 				77402DBA198FFFB100F255A6 /* overtime-25.png */,
 				77402DC01990008C00F255A6 /* survey-25.png */,
@@ -520,8 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */,
-				F490D2A5198C1635001BAF2C /* Location.h */,
-				F490D2A6198C1635001BAF2C /* Location.m */,
+				F436AEDB1993FD9A00511331 /* Location.h */,
+				F436AEDC1993FD9A00511331 /* Location.m */,
 				F440A73A1989656A00D057F6 /* TimeInterval.h */,
 				F440A73B1989656A00D057F6 /* TimeInterval.m */,
 				F44664AF19917906004B497D /* Theme.h */,
@@ -542,18 +548,18 @@
 		F44664B519917ABD004B497D /* Inputs */ = {
 			isa = PBXGroup;
 			children = (
-				F483CF7B198AAB7300CE6718 /* DTADataFetchFromCSV.h */,
-				F4BB9A2E198AAAE300956381 /* DTADataFetchFromCSV.m */,
+				F483CF7B198AAB7300CE6718 /* DTASetUpDefaultData.h */,
+				F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */,
 				F4BB9A22198A922600956381 /* DTATimeRange.h */,
 				F4BB9A23198A922600956381 /* DTATimeRange.m */,
 				F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */,
 				F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */,
-				F483CF7C198AAB7E00CE6718 /* DTAManageTimeRanges.h */,
-				F4BB9A26198A969B00956381 /* DTAManageTimeRanges.m */,
+				F483CF7C198AAB7E00CE6718 /* DTASetUpDefaultTimeRanges.h */,
+				F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */,
 				F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */,
 				F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */,
-				F490D3C9198C2C42001BAF2C /* DTAManageDefaultThemes.h */,
-				F490D3CA198C2C42001BAF2C /* DTAManageDefaultThemes.m */,
+				F490D3C9198C2C42001BAF2C /* DTASetUpDefaultThemes.h */,
+				F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */,
 			);
 			name = Inputs;
 			sourceTree = "<group>";
@@ -605,15 +611,9 @@
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
 				F47CB75B1987DE7100398293 /* View */,
+				F47CB71C1987D9CC00398293 /* Supporting Files */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
-				77AC835319916D4B009E278B /* white25.png */,
-				77AC835519916D6A009E278B /* white50i.png */,
-				77402DC4199002CC00F255A6 /* map_marker-50.png */,
-				77402DBA198FFFB100F255A6 /* overtime-25.png */,
-				77402DC01990008C00F255A6 /* survey-25.png */,
-				77402DC21990009600F255A6 /* map_marker-25.png */,
-				F47CB71C1987D9CC00398293 /* Supporting Files */,
 			);
 			path = DowntownAllianceHistory;
 			sourceTree = "<group>";
@@ -679,8 +679,8 @@
 				7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */,
 				F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */,
 				F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */,
-				A42B281519892E8800DDB4F6 /* DTATableViewController.h */,
-				A42B281619892E8800DDB4F6 /* DTATableViewController.m */,
+				A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */,
+				A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
 				7771A43B1988162600CD6BA8 /* DTADetailViewController.m */,
 				A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */,
@@ -872,8 +872,8 @@
 		F490D3C7198C2AA5001BAF2C /* CSV */ = {
 			isa = PBXGroup;
 			children = (
-				F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */,
-				F410E9BE19914B2E00A8EA36 /* COH.csv */,
+				F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */,
+				F4B691A619956952001E23BE /* COH.csv */,
 			);
 			name = CSV;
 			sourceTree = "<group>";
@@ -1001,7 +1001,6 @@
 				F410EAB619914B7900A8EA36 /* 194.tif in Resources */,
 				F410EA6D19914B7900A8EA36 /* 083.tif in Resources */,
 				F410EA5D19914B7900A8EA36 /* 066.tif in Resources */,
-				F410E9BF19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
 				F410EA7519914B7900A8EA36 /* 091.tif in Resources */,
 				775AA29A199151C800FC0A87 /* tickerTack.png in Resources */,
@@ -1016,7 +1015,6 @@
 				77402DA3198FDF7200F255A6 /* 1940s.png in Resources */,
 				F410EAB719914B7900A8EA36 /* 197.tif in Resources */,
 				F410EA5119914B7900A8EA36 /* 038.tif in Resources */,
-				F410E9C019914B2E00A8EA36 /* COH.csv in Resources */,
 				F410EA6019914B7900A8EA36 /* 068.tif in Resources */,
 				77402DB6198FE13600F255A6 /* USHistory.png in Resources */,
 				77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */,
@@ -1126,10 +1124,12 @@
 				F410EA9519914B7900A8EA36 /* 152.tif in Resources */,
 				F410EA9719914B7900A8EA36 /* 154.tif in Resources */,
 				F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */,
+				F4B691A719956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
 				F410EA6119914B7900A8EA36 /* 069.tif in Resources */,
 				F410EA9D19914B7900A8EA36 /* 160.tif in Resources */,
 				F410EA9F19914B7900A8EA36 /* 162.tif in Resources */,
 				F410EAB219914B7900A8EA36 /* 188.tif in Resources */,
+				F4B691A819956952001E23BE /* COH.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1157,22 +1157,22 @@
 				77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */,
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
-				F490D3CB198C2C42001BAF2C /* DTAManageDefaultThemes.m in Sources */,
+				F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */,
 				F44664B119917906004B497D /* Theme.m in Sources */,
 				77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
-				F490D2A7198C1635001BAF2C /* Location.m in Sources */,
-				F4BB9A2F198AAAE300956381 /* DTADataFetchFromCSV.m in Sources */,
+				F436AEDD1993FD9A00511331 /* Location.m in Sources */,
+				F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
 				F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */,
 				A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */,
-				A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */,
+				A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */,
 				F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */,
 				F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */,
 				F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */,
 				F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */,
 				7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */,
-				F4BB9A27198A969B00956381 /* DTAManageTimeRanges.m in Sources */,
+				F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */,
 				F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */,
 				7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */,
 			);

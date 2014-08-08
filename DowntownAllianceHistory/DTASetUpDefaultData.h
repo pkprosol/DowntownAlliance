@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DTADataFetchFromCSV : NSObject
+@interface DTASetUpDefaultData : NSObject
 
-+ (void)importCSV;
++ (void)setUpDefaultData;
 
 @end

@@ -6,18 +6,21 @@
 //
 //
 
-#import "DTADataFetchFromCSV.h"
+#import "DTASetUpDefaultData.h"
 #import "Location.h"
 #import "DTADataStore.h"
+#import "DTASetUpDefaultThemes.h"
 
-@implementation DTADataFetchFromCSV
+@implementation DTASetUpDefaultData
 
-+ (void)importCSV
++ (void)setUpDefaultData
 {
-    NSString *rawCSVString = [DTADataFetchFromCSV getCSVFileAndConvertToString];
-    NSArray *cleanArray = [DTADataFetchFromCSV getCleanArrayOfCSVFileFromString:rawCSVString];
-    NSArray *componentsArray = [DTADataFetchFromCSV getArrayOfArraysWithComponentsFromArray:cleanArray];
-    [DTADataFetchFromCSV createLocationObjectsInCoreDataFromComponentsArray:componentsArray];
+    NSString *rawCSVString = [DTASetUpDefaultData getCSVFileAndConvertToString];
+    NSArray *cleanArray = [DTASetUpDefaultData getCleanArrayOfCSVFileFromString:rawCSVString];
+    NSArray *componentsArray = [DTASetUpDefaultData getArrayOfArraysWithComponentsFromArray:cleanArray];
+    
+    [DTASetUpDefaultThemes setUpArrayOfThemesWithNameAndImage];
+    [DTASetUpDefaultData createLocationObjectsInCoreDataFromComponentsArray:componentsArray];
 }
 
 + (NSString *)getCSVFileAndConvertToString
@@ -55,7 +58,7 @@
         [componentsArray addObject:componentsSeparatedByString];
     }
     
-    NSArray *cleanComponentsArray = [DTADataFetchFromCSV cleanAsterisksFromArray:componentsArray];
+    NSArray *cleanComponentsArray = [DTASetUpDefaultData cleanAsterisksFromArray:componentsArray];
     
     return cleanComponentsArray;
 }
@@ -92,6 +95,5 @@
         }
     }
 }
-
 
 @end

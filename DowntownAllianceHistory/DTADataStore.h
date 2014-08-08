@@ -11,10 +11,11 @@
 @interface DTADataStore : NSObject
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSArray *defaultThemesArray;
 
 + (instancetype) sharedDataStore;
 
-- (NSArray *)fetchData;
-- (void) saveContext;
+- (NSArray *)fetchDataForEntityName:(NSString *)entityName;
+- (void)saveContext;
 
 @end

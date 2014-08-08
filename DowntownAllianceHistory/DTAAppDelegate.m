@@ -7,11 +7,9 @@
 //
 
 #import "DTAAppDelegate.h"
-#import "DTADataFetchFromCSV.h"
-#import "Location.h"
-#import "DTAThemesTableViewController.h"
-#import "DTAManageTimeRanges.h"
 #import "DTAGeoFencing.h"
+#import "DTASetUpDefaultData.h"
+
 @implementation DTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -35,14 +33,12 @@
 //     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
 //                                           forState:UIControlStateSelected];
     
-
-    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
-   
+    [DTASetUpDefaultData setUpDefaultData];
     
     return YES;
 }

@@ -6,15 +6,15 @@
 //
 //
 
-#import "DTATableViewController.h"
+#import "DTALocationsTableViewController.h"
 #import "Location.h"
 #import "DTADetailViewController.h"
 
-@interface DTATableViewController ()
+@interface DTALocationsTableViewController ()
 
 @end
 
-@implementation DTATableViewController
+@implementation DTALocationsTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,8 +35,6 @@
     }
     return self;
 }
-
-
 
 - (void)viewDidUnload
 {
@@ -59,7 +57,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.navigationItem.title = self.title;
     
     NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES];
@@ -142,24 +139,18 @@
 }
 */
 
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DTADetailViewController *nextVC = segue.destinationViewController;
-    
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    
     Location *selectedLocation = self.locationsToShow[indexPath.row];
-    
     nextVC.locationToBePLotted = selectedLocation;
-    
     
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
 
 @end
