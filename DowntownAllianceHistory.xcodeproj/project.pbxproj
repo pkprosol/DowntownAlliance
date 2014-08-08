@@ -43,6 +43,7 @@
 		77AC835619916D6A009E278B /* white50i.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835519916D6A009E278B /* white50i.png */; };
 		77AC835C19929BC3009E278B /* DTAScrollingDetailTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */; };
 		77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */; };
+		77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC83AB19956E71009E278B /* DTAResizingCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
@@ -256,6 +257,8 @@
 		77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAScrollingDetailTable.m; sourceTree = "<group>"; };
 		77AC835D1993C322009E278B /* DTAPlaqueImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAPlaqueImageCell.h; sourceTree = "<group>"; };
 		77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAPlaqueImageCell.m; sourceTree = "<group>"; };
+		77AC83AA19956E71009E278B /* DTAResizingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAResizingCell.h; sourceTree = "<group>"; };
+		77AC83AB19956E71009E278B /* DTAResizingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAResizingCell.m; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTALocationsTableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTALocationsTableViewController.m; sourceTree = "<group>"; };
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
@@ -474,6 +477,8 @@
 				77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */,
 				77AC835D1993C322009E278B /* DTAPlaqueImageCell.h */,
 				77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */,
+				77AC83AA19956E71009E278B /* DTAResizingCell.h */,
+				77AC83AB19956E71009E278B /* DTAResizingCell.m */,
 			);
 			name = "Cells and Xibs";
 			sourceTree = "<group>";
@@ -1152,6 +1157,7 @@
 				F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */,
 				F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */,
 				77AC835C19929BC3009E278B /* DTAScrollingDetailTable.m in Sources */,
+				77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */,
 				A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */,
 				F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */,
 				77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */,
