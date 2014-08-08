@@ -187,9 +187,9 @@
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
     lastContentOffset = currentOffset;
     
-    NSLog(@"Offest: %f",currentOffset);
-    NSLog(@"start: %f", differenceFromStart);
-    NSLog(@"last: %f",differenceFromLast);
+//    NSLog(@"Offest: %f",currentOffset);
+//    NSLog(@"start: %f", differenceFromStart);
+//    NSLog(@"last: %f",differenceFromLast);
     
     if((differenceFromStart) < 0)
     {

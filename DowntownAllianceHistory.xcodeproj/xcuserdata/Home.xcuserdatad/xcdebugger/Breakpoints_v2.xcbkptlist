@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DowntownAllianceHistory/Core Data/Location.m"
-            timestampString = "429221396.54912"
+            timestampString = "429222751.935076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-setThemesFromInputString:"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-setUpLocationDataWithComponentArrayAndImage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DowntownAllianceHistory/Core Data/Location.m"
-            timestampString = "429221781.244283"
+            timestampString = "429222751.935076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-setUpLocationDataWithComponentArrayAndImage:"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-setImageFromNamesString:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

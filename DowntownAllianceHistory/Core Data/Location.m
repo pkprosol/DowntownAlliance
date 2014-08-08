@@ -44,7 +44,6 @@
     [self setImageFromNamesString:imageNamesString];
     
     NSString *themesString = componentArray[10];
-    NSLog(@"%@", themesString);
     [self setThemesFromInputString:themesString];
     
     if (self.day) {
@@ -70,7 +69,14 @@
         
         DTADataStore *store = [DTADataStore sharedDataStore];
         NSArray *themes = store.defaultThemesArray;
-        NSLog(@"Themes from store: %@", themes);
+
+        for (NSString *themeName in themeNamesArray) {
+            for (Theme *theme in themes) {
+                if ([theme.name isEqualToString:themeName]) {
+                    [self addThemesObject:theme];
+                }
+            }
+        }
     }
 }
 

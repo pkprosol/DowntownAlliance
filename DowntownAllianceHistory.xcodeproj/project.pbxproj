@@ -46,8 +46,6 @@
 		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
-		F410E9BF19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */; };
-		F410E9C019914B2E00A8EA36 /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F410E9BE19914B2E00A8EA36 /* COH.csv */; };
 		F410EA3D19914B7900A8EA36 /* 001.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C119914B7900A8EA36 /* 001.tif */; };
 		F410EA3E19914B7900A8EA36 /* 002.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C219914B7900A8EA36 /* 002.tif */; };
 		F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C319914B7900A8EA36 /* 004a.tif */; };
@@ -197,6 +195,8 @@
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
 		F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */; };
+		F4B691A719956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */; };
+		F4B691A819956952001E23BE /* COH.csv in Resources */ = {isa = PBXBuildFile; fileRef = F4B691A619956952001E23BE /* COH.csv */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
 		F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
@@ -262,8 +262,6 @@
 		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
 		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
-		F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Canyon of Heroes Locations and Descriptions.numbers"; path = "CSV/Canyon of Heroes Locations and Descriptions.numbers"; sourceTree = "<group>"; };
-		F410E9BE19914B2E00A8EA36 /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COH.csv; path = CSV/COH.csv; sourceTree = "<group>"; };
 		F410E9C119914B7900A8EA36 /* 001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 001.tif; path = COHPhotos/ItemPhotos/001.tif; sourceTree = "<group>"; };
 		F410E9C219914B7900A8EA36 /* 002.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 002.tif; path = COHPhotos/ItemPhotos/002.tif; sourceTree = "<group>"; };
 		F410E9C319914B7900A8EA36 /* 004a.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 004a.tif; path = COHPhotos/ItemPhotos/004a.tif; sourceTree = "<group>"; };
@@ -430,6 +428,8 @@
 		F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultThemes.m; sourceTree = "<group>"; };
 		F490D3C9198C2C42001BAF2C /* DTASetUpDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultThemes.h; sourceTree = "<group>"; };
 		F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultThemes.m; sourceTree = "<group>"; };
+		F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Canyon of Heroes Locations and Descriptions.numbers"; sourceTree = "<group>"; };
+		F4B691A619956952001E23BE /* COH.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COH.csv; sourceTree = "<group>"; };
 		F4BB9A22198A922600956381 /* DTATimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATimeRange.h; sourceTree = "<group>"; };
 		F4BB9A23198A922600956381 /* DTATimeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeRange.m; sourceTree = "<group>"; };
 		F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultTimeRanges.m; sourceTree = "<group>"; };
@@ -611,9 +611,9 @@
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
 				F47CB75B1987DE7100398293 /* View */,
+				F47CB71C1987D9CC00398293 /* Supporting Files */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
-				F47CB71C1987D9CC00398293 /* Supporting Files */,
 			);
 			path = DowntownAllianceHistory;
 			sourceTree = "<group>";
@@ -872,8 +872,8 @@
 		F490D3C7198C2AA5001BAF2C /* CSV */ = {
 			isa = PBXGroup;
 			children = (
-				F410E9BD19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers */,
-				F410E9BE19914B2E00A8EA36 /* COH.csv */,
+				F4B691A519956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers */,
+				F4B691A619956952001E23BE /* COH.csv */,
 			);
 			name = CSV;
 			sourceTree = "<group>";
@@ -1001,7 +1001,6 @@
 				F410EAB619914B7900A8EA36 /* 194.tif in Resources */,
 				F410EA6D19914B7900A8EA36 /* 083.tif in Resources */,
 				F410EA5D19914B7900A8EA36 /* 066.tif in Resources */,
-				F410E9BF19914B2E00A8EA36 /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
 				F410EA7519914B7900A8EA36 /* 091.tif in Resources */,
 				775AA29A199151C800FC0A87 /* tickerTack.png in Resources */,
@@ -1016,7 +1015,6 @@
 				77402DA3198FDF7200F255A6 /* 1940s.png in Resources */,
 				F410EAB719914B7900A8EA36 /* 197.tif in Resources */,
 				F410EA5119914B7900A8EA36 /* 038.tif in Resources */,
-				F410E9C019914B2E00A8EA36 /* COH.csv in Resources */,
 				F410EA6019914B7900A8EA36 /* 068.tif in Resources */,
 				77402DB6198FE13600F255A6 /* USHistory.png in Resources */,
 				77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */,
@@ -1126,10 +1124,12 @@
 				F410EA9519914B7900A8EA36 /* 152.tif in Resources */,
 				F410EA9719914B7900A8EA36 /* 154.tif in Resources */,
 				F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */,
+				F4B691A719956952001E23BE /* Canyon of Heroes Locations and Descriptions.numbers in Resources */,
 				F410EA6119914B7900A8EA36 /* 069.tif in Resources */,
 				F410EA9D19914B7900A8EA36 /* 160.tif in Resources */,
 				F410EA9F19914B7900A8EA36 /* 162.tif in Resources */,
 				F410EAB219914B7900A8EA36 /* 188.tif in Resources */,
+				F4B691A819956952001E23BE /* COH.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
