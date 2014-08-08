@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6N0-CF-4sg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6N0-CF-4sg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -200,29 +200,38 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97J-cY-367" customClass="DTAScrollingDetailTable">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" textLabel="4AW-nZ-FvI" style="IBUITableViewCellStyleDefault" id="7Ga-Qa-NQh">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" rowHeight="100" id="7Ga-Qa-NQh" customClass="DTAResizingCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Ga-Qa-NQh" id="mWJ-50-wIZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4AW-nZ-FvI">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="mky-2G-El9">
+                                                    <rect key="frame" x="20" y="20" width="280" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mky-2G-El9" firstAttribute="top" secondItem="mWJ-50-wIZ" secondAttribute="top" constant="20" symbolic="YES" id="GBy-Zy-Wov"/>
+                                                <constraint firstItem="mky-2G-El9" firstAttribute="leading" secondItem="mWJ-50-wIZ" secondAttribute="leading" constant="20" symbolic="YES" id="WfW-Tf-dIm"/>
+                                                <constraint firstAttribute="trailing" secondItem="mky-2G-El9" secondAttribute="trailing" constant="20" symbolic="YES" id="cZh-Pw-Z4G"/>
+                                                <constraint firstAttribute="bottom" secondItem="mky-2G-El9" secondAttribute="bottom" constant="20" symbolic="YES" id="pA2-QM-zfw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lineLabel" destination="mky-2G-El9" id="mIm-1L-YtW"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleAspectFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="picture" rowHeight="250" id="DgH-NF-1DJ" customClass="DTAPlaqueImageCell">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="250"/>
+                                        <rect key="frame" x="0.0" y="122" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="DgH-NF-1DJ" id="DG7-W2-M9L">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
@@ -246,6 +255,7 @@
                     <navigationItem key="navigationItem" id="c5g-NN-MZf"/>
                     <connections>
                         <outlet property="mapOutlet" destination="LCD-Zb-dSp" id="AqO-GC-TuN"/>
+                        <outlet property="scrollingTableView" destination="97J-cY-367" id="Y43-ks-dxE"/>
                         <outlet property="tableViewOutlet" destination="97J-cY-367" id="Q1m-yC-7bZ"/>
                     </connections>
                 </viewController>

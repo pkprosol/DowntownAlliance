@@ -10,6 +10,7 @@
 #import "DTAPlaqueImageCell.h"
 
 
+
 @interface DTADetailViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
@@ -28,10 +29,22 @@
     }
     return self;
 }
+- (DTAResizingCell *)prototypeCell
+{
+    if (!_prototypeCell)
+    {
+        _prototypeCell = [self.scrollingTableView dequeueReusableCellWithIdentifier:@"detailCell"];
+    }
+    return _prototypeCell;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didChangePreferredContentSize:)
+                                                 name:UIContentSizeCategoryDidChangeNotification object:nil];
     
     //Plot Passed Locations
     [self plotLocationsOnMap:self.locationToBePLotted];
@@ -57,6 +70,11 @@
     self.tableViewOutlet.delegate = self;
     self.tableViewOutlet.dataSource = self;
     self.tableViewOutlet.backgroundColor = [UIColor clearColor];
+    
+    self.stuffToDisplay = [[NSMutableArray alloc]init];
+    [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];
+    [self.stuffToDisplay addObject:self.locationToBePLotted.brochureDescription];
+//    [self.stuffToDisplay addObject:self.locationToBePLotted.day];
     // Do any additional setup after loading the view.
 }
 
@@ -64,6 +82,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIContentSizeCategoryDidChangeNotification
+                                                  object:nil];
+}
+- (void)didChangePreferredContentSize:(NSNotification *)notification
+{
+    [self.scrollingTableView reloadData];
 }
 #pragma mark - Table view data source
 
@@ -77,21 +105,24 @@
 {
     
     // Return the number of rows in the section.
-    return 3;
+    return [self.stuffToDisplay count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
+    [self configureCell:cell forRowAtIndexPath:indexPath];
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
-    }
-    else if (indexPath.row == 1) {
-        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
-    }
-    else if (indexPath.row == 2) {
+
+    
+//    if (indexPath.row == 0) {
+//        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
+//    }
+//    else if (indexPath.row == 1) {
+//        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
+//    }
+    if (indexPath.row == 4) {
         
         DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
         
@@ -102,14 +133,44 @@
     
     return cell;
 }
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell isKindOfClass:[DTAResizingCell class]])
+    {
+        DTAResizingCell *textCell = (DTAResizingCell *)cell;
+
+        textCell.lineLabel.text = [self.stuffToDisplay objectAtIndex:indexPath.row];
+        textCell.lineLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    }
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.row == 2)
+    if(indexPath.row == 3)
     {
         return 250;
     }
-    return 44;
+    else
+    {
+        [self configureCell:self.prototypeCell forRowAtIndexPath:indexPath];
+        
+        // Need to set the width of the prototype cell to the width of the table view
+        // as this will change when the device is rotated.
+        
+        self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.scrollingTableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
+        
+        [self.prototypeCell layoutIfNeeded];
+        
+        CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        return size.height+1;
+    }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
+}
+
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
@@ -145,6 +206,7 @@
     self.tableViewOutlet.delegate = nil;
     self.tableViewOutlet.dataSource = nil;
 }
+
 /*
  #pragma mark - Navigation
  
