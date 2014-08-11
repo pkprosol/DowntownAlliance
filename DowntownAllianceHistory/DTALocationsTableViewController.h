@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DTAListCell.h"
 
 @interface DTALocationsTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *locationsToShow;
 @property (strong, nonatomic) NSString *title;
+
+@property (strong, nonatomic) DTAListCell *prototypeCell;
+
+
 
 @end

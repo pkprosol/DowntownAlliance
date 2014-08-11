@@ -34,6 +34,7 @@
 		775AA29619913C8300FC0A87 /* canyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29519913C8300FC0A87 /* canyon.png */; };
 		775AA29819913FAE00FC0A87 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29719913FAE00FC0A87 /* Background.jpg */; };
 		775AA29A199151C800FC0A87 /* tickerTack.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA299199151C800FC0A87 /* tickerTack.png */; };
+		775E45B719990EE30094E3B2 /* DTAListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 775E45B619990EE30094E3B2 /* DTAListCell.m */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
@@ -249,6 +250,8 @@
 		775AA29519913C8300FC0A87 /* canyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canyon.png; sourceTree = "<group>"; };
 		775AA29719913FAE00FC0A87 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		775AA299199151C800FC0A87 /* tickerTack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickerTack.png; sourceTree = "<group>"; };
+		775E45B519990EE30094E3B2 /* DTAListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAListCell.h; sourceTree = "<group>"; };
+		775E45B619990EE30094E3B2 /* DTAListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAListCell.m; sourceTree = "<group>"; };
 		7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7771A43A1988162600CD6BA8 /* DTADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADetailViewController.h; sourceTree = "<group>"; };
@@ -479,6 +482,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		775E45B419990DE10094E3B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F47CB7271987D9CC00398293 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		77A75B72198C14D2007D135F /* Cells and Xibs */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +502,8 @@
 				77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */,
 				77AC83AA19956E71009E278B /* DTAResizingCell.h */,
 				77AC83AB19956E71009E278B /* DTAResizingCell.m */,
+				775E45B519990EE30094E3B2 /* DTAListCell.h */,
+				775E45B619990EE30094E3B2 /* DTAListCell.m */,
 			);
 			name = "Cells and Xibs";
 			sourceTree = "<group>";
@@ -626,9 +639,9 @@
 		F47CB71B1987D9CC00398293 /* DowntownAllianceHistory */ = {
 			isa = PBXGroup;
 			children = (
+				775E45B419990DE10094E3B2 /* View */,
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
-				F47CB75B1987DE7100398293 /* View */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
 				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
@@ -678,14 +691,6 @@
 				F44664B219917A78004B497D /* Helper Methods */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		F47CB75B1987DE7100398293 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F47CB7271987D9CC00398293 /* Main.storyboard */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		F47CB75C1987DE7600398293 /* Controllers */ = {
@@ -1192,6 +1197,7 @@
 				F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */,
 				7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */,
 				F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */,
+				775E45B719990EE30094E3B2 /* DTAListCell.m in Sources */,
 				F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */,
 				7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */,
 			);
