@@ -112,7 +112,7 @@
       NSString *date = [NSString stringWithFormat:@"%@",currentLocation.year];
 //        
 //        NSString *appendeddate = [currentLocation.titleOfPlaque stringByAppendingString:date];
-        
+//        
         textCell.dateLabel.text = date;
         
         textCell.listLabel.text = currentLocation.titleOfPlaque;
