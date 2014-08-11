@@ -7,11 +7,9 @@
 //
 
 #import "DTAAppDelegate.h"
-#import "DTADataFetchFromCSV.h"
-#import "Location.h"
-#import "DTAThemesTableViewController.h"
-#import "DTAManageTimeRanges.h"
 #import "DTAGeoFencing.h"
+#import "DTASetUpDefaultData.h"
+
 @implementation DTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -35,15 +33,18 @@
 //     @{NSForegroundColorAttributeName : [UIColor whiteColor]}
 //                                           forState:UIControlStateSelected];
     
-
-    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+<<<<<<< HEAD
     [self setUpFromGeoFence];
 
    
+=======
+    
+    [DTASetUpDefaultData setUpDefaultData];
+>>>>>>> 3648a4b58c57012bfdc2241fb8852851858ef2c5
     
     return YES;
 }

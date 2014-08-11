@@ -7,7 +7,7 @@
 ////
 
 #import "DTADataStore.h"
-#import "DTADataFetchFromCSV.h"
+#import "DTASetUpDefaultData.h"
 
 @implementation DTADataStore
 
@@ -23,17 +23,22 @@
     return _sharedDataStore;
 }
 
-- (NSArray *)fetchData
+- (NSArray *)fetchDataForEntityName:(NSString *)entityName
 {
-    NSFetchRequest *fetchLocationData = [NSFetchRequest fetchRequestWithEntityName:@"Location"];
-    NSArray *fetchedData = [self.managedObjectContext executeFetchRequest:fetchLocationData error:nil];
+    NSFetchRequest *fetchDataRequest = [NSFetchRequest fetchRequestWithEntityName:entityName];
+    NSArray *fetchedData = [self.managedObjectContext executeFetchRequest:fetchDataRequest error:nil];
     
     if ([fetchedData count] == 0) {
-        [DTADataFetchFromCSV importCSV];
-        fetchedData = [self.managedObjectContext executeFetchRequest:fetchLocationData error:nil];
+        [DTASetUpDefaultData setUpDefaultData];
+        fetchedData = [self.managedObjectContext executeFetchRequest:fetchDataRequest error:nil];
     }
     
     return fetchedData;
+}
+
+- (void)setUpDefaultThemesArray
+{
+    self.defaultThemesArray = [self fetchDataForEntityName:@"Theme"];
 }
 
 - (void)saveContext

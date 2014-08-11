@@ -14,12 +14,12 @@
 + (NSDictionary *)generateDefaultDictionaryOfThemesAndImages
 {
     // Key is the theme name, and the value is the image, and priority for each (lowest numbers first)
-    NSDictionary *defaultThemeAndImageNames = @{@"Aviation": @[@"Aviation.png", @0],
-                                                @"ForeignDignitaries": @[@"foreignDig.png", @3],
-                                                @"Military": @[@"military.png", @4],
-                                                @"Sports": @[@"sports.png", @5],
-                                                @"USHistory": @[@"USHistory.png", @1],
-                                                @"USLeaders": @[@"USleaders.png", @2]};
+    NSDictionary *defaultThemeAndImageNames = @{@"aviation": @[@"Aviation.png", @0],
+                                                @"foreigndignitaries": @[@"foreignDig.png", @3],
+                                                @"military": @[@"military.png", @4],
+                                                @"sports": @[@"sports.png", @5],
+                                                @"ushistory": @[@"USHistory.png", @1],
+                                                @"usleaders": @[@"USleaders.png", @2]};
                                                 
     return defaultThemeAndImageNames;
 }

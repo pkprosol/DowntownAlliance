@@ -10,14 +10,22 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import "Location.h"
+#import "DTAScrollingDetailTable.h"
+#import "DTAResizingCell.h"
 
 
 @interface DTADetailViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) DTAResizingCell *prototypeCell;
 
 @property (strong, nonatomic) NSMutableArray *arrayOfLocations;
 
 @property (strong, nonatomic) Location *locationToBePLotted;
 
--(void)plotLocationsOnMap:(Location *)locationToBePlotted;
+@property (strong, nonatomic) NSMutableArray *stuffToDisplay;
 
+@property (weak, nonatomic) IBOutlet DTAScrollingDetailTable *scrollingTableView;
+
+
+-(void)plotLocationsOnMap:(Location *)locationToBePlotted;
 @end

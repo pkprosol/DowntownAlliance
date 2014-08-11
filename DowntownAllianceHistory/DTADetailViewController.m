@@ -7,13 +7,15 @@
 //
 
 #import "DTADetailViewController.h"
-#import "DTAImageTableViewCell.h"
+#import "DTAPlaqueImageCell.h"
+
 
 
 @interface DTADetailViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
+@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
 
 @end
 
@@ -27,15 +29,27 @@
     }
     return self;
 }
+- (DTAResizingCell *)prototypeCell
+{
+    if (!_prototypeCell)
+    {
+        _prototypeCell = [self.scrollingTableView dequeueReusableCellWithIdentifier:@"detailCell"];
+    }
+    return _prototypeCell;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didChangePreferredContentSize:)
+                                                 name:UIContentSizeCategoryDidChangeNotification object:nil];
+    
     //Plot Passed Locations
     [self plotLocationsOnMap:self.locationToBePLotted];
     
-
+    
     //Float Values for coordinates
     CGFloat latitudeCenterPoint = [self.locationToBePLotted.latitude floatValue];
     CGFloat longitudeCenterPoint = [self.locationToBePLotted.longitude floatValue];
@@ -52,9 +66,19 @@
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"DTAImageTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"pictureImage"];
     
     
-    _mapOutlet.delegate = self;
-    _tableViewOutlet.delegate = self;
-    _tableViewOutlet.dataSource = self;
+    self.mapOutlet.delegate = self;
+    self.tableViewOutlet.delegate = self;
+    self.tableViewOutlet.dataSource = self;
+    self.tableViewOutlet.backgroundColor = [UIColor clearColor];
+    
+    self.stuffToDisplay = [[NSMutableArray alloc]init];
+    [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];
+    [self.stuffToDisplay addObject:self.locationToBePLotted.brochureDescription];
+    
+    if (self.locationToBePLotted.image) {
+        [self.stuffToDisplay addObject:self.locationToBePLotted.image];
+    }
+
     // Do any additional setup after loading the view.
 }
 
@@ -62,6 +86,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIContentSizeCategoryDidChangeNotification
+                                                  object:nil];
+}
+- (void)didChangePreferredContentSize:(NSNotification *)notification
+{
+    [self.scrollingTableView reloadData];
 }
 #pragma mark - Table view data source
 
@@ -75,7 +109,7 @@
 {
     
     // Return the number of rows in the section.
-    return 3;
+    return [self.stuffToDisplay count];
 }
 
 
@@ -83,21 +117,63 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = self.locationToBePLotted.titleOfPlaque;
+    if (indexPath.row <2)
+    {
+    
+    [self configureCell:cell forRowAtIndexPath:indexPath];
     }
-    else if (indexPath.row == 1) {
-        cell.textLabel.text = self.locationToBePLotted.brochureDescription;
-    }
-    else if (indexPath.row ==2) {
+ 
+    
+    if (indexPath.row == 2) {
+        if(self.locationToBePLotted.image){
+    
+        DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
         
-        DTAImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureImage"forIndexPath:indexPath];
+        cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
+        cell.plaqueImageView.image = self.locationToBePLotted.image;
+        }
         
-        cell.pictureImage.contentMode = UIViewContentModeScaleAspectFill;
-        cell.pictureImage.image = self.locationToBePLotted.image;
+
     }
     
     return cell;
+}
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell isKindOfClass:[DTAResizingCell class]])
+    {
+        DTAResizingCell *textCell = (DTAResizingCell *)cell;
+    
+        textCell.lineLabel.text = [self.stuffToDisplay objectAtIndex:indexPath.row];
+        textCell.lineLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    }
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row == 2)
+    {
+        return 250;
+    }
+    else
+    {
+        [self configureCell:self.prototypeCell forRowAtIndexPath:indexPath];
+        
+        // Need to set the width of the prototype cell to the width of the table view
+        // as this will change when the device is rotated.
+        
+        self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.scrollingTableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
+        
+        [self.prototypeCell layoutIfNeeded];
+        
+        CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        return size.height+1;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
@@ -112,15 +188,39 @@
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Overlap
+
+//Content inset so that the tableview starts below the map
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.tableViewOutlet.contentInset = UIEdgeInsetsMake(self.tableViewOutlet.frame.size.height-40, 0, 0, 0);
 }
-*/
+
+//checks for it going below the map, hides white space
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (scrollView.contentOffset.y < self.mapOutlet.frame.size.height*-1 ) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, self.mapOutlet.frame.size.height*-1)];
+        
+    }
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    self.tableViewOutlet.delegate = nil;
+    self.tableViewOutlet.dataSource = nil;
+}
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
