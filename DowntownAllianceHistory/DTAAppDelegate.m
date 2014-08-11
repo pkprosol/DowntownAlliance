@@ -86,8 +86,8 @@
     
     if (didGoToDowntownAllianceApp) {
         [defaults setBool:NO forKey:@"wentToDowntownAllianceApp"];
+        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-
         UITabBarController *homeViewController = [storyboard instantiateInitialViewController];
         
         self.window.rootViewController = homeViewController;
