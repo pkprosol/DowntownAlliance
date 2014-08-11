@@ -42,10 +42,15 @@
 		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
 		77AC835419916D4B009E278B /* white25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835319916D4B009E278B /* white25.png */; };
 		77AC835619916D6A009E278B /* white50i.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835519916D6A009E278B /* white50i.png */; };
+<<<<<<< HEAD
+		A42B281719892E8800DDB4F6 /* DTATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTATableViewController.m */; };
+		A46EC50919941030001D4A92 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46EC50819941030001D4A92 /* EventKit.framework */; };
+=======
 		77AC835C19929BC3009E278B /* DTAScrollingDetailTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */; };
 		77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC835E1993C322009E278B /* DTAPlaqueImageCell.m */; };
 		77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC83AB19956E71009E278B /* DTAResizingCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
+>>>>>>> 3648a4b58c57012bfdc2241fb8852851858ef2c5
 		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
 		F410EA3D19914B7900A8EA36 /* 001.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C119914B7900A8EA36 /* 001.tif */; };
@@ -256,6 +261,11 @@
 		77A75B82198C3DBE007D135F /* DTAThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemeCell.m; sourceTree = "<group>"; };
 		77AC835319916D4B009E278B /* white25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white25.png; sourceTree = "<group>"; };
 		77AC835519916D6A009E278B /* white50i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white50i.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		A42B281519892E8800DDB4F6 /* DTATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTATableViewController.h; sourceTree = "<group>"; };
+		A42B281619892E8800DDB4F6 /* DTATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATableViewController.m; sourceTree = "<group>"; };
+		A46EC50819941030001D4A92 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+=======
 		77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAScrollingDetailTable.h; sourceTree = "<group>"; };
 		77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAScrollingDetailTable.m; sourceTree = "<group>"; };
 		77AC835D1993C322009E278B /* DTAPlaqueImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAPlaqueImageCell.h; sourceTree = "<group>"; };
@@ -264,6 +274,7 @@
 		77AC83AB19956E71009E278B /* DTAResizingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAResizingCell.m; sourceTree = "<group>"; };
 		A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTALocationsTableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTALocationsTableViewController.m; sourceTree = "<group>"; };
+>>>>>>> 3648a4b58c57012bfdc2241fb8852851858ef2c5
 		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
 		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
@@ -449,6 +460,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46EC50919941030001D4A92 /* EventKit.framework in Frameworks */,
 				7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */,
 				7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */,
 				F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */,
@@ -613,6 +625,7 @@
 		F47CB7141987D9CC00398293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A46EC50819941030001D4A92 /* EventKit.framework */,
 				7771A4331987E9B100CD6BA8 /* MapKit.framework */,
 				7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */,
 				F47CB7151987D9CC00398293 /* Foundation.framework */,
