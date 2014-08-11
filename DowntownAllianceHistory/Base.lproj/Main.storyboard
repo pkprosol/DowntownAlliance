@@ -161,21 +161,31 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-kw-fTW">
-                                            <rect key="frame" x="20" y="20" width="247" height="59"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="206" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-kw-fTW">
+                                            <rect key="frame" x="20" y="20" width="206" height="59"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDf-aU-MfZ">
+                                            <rect key="frame" x="249" y="20" width="38" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="jsT-kw-fTW" secondAttribute="bottom" constant="20" symbolic="YES" id="A4m-vB-rSr"/>
-                                        <constraint firstAttribute="trailing" secondItem="jsT-kw-fTW" secondAttribute="trailing" constant="20" symbolic="YES" id="hyb-Rl-AA1"/>
-                                        <constraint firstItem="jsT-kw-fTW" firstAttribute="leading" secondItem="wHW-GA-KFu" secondAttribute="leading" constant="20" symbolic="YES" id="pgr-X6-Pkt"/>
-                                        <constraint firstItem="jsT-kw-fTW" firstAttribute="top" secondItem="wHW-GA-KFu" secondAttribute="top" constant="20" symbolic="YES" id="wEo-UP-GQi"/>
+                                        <constraint firstAttribute="bottom" secondItem="rDf-aU-MfZ" secondAttribute="bottom" constant="20" symbolic="YES" id="6Dz-ds-pL2"/>
+                                        <constraint firstAttribute="bottom" secondItem="jsT-kw-fTW" secondAttribute="bottom" constant="20" symbolic="YES" id="6Qu-wa-9Km"/>
+                                        <constraint firstAttribute="trailing" secondItem="rDf-aU-MfZ" secondAttribute="trailing" id="Icn-Nd-sjP"/>
+                                        <constraint firstItem="jsT-kw-fTW" firstAttribute="top" secondItem="wHW-GA-KFu" secondAttribute="top" constant="20" symbolic="YES" id="aEg-3Q-rrv"/>
+                                        <constraint firstItem="jsT-kw-fTW" firstAttribute="leading" secondItem="wHW-GA-KFu" secondAttribute="leading" constant="20" symbolic="YES" id="m41-Up-ffF"/>
+                                        <constraint firstItem="rDf-aU-MfZ" firstAttribute="top" secondItem="wHW-GA-KFu" secondAttribute="top" constant="20" symbolic="YES" id="tl9-hj-42m"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dateLabel" destination="rDf-aU-MfZ" id="2pE-ET-W7h"/>
                                     <outlet property="listLabel" destination="jsT-kw-fTW" id="zLo-au-Hi5"/>
                                     <segue destination="iG7-ft-mWB" kind="push" id="NBv-VY-RE9"/>
                                 </connections>

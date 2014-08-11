@@ -44,6 +44,8 @@
     
     DTADataStore *store = [DTADataStore sharedDataStore];
     self.themesArray = store.defaultThemesArray;
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [self.tableView setSeparatorColor:[UIColor blackColor]];
 }
 
 
