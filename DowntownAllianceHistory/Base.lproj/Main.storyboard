@@ -66,6 +66,25 @@
             </objects>
             <point key="canvasLocation" x="2484" y="1391"/>
         </scene>
+        <!--App Link View Controller - Main App-->
+        <scene sceneID="NUc-U4-t62">
+            <objects>
+                <viewController id="OSz-0e-Jay" customClass="DTAAppLinkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OFt-qb-JVo"/>
+                        <viewControllerLayoutGuide type="bottom" id="OwP-11-XQF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tgg-15-cV4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main App" image="customheader" id="8Cy-cB-Cez"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-lD-pvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="2098"/>
+        </scene>
         <!--View Controller - About-->
         <scene sceneID="lVc-0i-jde">
             <objects>
@@ -161,14 +180,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="214" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-kw-fTW">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="214" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-kw-fTW">
                                             <rect key="frame" x="20" y="20" width="214" height="59"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDf-aU-MfZ">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDf-aU-MfZ">
                                             <rect key="frame" x="250" y="20" width="38" height="59"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -176,6 +194,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="rDf-aU-MfZ" secondAttribute="bottom" constant="20" id="JAo-7A-dag"/>
+                                        <constraint firstItem="jsT-kw-fTW" firstAttribute="leading" secondItem="wHW-GA-KFu" secondAttribute="leading" constant="20" id="VXc-MA-hxd"/>
+                                        <constraint firstAttribute="bottom" secondItem="jsT-kw-fTW" secondAttribute="bottom" constant="20" id="eZm-WU-zUO"/>
+                                        <constraint firstItem="jsT-kw-fTW" firstAttribute="top" secondItem="wHW-GA-KFu" secondAttribute="top" constant="20" id="iBh-iB-hjE"/>
+                                        <constraint firstItem="rDf-aU-MfZ" firstAttribute="top" secondItem="wHW-GA-KFu" secondAttribute="top" constant="20" id="mRH-Ic-xZw"/>
+                                        <constraint firstAttribute="trailing" secondItem="rDf-aU-MfZ" secondAttribute="trailing" constant="-1" id="yBM-7K-749"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dateLabel" destination="rDf-aU-MfZ" id="2pE-ET-W7h"/>
@@ -294,7 +320,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="wVZ-3X-BUz">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6N0-CF-4sg" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="6N0-CF-4sg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UOD-a6-ZT0">
@@ -306,6 +332,7 @@
                         <segue destination="hTL-Xx-6z6" kind="relationship" relationship="viewControllers" id="VNK-K3-id9"/>
                         <segue destination="nmw-rd-ICq" kind="relationship" relationship="viewControllers" id="ESc-n2-oxF"/>
                         <segue destination="aBy-1T-msG" kind="relationship" relationship="viewControllers" id="28x-LN-x7F"/>
+                        <segue destination="OSz-0e-Jay" kind="relationship" relationship="viewControllers" id="tH2-Cj-C51"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2D-jg-2qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -460,6 +487,7 @@
     </scenes>
     <resources>
         <image name="canyon.png" width="320" height="86"/>
+        <image name="customheader" width="34" height="34"/>
         <image name="map_marker-25.png" width="25" height="25"/>
         <image name="overtime-25.png" width="25" height="25"/>
         <image name="survey-25.png" width="25" height="25"/>

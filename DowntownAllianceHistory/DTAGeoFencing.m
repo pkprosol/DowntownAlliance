@@ -17,8 +17,7 @@
 
 -(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
-    
-   // _didStartMonitoringRegion = YES;
+    // _didStartMonitoringRegion = YES;
     NSLog(@"in the area");
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!"
                                                       message:@"You are now near the canyon of heroes!"
@@ -28,7 +27,8 @@
     [message show];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLCircularRegion *)region {
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLCircularRegion *)region
+{
     NSLog(@"in the area");
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Goodbye World!"
                                                       message:@"You are now leaving the canyon of heroes!"
@@ -36,8 +36,8 @@
                                             cancelButtonTitle:@"OK"
                                             otherButtonTitles:nil];
     [message show];
-
 }
+
 -(EKStructuredLocation*)createStructuredLocation
 {
     EKStructuredLocation *structuredLocation = [EKStructuredLocation locationWithTitle:@"structuredLocation"];
@@ -69,7 +69,6 @@
     [eventStore saveReminder:reminder commit:YES error:&error];
 }
 
-
 -(void)getGeofence
 {
     
@@ -78,21 +77,13 @@
     // Initialize Region to Monitor
     CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:25 identifier:@"Identifier"];
     NSSet *regions = self.locationManager.monitoredRegions;
-    
-//    for (CLRxegion *region in self.locationManager.monitoredRegions) {
-//        [self.locationManager stopMonitoringForRegion:region];
-//    }
     self.locationManager.delegate = self;
+    
     // Start Monitoring Region
     [self.locationManager startMonitoringForRegion:region];
- //   [self.locationManager startUpdatingLocation];
-    //[self.locationManager stopUpdatingLocation];
-    //if  (region.center.longitude == location.coordinate.longitude && region.center.latitude == location.coordinate.latitude)
-
-    
- //   NSLog(@"%@",self.locationManager.monitoredRegions);
-    
-    
+    [self.locationManager startUpdatingLocation];
+    [self.locationManager stopUpdatingLocation];
+    NSLog(@"%@",self.locationManager.monitoredRegions);
 }
 
 -(void)awakeFromNib
@@ -139,20 +130,6 @@
 //        //  [self updateView];
 //    }
 }
-/*
-- (void)setupAlarmWithLocation:(Location *)location AndEventStore:(EKEventStore *)eventStore AndLocationManager:(CLLocationManager *)locationManager
-{
-    DTAGeoFencing *reminder = [EKReminder reminderWithEventStore:eventStore];
-    NSString *titleString = [NSString stringWithFormat:@"Rxxx You have arrived at\n%@",locations.name];
-    reminder.title = titleString;
-    reminder.calendar = [eventStore defaultCalendarForNewReminders];
-    EKAlarm fenceAlarm = [location createAlarm];
-    [reminder addAlarm:fenceAlarm];
-    NSError error = nil;
-    [eventStore saveReminder:reminder commit:YES error:&error];
-    
-
-}*/
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
