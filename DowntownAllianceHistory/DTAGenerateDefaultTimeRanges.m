@@ -35,7 +35,7 @@
 {
     // Images must match the order of and correspond to the time labels in default dictionary of time intervals
     
-    NSArray *images = @[[UIImage imageNamed:@"pre1900s.png"],
+    NSArray *images = @[[UIImage imageNamed:@"pre1910s.png"],
                         [UIImage imageNamed:@"1910s.png"],
                         [UIImage imageNamed:@"1920s.png"],
                         [UIImage imageNamed:@"1930s.png"],

@@ -67,9 +67,18 @@
     
     
     self.mapOutlet.delegate = self;
-    self.tableViewOutlet.delegate = self;
-    self.tableViewOutlet.dataSource = self;
+
     self.tableViewOutlet.backgroundColor = [UIColor clearColor];
+    
+
+
+    
+    // Do any additional setup after loading the view.
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     
     self.stuffToDisplay = [[NSMutableArray alloc]init];
     [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];
@@ -78,10 +87,11 @@
     if (self.locationToBePLotted.image) {
         [self.stuffToDisplay addObject:self.locationToBePLotted.image];
     }
+    self.tableViewOutlet.delegate = self;
+    self.tableViewOutlet.dataSource = self;
 
-    
-    // Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning
 {

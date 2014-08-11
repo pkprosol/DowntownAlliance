@@ -10,5 +10,6 @@
 
 @interface DTAListCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *listLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end

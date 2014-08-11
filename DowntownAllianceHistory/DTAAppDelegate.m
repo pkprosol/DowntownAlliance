@@ -42,8 +42,6 @@
     [self setUpFromGeoFence];
 
    
-
-    
     [DTASetUpDefaultData setUpDefaultData];
     
     return YES;

@@ -105,6 +105,16 @@
         
         Location *currentLocation = self.locationsToShow[indexPath.row];
         
+//        NSString *day = [currentLocation.day stringValue];
+//        NSString *month = [currentLocation.month stringValue];
+//        NSString *year = [currentLocation.year stringValue];
+//        
+      NSString *date = [NSString stringWithFormat:@"%@",currentLocation.year];
+//        
+//        NSString *appendeddate = [currentLocation.titleOfPlaque stringByAppendingString:date];
+//        
+        textCell.dateLabel.text = date;
+        
         textCell.listLabel.text = currentLocation.titleOfPlaque;
         textCell.listLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     }
