@@ -38,6 +38,11 @@
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+    [self setUpFromGeoFence];
+
+   
+
     
     [DTASetUpDefaultData setUpDefaultData];
     
@@ -45,19 +50,21 @@
 }
   -(void)setUpFromGeoFence
 {
-    DTAGeoFencing *geoFence = [[DTAGeoFencing alloc]init];
+
+   self.geoFence = [[DTAGeoFencing alloc]init];
     
     // Initialize Location Manager
-    geoFence.locationManager = [[CLLocationManager alloc] init];
+    self.geoFence.locationManager = [[CLLocationManager alloc] init];
     
     // Configure Location Manager
-    [geoFence.locationManager setDelegate:geoFence];
-    [geoFence.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+   // [self.geoFence.locationManager setDelegate:self.geoFence];
+    [self.geoFence.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     
     // Load Geofences
-    geoFence.geofences = [NSMutableArray arrayWithArray:[[geoFence.locationManager monitoredRegions] allObjects]];
+//    self.geoFence.geofences = [NSMutableArray arrayWithArray:[[self.geoFence.locationManager monitoredRegions] allObjects]];
     
-    [geoFence getGeofence];
+    [self.geoFence getGeofence];
+   // [self.geoFence.locationManager startUpdatingLocation];
     
 }
 - (void)applicationWillResignActive:(UIApplication *)application
