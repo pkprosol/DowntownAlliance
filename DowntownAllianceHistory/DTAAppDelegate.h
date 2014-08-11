@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DTAGeoFencing.h"
 @interface DTAAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController    *tabbar;
+@property (strong, nonatomic) DTAGeoFencing *geoFence;
+
 
 -(void)setUpFromGeoFence;
 
