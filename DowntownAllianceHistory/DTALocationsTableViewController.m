@@ -10,11 +10,22 @@
 #import "Location.h"
 #import "DTADetailViewController.h"
 
+
 @interface DTALocationsTableViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *formattedLabel;
 
 @end
 
 @implementation DTALocationsTableViewController
+
+- (DTAListCell *)prototypeCell
+{
+    if (!_prototypeCell)
+    {
+        _prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"detailTablecell"];
+    }
+    return _prototypeCell;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -59,6 +70,10 @@
     [super viewDidLoad];
     self.navigationItem.title = self.title;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didChangePreferredContentSize:)
+                                                 name:UIContentSizeCategoryDidChangeNotification object:nil];
+    
     NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES];
     self.locationsToShow = [self.locationsToShow sortedArrayUsingDescriptors:@[nameSort]];
     
@@ -68,6 +83,12 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIContentSizeCategoryDidChangeNotification
+                                                  object:nil];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -76,6 +97,18 @@
 }
 
 #pragma mark - Table view data source
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell isKindOfClass:[DTAListCell class]])
+    {
+        DTAListCell *textCell = (DTAListCell *)cell;
+        
+        Location *currentLocation = self.locationsToShow[indexPath.row];
+        
+        textCell.listLabel.text = currentLocation.titleOfPlaque;
+        textCell.listLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    }
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -94,11 +127,32 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailTablecell" forIndexPath:indexPath];
     
     // Configure the cell...
-    Location *currentLocation = self.locationsToShow[indexPath.row];
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",currentLocation.titleOfPlaque];
+//    Location *currentLocation = self.locationsToShow[indexPath.row];
+//    
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@",currentLocation.titleOfPlaque];
+    [self configureCell:cell forRowAtIndexPath:indexPath];
+    return cell;
     
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self configureCell:self.prototypeCell forRowAtIndexPath:indexPath];
+    
+    // Need to set the width of the prototype cell to the width of the table view
+    // as this will change when the device is rotated.
+    
+    self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.tableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
+    
+    [self.prototypeCell layoutIfNeeded];
+    
+    CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    return size.height+1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 
 /*
