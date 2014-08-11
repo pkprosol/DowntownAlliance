@@ -79,6 +79,7 @@
         [self.stuffToDisplay addObject:self.locationToBePLotted.image];
     }
 
+    
     // Do any additional setup after loading the view.
 }
 
