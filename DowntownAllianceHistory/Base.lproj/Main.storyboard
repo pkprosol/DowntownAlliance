@@ -211,7 +211,7 @@
                                 <connections>
                                     <outlet property="dateLabel" destination="dXP-VH-MIh" id="a6a-29-TEk"/>
                                     <outlet property="listLabel" destination="jsT-kw-fTW" id="zLo-au-Hi5"/>
-                                    <segue destination="iG7-ft-mWB" kind="push" id="NBv-VY-RE9"/>
+                                    <segue destination="iG7-ft-mWB" kind="push" identifier="detailController" id="NBv-VY-RE9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -523,6 +523,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="kwI-zS-36s"/>
+        <segue reference="p07-Qj-wZk"/>
     </inferredMetricsTieBreakers>
 </document>

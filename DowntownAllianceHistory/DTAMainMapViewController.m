@@ -9,6 +9,7 @@
 #import "DTAMainMapViewController.h"
 #import "DTADataStore.h"
 #import "UITabBarController+hidableTab.h"
+#import "DTADetailViewController.h"
 
 @interface DTAMainMapViewController ()
 
@@ -34,17 +35,6 @@
     }
     return self;
 }
-
-//- (void)viewDidLoad
-//{
-//    [super viewDidLoad];
-//
-//    // Uncomment the following line to preserve selection between presentations.
-//    // self.clearsSelectionOnViewWillAppear = NO;
-//
-//    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//}
 
 - (void)viewDidUnload
 {
@@ -96,11 +86,6 @@
     
     hidden = YES;
     
-//    [self.tabBarController setTabBarHidden:YES
-//                                  animated:YES];
-    
-//    [self.navigationController setNavigationBarHidden:YES
-//                                             animated:YES];
 }
 
 -(void)contract
@@ -110,11 +95,6 @@
     
     hidden = NO;
     
-//    [self.tabBarController setTabBarHidden:NO
-//                                  animated:YES];
-    
-//    [self.navigationController setNavigationBarHidden:NO
-//                                             animated:YES];
 }
 
 #pragma mark -
@@ -148,21 +128,11 @@
     
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-}
-
 - (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
 {
     [self contract];
     return YES;
 }
-
-
 
 
 - (void)viewDidLoad
@@ -185,12 +155,15 @@
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
     
-//    [self.mapOutlet setCenterCoordinate:self.mapOutlet.userLocation.location.coordinate animated:YES];
-    
-    
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
   
 	// Do any additional setup after loading the view, typically from a nib.
+}
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+
+    [self performSegueWithIdentifier:@"detailController" sender:view];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -202,8 +175,6 @@
 {
     MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
-    
-    
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
@@ -211,6 +182,21 @@
     pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
+}
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
+    if (!pinView) {
+        pinView = [[MKPinAnnotationView alloc] init];
+        pinView.pinColor = MKPinAnnotationColorRed;
+        pinView.animatesDrop = YES;
+        pinView.canShowCallout = YES;
+        
+        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        pinView.rightCalloutAccessoryView = rightButton;
+    } else {
+        pinView.annotation = annotation;
+    }
+    return pinView;
 }
 
 
@@ -220,6 +206,23 @@
     {
         [self plotLocationsOnMap:location];
     }
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"detailController"])
+    {
+        MKAnnotationView *view = sender;
+        
+        
+        
+        
+    DTADetailViewController *nextVC = segue.destinationViewController;
+    Location *selectedLocation =
+    nextVC.locationToBePLotted = selectedLocation;
+    }
+    
 }
 
 @end
