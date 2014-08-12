@@ -172,8 +172,9 @@
         
         // Need to set the width of the prototype cell to the width of the table view
         // as this will change when the device is rotated.
+
         
-        self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.scrollingTableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
+//        self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.scrollingTableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
         
         [self.prototypeCell layoutIfNeeded];
         
