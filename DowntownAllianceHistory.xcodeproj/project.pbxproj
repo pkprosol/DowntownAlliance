@@ -47,7 +47,6 @@
 		77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC83AB19956E71009E278B /* DTAResizingCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
 		A46EC50919941030001D4A92 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46EC50819941030001D4A92 /* EventKit.framework */; };
-		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
 		F410EA3D19914B7900A8EA36 /* 001.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C119914B7900A8EA36 /* 001.tif */; };
 		F410EA3E19914B7900A8EA36 /* 002.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C219914B7900A8EA36 /* 002.tif */; };
@@ -179,8 +178,6 @@
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
 		F44664B119917906004B497D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664B019917906004B497D /* Theme.m */; };
-		F452050019991F500011A6F3 /* customheader25.png in Resources */ = {isa = PBXBuildFile; fileRef = F45204FF19991F500011A6F3 /* customheader25.png */; };
-		F452050219991FE00011A6F3 /* customheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F452050119991FE00011A6F3 /* customheader@2x.png */; };
 		F4520546199920630011A6F3 /* DTAAppLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4520545199920630011A6F3 /* DTAAppLinkViewController.m */; };
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
@@ -271,8 +268,6 @@
 		A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTALocationsTableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTALocationsTableViewController.m; sourceTree = "<group>"; };
 		A46EC50819941030001D4A92 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
-		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
 		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
 		F410E9C119914B7900A8EA36 /* 001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 001.tif; path = COHPhotos/ItemPhotos/001.tif; sourceTree = "<group>"; };
@@ -410,8 +405,6 @@
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
 		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
-		F45204FF19991F500011A6F3 /* customheader25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customheader25.png; sourceTree = "<group>"; };
-		F452050119991FE00011A6F3 /* customheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customheader@2x.png"; sourceTree = "<group>"; };
 		F4520544199920630011A6F3 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
 		F4520545199920630011A6F3 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
@@ -520,8 +513,6 @@
 		F410EAB919914B9700A8EA36 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				F45204FF19991F500011A6F3 /* customheader25.png */,
-				F452050119991FE00011A6F3 /* customheader@2x.png */,
 				77AC835319916D4B009E278B /* white25.png */,
 				77AC835519916D6A009E278B /* white50i.png */,
 				77402DC4199002CC00F255A6 /* map_marker-50.png */,
@@ -1053,7 +1044,6 @@
 				F410EA9419914B7900A8EA36 /* 149.tif in Resources */,
 				F410EA5619914B7900A8EA36 /* 052.tif in Resources */,
 				F410EA9119914B7900A8EA36 /* 145.tif in Resources */,
-				F452050219991FE00011A6F3 /* customheader@2x.png in Resources */,
 				F410EAB119914B7900A8EA36 /* 187.tif in Resources */,
 				775AA292199129C600FC0A87 /* 1950.png in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
@@ -1153,7 +1143,6 @@
 				F410EAB019914B7900A8EA36 /* 186.tif in Resources */,
 				77402DC11990008C00F255A6 /* survey-25.png in Resources */,
 				F410EA4219914B7900A8EA36 /* 007.eps in Resources */,
-				F452050019991F500011A6F3 /* customheader25.png in Resources */,
 				F410EA9519914B7900A8EA36 /* 152.tif in Resources */,
 				F410EA9719914B7900A8EA36 /* 154.tif in Resources */,
 				F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */,

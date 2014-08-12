@@ -80,7 +80,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main App Link" image="DTALink" id="8Cy-cB-Cez">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="-12" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-5" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-lD-pvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -458,7 +458,7 @@
             <objects>
                 <navigationController title="About " automaticallyAdjustsScrollViewInsets="NO" id="aBy-1T-msG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="About" image="white25.png" id="zVq-VH-RHo">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="-5" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-2" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="eCs-s3-XY3">
