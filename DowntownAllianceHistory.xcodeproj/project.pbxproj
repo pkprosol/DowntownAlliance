@@ -179,8 +179,6 @@
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
 		F44664B119917906004B497D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664B019917906004B497D /* Theme.m */; };
-		F452050019991F500011A6F3 /* customheader25.png in Resources */ = {isa = PBXBuildFile; fileRef = F45204FF19991F500011A6F3 /* customheader25.png */; };
-		F452050219991FE00011A6F3 /* customheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F452050119991FE00011A6F3 /* customheader@2x.png */; };
 		F4520546199920630011A6F3 /* DTAAppLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4520545199920630011A6F3 /* DTAAppLinkViewController.m */; };
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
@@ -207,6 +205,8 @@
 		F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
 		F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */; };
+		F4CB9105199AA8B900BC873D /* DTAlink.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB9103199AA8B900BC873D /* DTAlink.png */; };
+		F4CB9106199AA8B900BC873D /* DTAlink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB9104199AA8B900BC873D /* DTAlink@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -408,8 +408,6 @@
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
 		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
-		F45204FF19991F500011A6F3 /* customheader25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customheader25.png; sourceTree = "<group>"; };
-		F452050119991FE00011A6F3 /* customheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customheader@2x.png"; sourceTree = "<group>"; };
 		F4520544199920630011A6F3 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
 		F4520545199920630011A6F3 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
@@ -451,6 +449,8 @@
 		F4BB9A2B198AAA9100956381 /* DTADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataStore.h; sourceTree = "<group>"; };
 		F4BB9A2C198AAA9100956381 /* DTADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataStore.m; sourceTree = "<group>"; };
 		F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultData.m; sourceTree = "<group>"; };
+		F4CB9103199AA8B900BC873D /* DTAlink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DTAlink.png; sourceTree = "<group>"; };
+		F4CB9104199AA8B900BC873D /* DTAlink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DTAlink@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,8 +516,6 @@
 		F410EAB919914B9700A8EA36 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				F45204FF19991F500011A6F3 /* customheader25.png */,
-				F452050119991FE00011A6F3 /* customheader@2x.png */,
 				77AC835319916D4B009E278B /* white25.png */,
 				77AC835519916D6A009E278B /* white50i.png */,
 				77402DC4199002CC00F255A6 /* map_marker-50.png */,
@@ -528,6 +526,8 @@
 				77402DBA198FFFB100F255A6 /* overtime-25.png */,
 				77402DC01990008C00F255A6 /* survey-25.png */,
 				77402DC21990009600F255A6 /* map_marker-25.png */,
+				F4CB9103199AA8B900BC873D /* DTAlink.png */,
+				F4CB9104199AA8B900BC873D /* DTAlink@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -1000,6 +1000,7 @@
 				F410EAA119914B7900A8EA36 /* 165.tif in Resources */,
 				7788FFD2199BADE10066FF03 /* 1960.png in Resources */,
 				F410EA5319914B7900A8EA36 /* 048.tif in Resources */,
+				F4CB9106199AA8B900BC873D /* DTAlink@2x.png in Resources */,
 				F410EA5819914B7900A8EA36 /* 054.tif in Resources */,
 				F410EAB519914B7900A8EA36 /* 192.tif in Resources */,
 				F410EA5019914B7900A8EA36 /* 035.tif in Resources */,
@@ -1052,7 +1053,6 @@
 				F410EA9419914B7900A8EA36 /* 149.tif in Resources */,
 				F410EA5619914B7900A8EA36 /* 052.tif in Resources */,
 				F410EA9119914B7900A8EA36 /* 145.tif in Resources */,
-				F452050219991FE00011A6F3 /* customheader@2x.png in Resources */,
 				F410EAB119914B7900A8EA36 /* 187.tif in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
 				F410EA7219914B7900A8EA36 /* 088.tif in Resources */,
@@ -1066,6 +1066,7 @@
 				F410EA7B19914B7900A8EA36 /* 099.tif in Resources */,
 				F410EA7819914B7900A8EA36 /* 095.tif in Resources */,
 				F410EA9819914B7900A8EA36 /* 155.tif in Resources */,
+				F4CB9105199AA8B900BC873D /* DTAlink.png in Resources */,
 				F410EA8D19914B7900A8EA36 /* 136(Queen).tif in Resources */,
 				F410EA6C19914B7900A8EA36 /* 081.tif in Resources */,
 				77402DBB198FFFB100F255A6 /* overtime-25.png in Resources */,
@@ -1146,7 +1147,6 @@
 				F410EAB019914B7900A8EA36 /* 186.tif in Resources */,
 				77402DC11990008C00F255A6 /* survey-25.png in Resources */,
 				F410EA4219914B7900A8EA36 /* 007.eps in Resources */,
-				F452050019991F500011A6F3 /* customheader25.png in Resources */,
 				F410EA9519914B7900A8EA36 /* 152.tif in Resources */,
 				F410EA9719914B7900A8EA36 /* 154.tif in Resources */,
 				F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */,

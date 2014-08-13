@@ -126,24 +126,18 @@
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
     lastContentOffset = currentOffset;
     
-//    NSLog(@"Offest: %f",currentOffset);
-//    NSLog(@"start: %f", differenceFromStart);
-//    NSLog(@"last: %f",differenceFromLast);
-    
     if((differenceFromStart) < 0)
     {
         // scroll up
         if(scrollView.isTracking && (abs(differenceFromLast)>20))
         {
             [self expand];
-            NSLog(@"Expanding");
         }
     }
     else {
         if(scrollView.isTracking && (abs(differenceFromLast)>20))
         {
             [self contract];
-            NSLog(@"contracting");
         }
     }
     
