@@ -35,18 +35,18 @@
 {
     // Images must match the order of and correspond to the time labels in default dictionary of time intervals
     
-    NSArray *images = @[[UIImage imageNamed:@"pre1910s.png"],
-                        [UIImage imageNamed:@"1910s.png"],
-                        [UIImage imageNamed:@"1920s.png"],
-                        [UIImage imageNamed:@"1930s.png"],
-                        [UIImage imageNamed:@"1940s.png"],
+    NSArray *images = @[[UIImage imageNamed:@"pre1910.png"],
+                        [UIImage imageNamed:@"1910.png"],
+                        [UIImage imageNamed:@"1920.png"],
+                        [UIImage imageNamed:@"1930.png"],
+                        [UIImage imageNamed:@"1940.png"],
                         [UIImage imageNamed:@"1950.png"],
-                        [UIImage imageNamed:@"1960s.png"],
-                        [UIImage imageNamed:@"1970s.png"],
-                        [UIImage imageNamed:@"1980s.png"],
-                        [UIImage imageNamed:@"1990s.png"],
-                        [UIImage imageNamed:@"2000s.png"],
-                        [UIImage imageNamed:@"2010s.png"]];
+                        [UIImage imageNamed:@"1960.png"],
+                        [UIImage imageNamed:@"1970.png"],
+                        [UIImage imageNamed:@"1980.png"],
+                        [UIImage imageNamed:@"1990.png"],
+                        [UIImage imageNamed:@"2000.png"],
+                        [UIImage imageNamed:@"2010.png"]];
     
     return images;
 }

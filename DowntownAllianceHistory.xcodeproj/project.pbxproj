@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		77402DA0198FDF7200F255A6 /* 1910s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D94198FDF7200F255A6 /* 1910s.png */; };
 		77402DA1198FDF7200F255A6 /* 1920s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D95198FDF7200F255A6 /* 1920s.png */; };
 		77402DA2198FDF7200F255A6 /* 1930s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D96198FDF7200F255A6 /* 1930s.png */; };
@@ -17,20 +18,20 @@
 		77402DA9198FDF7200F255A6 /* 2000s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9D198FDF7200F255A6 /* 2000s.png */; };
 		77402DAA198FDF7200F255A6 /* 2010s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9E198FDF7200F255A6 /* 2010s.png */; };
 		77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9F198FDF7200F255A6 /* pre1900s.png */; };
+=======
+>>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		77402DB2198FE13600F255A6 /* Aviation.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAC198FE13600F255A6 /* Aviation.png */; };
 		77402DB3198FE13600F255A6 /* foreignDig.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAD198FE13600F255A6 /* foreignDig.png */; };
 		77402DB4198FE13600F255A6 /* military.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAE198FE13600F255A6 /* military.png */; };
 		77402DB5198FE13600F255A6 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAF198FE13600F255A6 /* sports.png */; };
 		77402DB6198FE13600F255A6 /* USHistory.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DB0198FE13600F255A6 /* USHistory.png */; };
 		77402DB7198FE13600F255A6 /* USleaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DB1198FE13600F255A6 /* USleaders.png */; };
-		77402DB9198FFB2B00F255A6 /* 1990s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DB8198FFB2B00F255A6 /* 1990s.png */; };
 		77402DBB198FFFB100F255A6 /* overtime-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DBA198FFFB100F255A6 /* overtime-25.png */; };
 		77402DC11990008C00F255A6 /* survey-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC01990008C00F255A6 /* survey-25.png */; };
 		77402DC31990009600F255A6 /* map_marker-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC21990009600F255A6 /* map_marker-25.png */; };
 		77402DC5199002CC00F255A6 /* map_marker-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DC4199002CC00F255A6 /* map_marker-50.png */; };
 		7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */; };
 		7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749C4D119896D02009D1F23 /* DTAFilterCell.m */; };
-		775AA292199129C600FC0A87 /* 1950.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA291199129C600FC0A87 /* 1950.png */; };
 		775AA29619913C8300FC0A87 /* canyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29519913C8300FC0A87 /* canyon.png */; };
 		775AA29819913FAE00FC0A87 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29719913FAE00FC0A87 /* Background.jpg */; };
 		775AA29A199151C800FC0A87 /* tickerTack.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA299199151C800FC0A87 /* tickerTack.png */; };
@@ -38,6 +39,19 @@
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
+		7788FFBF199AA2F10066FF03 /* DTAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */; };
+		7788FFC1199BADDA0066FF03 /* pre1910.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC0199BADDA0066FF03 /* pre1910.png */; };
+		7788FFCD199BADE10066FF03 /* 1910.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC2199BADE10066FF03 /* 1910.png */; };
+		7788FFCE199BADE10066FF03 /* 1920.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC3199BADE10066FF03 /* 1920.png */; };
+		7788FFCF199BADE10066FF03 /* 1930.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC4199BADE10066FF03 /* 1930.png */; };
+		7788FFD0199BADE10066FF03 /* 1940.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC5199BADE10066FF03 /* 1940.png */; };
+		7788FFD1199BADE10066FF03 /* 1950.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC6199BADE10066FF03 /* 1950.png */; };
+		7788FFD2199BADE10066FF03 /* 1960.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC7199BADE10066FF03 /* 1960.png */; };
+		7788FFD3199BADE10066FF03 /* 1970.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC8199BADE10066FF03 /* 1970.png */; };
+		7788FFD4199BADE10066FF03 /* 1980.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC9199BADE10066FF03 /* 1980.png */; };
+		7788FFD5199BADE10066FF03 /* 1990.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFCA199BADE10066FF03 /* 1990.png */; };
+		7788FFD6199BADE10066FF03 /* 2000.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFCB199BADE10066FF03 /* 2000.png */; };
+		7788FFD7199BADE10066FF03 /* 2010.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFCC199BADE10066FF03 /* 2010.png */; };
 		77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */; };
 		77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A75B82198C3DBE007D135F /* DTAThemeCell.m */; };
 		77AC835419916D4B009E278B /* white25.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC835319916D4B009E278B /* white25.png */; };
@@ -179,6 +193,10 @@
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
 		F44664B119917906004B497D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664B019917906004B497D /* Theme.m */; };
+<<<<<<< HEAD
+=======
+		F4520546199920630011A6F3 /* DTAAppLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4520545199920630011A6F3 /* DTAAppLinkViewController.m */; };
+>>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
@@ -204,6 +222,8 @@
 		F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
 		F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */; };
+		F4CB9105199AA8B900BC873D /* DTAlink.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB9103199AA8B900BC873D /* DTAlink.png */; };
+		F4CB9106199AA8B900BC873D /* DTAlink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB9104199AA8B900BC873D /* DTAlink@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +237,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		77402D94198FDF7200F255A6 /* 1910s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1910s.png; sourceTree = "<group>"; };
 		77402D95198FDF7200F255A6 /* 1920s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920s.png; sourceTree = "<group>"; };
 		77402D96198FDF7200F255A6 /* 1930s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930s.png; sourceTree = "<group>"; };
@@ -227,13 +248,14 @@
 		77402D9D198FDF7200F255A6 /* 2000s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2000s.png; sourceTree = "<group>"; };
 		77402D9E198FDF7200F255A6 /* 2010s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2010s.png; sourceTree = "<group>"; };
 		77402D9F198FDF7200F255A6 /* pre1900s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1900s.png; sourceTree = "<group>"; };
+=======
+>>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		77402DAC198FE13600F255A6 /* Aviation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aviation.png; sourceTree = "<group>"; };
 		77402DAD198FE13600F255A6 /* foreignDig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foreignDig.png; sourceTree = "<group>"; };
 		77402DAE198FE13600F255A6 /* military.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = military.png; sourceTree = "<group>"; };
 		77402DAF198FE13600F255A6 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
 		77402DB0198FE13600F255A6 /* USHistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USHistory.png; sourceTree = "<group>"; };
 		77402DB1198FE13600F255A6 /* USleaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USleaders.png; sourceTree = "<group>"; };
-		77402DB8198FFB2B00F255A6 /* 1990s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1990s.png; sourceTree = "<group>"; };
 		77402DBA198FFFB100F255A6 /* overtime-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overtime-25.png"; sourceTree = "<group>"; };
 		77402DC01990008C00F255A6 /* survey-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "survey-25.png"; sourceTree = "<group>"; };
 		77402DC21990009600F255A6 /* map_marker-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_marker-25.png"; sourceTree = "<group>"; };
@@ -242,7 +264,6 @@
 		7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTATimeIntervalsTableViewController.m; sourceTree = "<group>"; };
 		7749C4D019896D02009D1F23 /* DTAFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAFilterCell.h; sourceTree = "<group>"; };
 		7749C4D119896D02009D1F23 /* DTAFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAFilterCell.m; sourceTree = "<group>"; };
-		775AA291199129C600FC0A87 /* 1950.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1950.png; sourceTree = "<group>"; };
 		775AA29519913C8300FC0A87 /* canyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canyon.png; sourceTree = "<group>"; };
 		775AA29719913FAE00FC0A87 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		775AA299199151C800FC0A87 /* tickerTack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickerTack.png; sourceTree = "<group>"; };
@@ -252,6 +273,20 @@
 		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7771A43A1988162600CD6BA8 /* DTADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADetailViewController.h; sourceTree = "<group>"; };
 		7771A43B1988162600CD6BA8 /* DTADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADetailViewController.m; sourceTree = "<group>"; };
+		7788FFBD199AA2F10066FF03 /* DTAMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAMapAnnotation.h; sourceTree = "<group>"; };
+		7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAMapAnnotation.m; sourceTree = "<group>"; };
+		7788FFC0199BADDA0066FF03 /* pre1910.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1910.png; sourceTree = "<group>"; };
+		7788FFC2199BADE10066FF03 /* 1910.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1910.png; sourceTree = "<group>"; };
+		7788FFC3199BADE10066FF03 /* 1920.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920.png; sourceTree = "<group>"; };
+		7788FFC4199BADE10066FF03 /* 1930.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930.png; sourceTree = "<group>"; };
+		7788FFC5199BADE10066FF03 /* 1940.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1940.png; sourceTree = "<group>"; };
+		7788FFC6199BADE10066FF03 /* 1950.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1950.png; sourceTree = "<group>"; };
+		7788FFC7199BADE10066FF03 /* 1960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1960.png; sourceTree = "<group>"; };
+		7788FFC8199BADE10066FF03 /* 1970.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1970.png; sourceTree = "<group>"; };
+		7788FFC9199BADE10066FF03 /* 1980.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980.png; sourceTree = "<group>"; };
+		7788FFCA199BADE10066FF03 /* 1990.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1990.png; sourceTree = "<group>"; };
+		7788FFCB199BADE10066FF03 /* 2000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2000.png; sourceTree = "<group>"; };
+		7788FFCC199BADE10066FF03 /* 2010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2010.png; sourceTree = "<group>"; };
 		77A75B6F198C14C9007D135F /* DTAImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DTAImageTableViewCell.xib; path = ../DTAImageTableViewCell.xib; sourceTree = "<group>"; };
 		77A75B81198C3DBE007D135F /* DTAThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAThemeCell.h; sourceTree = "<group>"; };
 		77A75B82198C3DBE007D135F /* DTAThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemeCell.m; sourceTree = "<group>"; };
@@ -405,6 +440,11 @@
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
 		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		F4520544199920630011A6F3 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
+		F4520545199920630011A6F3 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
+>>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
 		F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADateFormatterAssistant.m; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -444,6 +484,8 @@
 		F4BB9A2B198AAA9100956381 /* DTADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataStore.h; sourceTree = "<group>"; };
 		F4BB9A2C198AAA9100956381 /* DTADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataStore.m; sourceTree = "<group>"; };
 		F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultData.m; sourceTree = "<group>"; };
+		F4CB9103199AA8B900BC873D /* DTAlink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DTAlink.png; sourceTree = "<group>"; };
+		F4CB9104199AA8B900BC873D /* DTAlink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DTAlink@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,6 +561,8 @@
 				77402DBA198FFFB100F255A6 /* overtime-25.png */,
 				77402DC01990008C00F255A6 /* survey-25.png */,
 				77402DC21990009600F255A6 /* map_marker-25.png */,
+				F4CB9103199AA8B900BC873D /* DTAlink.png */,
+				F4CB9104199AA8B900BC873D /* DTAlink@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -701,6 +745,13 @@
 				A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */,
 				77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */,
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
+<<<<<<< HEAD
+=======
+				F4520544199920630011A6F3 /* DTAAppLinkViewController.h */,
+				F4520545199920630011A6F3 /* DTAAppLinkViewController.m */,
+				7788FFBD199AA2F10066FF03 /* DTAMapAnnotation.h */,
+				7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */,
+>>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 				77A75B72198C14D2007D135F /* Cells and Xibs */,
 			);
 			name = Controllers;
@@ -854,6 +905,7 @@
 		F490D3C5198C2A65001BAF2C /* Time Interval Images */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				77402D94198FDF7200F255A6 /* 1910s.png */,
 				77402D95198FDF7200F255A6 /* 1920s.png */,
 				77402D96198FDF7200F255A6 /* 1930s.png */,
@@ -866,6 +918,20 @@
 				77402D9D198FDF7200F255A6 /* 2000s.png */,
 				77402D9E198FDF7200F255A6 /* 2010s.png */,
 				77402D9F198FDF7200F255A6 /* pre1900s.png */,
+=======
+				7788FFC0199BADDA0066FF03 /* pre1910.png */,
+				7788FFC2199BADE10066FF03 /* 1910.png */,
+				7788FFC3199BADE10066FF03 /* 1920.png */,
+				7788FFC4199BADE10066FF03 /* 1930.png */,
+				7788FFC5199BADE10066FF03 /* 1940.png */,
+				7788FFC6199BADE10066FF03 /* 1950.png */,
+				7788FFC7199BADE10066FF03 /* 1960.png */,
+				7788FFC8199BADE10066FF03 /* 1970.png */,
+				7788FFC9199BADE10066FF03 /* 1980.png */,
+				7788FFCA199BADE10066FF03 /* 1990.png */,
+				7788FFCB199BADE10066FF03 /* 2000.png */,
+				7788FFCC199BADE10066FF03 /* 2010.png */,
+>>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 			);
 			name = "Time Interval Images";
 			sourceTree = "<group>";
@@ -987,7 +1053,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F410EAA119914B7900A8EA36 /* 165.tif in Resources */,
+				7788FFD2199BADE10066FF03 /* 1960.png in Resources */,
 				F410EA5319914B7900A8EA36 /* 048.tif in Resources */,
+				F4CB9106199AA8B900BC873D /* DTAlink@2x.png in Resources */,
 				F410EA5819914B7900A8EA36 /* 054.tif in Resources */,
 				F410EAB519914B7900A8EA36 /* 192.tif in Resources */,
 				F410EA5019914B7900A8EA36 /* 035.tif in Resources */,
@@ -997,36 +1065,39 @@
 				F410EA4419914B7900A8EA36 /* 008.tif in Resources */,
 				F410EA5419914B7900A8EA36 /* 049a.tif in Resources */,
 				F410EA6E19914B7900A8EA36 /* 084.tif in Resources */,
-				77402DA6198FDF7200F255A6 /* 1970s.png in Resources */,
 				F410EA7A19914B7900A8EA36 /* 098.tif in Resources */,
 				F410EA4C19914B7900A8EA36 /* 024.tif in Resources */,
+				7788FFD5199BADE10066FF03 /* 1990.png in Resources */,
 				F410EA4919914B7900A8EA36 /* 021.tif in Resources */,
 				F410EA9B19914B7900A8EA36 /* 158.tif in Resources */,
 				F410EA6B19914B7900A8EA36 /* 080.tif in Resources */,
 				F410EA4B19914B7900A8EA36 /* 022b.tif in Resources */,
+				7788FFD6199BADE10066FF03 /* 2000.png in Resources */,
 				F410EAB819914B7900A8EA36 /* 198.tif in Resources */,
+				7788FFCD199BADE10066FF03 /* 1910.png in Resources */,
 				77AC835619916D6A009E278B /* white50i.png in Resources */,
-				77402DAA198FDF7200F255A6 /* 2010s.png in Resources */,
-				77402DA7198FDF7200F255A6 /* 1980s.png in Resources */,
 				F410EA5B19914B7900A8EA36 /* 058.tif in Resources */,
-				77402DA9198FDF7200F255A6 /* 2000s.png in Resources */,
+				7788FFD3199BADE10066FF03 /* 1970.png in Resources */,
 				F410EAA019914B7900A8EA36 /* 164.tif in Resources */,
 				F410EA7F19914B7900A8EA36 /* 103.tif in Resources */,
 				F410EAB619914B7900A8EA36 /* 194.tif in Resources */,
 				F410EA6D19914B7900A8EA36 /* 083.tif in Resources */,
 				F410EA5D19914B7900A8EA36 /* 066.tif in Resources */,
+				7788FFD7199BADE10066FF03 /* 2010.png in Resources */,
 				F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */,
+				7788FFD1199BADE10066FF03 /* 1950.png in Resources */,
 				F410EA7519914B7900A8EA36 /* 091.tif in Resources */,
 				775AA29A199151C800FC0A87 /* tickerTack.png in Resources */,
+				7788FFC1199BADDA0066FF03 /* pre1910.png in Resources */,
 				77402DB2198FE13600F255A6 /* Aviation.png in Resources */,
 				F410EA3D19914B7900A8EA36 /* 001.tif in Resources */,
 				F410EA9319914B7900A8EA36 /* 147.tif in Resources */,
 				F410EA9A19914B7900A8EA36 /* 157.tif in Resources */,
 				F410EA8719914B7900A8EA36 /* 118.tif in Resources */,
+				7788FFCF199BADE10066FF03 /* 1930.png in Resources */,
 				F410EA8219914B7900A8EA36 /* 107.tif in Resources */,
 				F410EAA219914B7900A8EA36 /* 166.tif in Resources */,
 				F410EA6719914B7900A8EA36 /* 076.tif in Resources */,
-				77402DA3198FDF7200F255A6 /* 1940s.png in Resources */,
 				F410EAB719914B7900A8EA36 /* 197.tif in Resources */,
 				F410EA5119914B7900A8EA36 /* 038.tif in Resources */,
 				F410EA6019914B7900A8EA36 /* 068.tif in Resources */,
@@ -1039,7 +1110,6 @@
 				F410EA5619914B7900A8EA36 /* 052.tif in Resources */,
 				F410EA9119914B7900A8EA36 /* 145.tif in Resources */,
 				F410EAB119914B7900A8EA36 /* 187.tif in Resources */,
-				775AA292199129C600FC0A87 /* 1950.png in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
 				F410EA7219914B7900A8EA36 /* 088.tif in Resources */,
 				F410EAA919914B7900A8EA36 /* 177.tif in Resources */,
@@ -1052,6 +1122,7 @@
 				F410EA7B19914B7900A8EA36 /* 099.tif in Resources */,
 				F410EA7819914B7900A8EA36 /* 095.tif in Resources */,
 				F410EA9819914B7900A8EA36 /* 155.tif in Resources */,
+				F4CB9105199AA8B900BC873D /* DTAlink.png in Resources */,
 				F410EA8D19914B7900A8EA36 /* 136(Queen).tif in Resources */,
 				F410EA6C19914B7900A8EA36 /* 081.tif in Resources */,
 				77402DBB198FFFB100F255A6 /* overtime-25.png in Resources */,
@@ -1077,6 +1148,7 @@
 				F410EA9E19914B7900A8EA36 /* 161.tif in Resources */,
 				F410EAA719914B7900A8EA36 /* 174.tif in Resources */,
 				F410EA5919914B7900A8EA36 /* 055.tif in Resources */,
+				7788FFCE199BADE10066FF03 /* 1920.png in Resources */,
 				F410EA5219914B7900A8EA36 /* 047.tif in Resources */,
 				F410EA4019914B7900A8EA36 /* 004b.tif in Resources */,
 				F410EA9219914B7900A8EA36 /* 146.tif in Resources */,
@@ -1093,6 +1165,7 @@
 				F410EA5F19914B7900A8EA36 /* 067.tif in Resources */,
 				F410EA4519914B7900A8EA36 /* 011.psd in Resources */,
 				F410EA7119914B7900A8EA36 /* 087.tif in Resources */,
+				7788FFD0199BADE10066FF03 /* 1940.png in Resources */,
 				F410EA6219914B7900A8EA36 /* 070.tif in Resources */,
 				F410EA8C19914B7900A8EA36 /* 136.tif in Resources */,
 				F410EA8B19914B7900A8EA36 /* 135.tif in Resources */,
@@ -1101,8 +1174,7 @@
 				F410EA7919914B7900A8EA36 /* 096.tif in Resources */,
 				F410EA3E19914B7900A8EA36 /* 002.tif in Resources */,
 				F410EAAC19914B7900A8EA36 /* 180.tif in Resources */,
-				77402DB9198FFB2B00F255A6 /* 1990s.png in Resources */,
-				77402DA5198FDF7200F255A6 /* 1960s.png in Resources */,
+				7788FFD4199BADE10066FF03 /* 1980.png in Resources */,
 				F410EA5C19914B7900A8EA36 /* 063.tif in Resources */,
 				F410EA4319914B7900A8EA36 /* 007.tif in Resources */,
 				775AA29619913C8300FC0A87 /* canyon.png in Resources */,
@@ -1116,17 +1188,13 @@
 				F410EA9019914B7900A8EA36 /* 142.tif in Resources */,
 				77402DB4198FE13600F255A6 /* military.png in Resources */,
 				77402DB5198FE13600F255A6 /* sports.png in Resources */,
-				77402DA0198FDF7200F255A6 /* 1910s.png in Resources */,
 				F410EAA819914B7900A8EA36 /* 175.tif in Resources */,
-				77402DA2198FDF7200F255A6 /* 1930s.png in Resources */,
 				F410EA9919914B7900A8EA36 /* 156.tif in Resources */,
 				F410EA6419914B7900A8EA36 /* 073.tif in Resources */,
 				77AC835419916D4B009E278B /* white25.png in Resources */,
-				77402DA2198FDF7200F255A6 /* 1930s.png in Resources */,
 				775AA29819913FAE00FC0A87 /* Background.jpg in Resources */,
 				77402DC31990009600F255A6 /* map_marker-25.png in Resources */,
 				F410EA4819914B7900A8EA36 /* 019.tif in Resources */,
-				77402DA1198FDF7200F255A6 /* 1920s.png in Resources */,
 				F410EA6319914B7900A8EA36 /* 071.tif in Resources */,
 				F410EA8E19914B7900A8EA36 /* 137.tif in Resources */,
 				F410EAB419914B7900A8EA36 /* 191.tif in Resources */,
@@ -1174,6 +1242,7 @@
 				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
 				F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */,
 				F44664B119917906004B497D /* Theme.m in Sources */,
+				7788FFBF199AA2F10066FF03 /* DTAMapAnnotation.m in Sources */,
 				77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
 				F436AEDD1993FD9A00511331 /* Location.m in Sources */,

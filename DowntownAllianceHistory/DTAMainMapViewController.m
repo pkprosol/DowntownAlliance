@@ -10,6 +10,7 @@
 #import "DTADataStore.h"
 #import "UITabBarController+hidableTab.h"
 #import "DTADetailViewController.h"
+#import "DTAMapAnnotation.h"
 
 @interface DTAMainMapViewController ()
 
@@ -159,10 +160,17 @@
   
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    [self performSegueWithIdentifier:@"detailController" sender:view];
+}
+
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
+    
 
     [self performSegueWithIdentifier:@"detailController" sender:view];
+
     
 }
 
@@ -173,31 +181,33 @@
 }
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
-    MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
+    DTAMapAnnotation *pointToAnnotate = [[DTAMapAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat)];
     
-    pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
-    pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
+   
+    
+    pointToAnnotate.location = locationToBePlotted;
+    //pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
-    if (!pinView) {
-        pinView = [[MKPinAnnotationView alloc] init];
-        pinView.pinColor = MKPinAnnotationColorRed;
-        pinView.animatesDrop = YES;
-        pinView.canShowCallout = YES;
-        
-        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        pinView.rightCalloutAccessoryView = rightButton;
-    } else {
-        pinView.annotation = annotation;
-    }
-    return pinView;
-}
+//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+//    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
+//    if (!pinView) {
+//        pinView = [[MKPinAnnotationView alloc] init];
+//        pinView.pinColor = MKPinAnnotationColorRed;
+//        pinView.animatesDrop = YES;
+//        pinView.canShowCallout = YES;
+//        
+//        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//        pinView.rightCalloutAccessoryView = rightButton;
+//    } else {
+//        pinView.annotation = annotation;
+//    }
+//    return pinView;
+//}
 
 
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
@@ -213,15 +223,19 @@
 {
     if ([segue.identifier isEqualToString:@"detailController"])
     {
+    
         MKAnnotationView *view = sender;
-        
-        
-        
+        DTAMapAnnotation *annoation = view.annotation;
+        ((DTADetailViewController *)segue.destinationViewController).locationToBePLotted = annoation.location;
+    }
+    
+    /*
         
     DTADetailViewController *nextVC = segue.destinationViewController;
     Location *selectedLocation =
     nextVC.locationToBePLotted = selectedLocation;
     }
+     */
     
 }
 
