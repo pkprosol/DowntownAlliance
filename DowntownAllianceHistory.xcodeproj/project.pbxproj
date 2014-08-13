@@ -16,6 +16,7 @@
 		77402DA7198FDF7200F255A6 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9B198FDF7200F255A6 /* 1980s.png */; };
 		77402DA9198FDF7200F255A6 /* 2000s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9D198FDF7200F255A6 /* 2000s.png */; };
 		77402DAA198FDF7200F255A6 /* 2010s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9E198FDF7200F255A6 /* 2010s.png */; };
+		77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9F198FDF7200F255A6 /* pre1900s.png */; };
 		77402DB2198FE13600F255A6 /* Aviation.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAC198FE13600F255A6 /* Aviation.png */; };
 		77402DB3198FE13600F255A6 /* foreignDig.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAD198FE13600F255A6 /* foreignDig.png */; };
 		77402DB4198FE13600F255A6 /* military.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAE198FE13600F255A6 /* military.png */; };
@@ -34,7 +35,6 @@
 		775AA29819913FAE00FC0A87 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 775AA29719913FAE00FC0A87 /* Background.jpg */; };
 		775AA29A199151C800FC0A87 /* tickerTack.png in Resources */ = {isa = PBXBuildFile; fileRef = 775AA299199151C800FC0A87 /* tickerTack.png */; };
 		775E45B719990EE30094E3B2 /* DTAListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 775E45B619990EE30094E3B2 /* DTAListCell.m */; };
-		775E45BB199953290094E3B2 /* pre1910s.png in Resources */ = {isa = PBXBuildFile; fileRef = 775E45BA199953290094E3B2 /* pre1910s.png */; };
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
@@ -47,6 +47,7 @@
 		77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC83AB19956E71009E278B /* DTAResizingCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
 		A46EC50919941030001D4A92 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46EC50819941030001D4A92 /* EventKit.framework */; };
+		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
 		F410EA3D19914B7900A8EA36 /* 001.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C119914B7900A8EA36 /* 001.tif */; };
 		F410EA3E19914B7900A8EA36 /* 002.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C219914B7900A8EA36 /* 002.tif */; };
@@ -178,9 +179,6 @@
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
 		F44664B119917906004B497D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664B019917906004B497D /* Theme.m */; };
-		F452050019991F500011A6F3 /* customheader25.png in Resources */ = {isa = PBXBuildFile; fileRef = F45204FF19991F500011A6F3 /* customheader25.png */; };
-		F452050219991FE00011A6F3 /* customheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F452050119991FE00011A6F3 /* customheader@2x.png */; };
-		F4520546199920630011A6F3 /* DTAAppLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4520545199920630011A6F3 /* DTAAppLinkViewController.m */; };
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
@@ -228,6 +226,7 @@
 		77402D9B198FDF7200F255A6 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
 		77402D9D198FDF7200F255A6 /* 2000s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2000s.png; sourceTree = "<group>"; };
 		77402D9E198FDF7200F255A6 /* 2010s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2010s.png; sourceTree = "<group>"; };
+		77402D9F198FDF7200F255A6 /* pre1900s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1900s.png; sourceTree = "<group>"; };
 		77402DAC198FE13600F255A6 /* Aviation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aviation.png; sourceTree = "<group>"; };
 		77402DAD198FE13600F255A6 /* foreignDig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foreignDig.png; sourceTree = "<group>"; };
 		77402DAE198FE13600F255A6 /* military.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = military.png; sourceTree = "<group>"; };
@@ -249,7 +248,6 @@
 		775AA299199151C800FC0A87 /* tickerTack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickerTack.png; sourceTree = "<group>"; };
 		775E45B519990EE30094E3B2 /* DTAListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAListCell.h; sourceTree = "<group>"; };
 		775E45B619990EE30094E3B2 /* DTAListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAListCell.m; sourceTree = "<group>"; };
-		775E45BA199953290094E3B2 /* pre1910s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1910s.png; sourceTree = "<group>"; };
 		7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7771A43A1988162600CD6BA8 /* DTADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADetailViewController.h; sourceTree = "<group>"; };
@@ -268,6 +266,8 @@
 		A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTALocationsTableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTALocationsTableViewController.m; sourceTree = "<group>"; };
 		A46EC50819941030001D4A92 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
+		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
 		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
 		F410E9C119914B7900A8EA36 /* 001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 001.tif; path = COHPhotos/ItemPhotos/001.tif; sourceTree = "<group>"; };
@@ -405,10 +405,6 @@
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
 		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
-		F45204FF19991F500011A6F3 /* customheader25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customheader25.png; sourceTree = "<group>"; };
-		F452050119991FE00011A6F3 /* customheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customheader@2x.png"; sourceTree = "<group>"; };
-		F4520544199920630011A6F3 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
-		F4520545199920630011A6F3 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
 		F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADateFormatterAssistant.m; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -513,8 +509,6 @@
 		F410EAB919914B9700A8EA36 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				F45204FF19991F500011A6F3 /* customheader25.png */,
-				F452050119991FE00011A6F3 /* customheader@2x.png */,
 				77AC835319916D4B009E278B /* white25.png */,
 				77AC835519916D6A009E278B /* white50i.png */,
 				77402DC4199002CC00F255A6 /* map_marker-50.png */,
@@ -636,8 +630,6 @@
 		F47CB71B1987D9CC00398293 /* DowntownAllianceHistory */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB7241987D9CC00398293 /* DTAAppDelegate.h */,
-				F47CB7251987D9CC00398293 /* DTAAppDelegate.m */,
 				775E45B419990DE10094E3B2 /* View */,
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
@@ -695,20 +687,20 @@
 		F47CB75C1987DE7600398293 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
+				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				7749C4CA19896765009D1F23 /* DTATimeIntervalsTableViewController.h */,
 				7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */,
 				F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */,
 				F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */,
-				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
-				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */,
 				A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
 				7771A43B1988162600CD6BA8 /* DTADetailViewController.m */,
+				A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */,
+				A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */,
 				77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */,
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
-				F4520544199920630011A6F3 /* DTAAppLinkViewController.h */,
-				F4520545199920630011A6F3 /* DTAAppLinkViewController.m */,
 				77A75B72198C14D2007D135F /* Cells and Xibs */,
 			);
 			name = Controllers;
@@ -718,6 +710,8 @@
 			isa = PBXGroup;
 			children = (
 				F41C72E21989757800DD15DF /* Archive */,
+				F47CB7241987D9CC00398293 /* DTAAppDelegate.h */,
+				F47CB7251987D9CC00398293 /* DTAAppDelegate.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -860,7 +854,6 @@
 		F490D3C5198C2A65001BAF2C /* Time Interval Images */ = {
 			isa = PBXGroup;
 			children = (
-				775E45BA199953290094E3B2 /* pre1910s.png */,
 				77402D94198FDF7200F255A6 /* 1910s.png */,
 				77402D95198FDF7200F255A6 /* 1920s.png */,
 				77402D96198FDF7200F255A6 /* 1930s.png */,
@@ -872,6 +865,7 @@
 				77402DB8198FFB2B00F255A6 /* 1990s.png */,
 				77402D9D198FDF7200F255A6 /* 2000s.png */,
 				77402D9E198FDF7200F255A6 /* 2010s.png */,
+				77402D9F198FDF7200F255A6 /* pre1900s.png */,
 			);
 			name = "Time Interval Images";
 			sourceTree = "<group>";
@@ -1037,13 +1031,13 @@
 				F410EA5119914B7900A8EA36 /* 038.tif in Resources */,
 				F410EA6019914B7900A8EA36 /* 068.tif in Resources */,
 				77402DB6198FE13600F255A6 /* USHistory.png in Resources */,
+				77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */,
 				F410EA4119914B7900A8EA36 /* 006.tif in Resources */,
 				F410EA8A19914B7900A8EA36 /* 134.tif in Resources */,
 				F410EAA619914B7900A8EA36 /* 173.tif in Resources */,
 				F410EA9419914B7900A8EA36 /* 149.tif in Resources */,
 				F410EA5619914B7900A8EA36 /* 052.tif in Resources */,
 				F410EA9119914B7900A8EA36 /* 145.tif in Resources */,
-				F452050219991FE00011A6F3 /* customheader@2x.png in Resources */,
 				F410EAB119914B7900A8EA36 /* 187.tif in Resources */,
 				775AA292199129C600FC0A87 /* 1950.png in Resources */,
 				77A75B71198C14C9007D135F /* DTAImageTableViewCell.xib in Resources */,
@@ -1095,7 +1089,6 @@
 				F410EA4A19914B7900A8EA36 /* 022a.tif in Resources */,
 				F410EA7D19914B7900A8EA36 /* 101.tif in Resources */,
 				77402DB3198FE13600F255A6 /* foreignDig.png in Resources */,
-				775E45BB199953290094E3B2 /* pre1910s.png in Resources */,
 				F410EAAE19914B7900A8EA36 /* 183.tif in Resources */,
 				F410EA5F19914B7900A8EA36 /* 067.tif in Resources */,
 				F410EA4519914B7900A8EA36 /* 011.psd in Resources */,
@@ -1142,7 +1135,6 @@
 				F410EAB019914B7900A8EA36 /* 186.tif in Resources */,
 				77402DC11990008C00F255A6 /* survey-25.png in Resources */,
 				F410EA4219914B7900A8EA36 /* 007.eps in Resources */,
-				F452050019991F500011A6F3 /* customheader25.png in Resources */,
 				F410EA9519914B7900A8EA36 /* 152.tif in Resources */,
 				F410EA9719914B7900A8EA36 /* 154.tif in Resources */,
 				F410EA3F19914B7900A8EA36 /* 004a.tif in Resources */,
@@ -1175,6 +1167,7 @@
 				F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */,
 				77AC835C19929BC3009E278B /* DTAScrollingDetailTable.m in Sources */,
 				77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */,
+				A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */,
 				F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */,
 				77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */,
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
@@ -1183,7 +1176,6 @@
 				F44664B119917906004B497D /* Theme.m in Sources */,
 				77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
-				F4520546199920630011A6F3 /* DTAAppLinkViewController.m in Sources */,
 				F436AEDD1993FD9A00511331 /* Location.m in Sources */,
 				F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
