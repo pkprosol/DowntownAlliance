@@ -63,7 +63,7 @@
     NSString *titleString = [NSString stringWithFormat:@"Rxxx You have arrived at\n%@",locationManager.monitoredRegions.allObjects[0]];
     reminder.title = titleString;
     reminder.calendar = [eventStore defaultCalendarForNewReminders];
-    EKAlarm *fenceAlarm = [locationManager.monitoredRegions.allObjects[0] createAlarm];
+    EKAlarm *fenceAlarm = [self createAlarm];
     [reminder addAlarm:fenceAlarm];
     NSError *error = nil;
     [eventStore saveReminder:reminder commit:YES error:&error];
