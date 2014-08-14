@@ -78,7 +78,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+
     
     self.stuffToDisplay = [[NSMutableArray alloc]init];
     [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];

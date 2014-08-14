@@ -18,7 +18,6 @@
 -(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
     // _didStartMonitoringRegion = YES;
-    NSLog(@"in the area");
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!"
                                                       message:@"You are now near the canyon of heroes!"
                                                      delegate:nil
@@ -29,7 +28,6 @@
 
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLCircularRegion *)region
 {
-    NSLog(@"in the area");
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Goodbye World!"
                                                       message:@"You are now leaving the canyon of heroes!"
                                                      delegate:nil
@@ -83,53 +81,8 @@
     [self.locationManager startMonitoringForRegion:region];
     [self.locationManager startUpdatingLocation];
     [self.locationManager stopUpdatingLocation];
-    NSLog(@"%@",self.locationManager.monitoredRegions);
 }
 
--(void)awakeFromNib
-    {
-    
-    }
-
-//-(void)addCurrentLocation:(id)sender
-//    {
-//        // Update Helper
-//        _didStartMonitoringRegion = NO;
-//        
-//        // Start Updating Location
-//        [self.locationManager startUpdatingLocation];
-//    }
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-      NSLog(@"%@",locations);
-//    if (locations && [locations count] && !_didStartMonitoringRegion) {
-//        // Update Helper
-//        _didStartMonitoringRegion = YES;
-//        
-//        // Fetch Current Location
-//        CLLocation *location = [locations objectAtIndex:0];
-//        
-//        CLLocation *location2 = [[CLLocation alloc] initWithLatitude:40.709509 longitude:74.010258];
-//        
-//        // Initialize Region to Monitor
-//        CLRegion *region = [[CLRegion alloc] initCircularRegionWithCenter:[location2 coordinate] radius:250.0 identifier:[[NSUUID UUID] UUIDString]];
-//        
-//        
-//        
-//        // Start Monitoring Region
-//        [self.locationManager startMonitoringForRegion:region];
-//        [self.locationManager stopUpdatingLocation];
-//        
-//        //        // Update Table View
-//        //        [self.geofences addObject:region];
-//        //        [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:([self.geofences count] - 1) inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
-//        // self.locationManager = locations.lastObject;
-//        
-//        // Update View
-//        //  [self updateView];
-//    }
-}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
