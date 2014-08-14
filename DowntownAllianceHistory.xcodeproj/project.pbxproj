@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		77402DA0198FDF7200F255A6 /* 1910s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D94198FDF7200F255A6 /* 1910s.png */; };
-		77402DA1198FDF7200F255A6 /* 1920s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D95198FDF7200F255A6 /* 1920s.png */; };
-		77402DA2198FDF7200F255A6 /* 1930s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D96198FDF7200F255A6 /* 1930s.png */; };
-		77402DA3198FDF7200F255A6 /* 1940s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D97198FDF7200F255A6 /* 1940s.png */; };
-		77402DA5198FDF7200F255A6 /* 1960s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D99198FDF7200F255A6 /* 1960s.png */; };
-		77402DA6198FDF7200F255A6 /* 1970s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9A198FDF7200F255A6 /* 1970s.png */; };
-		77402DA7198FDF7200F255A6 /* 1980s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9B198FDF7200F255A6 /* 1980s.png */; };
-		77402DA9198FDF7200F255A6 /* 2000s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9D198FDF7200F255A6 /* 2000s.png */; };
-		77402DAA198FDF7200F255A6 /* 2010s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9E198FDF7200F255A6 /* 2010s.png */; };
-		77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402D9F198FDF7200F255A6 /* pre1900s.png */; };
-=======
->>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		77402DB2198FE13600F255A6 /* Aviation.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAC198FE13600F255A6 /* Aviation.png */; };
 		77402DB3198FE13600F255A6 /* foreignDig.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAD198FE13600F255A6 /* foreignDig.png */; };
 		77402DB4198FE13600F255A6 /* military.png in Resources */ = {isa = PBXBuildFile; fileRef = 77402DAE198FE13600F255A6 /* military.png */; };
@@ -193,10 +180,6 @@
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
 		F44664B119917906004B497D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664B019917906004B497D /* Theme.m */; };
-<<<<<<< HEAD
-=======
-		F4520546199920630011A6F3 /* DTAAppLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4520545199920630011A6F3 /* DTAAppLinkViewController.m */; };
->>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		F45D46C7198ACCA70029BD84 /* DTADateFormatterAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */; };
 		F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
 		F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7171987D9CC00398293 /* CoreGraphics.framework */; };
@@ -237,19 +220,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		77402D94198FDF7200F255A6 /* 1910s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1910s.png; sourceTree = "<group>"; };
-		77402D95198FDF7200F255A6 /* 1920s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920s.png; sourceTree = "<group>"; };
-		77402D96198FDF7200F255A6 /* 1930s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1930s.png; sourceTree = "<group>"; };
-		77402D97198FDF7200F255A6 /* 1940s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1940s.png; sourceTree = "<group>"; };
-		77402D99198FDF7200F255A6 /* 1960s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1960s.png; sourceTree = "<group>"; };
-		77402D9A198FDF7200F255A6 /* 1970s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1970s.png; sourceTree = "<group>"; };
-		77402D9B198FDF7200F255A6 /* 1980s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1980s.png; sourceTree = "<group>"; };
-		77402D9D198FDF7200F255A6 /* 2000s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2000s.png; sourceTree = "<group>"; };
-		77402D9E198FDF7200F255A6 /* 2010s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2010s.png; sourceTree = "<group>"; };
-		77402D9F198FDF7200F255A6 /* pre1900s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1900s.png; sourceTree = "<group>"; };
-=======
->>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		77402DAC198FE13600F255A6 /* Aviation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aviation.png; sourceTree = "<group>"; };
 		77402DAD198FE13600F255A6 /* foreignDig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foreignDig.png; sourceTree = "<group>"; };
 		77402DAE198FE13600F255A6 /* military.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = military.png; sourceTree = "<group>"; };
@@ -440,11 +410,8 @@
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
 		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		F4520544199920630011A6F3 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
 		F4520545199920630011A6F3 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
->>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
 		F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADateFormatterAssistant.m; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -745,13 +712,10 @@
 				A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */,
 				77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */,
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
-<<<<<<< HEAD
-=======
 				F4520544199920630011A6F3 /* DTAAppLinkViewController.h */,
 				F4520545199920630011A6F3 /* DTAAppLinkViewController.m */,
 				7788FFBD199AA2F10066FF03 /* DTAMapAnnotation.h */,
 				7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */,
->>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 				77A75B72198C14D2007D135F /* Cells and Xibs */,
 			);
 			name = Controllers;
@@ -905,20 +869,6 @@
 		F490D3C5198C2A65001BAF2C /* Time Interval Images */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				77402D94198FDF7200F255A6 /* 1910s.png */,
-				77402D95198FDF7200F255A6 /* 1920s.png */,
-				77402D96198FDF7200F255A6 /* 1930s.png */,
-				77402D97198FDF7200F255A6 /* 1940s.png */,
-				775AA291199129C600FC0A87 /* 1950.png */,
-				77402D99198FDF7200F255A6 /* 1960s.png */,
-				77402D9A198FDF7200F255A6 /* 1970s.png */,
-				77402D9B198FDF7200F255A6 /* 1980s.png */,
-				77402DB8198FFB2B00F255A6 /* 1990s.png */,
-				77402D9D198FDF7200F255A6 /* 2000s.png */,
-				77402D9E198FDF7200F255A6 /* 2010s.png */,
-				77402D9F198FDF7200F255A6 /* pre1900s.png */,
-=======
 				7788FFC0199BADDA0066FF03 /* pre1910.png */,
 				7788FFC2199BADE10066FF03 /* 1910.png */,
 				7788FFC3199BADE10066FF03 /* 1920.png */,
@@ -931,7 +881,6 @@
 				7788FFCA199BADE10066FF03 /* 1990.png */,
 				7788FFCB199BADE10066FF03 /* 2000.png */,
 				7788FFCC199BADE10066FF03 /* 2010.png */,
->>>>>>> 13482ba7cbe7ec327ef4dab8e0822cf74275bf4f
 			);
 			name = "Time Interval Images";
 			sourceTree = "<group>";
@@ -1102,7 +1051,6 @@
 				F410EA5119914B7900A8EA36 /* 038.tif in Resources */,
 				F410EA6019914B7900A8EA36 /* 068.tif in Resources */,
 				77402DB6198FE13600F255A6 /* USHistory.png in Resources */,
-				77402DAB198FDF7200F255A6 /* pre1900s.png in Resources */,
 				F410EA4119914B7900A8EA36 /* 006.tif in Resources */,
 				F410EA8A19914B7900A8EA36 /* 134.tif in Resources */,
 				F410EAA619914B7900A8EA36 /* 173.tif in Resources */,
