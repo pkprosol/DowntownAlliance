@@ -52,6 +52,7 @@
     alarm.proximity = EKAlarmProximityEnter;
     alarm.structuredLocation = [self createStructuredLocation];
     return alarm;
+    
 }
 
 -(void)setupAlarmWithEventStore:(EKEventStore*)eventStore AndLocationManager:(CLLocationManager *)locationManager

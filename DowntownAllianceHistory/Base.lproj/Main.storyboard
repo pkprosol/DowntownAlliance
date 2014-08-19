@@ -132,7 +132,7 @@
         <scene sceneID="NFh-P0-0mJ">
             <objects>
                 <tableViewController id="iD8-R4-4OB" customClass="DTATimeIntervalsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7uX-6d-3na">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7uX-6d-3na">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -350,6 +350,7 @@
         <!--Navigation Controller - By Era-->
         <scene sceneID="LG7-Xq-tEI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXO-ha-iSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eTg-pW-Spe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Era" image="overtime-25.png" id="1A7-XV-uyc"/>
                     <toolbarItems/>
@@ -368,13 +369,13 @@
                         <segue destination="iD8-R4-4OB" kind="relationship" relationship="rootViewController" id="OQv-tL-N47"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jXO-ha-iSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1958" y="-673"/>
         </scene>
         <!--Navigation Controller - By Category-->
         <scene sceneID="6eR-RE-0Di">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scI-Yc-4xS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTL-Xx-6z6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Category" image="survey-25.png" id="2Ir-sJ-Yqr"/>
                     <toolbarItems/>
@@ -392,7 +393,6 @@
                         <segue destination="Vi5-JB-l18" kind="relationship" relationship="rootViewController" id="SwA-iJ-1r8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="scI-Yc-4xS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1958" y="19"/>
         </scene>
@@ -419,7 +419,7 @@
         <scene sceneID="5UO-ij-4wa">
             <objects>
                 <tableViewController id="Vi5-JB-l18" customClass="DTAThemesTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KFU-s6-EK7">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KFU-s6-EK7">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -432,7 +432,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aO6-pf-Zg8">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                            <rect key="frame" x="0.0" y="-1" width="320" height="100"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                     </subviews>
@@ -528,7 +528,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Fcu-jf-gi1"/>
         <segue reference="p07-Qj-wZk"/>
+        <segue reference="Fcu-jf-gi1"/>
     </inferredMetricsTieBreakers>
 </document>

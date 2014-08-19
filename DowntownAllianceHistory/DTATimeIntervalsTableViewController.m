@@ -18,8 +18,6 @@
 @end
 
 @implementation DTATimeIntervalsTableViewController
-
-
 {
     CGFloat startContentOffset;
     CGFloat lastContentOffset;
@@ -41,11 +39,11 @@
 {
     [super viewDidLoad];
     hidden=NO;
+    self.tableView.backgroundColor = [UIColor blackColor];
     
    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
-    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
     [self.tableView setSeparatorColor:[UIColor blackColor]];
-    
+   
     
     self.arrayOfTimeIntervals = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
     self.arrayOfImages = [NSMutableArray new];
@@ -120,6 +118,7 @@
     //    [self.navigationController setNavigationBarHidden:hidden
     //                                             animated:YES];
     //
+
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -190,7 +189,8 @@
     CGFloat currentOffset = scrollView.contentOffset.y;
     CGFloat differenceFromStart = startContentOffset - currentOffset;
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
-    lastContentOffset = currentOffset;
+
+    //lastContentOffset = currentOffset;
     
 //    NSLog(@"Offest: %f",currentOffset);
 //    NSLog(@"start: %f", differenceFromStart);
@@ -199,14 +199,14 @@
     if((differenceFromStart) < 0)
     {
         // scroll up
-        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        if(scrollView.isTracking && (abs(differenceFromLast)>0))
         {
             [self expand];
             NSLog(@"Expanding");
         }
     }
     else {
-        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        if(scrollView.isTracking && (abs(differenceFromLast)>0))
         {
             [self contract];
             NSLog(@"contracting");
@@ -342,6 +342,7 @@
         
         nextVC.title = timeRangeSelected.nameOfRange;
         nextVC.locationsToShow = [DTASetUpDefaultTimeRanges findItemsInTimeRange:timeRangeSelected];
+        
     }
 }
 
