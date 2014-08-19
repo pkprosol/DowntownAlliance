@@ -183,7 +183,7 @@
     startContentOffset = lastContentOffset = scrollView.contentOffset.y;
     //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
 }
-
+/*
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat currentOffset = scrollView.contentOffset.y;
@@ -199,7 +199,7 @@
     if((differenceFromStart) < 0)
     {
         // scroll up
-        if(scrollView.isTracking && (abs(differenceFromLast)>0))
+        if(scrollView.isTracking && (abs(differenceFromLast)>10))
         {
             [self expand];
             NSLog(@"Expanding");
@@ -215,7 +215,7 @@
     
 }
 
-
+*/
 #pragma mark - The Magic!
 
 //-(void)expand
