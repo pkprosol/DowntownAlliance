@@ -52,6 +52,7 @@
     alarm.proximity = EKAlarmProximityEnter;
     alarm.structuredLocation = [self createStructuredLocation];
     return alarm;
+    
 }
 
 -(void)setupAlarmWithEventStore:(EKEventStore*)eventStore AndLocationManager:(CLLocationManager *)locationManager
@@ -70,10 +71,10 @@
 -(void)getGeofence
 {
     
-    CLLocation *location = [[CLLocation alloc] initWithLatitude:40.709509 longitude:-74.01025];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:40.709509 longitude:-74.010258];
     
     // Initialize Region to Monitor
-    CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:25 identifier:@"Identifier"];
+    CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:250 identifier:@"Identifier"];
     NSSet *regions = self.locationManager.monitoredRegions;
     self.locationManager.delegate = self;
     

@@ -41,7 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.tableView.backgroundColor = [UIColor blackColor];
+
     DTADataStore *store = [DTADataStore sharedDataStore];
     self.themesArray = store.defaultThemesArray;
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
@@ -116,39 +117,44 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     startContentOffset = lastContentOffset = scrollView.contentOffset.y;
-    //NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
+    NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+/*- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat currentOffset = scrollView.contentOffset.y;
     CGFloat differenceFromStart = startContentOffset - currentOffset;
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
-    lastContentOffset = currentOffset;
+   // lastContentOffset = currentOffset;
     
     if((differenceFromStart) < 0)
     {
         // scroll up
-        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        if(scrollView.isTracking && (abs(differenceFromLast)>15))
         {
             [self expand];
         }
     }
     else {
-        if(scrollView.isTracking && (abs(differenceFromLast)>20))
+        if(scrollView.isTracking && (abs(differenceFromLast)>0))
         {
             [self contract];
         }
     }
     
 }
+ */
 
-
+- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
+{
+    [self contract];
+}
 #pragma mark - Table view delegate
 
 
 
 #pragma mark - The Magic!
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -157,10 +163,10 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//    return 1;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
