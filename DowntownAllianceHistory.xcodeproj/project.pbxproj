@@ -205,6 +205,7 @@
 		F4BB9A27198A969B00956381 /* DTASetUpDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A26198A969B00956381 /* DTASetUpDefaultTimeRanges.m */; };
 		F4BB9A2D198AAA9100956381 /* DTADataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2C198AAA9100956381 /* DTADataStore.m */; };
 		F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */; };
+		F4BBCD7719A5140E00C2AC36 /* DTAAppLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BBCD7619A5140E00C2AC36 /* DTAAppLinkViewController.m */; };
 		F4CB9105199AA8B900BC873D /* DTAlink.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB9103199AA8B900BC873D /* DTAlink.png */; };
 		F4CB9106199AA8B900BC873D /* DTAlink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB9104199AA8B900BC873D /* DTAlink@2x.png */; };
 /* End PBXBuildFile section */
@@ -410,8 +411,6 @@
 		F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGetRandomNumber.m; sourceTree = "<group>"; };
 		F44664AF19917906004B497D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		F44664B019917906004B497D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
-		F4520544199920630011A6F3 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
-		F4520545199920630011A6F3 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
 		F45D46C5198ACCA70029BD84 /* DTADateFormatterAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADateFormatterAssistant.h; sourceTree = "<group>"; };
 		F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADateFormatterAssistant.m; sourceTree = "<group>"; };
 		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,6 +450,8 @@
 		F4BB9A2B198AAA9100956381 /* DTADataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADataStore.h; sourceTree = "<group>"; };
 		F4BB9A2C198AAA9100956381 /* DTADataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADataStore.m; sourceTree = "<group>"; };
 		F4BB9A2E198AAAE300956381 /* DTASetUpDefaultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTASetUpDefaultData.m; sourceTree = "<group>"; };
+		F4BBCD7519A5140D00C2AC36 /* DTAAppLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAppLinkViewController.h; sourceTree = "<group>"; };
+		F4BBCD7619A5140E00C2AC36 /* DTAAppLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAppLinkViewController.m; sourceTree = "<group>"; };
 		F4CB9103199AA8B900BC873D /* DTAlink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DTAlink.png; sourceTree = "<group>"; };
 		F4CB9104199AA8B900BC873D /* DTAlink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DTAlink@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -712,8 +713,8 @@
 				A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */,
 				77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */,
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
-				F4520544199920630011A6F3 /* DTAAppLinkViewController.h */,
-				F4520545199920630011A6F3 /* DTAAppLinkViewController.m */,
+				F4BBCD7519A5140D00C2AC36 /* DTAAppLinkViewController.h */,
+				F4BBCD7619A5140E00C2AC36 /* DTAAppLinkViewController.m */,
 				7788FFBD199AA2F10066FF03 /* DTAMapAnnotation.h */,
 				7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */,
 				77A75B72198C14D2007D135F /* Cells and Xibs */,
@@ -1208,6 +1209,7 @@
 				775E45B719990EE30094E3B2 /* DTAListCell.m in Sources */,
 				F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */,
 				7749C4CC19896765009D1F23 /* DTATimeIntervalsTableViewController.m in Sources */,
+				F4BBCD7719A5140E00C2AC36 /* DTAAppLinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
