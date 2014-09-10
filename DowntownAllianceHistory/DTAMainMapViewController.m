@@ -200,21 +200,21 @@
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
-    if (!pinView) {
-        pinView = [[MKPinAnnotationView alloc] init];
-        pinView.pinColor = MKPinAnnotationColorRed;
-        pinView.animatesDrop = YES;
-        pinView.canShowCallout = YES;
-        
-        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        pinView.rightCalloutAccessoryView = rightButton;
-    } else {
-        pinView.annotation = annotation;
-    }
-    return pinView;
-}
+//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+//    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
+//    if (!pinView) {
+//        pinView = [[MKPinAnnotationView alloc] init];
+//        pinView.pinColor = MKPinAnnotationColorRed;
+//        pinView.animatesDrop = YES;
+//        pinView.canShowCallout = YES;
+//        
+//        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//        pinView.rightCalloutAccessoryView = rightButton;
+//    } else {
+//        pinView.annotation = annotation;
+//    }
+//    return pinView;
+//}
 
 
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
