@@ -719,12 +719,12 @@
 		F47CB75C1987DE7600398293 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
-				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				7749C4CA19896765009D1F23 /* DTATimeIntervalsTableViewController.h */,
 				7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */,
 				F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */,
 				F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */,
+				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
+				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
 				A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */,
 				A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,

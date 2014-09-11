@@ -47,7 +47,6 @@
     
     [self.navigationController setNavigationBarHidden:hidden
                                              animated:YES];
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -62,18 +61,12 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark - Table view data source
-
-#pragma mark - Table view delegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
     
     
 }
-
-#pragma mark - The Magic!
 
 -(void)expand
 {
@@ -92,9 +85,6 @@
     hidden = NO;
     
 }
-
-#pragma mark -
-#pragma mark UIScrollViewDelegate Methods
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
@@ -150,18 +140,19 @@
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
   
 }
-//
-//-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
-//    [self performSegueWithIdentifier:@"detailController" sender:view];
-//}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"loc"];
+    annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
+    return annotationView;
+}
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    
-
     [self performSegueWithIdentifier:@"detailController" sender:view];
-
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -183,28 +174,10 @@
     pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
     pointToAnnotate.location = locationToBePlotted;
     
-   
-    
-   
-    //pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
-    
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
-//- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-//    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
-//    if (!pinView) {
-//        pinView = [[MKPinAnnotationView alloc] init];
-//        pinView.pinColor = MKPinAnnotationColorRed;
-//        pinView.animatesDrop = YES;
-//        pinView.canShowCallout = YES;
-//        
-//        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-//        pinView.rightCalloutAccessoryView = rightButton;
-//    } else {
-//        pinView.annotation = annotation;
-//    }
-//    return pinView;
-//}
+
+
 
 
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
