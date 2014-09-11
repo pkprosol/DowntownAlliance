@@ -39,7 +39,6 @@
     if (self.setOfRegions == nil) {
         self.setOfRegions = [[NSMutableArray alloc] init];
         NSInteger locationNumber = 0;
-        BOOL isAlreadyInRegion = NO;
         
         for (CLLocation *location in self.setOfLocationsForGeofencing) {
             CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:100 identifier:[NSString stringWithFormat:@"Identifier%d", locationNumber]];
@@ -53,7 +52,7 @@
             CLLocationDistance distanceFromRegion = [self.locationManager.location distanceFromLocation:centerOfRegion];
 
             if (distanceFromRegion > 150) {
-                
+//                [self respondToUserPresenceInRegion];
             }
             
             locationNumber++;
@@ -66,6 +65,8 @@
     
     NSLog(@"Monitored regions %@", self.locationManager.monitoredRegions);
 }
+
+
 
 - (void)createLocationsForGeoFencing
 {
@@ -94,10 +95,19 @@
 {
     NSLog(@"Entered region: %@", region);
     
+    if ([self isValidTimeForAlerts]) {
+        [self respondToUserPresenceInRegion];
+    }
+}
+
+- (BOOL)isValidTimeForAlerts
+{
     NSInteger priorNumberOfAlerts = [self getPriorNumberOfAlertsSeen];
     
     if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts < 3 && [self hasAppropriateTimePassedSincePriorAlert])){
-        [self respondToUserPresenceInRegion];
+        return YES;
+    } else {
+        return NO;
     }
 }
 
