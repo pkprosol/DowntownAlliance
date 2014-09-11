@@ -36,6 +36,28 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.mapOutlet.delegate = self;
+    
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    
+    self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
+    
+    [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
+    
+    CGFloat latitudeFloat = 40.7089005;
+    CGFloat longitudeFloat = -74.0105972;
+    
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
+    
+    [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
+    
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -64,8 +86,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
 }
 
 -(void)expand
@@ -74,7 +94,6 @@
         return;
     
     hidden = YES;
-    
 }
 
 -(void)contract
@@ -83,7 +102,6 @@
         return;
     
     hidden = NO;
-    
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -98,8 +116,6 @@
     CGFloat differenceFromLast = lastContentOffset - currentOffset;
     lastContentOffset = currentOffset;
     
-    
-    
     if((differenceFromStart) < 0)
     {
         if(scrollView.isTracking && (abs(differenceFromLast)>1))
@@ -109,7 +125,6 @@
         if(scrollView.isTracking && (abs(differenceFromLast)>1))
             [self contract];
     }
-    
 }
 
 - (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
@@ -118,31 +133,16 @@
     return YES;
 }
 
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.mapOutlet.delegate = self;
-    
-    DTADataStore *store = [DTADataStore sharedDataStore];
-    
-    self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
-    
-    [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
-    
-    CGFloat latitudeFloat = 40.7089005;
-    CGFloat longitudeFloat = -74.0105972;
-    
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
-    
-    [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
-  
-}
-
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    if (NSClassFromString(@"MKUserLocation")==[annotation class]) {
+        return nil;
+    }
+    
+    if (annotation == mapView.userLocation) {
+        return nil;
+    }
+    
     MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"loc"];
     annotationView.canShowCallout = YES;
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
@@ -163,12 +163,10 @@
 {
 //    MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
-
-    
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
-         DTAMapAnnotation *pointToAnnotate = [[DTAMapAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat)];
+    DTAMapAnnotation *pointToAnnotate = [[DTAMapAnnotation alloc]initWithLocation:CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat)];
     
     pointToAnnotate.coordinate = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
     pointToAnnotate.title = locationToBePlotted.titleOfPlaque;
@@ -176,9 +174,6 @@
     
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
-
-
-
 
 -(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
 {
@@ -188,15 +183,14 @@
     }
 }
 
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"detailController"])
     {
     
         MKAnnotationView *view = sender;
-        DTAMapAnnotation *annoation = view.annotation;
-        ((DTADetailViewController *)segue.destinationViewController).locationToBePLotted = annoation.location;
+        DTAMapAnnotation *annotation = view.annotation;
+        ((DTADetailViewController *)segue.destinationViewController).locationToBePLotted = annotation.location;
     }
 }
 

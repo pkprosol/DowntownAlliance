@@ -7,6 +7,7 @@
 //
 
 #import "DTAGeoFencing.h"
+
 @interface DTAGeoFencing ()
 
 @end
@@ -19,14 +20,13 @@
     self.locationManager.delegate = self;
     
     self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    self.locationManager.distanceFilter = 50.0f;
     
     [self setUpRegions];
     
     if ([CLLocationManager locationServicesEnabled]) {
         [self.locationManager startUpdatingLocation];
     }
-
-    [self.locationManager stopUpdatingLocation];
 }
 
 - (void)setUpRegions
@@ -39,21 +39,11 @@
     if (self.setOfRegions == nil) {
         self.setOfRegions = [[NSMutableArray alloc] init];
         NSInteger locationNumber = 0;
+        self.defaultDistanceInMeters = 200;
         
         for (CLLocation *location in self.setOfLocationsForGeofencing) {
-            CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:100 identifier:[NSString stringWithFormat:@"Identifier%d", locationNumber]];
+            CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:self.defaultDistanceInMeters identifier:[NSString stringWithFormat:@"Identifier%d", locationNumber]];
             [self.setOfRegions addObject:region];
-            
-            CLLocationDegrees regionCenterLatitude = region.center.latitude;
-            CLLocationDegrees regionCenterLongitude = region.center.longitude;
-            
-            CLLocation *centerOfRegion = [[CLLocation alloc] initWithLatitude:regionCenterLatitude longitude:regionCenterLongitude];
-            
-            CLLocationDistance distanceFromRegion = [self.locationManager.location distanceFromLocation:centerOfRegion];
-
-            if (distanceFromRegion > 150) {
-//                [self respondToUserPresenceInRegion];
-            }
             
             locationNumber++;
         }
@@ -63,10 +53,8 @@
         [self.locationManager startMonitoringForRegion:region];
     }
     
-    NSLog(@"Monitored regions %@", self.locationManager.monitoredRegions);
+    [self performSelector:@selector(checkAndRespondIfUserIsAlreadyInRegion) withObject:nil afterDelay:8];
 }
-
-
 
 - (void)createLocationsForGeoFencing
 {
@@ -91,12 +79,30 @@
     }
 }
 
--(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
+- (void)checkAndRespondIfUserIsAlreadyInRegion
+{
+    for (CLRegion *region in self.setOfRegions) {
+        CLLocationDegrees regionCenterLatitude = region.center.latitude;
+        CLLocationDegrees regionCenterLongitude = region.center.longitude;
+        
+        CLLocation *centerOfRegion = [[CLLocation alloc] initWithLatitude:regionCenterLatitude longitude:regionCenterLongitude];
+        
+        CLLocationDistance distanceFromRegion = [self.locationManager.location distanceFromLocation:centerOfRegion];
+        
+        if (self.locationManager.location != nil && distanceFromRegion < self.defaultDistanceInMeters && [self isValidTimeForAlerts]) {
+            [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
+            [self performSelector:@selector(showUserProximityAlert) withObject:nil afterDelay:2];
+        }
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
     NSLog(@"Entered region: %@", region);
     
     if ([self isValidTimeForAlerts]) {
-        [self respondToUserPresenceInRegion];
+        [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
+        [self showUserProximityAlert];
     }
 }
 
@@ -104,35 +110,36 @@
 {
     NSInteger priorNumberOfAlerts = [self getPriorNumberOfAlertsSeen];
     
-    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts < 3 && [self hasAppropriateTimePassedSincePriorAlert])){
+    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts > 0 && priorNumberOfAlerts < 10 && [self hasAppropriateTimePassedSincePriorAlert])){
         return YES;
     } else {
         return NO;
     }
 }
 
-- (void)respondToUserPresenceInRegion
+- (void)showUserProximityAlert
 {
-    [self showAlert];
-    [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
-}
-
-- (void)showAlert
-{
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Welcome!"
-                                                      message:@"You are now near the Canyon of Heroes!"
-                                                     delegate:self
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
+    UIApplicationState state = [[UIApplication sharedApplication] applicationState];
     
-    [message show];
+    if (state == UIApplicationStateBackground || state == UIApplicationStateInactive)
+    {
+        [self fireBackgroundNotification];
+    } else {
+        UIAlertView *userEnteredRegion = [[UIAlertView alloc]initWithTitle:@"Welcome!"
+                                                                   message:@"You are near the Canyon of Heroes!"
+                                                                  delegate:nil
+                                                         cancelButtonTitle:@"OK"
+                                                         otherButtonTitles:nil];
+        
+        [userEnteredRegion show];
+    }
 }
 
 - (NSInteger)getPriorNumberOfAlertsSeen
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger numberOfAlertsSeen = [defaults integerForKey:@"alertsShown"];
-    
+
     return numberOfAlertsSeen;
 }
 
@@ -158,7 +165,9 @@
     NSUserDefaults *defaults  = [NSUserDefaults standardUserDefaults];
     NSDate *dateOfLastAlert = [defaults valueForKey:@"dateAndTimeOfLastAlert"];
     
-    if (dateOfLastAlert > 0 && [[NSDate date] timeIntervalSinceDate:dateOfLastAlert] > 15) {
+    NSInteger secondsInOneWeek = 10; //604800;
+    
+    if (dateOfLastAlert > 0 && [[NSDate date] timeIntervalSinceDate:dateOfLastAlert] > secondsInOneWeek) {
         return YES;
     } else {
         return NO;
@@ -181,56 +190,15 @@
     return lastAlertDate;
 }
 
-//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-//{
-//    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-//    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:60];
-//    localNotification.alertBody = @"Your alert message";
-//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-//    
-//    // Override point for customization after application launch.
-//    
-//    // Handle launching from a notification
-//    UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-//    if (locationNotification) {
-//        // Set icon badge number to zero
-//        application.applicationIconBadgeNumber = 0;
-//    }
-//    
-//    return YES;
-//}
+- (void)fireBackgroundNotification
+{
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate date];
+    localNotification.alertBody = @"You are near the Canyon of Heroes!";
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
 
-//-(EKStructuredLocation*)createStructuredLocation
-//{
-//    EKStructuredLocation *structuredLocation = [EKStructuredLocation locationWithTitle:@"structuredLocation"];
-//    CLCircularRegion *myRegion = [self.locationManager.monitoredRegions allObjects][0];
-//    CLLocation *locationForStructLoc = [[CLLocation alloc] initWithLatitude:myRegion.center.latitude longitude:myRegion.center.longitude];
-//    structuredLocation.geoLocation = locationForStructLoc;
-//    structuredLocation.radius = myRegion.radius;
-//    return structuredLocation;
-//}
-//
-//-(EKAlarm*)createAlarm
-//{
-//    EKAlarm *alarm = [[EKAlarm alloc]init];
-//    alarm.proximity = EKAlarmProximityEnter;
-//    alarm.structuredLocation = [self createStructuredLocation];
-//    return alarm;
-//    
-//}
-//
-//-(void)setupAlarmWithEventStore:(EKEventStore*)eventStore AndLocationManager:(CLLocationManager *)locationManager
-//{
-//    
-//    EKReminder *reminder = [EKReminder reminderWithEventStore:eventStore];
-//    NSString *titleString = [NSString stringWithFormat:@"Rxxx You have arrived at\n%@",locationManager.monitoredRegions.allObjects[0]];
-//    reminder.title = titleString;
-//    reminder.calendar = [eventStore defaultCalendarForNewReminders];
-//    EKAlarm *fenceAlarm = [self createAlarm];
-//    [reminder addAlarm:fenceAlarm];
-//    NSError *error = nil;
-//    [eventStore saveReminder:reminder commit:YES error:&error];
-//}
+
 
 @end
