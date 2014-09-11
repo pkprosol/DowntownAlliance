@@ -48,7 +48,6 @@
 		77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC83AB19956E71009E278B /* DTAResizingCell.m */; };
 		A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */; };
 		A46EC50919941030001D4A92 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46EC50819941030001D4A92 /* EventKit.framework */; };
-		A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */; };
 		A4A9077F199125F9004AF18C /* DTAGeoFencing.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A9077E199125F9004AF18C /* DTAGeoFencing.m */; };
 		F410EA3D19914B7900A8EA36 /* 001.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C119914B7900A8EA36 /* 001.tif */; };
 		F410EA3E19914B7900A8EA36 /* 002.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410E9C219914B7900A8EA36 /* 002.tif */; };
@@ -176,6 +175,11 @@
 		F410EAB819914B7900A8EA36 /* 198.tif in Resources */ = {isa = PBXBuildFile; fileRef = F410EA3C19914B7900A8EA36 /* 198.tif */; };
 		F41C72E519897B1300DD15DF /* DTAThemesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */; };
 		F436AEDD1993FD9A00511331 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F436AEDC1993FD9A00511331 /* Location.m */; };
+		F43A633719C1243300229F2E /* COHCenter.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F43A633219C1243300229F2E /* COHCenter.gpx */; };
+		F43A633819C1243300229F2E /* COHNorth.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F43A633319C1243300229F2E /* COHNorth.gpx */; };
+		F43A633919C1243300229F2E /* COHSouth.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F43A633419C1243300229F2E /* COHSouth.gpx */; };
+		F43A633A19C1243300229F2E /* EdgeOfCOHWithin.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F43A633519C1243300229F2E /* EdgeOfCOHWithin.gpx */; };
+		F43A633B19C1243300229F2E /* OutOfCOHToEast.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F43A633619C1243300229F2E /* OutOfCOHToEast.gpx */; };
 		F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F440A72B1989619900D057F6 /* DowntownAlliance.xcdatamodeld */; };
 		F440A73C1989656A00D057F6 /* TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = F440A73B1989656A00D057F6 /* TimeInterval.m */; };
 		F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F44664AA19915ECD004B497D /* DTAGetRandomNumber.m */; };
@@ -272,8 +276,6 @@
 		A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTALocationsTableViewController.h; sourceTree = "<group>"; };
 		A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTALocationsTableViewController.m; sourceTree = "<group>"; };
 		A46EC50819941030001D4A92 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+hidableTab.h"; sourceTree = "<group>"; };
-		A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+hidableTab.m"; sourceTree = "<group>"; };
 		A4A9077D199125F9004AF18C /* DTAGeoFencing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGeoFencing.h; sourceTree = "<group>"; };
 		A4A9077E199125F9004AF18C /* DTAGeoFencing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGeoFencing.m; sourceTree = "<group>"; };
 		F410E9C119914B7900A8EA36 /* 001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 001.tif; path = COHPhotos/ItemPhotos/001.tif; sourceTree = "<group>"; };
@@ -404,6 +406,11 @@
 		F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAThemesTableViewController.m; sourceTree = "<group>"; };
 		F436AEDB1993FD9A00511331 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = "Core Data/Location.h"; sourceTree = "<group>"; };
 		F436AEDC1993FD9A00511331 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = "Core Data/Location.m"; sourceTree = "<group>"; };
+		F43A633219C1243300229F2E /* COHCenter.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COHCenter.gpx; path = TestLocations/COHCenter.gpx; sourceTree = "<group>"; };
+		F43A633319C1243300229F2E /* COHNorth.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COHNorth.gpx; path = TestLocations/COHNorth.gpx; sourceTree = "<group>"; };
+		F43A633419C1243300229F2E /* COHSouth.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COHSouth.gpx; path = TestLocations/COHSouth.gpx; sourceTree = "<group>"; };
+		F43A633519C1243300229F2E /* EdgeOfCOHWithin.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EdgeOfCOHWithin.gpx; path = TestLocations/EdgeOfCOHWithin.gpx; sourceTree = "<group>"; };
+		F43A633619C1243300229F2E /* OutOfCOHToEast.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OutOfCOHToEast.gpx; path = TestLocations/OutOfCOHToEast.gpx; sourceTree = "<group>"; };
 		F440A72C1989619900D057F6 /* DowntownAlliance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DowntownAlliance.xcdatamodel; sourceTree = "<group>"; };
 		F440A73A1989656A00D057F6 /* TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeInterval.h; sourceTree = "<group>"; };
 		F440A73B1989656A00D057F6 /* TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeInterval.m; sourceTree = "<group>"; };
@@ -513,8 +520,9 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = CategoryCells;
-			sourceTree = "<group>";
+			name = CategoryCells;
+			path = "/Users/Home/Google Drive/Programming/Flatiron/_Side Projects/DowntownAllianceHistory/DowntownAllianceHistory/CategoryCells";
+			sourceTree = "<absolute>";
 		};
 		F410EAB919914B9700A8EA36 /* Icons */ = {
 			isa = PBXGroup;
@@ -542,6 +550,18 @@
 				F47CB77E198812EF00398293 /* DTADecadesViewController.m */,
 			);
 			name = Archive;
+			sourceTree = "<group>";
+		};
+		F43A633C19C1244700229F2E /* Test Locations */ = {
+			isa = PBXGroup;
+			children = (
+				F43A633219C1243300229F2E /* COHCenter.gpx */,
+				F43A633319C1243300229F2E /* COHNorth.gpx */,
+				F43A633419C1243300229F2E /* COHSouth.gpx */,
+				F43A633519C1243300229F2E /* EdgeOfCOHWithin.gpx */,
+				F43A633619C1243300229F2E /* OutOfCOHToEast.gpx */,
+			);
+			name = "Test Locations";
 			sourceTree = "<group>";
 		};
 		F44664B219917A78004B497D /* Helper Methods */ = {
@@ -655,12 +675,12 @@
 		F47CB71C1987D9CC00398293 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				77A75B84198C45CF007D135F /* CategoryCells */,
 				F490D2A8198C1A12001BAF2C /* COH Images */,
 				F490D3C7198C2AA5001BAF2C /* CSV */,
 				F410EAB919914B9700A8EA36 /* Icons */,
 				F490D3C6198C2A75001BAF2C /* Theme Images */,
 				F490D3C5198C2A65001BAF2C /* Time Interval Images */,
+				F43A633C19C1244700229F2E /* Test Locations */,
 				F490D3C8198C2ABD001BAF2C /* Other */,
 			);
 			name = "Supporting Files";
@@ -709,8 +729,6 @@
 				A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
 				7771A43B1988162600CD6BA8 /* DTADetailViewController.m */,
-				A48F73B9198A9B2100274EB5 /* UITabBarController+hidableTab.h */,
-				A48F73BA198A9B2100274EB5 /* UITabBarController+hidableTab.m */,
 				77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */,
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
 				F4BBCD7519A5140D00C2AC36 /* DTAAppLinkViewController.h */,
@@ -967,6 +985,7 @@
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
 					F47CB7111987D9CC00398293 = {
+						DevelopmentTeam = 8T2L8GTDGV;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1003,6 +1022,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F410EAA119914B7900A8EA36 /* 165.tif in Resources */,
+				F43A633819C1243300229F2E /* COHNorth.gpx in Resources */,
 				7788FFD2199BADE10066FF03 /* 1960.png in Resources */,
 				F410EA5319914B7900A8EA36 /* 048.tif in Resources */,
 				F4CB9106199AA8B900BC873D /* DTAlink@2x.png in Resources */,
@@ -1071,6 +1091,7 @@
 				F410EA7B19914B7900A8EA36 /* 099.tif in Resources */,
 				F410EA7819914B7900A8EA36 /* 095.tif in Resources */,
 				F410EA9819914B7900A8EA36 /* 155.tif in Resources */,
+				F43A633719C1243300229F2E /* COHCenter.gpx in Resources */,
 				F4CB9105199AA8B900BC873D /* DTAlink.png in Resources */,
 				F410EA8D19914B7900A8EA36 /* 136(Queen).tif in Resources */,
 				F410EA6C19914B7900A8EA36 /* 081.tif in Resources */,
@@ -1081,6 +1102,7 @@
 				F410EA9C19914B7900A8EA36 /* 159.tif in Resources */,
 				F410EAA419914B7900A8EA36 /* 168.tif in Resources */,
 				F410EAAA19914B7900A8EA36 /* 178.tif in Resources */,
+				F43A633A19C1243300229F2E /* EdgeOfCOHWithin.gpx in Resources */,
 				F410EA8319914B7900A8EA36 /* 108.tif in Resources */,
 				F410EA7019914B7900A8EA36 /* 086.tif in Resources */,
 				F410EA7719914B7900A8EA36 /* 093.tif in Resources */,
@@ -1096,6 +1118,7 @@
 				F410EA8F19914B7900A8EA36 /* 140.tif in Resources */,
 				F410EA9E19914B7900A8EA36 /* 161.tif in Resources */,
 				F410EAA719914B7900A8EA36 /* 174.tif in Resources */,
+				F43A633919C1243300229F2E /* COHSouth.gpx in Resources */,
 				F410EA5919914B7900A8EA36 /* 055.tif in Resources */,
 				7788FFCE199BADE10066FF03 /* 1920.png in Resources */,
 				F410EA5219914B7900A8EA36 /* 047.tif in Resources */,
@@ -1128,6 +1151,7 @@
 				F410EA4319914B7900A8EA36 /* 007.tif in Resources */,
 				775AA29619913C8300FC0A87 /* canyon.png in Resources */,
 				F47CB7291987D9CC00398293 /* Main.storyboard in Resources */,
+				F43A633B19C1243300229F2E /* OutOfCOHToEast.gpx in Resources */,
 				F410EA4E19914B7900A8EA36 /* 026.tif in Resources */,
 				F410EAA519914B7900A8EA36 /* 169.tif in Resources */,
 				F410EA6F19914B7900A8EA36 /* 085.tif in Resources */,
@@ -1184,7 +1208,6 @@
 				F44664AB19915ECD004B497D /* DTAGetRandomNumber.m in Sources */,
 				77AC835C19929BC3009E278B /* DTAScrollingDetailTable.m in Sources */,
 				77AC83AC19956E71009E278B /* DTAResizingCell.m in Sources */,
-				A48F73BB198A9B2100274EB5 /* UITabBarController+hidableTab.m in Sources */,
 				F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */,
 				77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */,
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
@@ -1334,10 +1357,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DowntownAllianceHistory/DowntownAllianceHistory-Prefix.pch";
 				INFOPLIST_FILE = "DowntownAllianceHistory/DowntownAllianceHistory-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1347,10 +1373,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DowntownAllianceHistory/DowntownAllianceHistory-Prefix.pch";
 				INFOPLIST_FILE = "DowntownAllianceHistory/DowntownAllianceHistory-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

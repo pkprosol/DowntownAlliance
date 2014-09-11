@@ -21,7 +21,6 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
     [self setUpFromGeoFence];
-
    
     [DTASetUpDefaultData setUpDefaultData];
     
@@ -32,11 +31,7 @@
 {
     self.geoFence = [[DTAGeoFencing alloc]init];
     
-    self.geoFence.locationManager = [[CLLocationManager alloc] init];
-    
-    [self.geoFence.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-    
-    [self.geoFence getGeofence];
+    [self.geoFence setUpGeoFences];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

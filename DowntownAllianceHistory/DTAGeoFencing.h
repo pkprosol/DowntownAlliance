@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <EventKit/EventKit.h>
 
-@interface DTAGeoFencing : NSObject <CLLocationManagerDelegate>
+@interface DTAGeoFencing : NSObject <CLLocationManagerDelegate, UIAlertViewDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSMutableArray *geofences;
 @property (strong, nonatomic) DTAGeoFencing *geoFence;
@@ -22,8 +22,10 @@
 // Array of all events happening within the next 24 hours
 @property (nonatomic, strong) NSMutableArray *eventsList;
 
+@property (nonatomic, strong) NSMutableArray *setOfLocationsForGeofencing;
+@property (nonatomic, strong) NSMutableArray *setOfRegions;
 
--(void)getGeofence;
--(CLCircularRegion*)createFence;
+-(void)setUpGeoFences;
 -(EKAlarm*)createAlarm;
+
 @end

@@ -30,7 +30,6 @@
 {
     self = [super init];
     if (self) {
-        // Custom initialization
         self.title = NSLocalizedString(@"SOCIAL APP!", @"");
         hidden = NO;
     }
@@ -40,8 +39,6 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -56,8 +53,6 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-//    [self.tabBarController setTabBarHidden:hidden
-//                                  animated:NO];
     [self.navigationController setNavigationBarHidden:YES];
     
 }
@@ -117,7 +112,6 @@
     
     if((differenceFromStart) < 0)
     {
-        // scroll up
         if(scrollView.isTracking && (abs(differenceFromLast)>1))
             [self expand];
     }
@@ -147,8 +141,6 @@
     
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
     
-    
-    //Region of a middle-ish 1950's point
     CGFloat latitudeFloat = 40.7089005;
     CGFloat longitudeFloat = -74.0105972;
     
@@ -157,7 +149,6 @@
     
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
   
-	// Do any additional setup after loading the view, typically from a nib.
 }
 //
 //-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
@@ -176,7 +167,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
@@ -235,15 +225,6 @@
         DTAMapAnnotation *annoation = view.annotation;
         ((DTADetailViewController *)segue.destinationViewController).locationToBePLotted = annoation.location;
     }
-    
-    /*
-        
-    DTADetailViewController *nextVC = segue.destinationViewController;
-    Location *selectedLocation =
-    nextVC.locationToBePLotted = selectedLocation;
-    }
-     */
-    
 }
 
 @end

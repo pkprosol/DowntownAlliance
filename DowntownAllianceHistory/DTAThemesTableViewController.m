@@ -88,9 +88,6 @@
     
     hidden = YES;
     
-    //    [self.tabBarController setTabBarHidden:YES
-    //                                  animated:YES];
-    
     [self.navigationController setNavigationBarHidden:YES
                                              animated:YES];
 }
@@ -104,9 +101,6 @@
     
     hidden = NO;
     
-    //    [self.tabBarController setTabBarHidden:NO
-    //                                  animated:YES];
-    
     [self.navigationController setNavigationBarHidden:NO
                                              animated:YES];
 }
@@ -117,33 +111,7 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     startContentOffset = lastContentOffset = scrollView.contentOffset.y;
-    NSLog(@"scrollViewWillBeginDragging: %f", scrollView.contentOffset.y);
 }
-
-/*- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    CGFloat currentOffset = scrollView.contentOffset.y;
-    CGFloat differenceFromStart = startContentOffset - currentOffset;
-    CGFloat differenceFromLast = lastContentOffset - currentOffset;
-   // lastContentOffset = currentOffset;
-    
-    if((differenceFromStart) < 0)
-    {
-        // scroll up
-        if(scrollView.isTracking && (abs(differenceFromLast)>15))
-        {
-            [self expand];
-        }
-    }
-    else {
-        if(scrollView.isTracking && (abs(differenceFromLast)>0))
-        {
-            [self contract];
-        }
-    }
-    
-}
- */
 
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
 {
@@ -163,14 +131,8 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return 1;
-//}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
     return [self.themesArray count];
 }
 
@@ -182,9 +144,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DTAFilterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"themeCell" forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+        
     Theme *themeInCell = self.themesArray[indexPath.row];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;

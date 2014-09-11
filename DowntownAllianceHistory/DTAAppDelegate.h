@@ -14,7 +14,6 @@
 @property (strong, nonatomic) UITabBarController    *tabbar;
 @property (strong, nonatomic) DTAGeoFencing *geoFence;
 
-
 -(void)setUpFromGeoFence;
 
 @end

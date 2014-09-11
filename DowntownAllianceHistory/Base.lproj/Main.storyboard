@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XPo-cL-qjT">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPo-cL-qjT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
@@ -87,46 +87,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyP-lD-pvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1958" y="2098"/>
-        </scene>
-        <!--View Controller - About-->
-        <scene sceneID="lVc-0i-jde">
-            <objects>
-                <viewController id="yFy-vh-E3w" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GoL-Le-1wC"/>
-                        <viewControllerLayoutGuide type="bottom" id="bcw-Md-kNH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oZ0-CJ-BhH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-Jx-0dy">
-                                <rect key="frame" x="0.0" y="242" width="320" height="189"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">These granite panels commemorate the New York City of ticker-tape parades up broadway from The Battery to City Hall. This celebrated route is called the Canyon of the Heroes</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="While walking on Broadway in Manhattan you may encounter a plague, that looks something  like this:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-lX-b9z">
-                                <rect key="frame" x="0.0" y="66" width="320" height="71"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="canyon.png" translatesAutoresizingMaskIntoConstraints="NO" id="n8D-NY-DTO">
-                                <rect key="frame" x="0.0" y="140" width="320" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="About" id="gLh-aI-S3c"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bKB-4u-hh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3105" y="1391"/>
         </scene>
         <!--Time Intervals Table View Controller - By Era-->
         <scene sceneID="NFh-P0-0mJ">
@@ -350,7 +310,6 @@
         <!--Navigation Controller - By Era-->
         <scene sceneID="LG7-Xq-tEI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jXO-ha-iSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eTg-pW-Spe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Era" image="overtime-25.png" id="1A7-XV-uyc"/>
                     <toolbarItems/>
@@ -369,13 +328,13 @@
                         <segue destination="iD8-R4-4OB" kind="relationship" relationship="rootViewController" id="OQv-tL-N47"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXO-ha-iSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1958" y="-673"/>
         </scene>
         <!--Navigation Controller - By Category-->
         <scene sceneID="6eR-RE-0Di">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="scI-Yc-4xS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTL-Xx-6z6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Category" image="survey-25.png" id="2Ir-sJ-Yqr"/>
                     <toolbarItems/>
@@ -393,6 +352,7 @@
                         <segue destination="Vi5-JB-l18" kind="relationship" relationship="rootViewController" id="SwA-iJ-1r8"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scI-Yc-4xS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1958" y="19"/>
         </scene>
@@ -476,46 +436,9 @@
             </objects>
             <point key="canvasLocation" x="1958" y="1391"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dH4-UL-rFI">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="AIS-v3-Xnr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4MD-xT-8c6"/>
-                        <viewControllerLayoutGuide type="bottom" id="VWj-so-ZgF"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ORB-Wt-T5B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CFn-cD-hYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sWF-cT-BQl">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nUV-Jw-xPx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9OS-5B-cyc"/>
-                        <viewControllerLayoutGuide type="bottom" id="FIK-lk-tcW"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XPX-MC-KrB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c92-b1-UaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="DTALink" width="23" height="23"/>
-        <image name="canyon.png" width="320" height="86"/>
         <image name="map_marker-25.png" width="25" height="25"/>
         <image name="overtime-25.png" width="25" height="25"/>
         <image name="survey-25.png" width="25" height="25"/>
