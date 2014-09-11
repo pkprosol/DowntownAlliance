@@ -39,10 +39,23 @@
     if (self.setOfRegions == nil) {
         self.setOfRegions = [[NSMutableArray alloc] init];
         NSInteger locationNumber = 0;
+        BOOL isAlreadyInRegion = NO;
         
         for (CLLocation *location in self.setOfLocationsForGeofencing) {
             CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:100 identifier:[NSString stringWithFormat:@"Identifier%d", locationNumber]];
             [self.setOfRegions addObject:region];
+            
+            CLLocationDegrees regionCenterLatitude = region.center.latitude;
+            CLLocationDegrees regionCenterLongitude = region.center.longitude;
+            
+            CLLocation *centerOfRegion = [[CLLocation alloc] initWithLatitude:regionCenterLatitude longitude:regionCenterLongitude];
+            
+            CLLocationDistance distanceFromRegion = [self.locationManager.location distanceFromLocation:centerOfRegion];
+
+            if (distanceFromRegion > 150) {
+                
+            }
+            
             locationNumber++;
         }
     }
@@ -83,19 +96,21 @@
     
     NSInteger priorNumberOfAlerts = [self getPriorNumberOfAlertsSeen];
     
-    if (priorNumberOfAlerts == 0) {
-        [self showAlert];
-        [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
-    } else if (priorNumberOfAlerts > 0 && priorNumberOfAlerts < 3 && [self hasAppropriateTimePassedSincePriorAlert]) {
-        [self showAlert];
-        [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
+    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts < 3 && [self hasAppropriateTimePassedSincePriorAlert])){
+        [self respondToUserPresenceInRegion];
     }
+}
+
+- (void)respondToUserPresenceInRegion
+{
+    [self showAlert];
+    [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
 }
 
 - (void)showAlert
 {
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!"
-                                                      message:@"You are now near the canyon of heroes!"
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Welcome!"
+                                                      message:@"You are now near the Canyon of Heroes!"
                                                      delegate:self
                                             cancelButtonTitle:@"OK"
                                             otherButtonTitles:nil];

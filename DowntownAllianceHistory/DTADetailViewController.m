@@ -96,7 +96,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 - (void)dealloc
 {
@@ -112,14 +111,11 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
-    // Return the number of rows in the section.
     return [self.stuffToDisplay count];
 }
 
@@ -170,12 +166,6 @@
     {
         [self configureCell:self.prototypeCell forRowAtIndexPath:indexPath];
         
-        // Need to set the width of the prototype cell to the width of the table view
-        // as this will change when the device is rotated.
-
-        
-//        self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.scrollingTableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
-        
         [self.prototypeCell layoutIfNeeded];
         
         CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
@@ -201,15 +191,11 @@
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
 
-#pragma mark - Overlap
-
-//Content inset so that the tableview starts below the map
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.tableViewOutlet.contentInset = UIEdgeInsetsMake(self.tableViewOutlet.frame.size.height-40, 0, 0, 0);
 }
 
-//checks for it going below the map, hides white space
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (scrollView.contentOffset.y < self.mapOutlet.frame.size.height*-1 ) {
         [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, self.mapOutlet.frame.size.height*-1)];
@@ -223,16 +209,5 @@
     self.tableViewOutlet.delegate = nil;
     self.tableViewOutlet.dataSource = nil;
 }
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
