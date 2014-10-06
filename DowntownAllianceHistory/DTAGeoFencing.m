@@ -110,7 +110,7 @@
 {
     NSInteger priorNumberOfAlerts = [self getPriorNumberOfAlertsSeen];
     
-    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts > 0 && priorNumberOfAlerts < 10 && [self hasAppropriateTimePassedSincePriorAlert])){
+    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts > 0 && priorNumberOfAlerts < 3 && [self hasAppropriateTimePassedSincePriorAlert])){
         return YES;
     } else {
         return NO;
@@ -165,7 +165,7 @@
     NSUserDefaults *defaults  = [NSUserDefaults standardUserDefaults];
     NSDate *dateOfLastAlert = [defaults valueForKey:@"dateAndTimeOfLastAlert"];
     
-    NSInteger secondsInOneWeek = 10; //604800;
+    NSInteger secondsInOneWeek = 604800;
     
     if (dateOfLastAlert > 0 && [[NSDate date] timeIntervalSinceDate:dateOfLastAlert] > secondsInOneWeek) {
         return YES;
