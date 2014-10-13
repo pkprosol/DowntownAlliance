@@ -12,7 +12,7 @@
 #import "DTASetUpDefaultData.h"
 #import "Location.h"
 
-@interface DTAMainMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface DTAMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 

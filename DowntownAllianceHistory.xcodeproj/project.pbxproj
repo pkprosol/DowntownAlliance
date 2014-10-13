@@ -194,7 +194,7 @@
 		F47CB7221987D9CC00398293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7211987D9CC00398293 /* main.m */; };
 		F47CB7261987D9CC00398293 /* DTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7251987D9CC00398293 /* DTAAppDelegate.m */; };
 		F47CB7291987D9CC00398293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CB7271987D9CC00398293 /* Main.storyboard */; };
-		F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */; };
+		F47CB72C1987D9CC00398293 /* DTAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB72B1987D9CC00398293 /* DTAMapViewController.m */; };
 		F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47CB72D1987D9CC00398293 /* Images.xcassets */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
@@ -422,8 +422,8 @@
 		F47CB7241987D9CC00398293 /* DTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAAppDelegate.h; sourceTree = "<group>"; };
 		F47CB7251987D9CC00398293 /* DTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAAppDelegate.m; sourceTree = "<group>"; };
 		F47CB7281987D9CC00398293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAMainMapViewController.h; sourceTree = "<group>"; };
-		F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAMainMapViewController.m; sourceTree = "<group>"; };
+		F47CB72A1987D9CC00398293 /* DTAMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAMapViewController.h; sourceTree = "<group>"; };
+		F47CB72B1987D9CC00398293 /* DTAMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAMapViewController.m; sourceTree = "<group>"; };
 		F47CB72D1987D9CC00398293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
 		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
@@ -472,12 +472,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		775E45B419990DE10094E3B2 /* View */ = {
+		775E45B419990DE10094E3B2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				F47CB7271987D9CC00398293 /* Main.storyboard */,
 			);
-			name = View;
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		77A75B72198C14D2007D135F /* Cells and Xibs */ = {
@@ -641,7 +641,7 @@
 		F47CB71B1987D9CC00398293 /* DowntownAllianceHistory */ = {
 			isa = PBXGroup;
 			children = (
-				775E45B419990DE10094E3B2 /* View */,
+				775E45B419990DE10094E3B2 /* Storyboard */,
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
@@ -684,8 +684,8 @@
 				7749C4CB19896765009D1F23 /* DTATimeIntervalsTableViewController.m */,
 				F41C72E319897B1300DD15DF /* DTAThemesTableViewController.h */,
 				F41C72E419897B1300DD15DF /* DTAThemesTableViewController.m */,
-				F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */,
-				F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */,
+				F47CB72A1987D9CC00398293 /* DTAMapViewController.h */,
+				F47CB72B1987D9CC00398293 /* DTAMapViewController.m */,
 				A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */,
 				A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */,
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
@@ -1160,7 +1160,7 @@
 				F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */,
 				77A75B83198C3DBE007D135F /* DTAThemeCell.m in Sources */,
 				F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */,
-				F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */,
+				F47CB72C1987D9CC00398293 /* DTAMapViewController.m in Sources */,
 				F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */,
 				F44664B119917906004B497D /* Theme.m in Sources */,
 				7788FFBF199AA2F10066FF03 /* DTAMapAnnotation.m in Sources */,

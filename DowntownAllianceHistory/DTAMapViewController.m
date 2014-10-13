@@ -6,35 +6,19 @@
 //
 //
 
-#import "DTAMainMapViewController.h"
+#import "DTAMapViewController.h"
 #import "DTADataStore.h"
 #import "UITabBarController+hidableTab.h"
 #import "DTADetailViewController.h"
 #import "DTAMapAnnotation.h"
 
-@interface DTAMainMapViewController ()
+@interface DTAMapViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
 
 @end
 
-@implementation DTAMainMapViewController
-
-{
-    CGFloat startContentOffset;
-    CGFloat lastContentOffset;
-    BOOL hidden;
-}
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super init];
-    if (self) {
-        self.title = NSLocalizedString(@"SOCIAL APP!", @"");
-        hidden = NO;
-    }
-    return self;
-}
+@implementation DTAMapViewController
 
 - (void)viewDidLoad
 {
@@ -57,14 +41,6 @@
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:hidden
-                                             animated:YES];
-}
-
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -79,51 +55,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
-}
-
--(void)expand
-{
-    if(hidden)
-        return;
-    
-    hidden = YES;
-}
-
--(void)contract
-{
-    if(!hidden)
-        return;
-    
-    hidden = NO;
-}
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    CGFloat currentOffset = scrollView.contentOffset.y;
-    CGFloat differenceFromStart = startContentOffset - currentOffset;
-    CGFloat differenceFromLast = lastContentOffset - currentOffset;
-    lastContentOffset = currentOffset;
-    
-    if((differenceFromStart) < 0)
-    {
-        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-            [self expand];
-    }
-    else {
-        if(scrollView.isTracking && (abs(differenceFromLast)>1))
-            [self contract];
-    }
-}
-
-- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
-{
-    [self contract];
-    return YES;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
