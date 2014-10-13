@@ -55,12 +55,6 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
     
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
-    
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -75,7 +69,6 @@
 {
     [super viewDidAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];
-    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -155,13 +148,8 @@
     [self performSegueWithIdentifier:@"detailController" sender:view];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
-//    MKPointAnnotation *pointToAnnotate = [[MKPointAnnotation alloc]init];
     
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
@@ -187,7 +175,6 @@
 {
     if ([segue.identifier isEqualToString:@"detailController"])
     {
-    
         MKAnnotationView *view = sender;
         DTAMapAnnotation *annotation = view.annotation;
         ((DTADetailViewController *)segue.destinationViewController).locationToBePLotted = annotation.location;

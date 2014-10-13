@@ -14,7 +14,6 @@
 
 @interface DTAMainMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
-
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 @property (strong, nonatomic) NSArray *arrayOfLocations;

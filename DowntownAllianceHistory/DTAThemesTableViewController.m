@@ -31,7 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.tableView.backgroundColor = [UIColor blackColor];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [self.tableView setSeparatorColor:[UIColor blackColor]];
 
     DTADataStore *store = [DTADataStore sharedDataStore];
     self.themesArray = store.defaultThemesArray;
