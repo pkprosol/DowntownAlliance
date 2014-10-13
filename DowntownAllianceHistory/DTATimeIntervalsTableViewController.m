@@ -24,25 +24,12 @@
     BOOL hidden;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        self.title = NSLocalizedString(@"SOCIAL APP!", @"");
-        hidden = NO;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    hidden=NO;
-    self.tableView.backgroundColor = [UIColor blackColor];
     
-   [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
     [self.tableView setSeparatorColor:[UIColor blackColor]];
-   
     
     self.arrayOfTimeIntervals = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
     self.arrayOfImages = [NSMutableArray new];
@@ -54,11 +41,6 @@
     DTAAppDelegate *appDelegate = (DTAAppDelegate *)[[UIApplication sharedApplication ] delegate];
     
     [appDelegate setUpFromGeoFence];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Table view data source
@@ -92,16 +74,6 @@
     return cell;
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
@@ -110,7 +82,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
-    
 }
 
 -(void)expand
