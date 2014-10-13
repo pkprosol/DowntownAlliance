@@ -22,12 +22,6 @@
 
 @implementation DTAThemesTableViewController
 
-{
-    CGFloat startContentOffset;
-    CGFloat lastContentOffset;
-    BOOL hidden;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,8 +32,6 @@
 
     DTADataStore *store = [DTADataStore sharedDataStore];
     self.themesArray = store.defaultThemesArray;
-    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
-    [self.tableView setSeparatorColor:[UIColor blackColor]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -47,53 +39,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark - Table view delegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView  deselectRowAtIndexPath:indexPath animated:YES];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-
-#pragma mark - The Magic!
-
--(void)expand
-{
-    if(hidden)
-        return;
-    
-    hidden = YES;
-    
-    [self.navigationController setNavigationBarHidden:YES
-                                             animated:YES];
-}
-
--(void)contract
-{
-    if(!hidden)
-    {
-        return;
-    }
-    
-    hidden = NO;
-    
-    [self.navigationController setNavigationBarHidden:NO
-                                             animated:YES];
-}
-
-#pragma mark UIScrollViewDelegate Methods
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
-}
-
-- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
-{
-    [self contract];
-}
-
-#pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -102,7 +51,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100.0f;
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -112,7 +61,6 @@
     Theme *themeInCell = self.themesArray[indexPath.row];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
-    
     cell.filterCellImageView.image = themeInCell.image;
     
     return cell;
@@ -126,6 +74,5 @@
     Theme *themeSelected = self.themesArray[indexSelected.row];
     nextViewController.locationsToShow = [themeSelected.locations allObjects];
 }
-
 
 @end

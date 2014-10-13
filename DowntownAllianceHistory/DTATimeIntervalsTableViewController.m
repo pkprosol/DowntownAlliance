@@ -18,11 +18,6 @@
 @end
 
 @implementation DTATimeIntervalsTableViewController
-{
-    CGFloat startContentOffset;
-    CGFloat lastContentOffset;
-    BOOL hidden;
-}
 
 - (void)viewDidLoad
 {
@@ -33,17 +28,18 @@
     
     self.arrayOfTimeIntervals = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
     self.arrayOfImages = [NSMutableArray new];
+
+    // Clean me
     
     for (DTATimeRange *timeRange in self.arrayOfTimeIntervals) {
         [self.arrayOfImages addObject:timeRange.imageForRange];
     }
-    
-    DTAAppDelegate *appDelegate = (DTAAppDelegate *)[[UIApplication sharedApplication ] delegate];
-    
-    [appDelegate setUpFromGeoFence];
 }
 
-#pragma mark - Table view data source
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -60,7 +56,6 @@
     return 100;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DTAFilterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
@@ -68,49 +63,14 @@
     UIImage *imageOfDecade = self.arrayOfImages[indexPath.row];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
-    
     cell.filterCellImageView.image = imageOfDecade;
     
     return cell;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView  deselectRowAtIndexPath:indexPath animated:YES];
-}
-
--(void)expand
-{
-    if(hidden)
-        return;
-    
-    hidden = YES;
-    
-    [self.navigationController setNavigationBarHidden:YES
-                                             animated:YES];
-}
-
--(void)contract
-{
-    if(!hidden)
-    {
-        return;
-    }
-    
-    hidden = NO;
-    
-    [self.navigationController setNavigationBarHidden:NO
-                                             animated:YES];
-}
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    startContentOffset = lastContentOffset = scrollView.contentOffset.y;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
