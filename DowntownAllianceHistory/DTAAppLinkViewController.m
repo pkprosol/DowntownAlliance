@@ -16,28 +16,10 @@
 
 @implementation DTAAppLinkViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
     [self goToAppStoreOrDowntownAllianceApp];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 - (void)goToAppStoreOrDowntownAllianceApp
@@ -53,6 +35,5 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setBool:YES forKey:@"wentToDowntownAllianceApp"];
 }
-
 
 @end
