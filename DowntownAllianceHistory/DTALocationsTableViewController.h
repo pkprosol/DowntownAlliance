@@ -13,9 +13,6 @@
 
 @property (strong, nonatomic) NSArray *locationsToShow;
 @property (strong, nonatomic) NSString *title;
-
 @property (strong, nonatomic) DTAListCell *prototypeCell;
-
-
 
 @end
