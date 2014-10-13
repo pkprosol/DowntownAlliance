@@ -8,7 +8,6 @@
 
 #import "DTAMapViewController.h"
 #import "DTADataStore.h"
-#import "UITabBarController+hidableTab.h"
 #import "DTADetailViewController.h"
 #import "DTAMapAnnotation.h"
 

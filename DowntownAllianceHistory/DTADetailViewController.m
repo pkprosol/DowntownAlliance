@@ -22,11 +22,11 @@
 
 - (DTAResizingCell *)prototypeCell
 {
-    if (!_prototypeCell)
+    if (!self.prototypeCell)
     {
-        _prototypeCell = [self.scrollingTableView dequeueReusableCellWithIdentifier:@"detailCell"];
+        self.prototypeCell = [self.scrollingTableView dequeueReusableCellWithIdentifier:@"detailCell"];
     }
-    return _prototypeCell;
+    return self.prototypeCell;
 }
 
 - (void)viewDidLoad
