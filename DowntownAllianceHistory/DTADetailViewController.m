@@ -15,20 +15,11 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
-@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
 
 @end
 
 @implementation DTADetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 - (DTAResizingCell *)prototypeCell
 {
     if (!_prototypeCell)
@@ -46,39 +37,26 @@
                                              selector:@selector(didChangePreferredContentSize:)
                                                  name:UIContentSizeCategoryDidChangeNotification object:nil];
     
-    //Plot Passed Locations
     [self plotLocationsOnMap:self.locationToBePLotted];
     
-    
-    //Float Values for coordinates
     CGFloat latitudeCenterPoint = [self.locationToBePLotted.latitude floatValue];
     CGFloat longitudeCenterPoint = [self.locationToBePLotted.longitude floatValue];
     
-    //make coordinate
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeCenterPoint, longitudeCenterPoint);
-    //set Region To zoom
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 150.0, 150.0);
     
-    //Set region to map
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
     
-    //load XiB
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"DTAImageTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"pictureImage"];
-    
     
     self.mapOutlet.delegate = self;
 
     self.tableViewOutlet.backgroundColor = [UIColor clearColor];
-    
-
-
-    
-    // Do any additional setup after loading the view.
 }
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
     
     self.stuffToDisplay = [[NSMutableArray alloc]init];
     [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];
@@ -87,26 +65,23 @@
     if (self.locationToBePLotted.image) {
         [self.stuffToDisplay addObject:self.locationToBePLotted.image];
     }
+    
     self.tableViewOutlet.delegate = self;
     self.tableViewOutlet.dataSource = self;
-
 }
 
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIContentSizeCategoryDidChangeNotification
                                                   object:nil];
 }
+
 - (void)didChangePreferredContentSize:(NSNotification *)notification
 {
     [self.scrollingTableView reloadData];
 }
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -119,12 +94,11 @@
     return [self.stuffToDisplay count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
     
-    if (indexPath.row <2)
+    if (indexPath.row < 2)
     {
     
     [self configureCell:cell forRowAtIndexPath:indexPath];
@@ -139,12 +113,11 @@
         cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
         cell.plaqueImageView.image = self.locationToBePLotted.image;
         }
-        
-
     }
     
     return cell;
 }
+
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([cell isKindOfClass:[DTAResizingCell class]])
@@ -156,7 +129,7 @@
     }
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.row == 2)
     {
@@ -199,15 +172,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (scrollView.contentOffset.y < self.mapOutlet.frame.size.height*-1 ) {
         [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, self.mapOutlet.frame.size.height*-1)];
-        
     }
-}
--(void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    
-    self.tableViewOutlet.delegate = nil;
-    self.tableViewOutlet.dataSource = nil;
 }
 
 @end
