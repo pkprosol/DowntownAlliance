@@ -49,12 +49,9 @@
         NSString *endDateString = nextKey;
         UIImage *imageForTimeRange = imagesArray[i];
         
-        // Need to reduce endDate by one so intervals don't overlap
-        
         NSDate *startDate = [dateFormat dateFromString:startDateString];
         
         NSDate *endDate = [dateFormat dateFromString:endDateString];
-//        NSDate *endDate = [endDateUnadjusted dateByAddingTimeInterval:-43200]; // Half a day
         
         DTATimeRange *newRange = [DTASetUpDefaultTimeRanges generateTimeRangeWithName:nameOfInterval StartDate:startDate EndDate:endDate Image:imageForTimeRange];
         

@@ -196,10 +196,6 @@
 		F47CB7291987D9CC00398293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CB7271987D9CC00398293 /* Main.storyboard */; };
 		F47CB72C1987D9CC00398293 /* DTAMainMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */; };
 		F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47CB72D1987D9CC00398293 /* Images.xcassets */; };
-		F47CB7361987D9CD00398293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7151987D9CC00398293 /* Foundation.framework */; };
-		F47CB7371987D9CD00398293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47CB7191987D9CC00398293 /* UIKit.framework */; };
-		F47CB73F1987D9CD00398293 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47CB73D1987D9CD00398293 /* InfoPlist.strings */; };
-		F47CB7411987D9CD00398293 /* DowntownAllianceHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
@@ -216,16 +212,6 @@
 		F4DDB0B219C2296600761C3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DDB0B119C2296600761C3D /* Security.framework */; };
 		F4DDB0B419C2296E00761C3D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DDB0B319C2296E00761C3D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F47CB7381987D9CD00398293 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F47CB70A1987D9CC00398293 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F47CB7111987D9CC00398293;
-			remoteInfo = DowntownAllianceHistory;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		77402DAC198FE13600F255A6 /* Aviation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aviation.png; sourceTree = "<group>"; };
@@ -439,10 +425,6 @@
 		F47CB72A1987D9CC00398293 /* DTAMainMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAMainMapViewController.h; sourceTree = "<group>"; };
 		F47CB72B1987D9CC00398293 /* DTAMainMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAMainMapViewController.m; sourceTree = "<group>"; };
 		F47CB72D1987D9CC00398293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F47CB7331987D9CD00398293 /* DowntownAllianceHistoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DowntownAllianceHistoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47CB73C1987D9CD00398293 /* DowntownAllianceHistoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DowntownAllianceHistoryTests-Info.plist"; sourceTree = "<group>"; };
-		F47CB73E1987D9CD00398293 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DowntownAllianceHistoryTests.m; sourceTree = "<group>"; };
 		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
 		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
 		F483CF7B198AAB7300CE6718 /* DTASetUpDefaultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultData.h; sourceTree = "<group>"; };
@@ -484,15 +466,6 @@
 				F47CB7181987D9CC00398293 /* CoreGraphics.framework in Frameworks */,
 				F47CB71A1987D9CC00398293 /* UIKit.framework in Frameworks */,
 				F47CB7161987D9CC00398293 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F47CB7301987D9CD00398293 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F47CB7371987D9CD00398293 /* UIKit.framework in Frameworks */,
-				F47CB7361987D9CD00398293 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +608,6 @@
 			isa = PBXGroup;
 			children = (
 				F47CB71B1987D9CC00398293 /* DowntownAllianceHistory */,
-				F47CB73A1987D9CD00398293 /* DowntownAllianceHistoryTests */,
 				F47CB7141987D9CC00398293 /* Frameworks */,
 				F47CB7131987D9CC00398293 /* Products */,
 			);
@@ -645,7 +617,6 @@
 			isa = PBXGroup;
 			children = (
 				F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */,
-				F47CB7331987D9CD00398293 /* DowntownAllianceHistoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -690,24 +661,6 @@
 				F490D3C5198C2A65001BAF2C /* Time Interval Images */,
 				F43A633C19C1244700229F2E /* Test Locations */,
 				F490D3C8198C2ABD001BAF2C /* Other */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F47CB73A1987D9CD00398293 /* DowntownAllianceHistoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				F47CB7401987D9CD00398293 /* DowntownAllianceHistoryTests.m */,
-				F47CB73B1987D9CD00398293 /* Supporting Files */,
-			);
-			path = DowntownAllianceHistoryTests;
-			sourceTree = "<group>";
-		};
-		F47CB73B1987D9CD00398293 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F47CB73C1987D9CD00398293 /* DowntownAllianceHistoryTests-Info.plist */,
-				F47CB73D1987D9CD00398293 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -966,24 +919,6 @@
 			productReference = F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F47CB7321987D9CD00398293 /* DowntownAllianceHistoryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F47CB7471987D9CD00398293 /* Build configuration list for PBXNativeTarget "DowntownAllianceHistoryTests" */;
-			buildPhases = (
-				F47CB72F1987D9CD00398293 /* Sources */,
-				F47CB7301987D9CD00398293 /* Frameworks */,
-				F47CB7311987D9CD00398293 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F47CB7391987D9CD00398293 /* PBXTargetDependency */,
-			);
-			name = DowntownAllianceHistoryTests;
-			productName = DowntownAllianceHistoryTests;
-			productReference = F47CB7331987D9CD00398293 /* DowntownAllianceHistoryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1001,9 +936,6 @@
 							};
 						};
 					};
-					F47CB7321987D9CD00398293 = {
-						TestTargetID = F47CB7111987D9CC00398293;
-					};
 				};
 			};
 			buildConfigurationList = F47CB70D1987D9CC00398293 /* Build configuration list for PBXProject "DowntownAllianceHistory" */;
@@ -1020,7 +952,6 @@
 			projectRoot = "";
 			targets = (
 				F47CB7111987D9CC00398293 /* DowntownAllianceHistory */,
-				F47CB7321987D9CD00398293 /* DowntownAllianceHistoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1197,14 +1128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F47CB7311987D9CD00398293 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F47CB73F1987D9CD00398293 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1262,23 +1185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F47CB72F1987D9CD00398293 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F47CB7411987D9CD00398293 /* DowntownAllianceHistoryTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F47CB7391987D9CD00398293 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F47CB7111987D9CC00398293 /* DowntownAllianceHistory */;
-			targetProxy = F47CB7381987D9CD00398293 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F47CB71E1987D9CC00398293 /* InfoPlist.strings */ = {
@@ -1295,14 +1202,6 @@
 				F47CB7281987D9CC00398293 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F47CB73D1987D9CD00398293 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F47CB73E1987D9CD00398293 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1418,46 +1317,6 @@
 			};
 			name = Release;
 		};
-		F47CB7481987D9CD00398293 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DowntownAllianceHistory.app/DowntownAllianceHistory";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DowntownAllianceHistory/DowntownAllianceHistory-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DowntownAllianceHistoryTests/DowntownAllianceHistoryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F47CB7491987D9CD00398293 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DowntownAllianceHistory.app/DowntownAllianceHistory";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DowntownAllianceHistory/DowntownAllianceHistory-Prefix.pch";
-				INFOPLIST_FILE = "DowntownAllianceHistoryTests/DowntownAllianceHistoryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1475,15 +1334,6 @@
 			buildConfigurations = (
 				F47CB7451987D9CD00398293 /* Debug */,
 				F47CB7461987D9CD00398293 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F47CB7471987D9CD00398293 /* Build configuration list for PBXNativeTarget "DowntownAllianceHistoryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F47CB7481987D9CD00398293 /* Debug */,
-				F47CB7491987D9CD00398293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
