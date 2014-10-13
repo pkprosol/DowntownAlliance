@@ -19,8 +19,6 @@
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-
     [self setUpFromGeoFence];
    
     [DTASetUpDefaultData setUpDefaultData];

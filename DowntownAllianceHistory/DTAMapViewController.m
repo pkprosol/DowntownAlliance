@@ -23,6 +23,8 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor blackColor];
+    
     self.mapOutlet.delegate = self;
     
     DTADataStore *store = [DTADataStore sharedDataStore];
@@ -42,11 +44,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView  deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation

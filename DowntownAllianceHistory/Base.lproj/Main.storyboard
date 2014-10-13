@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6N0-CF-4sg">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Canyon of Heroes Map-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="vXZ-lx-hvc" customClass="DTAMapViewController" sceneMemberID="viewController">
@@ -23,7 +24,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cmg-cs-eRH"/>
+                    <navigationItem key="navigationItem" title="Canyon of Heroes Map" id="cmg-cs-eRH"/>
                     <connections>
                         <outlet property="mapOutlet" destination="XPo-cL-qjT" id="srO-ky-798"/>
                         <segue destination="iG7-ft-mWB" kind="push" identifier="detailController" id="Fcu-jf-gi1"/>
@@ -36,7 +37,7 @@
         <!--About-->
         <scene sceneID="t9r-Wg-R2C">
             <objects>
-                <viewController id="s0p-CD-eXM" sceneMemberID="viewController">
+                <viewController id="s0p-CD-eXM" customClass="DTAAboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ScV-6u-kR8"/>
                         <viewControllerLayoutGuide type="bottom" id="DVB-8y-j7B"/>
@@ -201,14 +202,14 @@
                         <viewControllerLayoutGuide type="bottom" id="ahQ-2z-cPa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jHI-3g-5bm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-Zb-dSp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="97J-cY-367" customClass="DTAScrollingDetailTable">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" rowHeight="100" id="7Ga-Qa-NQh" customClass="DTAResizingCell">
@@ -450,6 +451,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kwI-zS-36s"/>
-        <segue reference="NBv-VY-RE9"/>
+        <segue reference="Fcu-jf-gi1"/>
     </inferredMetricsTieBreakers>
 </document>

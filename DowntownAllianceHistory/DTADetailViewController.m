@@ -9,8 +9,6 @@
 #import "DTADetailViewController.h"
 #import "DTAPlaqueImageCell.h"
 
-
-
 @interface DTADetailViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
@@ -70,20 +68,6 @@
     self.tableViewOutlet.dataSource = self;
 }
 
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIContentSizeCategoryDidChangeNotification
-                                                  object:nil];
-}
-
-- (void)didChangePreferredContentSize:(NSNotification *)notification
-{
-    [self.scrollingTableView reloadData];
-}
-
-#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -104,7 +88,6 @@
     [self configureCell:cell forRowAtIndexPath:indexPath];
     }
  
-    
     if (indexPath.row == 2) {
         if(self.locationToBePLotted.image){
     

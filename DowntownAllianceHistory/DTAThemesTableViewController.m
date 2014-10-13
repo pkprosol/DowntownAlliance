@@ -11,7 +11,6 @@
 #import "DTALocationsTableViewController.h"
 #import "UITabBarController+hidableTab.h"
 #import "DTADataStore.h"
-#import "DTAThemeCell.h"
 #import "DTAAppDelegate.h"
 #import "Theme.h"
 #import "DTALocationsTableViewController.h"
@@ -64,11 +63,6 @@
     cell.filterCellImageView.image = themeInCell.image;
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
