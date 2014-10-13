@@ -10,29 +10,29 @@
 	<string>DowntownAllianceHistory</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EA21776A-D479-498F-91DE-0827D577229B</key>
+		<key>1B9A44D6249B49B528EE7A34E458C49AD0606384</key>
 		<string>ssh://github.com/pkprosol/DowntownAlliance.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DowntownAllianceHistory.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EA21776A-D479-498F-91DE-0827D577229B</key>
+		<key>1B9A44D6249B49B528EE7A34E458C49AD0606384</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/pkprosol/DowntownAlliance.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EA21776A-D479-498F-91DE-0827D577229B</string>
+	<string>1B9A44D6249B49B528EE7A34E458C49AD0606384</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EA21776A-D479-498F-91DE-0827D577229B</string>
+			<string>1B9A44D6249B49B528EE7A34E458C49AD0606384</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DowntownAllianceHistory</string>
 		</dict>

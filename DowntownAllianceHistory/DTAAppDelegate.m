@@ -10,7 +10,6 @@
 #import "DTAGeoFencing.h"
 #import "DTASetUpDefaultData.h"
 #import "DTAAppLinkViewController.h"
-#import <HockeySDK/HockeySDK.h>
 
 
 @implementation DTAAppDelegate
@@ -25,12 +24,6 @@
     [self setUpFromGeoFence];
    
     [DTASetUpDefaultData setUpDefaultData];
-    
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"f87c1ca42b4e9fee7528cc082af283df"];
-    [[BITHockeyManager sharedHockeyManager] startManager];
-    [[BITHockeyManager sharedHockeyManager].authenticator
-     authenticateInstallation];
-
     
     return YES;
 }
