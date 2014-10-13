@@ -15,9 +15,8 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
-
 @property (strong, nonatomic) Location *location;
-- (id)initWithLocation:(CLLocationCoordinate2D)coord;
 
+- (id)initWithLocation:(CLLocationCoordinate2D)coord;
 
 @end
