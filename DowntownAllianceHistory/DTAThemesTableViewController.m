@@ -28,16 +28,6 @@
     BOOL hidden;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-        hidden = NO;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -49,27 +39,10 @@
     [self.tableView setSeparatorColor:[UIColor blackColor]];
 }
 
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-//    [self.tabBarController setTabBarHidden:hidden
-//                                  animated:NO];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 
 #pragma mark - Table view delegate
 
@@ -105,7 +78,6 @@
                                              animated:YES];
 }
 
-#pragma mark -
 #pragma mark UIScrollViewDelegate Methods
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -116,17 +88,6 @@
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
 {
     [self contract];
-}
-#pragma mark - Table view delegate
-
-
-
-#pragma mark - The Magic!
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Table view data source
