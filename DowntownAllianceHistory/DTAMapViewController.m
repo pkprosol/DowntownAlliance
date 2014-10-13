@@ -26,7 +26,6 @@
     self.mapOutlet.delegate = self;
     
     DTADataStore *store = [DTADataStore sharedDataStore];
-    
     self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
     
     [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
@@ -74,7 +73,6 @@
 
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
-    
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];
     
