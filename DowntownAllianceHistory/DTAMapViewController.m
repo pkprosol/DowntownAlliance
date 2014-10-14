@@ -48,7 +48,7 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    if (NSClassFromString(@"MKUserLocation")==[annotation class]) {
+    if (NSClassFromString(@"MKUserLocation") == [annotation class]) {
         return nil;
     }
     

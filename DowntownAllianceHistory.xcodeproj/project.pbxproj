@@ -26,7 +26,6 @@
 		7771A4321987E9AC00CD6BA8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4311987E9AC00CD6BA8 /* CoreLocation.framework */; };
 		7771A4341987E9B100CD6BA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7771A4331987E9B100CD6BA8 /* MapKit.framework */; };
 		7771A43C1988162600CD6BA8 /* DTADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771A43B1988162600CD6BA8 /* DTADetailViewController.m */; };
-		7788FFBF199AA2F10066FF03 /* DTAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */; };
 		7788FFC1199BADDA0066FF03 /* pre1910.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC0199BADDA0066FF03 /* pre1910.png */; };
 		7788FFCD199BADE10066FF03 /* 1910.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC2199BADE10066FF03 /* 1910.png */; };
 		7788FFCE199BADE10066FF03 /* 1920.png in Resources */ = {isa = PBXBuildFile; fileRef = 7788FFC3199BADE10066FF03 /* 1920.png */; };
@@ -198,6 +197,7 @@
 		F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47CB72D1987D9CC00398293 /* Images.xcassets */; };
 		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
+		F4870F1419ECC41D00B7E61B /* DTAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F4870F1319ECC41D00B7E61B /* DTAMapAnnotation.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
 		F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3CA198C2C42001BAF2C /* DTASetUpDefaultThemes.m */; };
 		F4BB9A24198A922600956381 /* DTATimeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BB9A23198A922600956381 /* DTATimeRange.m */; };
@@ -237,8 +237,6 @@
 		7771A4331987E9B100CD6BA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7771A43A1988162600CD6BA8 /* DTADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADetailViewController.h; sourceTree = "<group>"; };
 		7771A43B1988162600CD6BA8 /* DTADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADetailViewController.m; sourceTree = "<group>"; };
-		7788FFBD199AA2F10066FF03 /* DTAMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAMapAnnotation.h; sourceTree = "<group>"; };
-		7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAMapAnnotation.m; sourceTree = "<group>"; };
 		7788FFC0199BADDA0066FF03 /* pre1910.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pre1910.png; sourceTree = "<group>"; };
 		7788FFC2199BADE10066FF03 /* 1910.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1910.png; sourceTree = "<group>"; };
 		7788FFC3199BADE10066FF03 /* 1920.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1920.png; sourceTree = "<group>"; };
@@ -431,6 +429,8 @@
 		F483CF7C198AAB7E00CE6718 /* DTASetUpDefaultTimeRanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultTimeRanges.m; sourceTree = "<group>"; };
+		F4870F1219ECC41D00B7E61B /* DTAMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAMapAnnotation.h; sourceTree = "<group>"; };
+		F4870F1319ECC41D00B7E61B /* DTAMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAMapAnnotation.m; sourceTree = "<group>"; };
 		F490D3C2198C29E2001BAF2C /* DTAGenerateDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultThemes.h; sourceTree = "<group>"; };
 		F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAGenerateDefaultThemes.m; sourceTree = "<group>"; };
 		F490D3C9198C2C42001BAF2C /* DTASetUpDefaultThemes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultThemes.h; sourceTree = "<group>"; };
@@ -694,8 +694,8 @@
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
 				F4BBCD7519A5140D00C2AC36 /* DTAAppLinkViewController.h */,
 				F4BBCD7619A5140E00C2AC36 /* DTAAppLinkViewController.m */,
-				7788FFBD199AA2F10066FF03 /* DTAMapAnnotation.h */,
-				7788FFBE199AA2F10066FF03 /* DTAMapAnnotation.m */,
+				F4870F1219ECC41D00B7E61B /* DTAMapAnnotation.h */,
+				F4870F1319ECC41D00B7E61B /* DTAMapAnnotation.m */,
 				77A75B72198C14D2007D135F /* Cells and Xibs */,
 			);
 			name = Controllers;
@@ -1162,8 +1162,8 @@
 				F47CB72C1987D9CC00398293 /* DTAMapViewController.m in Sources */,
 				F490D3CB198C2C42001BAF2C /* DTASetUpDefaultThemes.m in Sources */,
 				F44664B119917906004B497D /* Theme.m in Sources */,
-				7788FFBF199AA2F10066FF03 /* DTAMapAnnotation.m in Sources */,
 				77AC835F1993C322009E278B /* DTAPlaqueImageCell.m in Sources */,
+				F4870F1419ECC41D00B7E61B /* DTAMapAnnotation.m in Sources */,
 				7749C4D219896D02009D1F23 /* DTAFilterCell.m in Sources */,
 				F436AEDD1993FD9A00511331 /* Location.m in Sources */,
 				F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */,
