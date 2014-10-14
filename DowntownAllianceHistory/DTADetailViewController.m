@@ -45,6 +45,7 @@
     self.mapOutlet.delegate = self;
     
     self.tableViewOutlet.backgroundColor = [UIColor clearColor];
+    self.navigationItem.title = @"Details";
 }
 
 -(void)viewWillAppear:(BOOL)animated {
