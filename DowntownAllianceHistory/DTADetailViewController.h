@@ -18,10 +18,10 @@
 
 @property (nonatomic, strong) DTAResizingCell *prototypeCell;
 @property (strong, nonatomic) NSMutableArray *arrayOfLocations;
-@property (strong, nonatomic) Location *locationToBePLotted;
+@property (strong, nonatomic) Location *locationToBePlotted;
 @property (strong, nonatomic) NSMutableArray *stuffToDisplay;
 @property (weak, nonatomic) IBOutlet DTAScrollingDetailTable *scrollingTableView;
 
--(void)plotLocationsOnMap:(Location *)locationToBePlotted;
+- (void)plotLocationsOnMap:(Location *)locationToBePlotted;
 
 @end

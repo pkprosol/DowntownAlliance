@@ -30,14 +30,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(didChangePreferredContentSize:)
-                                                 name:UIContentSizeCategoryDidChangeNotification object:nil];
+    [self plotLocationsOnMap:self.locationToBePlotted];
     
-    [self plotLocationsOnMap:self.locationToBePLotted];
-    
-    CGFloat latitudeCenterPoint = [self.locationToBePLotted.latitude floatValue];
-    CGFloat longitudeCenterPoint = [self.locationToBePLotted.longitude floatValue];
+    CGFloat latitudeCenterPoint = [self.locationToBePlotted.latitude floatValue];
+    CGFloat longitudeCenterPoint = [self.locationToBePlotted.longitude floatValue];
     
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeCenterPoint, longitudeCenterPoint);
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 150.0, 150.0);
@@ -51,32 +47,19 @@
     self.tableViewOutlet.backgroundColor = [UIColor clearColor];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
+-(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.stuffToDisplay = [[NSMutableArray alloc]init];
-    [self.stuffToDisplay addObject:self.locationToBePLotted.titleOfPlaque];
-    [self.stuffToDisplay addObject:self.locationToBePLotted.brochureDescription];
+    [self.stuffToDisplay addObject:self.locationToBePlotted.titleOfPlaque];
+    [self.stuffToDisplay addObject:self.locationToBePlotted.brochureDescription];
     
-    if (self.locationToBePLotted.image) {
-        [self.stuffToDisplay addObject:self.locationToBePLotted.image];
+    if (self.locationToBePlotted.image) {
+        [self.stuffToDisplay addObject:self.locationToBePlotted.image];
     }
     
     self.tableViewOutlet.delegate = self;
     self.tableViewOutlet.dataSource = self;
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIContentSizeCategoryDidChangeNotification
-                                                  object:nil];
-}
-
-- (void)didChangePreferredContentSize:(NSNotification *)notification
-{
-    [self.scrollingTableView reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -98,12 +81,12 @@
     }
     
     if (indexPath.row == 2) {
-        if(self.locationToBePLotted.image){
+        if(self.locationToBePlotted.image){
             
             DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
             
             cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
-            cell.plaqueImageView.image = self.locationToBePLotted.image;
+            cell.plaqueImageView.image = self.locationToBePlotted.image;
         }
     }
     

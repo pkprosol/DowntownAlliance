@@ -11,19 +11,14 @@
 #import "DTASetUpDefaultData.h"
 #import "DTAAppLinkViewController.h"
 
-
 @implementation DTAAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
-
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                              [UIColor whiteColor],
-                                                          NSForegroundColorAttributeName, nil]];
-
-    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+    [[UITabBar appearance] setTranslucent:NO];
+    
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackOpaque];
     
     [self setUpFromGeoFence];
    
@@ -32,8 +27,7 @@
     return YES;
 }
 
-- (void)setUpFromGeoFence
-{
+- (void)setUpFromGeoFence {
     self.geoFence = [[DTAGeoFencing alloc]init];
     
     [self.geoFence setUpGeoFences];

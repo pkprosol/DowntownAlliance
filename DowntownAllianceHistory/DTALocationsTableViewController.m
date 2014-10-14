@@ -96,7 +96,7 @@
     DTADetailViewController *nextVC = segue.destinationViewController;
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     Location *selectedLocation = self.locationsToShow[indexPath.row];
-    nextVC.locationToBePLotted = selectedLocation;
+    nextVC.locationToBePlotted = selectedLocation;
 }
 
 @end

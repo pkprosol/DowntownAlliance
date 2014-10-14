@@ -96,7 +96,7 @@
     {
         MKAnnotationView *view = sender;
         DTAMapAnnotation *annotation = view.annotation;
-        ((DTADetailViewController *)segue.destinationViewController).locationToBePLotted = annotation.location;
+        ((DTADetailViewController *)segue.destinationViewController).locationToBePlotted = annotation.location;
     }
 }
 
