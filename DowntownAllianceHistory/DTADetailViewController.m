@@ -82,34 +82,25 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailCell" forIndexPath:indexPath];
     
-    if (indexPath.row < 2)
+    if ([cell isKindOfClass:[DTAResizingCell class]])
     {
-    
-    [self configureCell:cell forRowAtIndexPath:indexPath];
-    }
- 
-    if (indexPath.row == 2) {
-        if(self.locationToBePLotted.image){
-    
-        DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
+        DTAResizingCell *textCell = (DTAResizingCell *)cell;
         
-        cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
-        cell.plaqueImageView.image = self.locationToBePLotted.image;
+        textCell.lineLabel.text = [self.stuffToDisplay objectAtIndex:indexPath.row];
+        textCell.lineLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+        
+        
+    } else if (indexPath.row == 2) {
+        if (self.locationToBePLotted.image) {
+            
+            DTAPlaqueImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture"forIndexPath:indexPath];
+            
+            cell.plaqueImageView.contentMode = UIViewContentModeScaleAspectFill;
+            cell.plaqueImageView.image = self.locationToBePLotted.image;
         }
     }
     
     return cell;
-}
-
-- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if ([cell isKindOfClass:[DTAResizingCell class]])
-    {
-        DTAResizingCell *textCell = (DTAResizingCell *)cell;
-    
-        textCell.lineLabel.text = [self.stuffToDisplay objectAtIndex:indexPath.row];
-        textCell.lineLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -120,8 +111,7 @@
     }
     else
     {
-        [self configureCell:self.prototypeCell forRowAtIndexPath:indexPath];
-        
+            
         [self.prototypeCell layoutIfNeeded];
         
         CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];

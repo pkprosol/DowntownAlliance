@@ -53,7 +53,7 @@
         
         textCell.dateLabel.text = date;
         textCell.listLabel.text = currentLocation.titleOfPlaque;
-        textCell.listLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+//        textCell.listLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     }
 }
 
