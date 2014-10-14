@@ -16,9 +16,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
-    [[UITabBar appearance] setTranslucent:NO];
-    
-    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackOpaque];
+
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                              [UIColor whiteColor],
+                                                          NSForegroundColorAttributeName, nil]];
+
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     
     [self setUpFromGeoFence];
    
