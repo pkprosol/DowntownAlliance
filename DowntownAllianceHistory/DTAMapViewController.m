@@ -19,13 +19,44 @@
 
 @implementation DTAMapViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self setUpLocationTracking];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    self.mapOutlet.delegate = self;
+    
+    [self setUpDefaultViewAndPoints];
+}
+
+- (void)setUpLocationTracking {
+    if ([CLLocationManager locationServicesEnabled]) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        
+        [self.locationManager requestWhenInUseAuthorization];
+        
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+        self.locationManager.distanceFilter = 50.0f;
+        
+        [self.locationManager startMonitoringSignificantLocationChanges];
+        
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    NSLog(@"%@", [locations.lastObject description]);
+}
+
+- (void)setUpDefaultViewAndPoints
+{
+    
     self.view.backgroundColor = [UIColor blackColor];
     
-    self.mapOutlet.delegate = self;
+    [self.mapOutlet showsUserLocation];
     
     DTADataStore *store = [DTADataStore sharedDataStore];
     self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
@@ -41,31 +72,12 @@
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+-(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    if (NSClassFromString(@"MKUserLocation") == [annotation class]) {
-        return nil;
+    for (Location *location in arrayOfLocations)
+    {
+        [self plotLocationsOnMap:location];
     }
-    
-    if (annotation == mapView.userLocation) {
-        return nil;
-    }
-    
-    MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"loc"];
-    annotationView.canShowCallout = YES;
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    
-    return annotationView;
-}
-
--(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
-{
-    [self performSegueWithIdentifier:@"detailController" sender:view];
 }
 
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted
@@ -82,15 +94,29 @@
     [self.mapOutlet addAnnotation:pointToAnnotate];
 }
 
--(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    for (Location *location in arrayOfLocations)
-    {
-        [self plotLocationsOnMap:location];
-    }
+//    if (NSClassFromString(@"MKUserLocation") == [annotation class]) {
+//        return nil;
+//    }
+//    
+//    if (annotation == mapView.userLocation) {
+//        return nil;
+//    }
+
+    MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"loc"];
+    annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
+    return annotationView;
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    [self performSegueWithIdentifier:@"detailController" sender:view];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"detailController"])
     {

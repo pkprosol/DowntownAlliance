@@ -8,15 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import <EventKit/EventKit.h>
 
-@interface DTAGeoFencing : NSObject <CLLocationManagerDelegate>
+@interface DTAUserLocationManagement : NSObject
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableArray *setOfLocationsForGeofencing;
 @property (nonatomic, strong) NSMutableArray *setOfRegions;
 @property (nonatomic) NSInteger defaultDistanceInMeters;
 
--(void)setUpGeoFences;
+- (void)setUpLocationManagementAndRegions;
 
 @end

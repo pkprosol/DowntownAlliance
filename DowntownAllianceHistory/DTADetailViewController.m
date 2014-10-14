@@ -9,8 +9,6 @@
 #import "DTADetailViewController.h"
 #import "DTAPlaqueImageCell.h"
 
-
-
 @interface DTADetailViewController ()
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapOutlet;
@@ -53,6 +51,7 @@
     
     self.stuffToDisplay = [[NSMutableArray alloc]init];
     [self.stuffToDisplay addObject:self.locationToBePlotted.titleOfPlaque];
+    
     [self.stuffToDisplay addObject:self.locationToBePlotted.brochureDescription];
     
     if (self.locationToBePlotted.image) {

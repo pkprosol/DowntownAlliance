@@ -6,31 +6,19 @@
 //
 //
 
-#import "DTAGeoFencing.h"
+#import "DTAUserLocationManagement.h"
 
-@interface DTAGeoFencing ()
+@interface DTAUserLocationManagement ()
 
 @end
 
-@implementation DTAGeoFencing
+@implementation DTAUserLocationManagement
 
--(void)setUpGeoFences
-{
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
-    
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-    self.locationManager.distanceFilter = 50.0f;
-    
+-(void)setUpLocationManagementAndRegions {
     [self setUpRegions];
-    
-    if ([CLLocationManager locationServicesEnabled]) {
-        [self.locationManager startUpdatingLocation];
-    }
 }
 
-- (void)setUpRegions
-{
+- (void)setUpRegions {
     
     if (self.setOfLocationsForGeofencing == nil) {
         [self createLocationsForGeoFencing];
@@ -81,7 +69,7 @@
 
 - (void)checkAndRespondIfUserIsAlreadyInRegion
 {
-    for (CLRegion *region in self.setOfRegions) {
+    for (CLCircularRegion *region in self.setOfRegions) {
         CLLocationDegrees regionCenterLatitude = region.center.latitude;
         CLLocationDegrees regionCenterLongitude = region.center.longitude;
         

@@ -38,9 +38,7 @@
     self.day = [self convertStringWithIntegerToNSNumber:componentArray[5]];
     self.year = [self convertStringWithIntegerToNSNumber:componentArray[6]];
 
-    NSString *allCapsTitle = componentArray[7];
-    
-    self.titleOfPlaque = [allCapsTitle capitalizedString];
+    self.titleOfPlaque = componentArray[7];
     self.brochureDescription = componentArray[8];
     
     NSString *imageNamesString = componentArray[9];

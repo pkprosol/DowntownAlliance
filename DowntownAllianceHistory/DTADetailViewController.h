@@ -13,7 +13,6 @@
 #import "DTAScrollingDetailTable.h"
 #import "DTAResizingCell.h"
 
-
 @interface DTADetailViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) DTAResizingCell *prototypeCell;

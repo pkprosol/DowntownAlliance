@@ -25,11 +25,6 @@
     return _prototypeCell;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,7 +43,7 @@
         DTAListCell *textCell = (DTAListCell *)cell;
         
         Location *currentLocation = self.locationsToShow[indexPath.row];
-        
+                
         NSString *date = [NSString stringWithFormat:@"%@",currentLocation.year];
         
         textCell.dateLabel.text = date;
