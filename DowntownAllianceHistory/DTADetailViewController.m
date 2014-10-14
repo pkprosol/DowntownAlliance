@@ -20,17 +20,14 @@
 
 @implementation DTADetailViewController
 
-- (DTAResizingCell *)prototypeCell
-{
-    if (!_prototypeCell)
-    {
+- (DTAResizingCell *)prototypeCell {
+    if (!_prototypeCell) {
         _prototypeCell = [self.scrollingTableView dequeueReusableCellWithIdentifier:@"detailCell"];
     }
     return _prototypeCell;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self

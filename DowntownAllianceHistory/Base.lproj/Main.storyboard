@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPo-cL-qjT">
@@ -43,7 +43,7 @@
                         <viewControllerLayoutGuide type="bottom" id="DVB-8y-j7B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5yB-MZ-ZUf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tickerTack.png" translatesAutoresizingMaskIntoConstraints="NO" id="de6-mD-han">
@@ -321,15 +321,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eTg-pW-Spe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Era" image="overtime-25.png" id="1A7-XV-uyc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="In1-bA-9Dm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="In1-bA-9Dm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -346,10 +342,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTL-Xx-6z6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="By Category" image="survey-25.png" id="2Ir-sJ-Yqr"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="A4g-kM-56Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="A4g-kM-56Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="K7p-Yy-bOx">
@@ -370,7 +365,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nmw-rd-ICq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Main Map" image="map_marker-25.png" id="nv1-te-qZB"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zr3-qT-9Uv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zr3-qT-9Uv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -429,10 +424,9 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-2" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="eCs-s3-XY3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eCs-s3-XY3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
