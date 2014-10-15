@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController *tabbar;
-@property (strong, nonatomic) DTAUserLocationManagement *geoFence;
+@property (strong, nonatomic) DTAUserLocationManagement *userLocationManagement;
 
 -(void)setUpFromGeoFence;
 

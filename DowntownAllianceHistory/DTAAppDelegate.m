@@ -11,6 +11,8 @@
 #import "DTASetUpDefaultData.h"
 #import "DTAAppLinkViewController.h"
 
+#import "DTAMapViewController.h"
+
 @implementation DTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -26,21 +28,18 @@
 - (void)setUpDefaultBars {
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
-    [[UITabBar appearance] setTranslucent:NO];
     
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackOpaque];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
-- (void)setUpFromGeoFence
-{
-    self.geoFence = [[DTAUserLocationManagement alloc] init];
+- (void)setUpFromGeoFence {
+    self.userLocationManagement = [[DTAUserLocationManagement alloc] init];
     
-    [self.geoFence setUpLocationManagementAndRegions];
+    [self.userLocationManagement setUpLocationManagementAndRegions];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
+- (void)applicationWillEnterForeground:(UIApplication *)application {
     [self respondToReturnFromDTAApp];
 }
 

@@ -28,7 +28,6 @@
     NSFetchRequest *fetchDataRequest = [NSFetchRequest fetchRequestWithEntityName:entityName];
     NSArray *fetchedData = [self.managedObjectContext executeFetchRequest:fetchDataRequest error:nil];
     
-#warning Test me
     if ([fetchedData count] == 0) {
         [DTASetUpDefaultData setUpDefaultData];
         fetchedData = [self.managedObjectContext executeFetchRequest:fetchDataRequest error:nil];

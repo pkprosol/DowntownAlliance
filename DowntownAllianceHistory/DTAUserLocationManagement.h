@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface DTAUserLocationManagement : NSObject
+@interface DTAUserLocationManagement : NSObject <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableArray *setOfLocationsForGeofencing;
 @property (nonatomic, strong) NSMutableArray *setOfRegions;
 @property (nonatomic) NSInteger defaultDistanceInMeters;
+@property (nonatomic) NSInteger attemptsToStartLocationTracking;
 
 - (void)setUpLocationManagementAndRegions;
 

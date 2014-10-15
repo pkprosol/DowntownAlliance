@@ -23,8 +23,7 @@
 {
     [super viewDidLoad];
     
-    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
-    [self.tableView setSeparatorColor:[UIColor blackColor]];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     self.arrayOfTimeIntervals = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
     self.arrayOfImages = [NSMutableArray new];

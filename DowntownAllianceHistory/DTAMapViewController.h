@@ -12,10 +12,9 @@
 #import "DTASetUpDefaultData.h"
 #import "Location.h"
 
-@interface DTAMapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface DTAMapViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
-
 @property (strong, nonatomic) NSArray *arrayOfLocations;
 
 -(void)plotLocationsOnMap:(Location *)locationToBePlotted;

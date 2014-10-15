@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F47CB7111987D9CC00398293"
-               BuildableName = "DowntownAllianceHistory.app"
-               BlueprintName = "DowntownAllianceHistory"
-               ReferencedContainer = "container:DowntownAllianceHistory.xcodeproj">
+               BuildableName = "Canyon of Heroes.app"
+               BlueprintName = "Canyon of Heroes"
+               ReferencedContainer = "container:Canyon of Heroes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F47CB7111987D9CC00398293"
-            BuildableName = "DowntownAllianceHistory.app"
-            BlueprintName = "DowntownAllianceHistory"
-            ReferencedContainer = "container:DowntownAllianceHistory.xcodeproj">
+            BuildableName = "Canyon of Heroes.app"
+            BlueprintName = "Canyon of Heroes"
+            ReferencedContainer = "container:Canyon of Heroes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F47CB7111987D9CC00398293"
-            BuildableName = "DowntownAllianceHistory.app"
-            BlueprintName = "DowntownAllianceHistory"
-            ReferencedContainer = "container:DowntownAllianceHistory.xcodeproj">
+            BuildableName = "Canyon of Heroes.app"
+            BlueprintName = "Canyon of Heroes"
+            ReferencedContainer = "container:Canyon of Heroes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -67,8 +67,8 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "New York, NY, USA"
-         referenceType = "1">
+         identifier = "../../DowntownAllianceHistory/TestLocations/COHCenter.gpx"
+         referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F47CB7111987D9CC00398293"
-            BuildableName = "DowntownAllianceHistory.app"
-            BlueprintName = "DowntownAllianceHistory"
-            ReferencedContainer = "container:DowntownAllianceHistory.xcodeproj">
+            BuildableName = "Canyon of Heroes.app"
+            BlueprintName = "Canyon of Heroes"
+            ReferencedContainer = "container:Canyon of Heroes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

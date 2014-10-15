@@ -409,14 +409,14 @@
 		F45D46C6198ACCA70029BD84 /* DTADateFormatterAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADateFormatterAssistant.m; sourceTree = "<group>"; };
 		F46BAFE619EC8FEB00375859 /* DTAAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAAboutViewController.h; sourceTree = "<group>"; };
 		F46BAFE719EC8FEB00375859 /* DTAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAAboutViewController.m; sourceTree = "<group>"; };
-		F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowntownAllianceHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47CB7121987D9CC00398293 /* Canyon of Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Canyon of Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CB7151987D9CC00398293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F47CB7171987D9CC00398293 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F47CB7191987D9CC00398293 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F47CB71D1987D9CC00398293 /* DowntownAllianceHistory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DowntownAllianceHistory-Info.plist"; sourceTree = "<group>"; };
+		F47CB71D1987D9CC00398293 /* Canyon of Heroes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Canyon of Heroes-Info.plist"; sourceTree = "<group>"; };
 		F47CB71F1987D9CC00398293 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47CB7211987D9CC00398293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F47CB7231987D9CC00398293 /* DowntownAllianceHistory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DowntownAllianceHistory-Prefix.pch"; sourceTree = "<group>"; };
+		F47CB7231987D9CC00398293 /* Canyon of Heroes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Canyon of Heroes-Prefix.pch"; sourceTree = "<group>"; };
 		F47CB7241987D9CC00398293 /* DTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAAppDelegate.h; sourceTree = "<group>"; };
 		F47CB7251987D9CC00398293 /* DTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAAppDelegate.m; sourceTree = "<group>"; };
 		F47CB7281987D9CC00398293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -614,7 +614,7 @@
 		F47CB7131987D9CC00398293 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */,
+				F47CB7121987D9CC00398293 /* Canyon of Heroes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -946,10 +946,10 @@
 		F490D3C8198C2ABD001BAF2C /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				F47CB71D1987D9CC00398293 /* DowntownAllianceHistory-Info.plist */,
+				F47CB71D1987D9CC00398293 /* Canyon of Heroes-Info.plist */,
 				F47CB71E1987D9CC00398293 /* InfoPlist.strings */,
 				F47CB7211987D9CC00398293 /* main.m */,
-				F47CB7231987D9CC00398293 /* DowntownAllianceHistory-Prefix.pch */,
+				F47CB7231987D9CC00398293 /* Canyon of Heroes-Prefix.pch */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -957,9 +957,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F47CB7111987D9CC00398293 /* DowntownAllianceHistory */ = {
+		F47CB7111987D9CC00398293 /* Canyon of Heroes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F47CB7441987D9CD00398293 /* Build configuration list for PBXNativeTarget "DowntownAllianceHistory" */;
+			buildConfigurationList = F47CB7441987D9CD00398293 /* Build configuration list for PBXNativeTarget "Canyon of Heroes" */;
 			buildPhases = (
 				F47CB70E1987D9CC00398293 /* Sources */,
 				F47CB70F1987D9CC00398293 /* Frameworks */,
@@ -970,9 +970,9 @@
 			);
 			dependencies = (
 			);
-			name = DowntownAllianceHistory;
+			name = "Canyon of Heroes";
 			productName = DowntownAllianceHistory;
-			productReference = F47CB7121987D9CC00398293 /* DowntownAllianceHistory.app */;
+			productReference = F47CB7121987D9CC00398293 /* Canyon of Heroes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -994,7 +994,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F47CB70D1987D9CC00398293 /* Build configuration list for PBXProject "DowntownAllianceHistory" */;
+			buildConfigurationList = F47CB70D1987D9CC00398293 /* Build configuration list for PBXProject "Canyon of Heroes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1007,7 +1007,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F47CB7111987D9CC00398293 /* DowntownAllianceHistory */,
+				F47CB7111987D9CC00398293 /* Canyon of Heroes */,
 			);
 		};
 /* End PBXProject section */
@@ -1345,10 +1345,10 @@
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DowntownAllianceHistory/DowntownAllianceHistory-Prefix.pch";
-				INFOPLIST_FILE = "DowntownAllianceHistory/DowntownAllianceHistory-Info.plist";
+				GCC_PREFIX_HEADER = "DowntownAllianceHistory/Canyon of Heroes-Prefix.pch";
+				INFOPLIST_FILE = "DowntownAllianceHistory/Canyon of Heroes-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Canyon of Heroes";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1366,10 +1366,10 @@
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DowntownAllianceHistory/DowntownAllianceHistory-Prefix.pch";
-				INFOPLIST_FILE = "DowntownAllianceHistory/DowntownAllianceHistory-Info.plist";
+				GCC_PREFIX_HEADER = "DowntownAllianceHistory/Canyon of Heroes-Prefix.pch";
+				INFOPLIST_FILE = "DowntownAllianceHistory/Canyon of Heroes-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Canyon of Heroes";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1378,7 +1378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F47CB70D1987D9CC00398293 /* Build configuration list for PBXProject "DowntownAllianceHistory" */ = {
+		F47CB70D1987D9CC00398293 /* Build configuration list for PBXProject "Canyon of Heroes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F47CB7421987D9CD00398293 /* Debug */,
@@ -1387,7 +1387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F47CB7441987D9CD00398293 /* Build configuration list for PBXNativeTarget "DowntownAllianceHistory" */ = {
+		F47CB7441987D9CD00398293 /* Build configuration list for PBXNativeTarget "Canyon of Heroes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F47CB7451987D9CD00398293 /* Debug */,

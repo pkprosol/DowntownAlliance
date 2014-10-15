@@ -15,7 +15,31 @@
 @implementation DTAUserLocationManagement
 
 -(void)setUpLocationManagementAndRegions {
+    [self setUpLocationTracking];
     [self setUpRegions];
+}
+
+- (void)setUpLocationTracking {
+    if ([CLLocationManager locationServicesEnabled]) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        
+        CLAuthorizationStatus authorizationStatus = [CLLocationManager authorizationStatus];
+        
+        if (authorizationStatus == kCLAuthorizationStatusNotDetermined && [self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager requestWhenInUseAuthorization];
+        } else if (authorizationStatus == kCLAuthorizationStatusAuthorized) {
+            [self.locationManager startUpdatingLocation];
+        }
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    NSLog(@"Location manager error: %@", error);
 }
 
 - (void)setUpRegions {
@@ -27,10 +51,11 @@
     if (self.setOfRegions == nil) {
         self.setOfRegions = [[NSMutableArray alloc] init];
         NSInteger locationNumber = 0;
-        self.defaultDistanceInMeters = 200;
+        self.defaultDistanceInMeters = 150;
         
         for (CLLocation *location in self.setOfLocationsForGeofencing) {
             CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:self.defaultDistanceInMeters identifier:[NSString stringWithFormat:@"Identifier%ld", (long)locationNumber]];
+            region.notifyOnEntry = YES;
             [self.setOfRegions addObject:region];
             
             locationNumber++;
@@ -85,9 +110,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
-{
-    NSLog(@"Entered region: %@", region);
-    
+{    
     if ([self isValidTimeForAlerts]) {
         [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
         [self showUserProximityAlert];
@@ -114,7 +137,7 @@
         [self fireBackgroundNotification];
     } else {
         UIAlertView *userEnteredRegion = [[UIAlertView alloc]initWithTitle:@"Welcome!"
-                                                                   message:@"You are near the Canyon of Heroes!"
+                                                                   message:@"You are near the Canyon of Heroes! Check out the Main Map to see where you are."
                                                                   delegate:nil
                                                          cancelButtonTitle:@"OK"
                                                          otherButtonTitles:nil];
@@ -186,7 +209,5 @@
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
-
-
 
 @end

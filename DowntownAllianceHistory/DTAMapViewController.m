@@ -19,41 +19,16 @@
 
 @implementation DTAMapViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [self setUpLocationTracking];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.mapOutlet.delegate = self;
-    
-    [self setUpDefaultViewAndPoints];
-}
-
-- (void)setUpLocationTracking {
-    if ([CLLocationManager locationServicesEnabled]) {
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self;
-        
-        [self.locationManager requestWhenInUseAuthorization];
-        
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-        self.locationManager.distanceFilter = 50.0f;
-        
-        [self.locationManager startMonitoringSignificantLocationChanges];
-        
-    }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    NSLog(@"%@", [locations.lastObject description]);
+        [self setUpDefaultViewAndPoints];
 }
 
 - (void)setUpDefaultViewAndPoints
 {
-    
     self.view.backgroundColor = [UIColor blackColor];
     
     [self.mapOutlet showsUserLocation];
@@ -67,6 +42,10 @@
     CGFloat longitudeFloat = -74.0105972;
     
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
+    
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    CLLocationCoordinate2D userCoord = locationManager.location.coordinate;
+    
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
     
     [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
@@ -96,13 +75,13 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-//    if (NSClassFromString(@"MKUserLocation") == [annotation class]) {
-//        return nil;
-//    }
-//    
-//    if (annotation == mapView.userLocation) {
-//        return nil;
-//    }
+    if (NSClassFromString(@"MKUserLocation") == [annotation class]) {
+        return nil;
+    }
+    
+    if (annotation == mapView.userLocation) {
+        return nil;
+    }
 
     MKAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"loc"];
     annotationView.canShowCallout = YES;
