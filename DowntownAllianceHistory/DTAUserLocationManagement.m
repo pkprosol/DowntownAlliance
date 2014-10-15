@@ -30,6 +30,8 @@
             [self.locationManager requestWhenInUseAuthorization];
         } else if (authorizationStatus == kCLAuthorizationStatusAuthorized) {
             [self.locationManager startUpdatingLocation];
+            // check if this actually works
+            // start updating will keep
         }
     }
 }
@@ -40,6 +42,8 @@
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"Location manager error: %@", error);
+    // see what the manager is doing
+    // see if manager looks normal
 }
 
 - (void)setUpRegions {
