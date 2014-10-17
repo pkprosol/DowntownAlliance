@@ -17,6 +17,11 @@
 @property (nonatomic) NSInteger defaultDistanceInMeters;
 @property (nonatomic) NSInteger attemptsToStartLocationTracking;
 
+@property (nonatomic) NSInteger maxNumberOfAlertsToShow;
+@property (nonatomic) NSInteger minIntervalBetweenLocationAlerts;
+@property (strong, nonatomic) UIAlertView *standardLocationAlert;
+@property (strong, nonatomic) UILocalNotification *standardBackgroundNotification;
+
 - (void)setUpLocationManagementAndRegions;
 
 @end

@@ -19,39 +19,50 @@
 
 @implementation DTAMapViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
+- (void)viewWillAppear:(BOOL)animated {
     self.mapOutlet.delegate = self;
-        [self setUpDefaultViewAndPoints];
+    [self setUpDefaultViewAndPoints];
 }
 
 - (void)setUpDefaultViewAndPoints
 {
-    self.view.backgroundColor = [UIColor blackColor];
-    
     [self.mapOutlet showsUserLocation];
-    
-    DTADataStore *store = [DTADataStore sharedDataStore];
-    self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
-    
-    [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
-    
-    CGFloat latitudeFloat = 40.7089005;
-    CGFloat longitudeFloat = -74.0105972;
-    
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(latitudeFloat, longitudeFloat);
-    
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    CLLocationCoordinate2D userCoord = locationManager.location.coordinate;
-    
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250.0, 250.0);
-    
-    [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:region] animated:YES];
+    [self setUpMapZoom];
+    [self setUpMapPoints];
 }
 
--(void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
+- (void)setUpMapPoints {
+    DTADataStore *store = [DTADataStore sharedDataStore];
+    self.arrayOfLocations = [store fetchDataForEntityName:@"Location"];
+    [self plotArrayOfLocationsOnMap:self.arrayOfLocations];
+}
+
+- (void)setUpMapZoom {
+    CGFloat centerOfCOHLatitude = 40.7089005;
+    CGFloat centerOfCOHLongitude = -74.0105972;
+    CLLocation *centerOfCOH = [[CLLocation alloc] initWithLatitude:centerOfCOHLatitude longitude:centerOfCOHLongitude];
+    
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    CLLocation *userLocation = locationManager.location;
+    CLLocationDistance userDistanceFromCOH = [userLocation distanceFromLocation:centerOfCOH];
+
+    MKCoordinateRegion regionToZoomMap;
+    MKCoordinateSpan span = MKCoordinateSpanMake(500.0, 500.0);
+    
+    if (userLocation && userDistanceFromCOH < 750) {
+        CLLocationCoordinate2D userLocationCoordinate = userLocation.coordinate;
+        MKCoordinateRegion regionCenteredOnUser = MKCoordinateRegionMake(userLocationCoordinate, span);
+        regionToZoomMap = regionCenteredOnUser;
+    } else {
+        CLLocationCoordinate2D centerOfCOHCoordinate = CLLocationCoordinate2DMake(centerOfCOHLatitude, centerOfCOHLongitude);
+        MKCoordinateRegion regionCenteredOnCOH = MKCoordinateRegionMake(centerOfCOHCoordinate, span);
+        regionToZoomMap = regionCenteredOnCOH;
+    }
+    
+    [self.mapOutlet setRegion:[self.mapOutlet regionThatFits:regionToZoomMap] animated:YES];
+}
+
+- (void)plotArrayOfLocationsOnMap:(NSArray *)arrayOfLocations
 {
     for (Location *location in arrayOfLocations)
     {
@@ -59,7 +70,7 @@
     }
 }
 
--(void)plotLocationsOnMap:(Location *)locationToBePlotted
+- (void)plotLocationsOnMap:(Location *)locationToBePlotted
 {
     CGFloat latitudeFloat = [locationToBePlotted.latitude floatValue];
     CGFloat longitudeFloat = [locationToBePlotted.longitude floatValue];

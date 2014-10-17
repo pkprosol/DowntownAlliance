@@ -17,6 +17,7 @@
 -(void)setUpLocationManagementAndRegions {
     [self setUpLocationTracking];
     [self setUpRegions];
+    [self setUpLocationAlerts];
 }
 
 - (void)setUpLocationTracking {
@@ -29,6 +30,7 @@
         if (authorizationStatus == kCLAuthorizationStatusNotDetermined && [self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
             [self.locationManager requestWhenInUseAuthorization];
         } else if (authorizationStatus == kCLAuthorizationStatusAuthorized) {
+            NSLog(@"Authorization status: %d", authorizationStatus);
             [self.locationManager startUpdatingLocation];
             // check if this actually works
             // start updating will keep
@@ -96,6 +98,22 @@
     }
 }
 
+- (void)setUpLocationAlerts {
+    self.maxNumberOfAlertsToShow = 3;
+    self.minIntervalBetweenLocationAlerts = 10;//604800;
+    
+    self.standardLocationAlert = [[UIAlertView alloc]initWithTitle:@"Welcome!"
+                                                           message:@"You are near the Canyon of Heroes! Check out the Main Map to see where you are."
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"OK"
+                                                 otherButtonTitles:nil];
+    
+    self.standardBackgroundNotification = [[UILocalNotification alloc] init];
+    self.standardBackgroundNotification.fireDate = [NSDate date];
+    self.standardBackgroundNotification.alertBody = @"You are near the Canyon of Heroes!";
+    self.standardBackgroundNotification.soundName = UILocalNotificationDefaultSoundName;
+}
+
 - (void)checkAndRespondIfUserIsAlreadyInRegion
 {
     for (CLCircularRegion *region in self.setOfRegions) {
@@ -125,7 +143,7 @@
 {
     NSInteger priorNumberOfAlerts = [self getPriorNumberOfAlertsSeen];
     
-    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts > 0 && priorNumberOfAlerts < 3 && [self hasAppropriateTimePassedSincePriorAlert])){
+    if (priorNumberOfAlerts == 0 || (priorNumberOfAlerts > 0 && priorNumberOfAlerts < self.maxNumberOfAlertsToShow && [self hasAppropriateTimePassedSincePriorAlert])){
         return YES;
     } else {
         return NO;
@@ -140,13 +158,7 @@
     {
         [self fireBackgroundNotification];
     } else {
-        UIAlertView *userEnteredRegion = [[UIAlertView alloc]initWithTitle:@"Welcome!"
-                                                                   message:@"You are near the Canyon of Heroes! Check out the Main Map to see where you are."
-                                                                  delegate:nil
-                                                         cancelButtonTitle:@"OK"
-                                                         otherButtonTitles:nil];
-        
-        [userEnteredRegion show];
+        [self.standardLocationAlert show];
     }
 }
 
@@ -164,12 +176,9 @@
     NSString *alertsKey = @"alertsShown";
     NSInteger alertsPreviouslyShown = [defaults integerForKey:alertsKey];
     
-    if (alertsPreviouslyShown == 0) {
-        [defaults setInteger:1 forKey:alertsKey];
-    } else if (alertsPreviouslyShown == 1) {
-        [defaults setInteger:2 forKey:alertsKey];
-    } else {
-        [defaults setInteger:3 forKey:alertsKey];
+    if (alertsPreviouslyShown < self.maxNumberOfAlertsToShow) {
+        alertsPreviouslyShown++;
+        [defaults setInteger:alertsPreviouslyShown forKey:alertsKey];
     }
     
     [self registerTimeAndDateOfAlert];
@@ -180,9 +189,9 @@
     NSUserDefaults *defaults  = [NSUserDefaults standardUserDefaults];
     NSDate *dateOfLastAlert = [defaults valueForKey:@"dateAndTimeOfLastAlert"];
     
-    NSInteger secondsInOneWeek = 604800;
+    NSInteger intervalBetweenAlerts = self.minIntervalBetweenLocationAlerts;
     
-    if (dateOfLastAlert > 0 && [[NSDate date] timeIntervalSinceDate:dateOfLastAlert] > secondsInOneWeek) {
+    if (dateOfLastAlert > 0 && [[NSDate date] timeIntervalSinceDate:dateOfLastAlert] > intervalBetweenAlerts) {
         return YES;
     } else {
         return NO;
@@ -207,11 +216,7 @@
 
 - (void)fireBackgroundNotification
 {
-    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate date];
-    localNotification.alertBody = @"You are near the Canyon of Heroes!";
-    localNotification.soundName = UILocalNotificationDefaultSoundName;
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    [[UIApplication sharedApplication] scheduleLocalNotification:self.standardBackgroundNotification];
 }
 
 @end
