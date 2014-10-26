@@ -371,7 +371,6 @@
         <!--By Category-->
         <scene sceneID="5UO-ij-4wa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dju-D0-tb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Vi5-JB-l18" customClass="DTAThemesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KFU-s6-EK7">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -403,6 +402,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="By Category" id="QkL-NJ-cAq"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dju-D0-tb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2494" y="19"/>
         </scene>

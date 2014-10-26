@@ -9,6 +9,7 @@
 #import "DTASetUpDefaultData.h"
 #import "Location.h"
 #import "DTADataStore.h"
+#import "DTASetUpDefaultTimeRanges.h"
 #import "DTASetUpDefaultThemes.h"
 
 @implementation DTASetUpDefaultData
@@ -19,7 +20,9 @@
     NSArray *cleanArray = [DTASetUpDefaultData getCleanArrayOfCSVFileFromString:rawCSVString];
     NSArray *componentsArray = [DTASetUpDefaultData getArrayOfArraysWithComponentsFromArray:cleanArray];
     
+    [DTASetUpDefaultTimeRanges setUpArrayOfDefaultTimeRanges];
     [DTASetUpDefaultThemes setUpArrayOfThemesWithNameAndImage];
+    
     [DTASetUpDefaultData createLocationObjectsInCoreDataFromComponentsArray:componentsArray];
 }
 

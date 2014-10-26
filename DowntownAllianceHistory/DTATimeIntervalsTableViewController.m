@@ -11,6 +11,7 @@
 #import "DTALocationsTableViewController.h"
 #import "UITabBarController+hidableTab.h"
 #import "DTATimeRange.h"
+#import "DTADataStore.h"
 #import "DTASetUpDefaultTimeRanges.h"
 
 @interface DTATimeIntervalsTableViewController ()
@@ -25,10 +26,10 @@
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
-    self.arrayOfTimeIntervals = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
+    DTADataStore *dataStore = [DTADataStore sharedDataStore];
+    
+    self.arrayOfTimeIntervals = dataStore.defaultTimeIntervalsArray;
     self.arrayOfImages = [NSMutableArray new];
-
-    // Clean me
     
     for (DTATimeRange *timeRange in self.arrayOfTimeIntervals) {
         [self.arrayOfImages addObject:timeRange.imageForRange];

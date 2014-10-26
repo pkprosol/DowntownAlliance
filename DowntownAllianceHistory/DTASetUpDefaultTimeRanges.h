@@ -11,11 +11,10 @@
 
 @interface DTASetUpDefaultTimeRanges : NSObject
 
++ (void)setUpArrayOfDefaultTimeRanges;
 + (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 
 // Receives array with beginning, intermediate, and final dates and generates time intervals
-+ (NSArray *)getAndProcessDefaultTimeRanges;
-
 + (NSArray *)findItemsInTimeRange:(DTATimeRange *)range;
 
 @end 

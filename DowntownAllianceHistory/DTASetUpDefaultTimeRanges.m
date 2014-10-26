@@ -14,6 +14,14 @@
 
 @implementation DTASetUpDefaultTimeRanges
 
++ (void)setUpArrayOfDefaultTimeRanges
+{
+    DTADataStore *dataStore = [DTADataStore sharedDataStore];
+    
+    dataStore.defaultTimeIntervalsArray = [DTASetUpDefaultTimeRanges getAndProcessDefaultTimeRanges];
+
+}
+
 + (DTATimeRange *)generateTimeRangeWithName:(NSString *)name StartDate:(NSDate *)startDate EndDate:(NSDate *)endDate Image:(UIImage *)image;
 {
     DTATimeRange *newTimeRange = [[DTATimeRange alloc] initWithName:name BeginningDate:startDate EndDate:endDate Image:image];

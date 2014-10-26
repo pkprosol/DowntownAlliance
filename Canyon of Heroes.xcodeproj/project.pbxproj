@@ -639,6 +639,8 @@
 		F47CB71B1987D9CC00398293 /* DowntownAllianceHistory */ = {
 			isa = PBXGroup;
 			children = (
+				F47CB7241987D9CC00398293 /* DTAAppDelegate.h */,
+				F47CB7251987D9CC00398293 /* DTAAppDelegate.m */,
 				775E45B419990DE10094E3B2 /* Storyboard */,
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
@@ -694,8 +696,6 @@
 			isa = PBXGroup;
 			children = (
 				F41C72E21989757800DD15DF /* Archive */,
-				F47CB7241987D9CC00398293 /* DTAAppDelegate.h */,
-				F47CB7251987D9CC00398293 /* DTAAppDelegate.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";

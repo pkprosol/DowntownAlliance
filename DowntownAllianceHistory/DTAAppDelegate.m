@@ -7,10 +7,11 @@
 //
 
 #import "DTAAppDelegate.h"
-#import "DTAUserLocationManagement.h"
 #import "DTASetUpDefaultData.h"
-#import "DTAAppLinkViewController.h"
+#import "DTADataStore.h"
 
+#import "DTAUserLocationManagement.h"
+#import "DTAAppLinkViewController.h"
 #import "DTAMapViewController.h"
 
 @implementation DTAAppDelegate
@@ -20,7 +21,11 @@
     [self setUpFromGeoFence];
     [self setUpDefaultBars];
     
-    [DTASetUpDefaultData setUpDefaultData];
+    DTADataStore *dataStore = [DTADataStore sharedDataStore];
+
+    if (!dataStore.defaultTimeIntervalsArray || !dataStore.defaultThemesArray) {
+        [DTASetUpDefaultData setUpDefaultData];
+    }
     
     return YES;
 }
