@@ -16,40 +16,25 @@
 
 @implementation DTALocationsTableViewController
 
-- (DTAListCell *)prototypeCell
-{
-    if (!_prototypeCell)
-    {
-        _prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"detailTablecell"];
-    }
-    return _prototypeCell;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = self.title;
     
-    NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES];
-    self.locationsToShow = [self.locationsToShow sortedArrayUsingDescriptors:@[nameSort]];
+    [self setUpDefaultView];
+    [self setUpDefaultData];
 }
 
-#pragma mark - Table view data source
-
-- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)setUpDefaultView
 {
-    if ([cell isKindOfClass:[DTAListCell class]])
-    {
-        DTAListCell *textCell = (DTAListCell *)cell;
-        
-        Location *currentLocation = self.locationsToShow[indexPath.row];
-                
-        NSString *date = [NSString stringWithFormat:@"%@",currentLocation.year];
-        
-        textCell.dateLabel.text = date;
-        textCell.listLabel.text = currentLocation.titleOfPlaque;
-//        textCell.listLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    }
+    self.navigationItem.title = self.title;
+    self.tableView.backgroundColor = [UIColor blackColor];
+    self.tableView.tableFooterView = [UIView new];
+}
+
+- (void)setUpDefaultData
+{
+    NSSortDescriptor *nameSort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:YES];
+    self.locationsToShow = [self.locationsToShow sortedArrayUsingDescriptors:@[nameSort]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -65,10 +50,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailTablecell" forIndexPath:indexPath];
-    
     [self configureCell:cell forRowAtIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell isKindOfClass:[DTAListCell class]])
+    {
+        DTAListCell *textCell = (DTAListCell *)cell;
+        Location *currentLocation = self.locationsToShow[indexPath.row];
+        
+        NSString *date = [NSString stringWithFormat:@"%@",currentLocation.year];
+        
+        textCell.dateLabel.text = date;
+        textCell.listLabel.text = currentLocation.titleOfPlaque;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -84,6 +83,15 @@
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewAutomaticDimension;
+}
+
+- (DTAListCell *)prototypeCell
+{
+    if (!_prototypeCell)
+    {
+        _prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"detailTablecell"];
+    }
+    return _prototypeCell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

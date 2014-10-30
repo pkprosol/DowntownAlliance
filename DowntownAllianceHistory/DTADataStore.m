@@ -1,10 +1,10 @@
-////
-////  DTADataStore.m
-////  DowntownAllianceHistory
-////
-////  Created by Piotr K Prosol on 7/29/14.
-////
-////
+//
+//  DTADataStore.m
+//  DowntownAllianceHistory
+//
+//  Created by Piotr K Prosol on 7/29/14.
+//
+//
 
 #import "DTADataStore.h"
 #import "DTASetUpDefaultData.h"

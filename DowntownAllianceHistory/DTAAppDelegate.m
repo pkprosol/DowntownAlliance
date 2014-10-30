@@ -17,8 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self setUpFromGeoFence];
     [self setUpDefaultBars];
+    [self setUpFromGeoFence];
     
     DTADataStore *dataStore = [DTADataStore sharedDataStore];
 

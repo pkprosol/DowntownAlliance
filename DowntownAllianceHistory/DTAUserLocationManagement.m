@@ -93,7 +93,7 @@
 
 - (void)setUpLocationAlerts {
     self.maxNumberOfAlertsToShow = 3;
-    self.minIntervalBetweenLocationAlerts = 10;//604800;
+    self.minIntervalBetweenLocationAlerts = 604800;
     
     self.standardLocationAlert = [[UIAlertView alloc]initWithTitle:@"Welcome!"
                                                            message:@"You are near the Canyon of Heroes! Check out the Main Map to see where you are."

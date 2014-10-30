@@ -23,11 +23,18 @@
 {
     [super viewDidLoad];
    
+    [self setUpDefaultView];
+    [self setUpDefaultData];
+}
+
+- (void)setUpDefaultView {
     self.view.backgroundColor = [UIColor blackColor];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-   
-    DTADataStore *dataStore = [DTADataStore sharedDataStore];
     
+}
+
+- (void)setUpDefaultData {
+    DTADataStore *dataStore = [DTADataStore sharedDataStore];
     self.arrayOfTimeIntervals = dataStore.defaultTimeIntervalsArray;
 }
 
@@ -53,6 +60,7 @@
     UIImage *imageOfDecade = [self.arrayOfTimeIntervals[indexPath.row] imageForRange];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.filterCellImageView.image = imageOfDecade;
     
     return cell;

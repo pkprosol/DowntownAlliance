@@ -48,7 +48,7 @@
 
     MKCoordinateRegion regionToZoomMap;
     
-    if (userLocation && userDistanceFromCOH < 1200) {
+    if (userLocation && userDistanceFromCOH < 1300) {
         CLLocationCoordinate2D userLocationCoordinate = userLocation.coordinate;
         CGFloat userLatitude = userLocationCoordinate.latitude;
         CGFloat userLongitude = userLocationCoordinate.longitude;
@@ -57,7 +57,16 @@
         CGFloat midPointBetweenUserAndCOHLongitude = (centerOfCOHLongitude + userLongitude) / 2;
         CLLocationCoordinate2D midPointBetweenUserAndCOHCoordinate = CLLocationCoordinate2DMake(midPointBetweenUserAndCOHLatitude, midPointBetweenUserAndCOHLongitude);
         
-        MKCoordinateRegion regionCenteredOnUser = MKCoordinateRegionMakeWithDistance(midPointBetweenUserAndCOHCoordinate, 1000, 1000);
+        NSInteger rangeShown;
+        if (userDistanceFromCOH < 600) {
+            rangeShown = 500;
+        } else if (userDistanceFromCOH < 1000) {
+            rangeShown = 900;
+        } else {
+            rangeShown = 1200;
+        }
+        
+        MKCoordinateRegion regionCenteredOnUser = MKCoordinateRegionMakeWithDistance(midPointBetweenUserAndCOHCoordinate, rangeShown, rangeShown);
         regionToZoomMap = regionCenteredOnUser;
     } else {
         CLLocationCoordinate2D centerOfCOHCoordinate = CLLocationCoordinate2DMake(centerOfCOHLatitude, centerOfCOHLongitude);

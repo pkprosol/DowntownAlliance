@@ -195,7 +195,6 @@
 		F47CB7291987D9CC00398293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CB7271987D9CC00398293 /* Main.storyboard */; };
 		F47CB72C1987D9CC00398293 /* DTAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB72B1987D9CC00398293 /* DTAMapViewController.m */; };
 		F47CB72E1987D9CC00398293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47CB72D1987D9CC00398293 /* Images.xcassets */; };
-		F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47CB77E198812EF00398293 /* DTADecadesViewController.m */; };
 		F483CFC0198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = F483CFBF198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.m */; };
 		F4870F1419ECC41D00B7E61B /* DTAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F4870F1319ECC41D00B7E61B /* DTAMapAnnotation.m */; };
 		F490D3C4198C29E2001BAF2C /* DTAGenerateDefaultThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = F490D3C3198C29E2001BAF2C /* DTAGenerateDefaultThemes.m */; };
@@ -428,8 +427,6 @@
 		F47CB72A1987D9CC00398293 /* DTAMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAMapViewController.h; sourceTree = "<group>"; };
 		F47CB72B1987D9CC00398293 /* DTAMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAMapViewController.m; sourceTree = "<group>"; };
 		F47CB72D1987D9CC00398293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F47CB77D198812EF00398293 /* DTADecadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTADecadesViewController.h; sourceTree = "<group>"; };
-		F47CB77E198812EF00398293 /* DTADecadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTADecadesViewController.m; sourceTree = "<group>"; };
 		F483CF7B198AAB7300CE6718 /* DTASetUpDefaultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultData.h; sourceTree = "<group>"; };
 		F483CF7C198AAB7E00CE6718 /* DTASetUpDefaultTimeRanges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTASetUpDefaultTimeRanges.h; sourceTree = "<group>"; };
 		F483CFBE198AC18A00CE6718 /* DTAGenerateDefaultTimeRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAGenerateDefaultTimeRanges.h; sourceTree = "<group>"; };
@@ -527,15 +524,6 @@
 				F4CB9104199AA8B900BC873D /* DTAlink@2x.png */,
 			);
 			name = Icons;
-			sourceTree = "<group>";
-		};
-		F41C72E21989757800DD15DF /* Archive */ = {
-			isa = PBXGroup;
-			children = (
-				F47CB77D198812EF00398293 /* DTADecadesViewController.h */,
-				F47CB77E198812EF00398293 /* DTADecadesViewController.m */,
-			);
-			name = Archive;
 			sourceTree = "<group>";
 		};
 		F43A633C19C1244700229F2E /* Test Locations */ = {
@@ -660,7 +648,6 @@
 				F47CB75C1987DE7600398293 /* Controllers */,
 				F47CB7511987DD3000398293 /* Model */,
 				F47CB71C1987D9CC00398293 /* Supporting Files */,
-				F47CB75D1987DE8300398293 /* Other */,
 				F47CB72D1987D9CC00398293 /* Images.xcassets */,
 			);
 			path = DowntownAllianceHistory;
@@ -695,24 +682,10 @@
 		F47CB75C1987DE7600398293 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4870F1519ECC70200B7E61B /* Time Intervals */,
-				F4870F1619ECC70D00B7E61B /* Categories */,
-				F4870F1719ECC71A00B7E61B /* Full Screen Map */,
-				F4870F1819ECC72B00B7E61B /* About */,
-				F4870F1919ECC73C00B7E61B /* COH Markers List */,
-				F4870F1A19ECC75800B7E61B /* Map and Details */,
-				F4870F1B19ECC76800B7E61B /* Link to DTA App */,
-				77A75B72198C14D2007D135F /* Cells and Xibs */,
+				F4FFFD3B1A020BDD007FB0A7 /* Main Tab Items */,
+				F4FFFD3C1A020BFB007FB0A7 /* Supporting Items */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		F47CB75D1987DE8300398293 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				F41C72E21989757800DD15DF /* Archive */,
-			);
-			name = Other;
 			sourceTree = "<group>";
 		};
 		F4870F1519ECC70200B7E61B /* Time Intervals */ = {
@@ -753,16 +726,16 @@
 			name = About;
 			sourceTree = "<group>";
 		};
-		F4870F1919ECC73C00B7E61B /* COH Markers List */ = {
+		F4870F1919ECC73C00B7E61B /* Locations List */ = {
 			isa = PBXGroup;
 			children = (
 				A42B281519892E8800DDB4F6 /* DTALocationsTableViewController.h */,
 				A42B281619892E8800DDB4F6 /* DTALocationsTableViewController.m */,
 			);
-			name = "COH Markers List";
+			name = "Locations List";
 			sourceTree = "<group>";
 		};
-		F4870F1A19ECC75800B7E61B /* Map and Details */ = {
+		F4870F1A19ECC75800B7E61B /* Location Map and Details */ = {
 			isa = PBXGroup;
 			children = (
 				7771A43A1988162600CD6BA8 /* DTADetailViewController.h */,
@@ -770,7 +743,7 @@
 				77AC835A19929BC3009E278B /* DTAScrollingDetailTable.h */,
 				77AC835B19929BC3009E278B /* DTAScrollingDetailTable.m */,
 			);
-			name = "Map and Details";
+			name = "Location Map and Details";
 			sourceTree = "<group>";
 		};
 		F4870F1B19ECC76800B7E61B /* Link to DTA App */ = {
@@ -967,6 +940,28 @@
 				F47CB7231987D9CC00398293 /* Canyon of Heroes-Prefix.pch */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		F4FFFD3B1A020BDD007FB0A7 /* Main Tab Items */ = {
+			isa = PBXGroup;
+			children = (
+				F4870F1519ECC70200B7E61B /* Time Intervals */,
+				F4870F1619ECC70D00B7E61B /* Categories */,
+				F4870F1719ECC71A00B7E61B /* Full Screen Map */,
+				F4870F1819ECC72B00B7E61B /* About */,
+				F4870F1B19ECC76800B7E61B /* Link to DTA App */,
+			);
+			name = "Main Tab Items";
+			sourceTree = "<group>";
+		};
+		F4FFFD3C1A020BFB007FB0A7 /* Supporting Items */ = {
+			isa = PBXGroup;
+			children = (
+				F4870F1919ECC73C00B7E61B /* Locations List */,
+				F4870F1A19ECC75800B7E61B /* Location Map and Details */,
+				77A75B72198C14D2007D135F /* Cells and Xibs */,
+			);
+			name = "Supporting Items";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1244,7 +1239,6 @@
 				F436AEDD1993FD9A00511331 /* Location.m in Sources */,
 				F4BB9A2F198AAAE300956381 /* DTASetUpDefaultData.m in Sources */,
 				F47CB7221987D9CC00398293 /* main.m in Sources */,
-				F47CB77F198812EF00398293 /* DTADecadesViewController.m in Sources */,
 				A4A9077F199125F9004AF18C /* DTAUserLocationManagement.m in Sources */,
 				A42B281719892E8800DDB4F6 /* DTALocationsTableViewController.m in Sources */,
 				F440A72D1989619900D057F6 /* DowntownAlliance.xcdatamodeld in Sources */,

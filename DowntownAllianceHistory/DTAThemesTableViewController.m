@@ -24,9 +24,18 @@
 {
     [super viewDidLoad];
     
+    [self setUpDefaultView];
+    [self setUpDefaultData];
+}
+
+- (void)setUpDefaultView
+{
     self.view.backgroundColor = [UIColor blackColor];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
+}
+
+- (void)setUpDefaultData
+{
     DTADataStore *store = [DTADataStore sharedDataStore];
     self.themesArray = store.defaultThemesArray;
 }
@@ -53,6 +62,7 @@
     Theme *themeInCell = self.themesArray[indexPath.row];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.filterCellImageView.image = themeInCell.image;
     
     return cell;
