@@ -9,7 +9,6 @@
 #import "DTATimeIntervalsTableViewController.h"
 #import "DTAFilterCell.h"
 #import "DTALocationsTableViewController.h"
-#import "UITabBarController+hidableTab.h"
 #import "DTATimeRange.h"
 #import "DTADataStore.h"
 #import "DTASetUpDefaultTimeRanges.h"
@@ -23,17 +22,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+   
+    self.view.backgroundColor = [UIColor blackColor];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
+   
     DTADataStore *dataStore = [DTADataStore sharedDataStore];
     
     self.arrayOfTimeIntervals = dataStore.defaultTimeIntervalsArray;
-    self.arrayOfImages = [NSMutableArray new];
-    
-    for (DTATimeRange *timeRange in self.arrayOfTimeIntervals) {
-        [self.arrayOfImages addObject:timeRange.imageForRange];
-    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -43,7 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.arrayOfImages count];
+    return [self.arrayOfTimeIntervals count];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,7 +50,7 @@
 {
     DTAFilterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
     
-    UIImage *imageOfDecade = self.arrayOfImages[indexPath.row];
+    UIImage *imageOfDecade = [self.arrayOfTimeIntervals[indexPath.row] imageForRange];
     
     cell.filterCellImageView.contentMode = UIViewContentModeScaleAspectFill;
     cell.filterCellImageView.image = imageOfDecade;
@@ -72,7 +67,6 @@
         
         nextVC.title = timeRangeSelected.nameOfRange;
         nextVC.locationsToShow = [DTASetUpDefaultTimeRanges findItemsInTimeRange:timeRangeSelected];
-        
     }
 }
 

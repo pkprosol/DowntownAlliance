@@ -14,10 +14,10 @@
 {
     self = [super init];
     if (self) {
-        _nameOfRange = nameOfRange;
-        _beginningDate = beginningDate;
-        _endDate = endDate;
-        _imageForRange = imageForRange;
+        self.nameOfRange = nameOfRange;
+        self.beginningDate = beginningDate;
+        self.endDate = endDate;
+        self.imageForRange = imageForRange;
     }
     
     return self;

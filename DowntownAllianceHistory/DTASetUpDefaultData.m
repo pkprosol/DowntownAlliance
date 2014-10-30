@@ -28,7 +28,7 @@
 
 + (NSString *)getCSVFileAndConvertToString
 {
-    NSString *filePathString = [[NSBundle mainBundle] pathForResource:@"COH2" ofType:@"csv"];
+    NSString *filePathString = [[NSBundle mainBundle] pathForResource:@"COH3" ofType:@"csv"];
     NSURL *filePathURL = [NSURL fileURLWithPath:filePathString];
     NSString *stringContentsOfCSV = [NSString stringWithContentsOfURL:filePathURL encoding:NSUTF8StringEncoding error:nil];
     

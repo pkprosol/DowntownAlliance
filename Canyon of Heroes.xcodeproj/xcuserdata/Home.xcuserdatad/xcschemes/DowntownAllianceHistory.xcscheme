@@ -67,7 +67,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../../DowntownAllianceHistory/TestLocations/OutOfCOHToEast.gpx"
+         identifier = "../../DowntownAllianceHistory/TestLocations/OutOfCOHToNorthWest.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>

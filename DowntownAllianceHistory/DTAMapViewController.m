@@ -26,7 +26,6 @@
 
 - (void)setUpDefaultViewAndPoints
 {
-    [self.mapOutlet showsUserLocation];
     [self setUpMapZoom];
     [self setUpMapPoints];
 }
@@ -38,8 +37,9 @@
 }
 
 - (void)setUpMapZoom {
-    CGFloat centerOfCOHLatitude = 40.7089005;
-    CGFloat centerOfCOHLongitude = -74.0105972;
+    CGFloat centerOfCOHLatitude = 40.707872;
+    CGFloat centerOfCOHLongitude = -74.011115;
+    
     CLLocation *centerOfCOH = [[CLLocation alloc] initWithLatitude:centerOfCOHLatitude longitude:centerOfCOHLongitude];
     
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
@@ -47,15 +47,21 @@
     CLLocationDistance userDistanceFromCOH = [userLocation distanceFromLocation:centerOfCOH];
 
     MKCoordinateRegion regionToZoomMap;
-    MKCoordinateSpan span = MKCoordinateSpanMake(500.0, 500.0);
     
-    if (userLocation && userDistanceFromCOH < 750) {
+    if (userLocation && userDistanceFromCOH < 1200) {
         CLLocationCoordinate2D userLocationCoordinate = userLocation.coordinate;
-        MKCoordinateRegion regionCenteredOnUser = MKCoordinateRegionMake(userLocationCoordinate, span);
+        CGFloat userLatitude = userLocationCoordinate.latitude;
+        CGFloat userLongitude = userLocationCoordinate.longitude;
+        
+        CGFloat midPointBetweenUserAndCOHLatitude = (centerOfCOHLatitude + userLatitude) / 2;
+        CGFloat midPointBetweenUserAndCOHLongitude = (centerOfCOHLongitude + userLongitude) / 2;
+        CLLocationCoordinate2D midPointBetweenUserAndCOHCoordinate = CLLocationCoordinate2DMake(midPointBetweenUserAndCOHLatitude, midPointBetweenUserAndCOHLongitude);
+        
+        MKCoordinateRegion regionCenteredOnUser = MKCoordinateRegionMakeWithDistance(midPointBetweenUserAndCOHCoordinate, 1000, 1000);
         regionToZoomMap = regionCenteredOnUser;
     } else {
         CLLocationCoordinate2D centerOfCOHCoordinate = CLLocationCoordinate2DMake(centerOfCOHLatitude, centerOfCOHLongitude);
-        MKCoordinateRegion regionCenteredOnCOH = MKCoordinateRegionMake(centerOfCOHCoordinate, span);
+        MKCoordinateRegion regionCenteredOnCOH = MKCoordinateRegionMakeWithDistance(centerOfCOHCoordinate, 600, 600);
         regionToZoomMap = regionCenteredOnCOH;
     }
     

@@ -9,7 +9,6 @@
 #import "DTAThemesTableViewController.h"
 #import "DTAFilterCell.h"
 #import "DTALocationsTableViewController.h"
-#import "UITabBarController+hidableTab.h"
 #import "DTADataStore.h"
 #import "DTAAppDelegate.h"
 #import "Theme.h"
@@ -25,6 +24,7 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor blackColor];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     DTADataStore *store = [DTADataStore sharedDataStore];

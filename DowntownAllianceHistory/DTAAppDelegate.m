@@ -9,7 +9,6 @@
 #import "DTAAppDelegate.h"
 #import "DTASetUpDefaultData.h"
 #import "DTADataStore.h"
-
 #import "DTAUserLocationManagement.h"
 #import "DTAAppLinkViewController.h"
 #import "DTAMapViewController.h"
@@ -40,7 +39,6 @@
 
 - (void)setUpFromGeoFence {
     self.userLocationManagement = [[DTAUserLocationManagement alloc] init];
-    
     [self.userLocationManagement setUpLocationManagementAndRegions];
 }
 

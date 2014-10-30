@@ -29,23 +29,16 @@
         
         if (authorizationStatus == kCLAuthorizationStatusNotDetermined && [self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
             [self.locationManager requestWhenInUseAuthorization];
-        } else if (authorizationStatus == kCLAuthorizationStatusAuthorized) {
-            NSLog(@"Authorization status: %d", authorizationStatus);
+        }
+        
+        if (authorizationStatus != kCLAuthorizationStatusDenied) {
             [self.locationManager startUpdatingLocation];
-            // check if this actually works
-            // start updating will keep
         }
     }
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    [self.locationManager startUpdatingLocation];
-}
-
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"Location manager error: %@", error);
-    // see what the manager is doing
-    // see if manager looks normal
 }
 
 - (void)setUpRegions {
@@ -72,7 +65,7 @@
         [self.locationManager startMonitoringForRegion:region];
     }
     
-    [self performSelector:@selector(checkAndRespondIfUserIsAlreadyInRegion) withObject:nil afterDelay:8];
+    [self performSelector:@selector(checkAndRespondIfUserIsAlreadyInRegion) withObject:nil afterDelay:2];
 }
 
 - (void)createLocationsForGeoFencing
@@ -126,7 +119,7 @@
         
         if (self.locationManager.location != nil && distanceFromRegion < self.defaultDistanceInMeters && [self isValidTimeForAlerts]) {
             [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
-            [self performSelector:@selector(showUserProximityAlert) withObject:nil afterDelay:2];
+            [self performSelector:@selector(showUserProximityAlert) withObject:nil afterDelay:1];
         }
     }
 }
