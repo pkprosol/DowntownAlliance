@@ -64,7 +64,7 @@
     if (self.setOfRegions == nil) {
         self.setOfRegions = [[NSMutableArray alloc] init];
         NSInteger locationNumber = 0;
-        self.defaultDistanceInMeters = 150;
+        self.defaultDistanceInMeters = 300;
         
         for (CLLocation *location in self.setOfLocationsForGeofencing) {
             CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:self.defaultDistanceInMeters identifier:[NSString stringWithFormat:@"Identifier%ld", (long)locationNumber]];
@@ -128,7 +128,7 @@
         BOOL isUserInRegion = [region containsCoordinate:self.locationManager.location.coordinate];
         
         if (self.locationManager.location != nil && isUserInRegion && [self isValidTimeForAlerts]) {
-            [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
+                [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
             [self performSelector:@selector(showUserProximityAlert) withObject:nil afterDelay:1];
         }
     }
