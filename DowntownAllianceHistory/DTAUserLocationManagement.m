@@ -22,13 +22,18 @@
 
 - (void)setUpLocationTracking {
     if ([CLLocationManager locationServicesEnabled]) {
-        self.locationManager = [[CLLocationManager alloc] init];
+        if (self.locationManager == nil) {
+            self.locationManager = [[CLLocationManager alloc] init];
+        }
+        
         self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+        self.locationManager.distanceFilter = kCLLocationAccuracyHundredMeters;
         
         CLAuthorizationStatus authorizationStatus = [CLLocationManager authorizationStatus];
         
-        if (authorizationStatus == kCLAuthorizationStatusNotDetermined && [self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-            [self.locationManager requestWhenInUseAuthorization];
+        if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+            [self.locationManager requestAlwaysAuthorization];
         }
         
         if (authorizationStatus != kCLAuthorizationStatusDenied) {
@@ -39,6 +44,15 @@
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"Location manager error: %@", error);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    NSLog(@"Locations: %@", locations.lastObject);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    [self.locationManager startUpdatingLocation];
+    [self performSelector:@selector(checkAndRespondIfUserIsAlreadyInRegion) withObject:nil afterDelay:4];
 }
 
 - (void)setUpRegions {
@@ -65,7 +79,7 @@
         [self.locationManager startMonitoringForRegion:region];
     }
     
-    [self performSelector:@selector(checkAndRespondIfUserIsAlreadyInRegion) withObject:nil afterDelay:2];
+    [self performSelector:@selector(checkAndRespondIfUserIsAlreadyInRegion) withObject:nil afterDelay:4];
 }
 
 - (void)createLocationsForGeoFencing
@@ -110,14 +124,10 @@
 - (void)checkAndRespondIfUserIsAlreadyInRegion
 {
     for (CLCircularRegion *region in self.setOfRegions) {
-        CLLocationDegrees regionCenterLatitude = region.center.latitude;
-        CLLocationDegrees regionCenterLongitude = region.center.longitude;
         
-        CLLocation *centerOfRegion = [[CLLocation alloc] initWithLatitude:regionCenterLatitude longitude:regionCenterLongitude];
+        BOOL isUserInRegion = [region containsCoordinate:self.locationManager.location.coordinate];
         
-        CLLocationDistance distanceFromRegion = [self.locationManager.location distanceFromLocation:centerOfRegion];
-        
-        if (self.locationManager.location != nil && distanceFromRegion < self.defaultDistanceInMeters && [self isValidTimeForAlerts]) {
+        if (self.locationManager.location != nil && isUserInRegion && [self isValidTimeForAlerts]) {
             [self adjustUserDefaultsToLimitNumberOfLocationAlertsShown];
             [self performSelector:@selector(showUserProximityAlert) withObject:nil afterDelay:1];
         }

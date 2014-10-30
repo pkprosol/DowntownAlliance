@@ -15,6 +15,6 @@
 @property (strong, nonatomic) UITabBarController *tabbar;
 @property (strong, nonatomic) DTAUserLocationManagement *userLocationManagement;
 
--(void)setUpFromGeoFence;
+- (void)setUpFromGeoFence;
 
 @end

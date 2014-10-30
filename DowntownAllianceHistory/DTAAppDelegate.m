@@ -18,7 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self setUpDefaultBars];
-    [self setUpFromGeoFence];
     
     DTADataStore *dataStore = [DTADataStore sharedDataStore];
 
@@ -26,7 +25,14 @@
         [DTASetUpDefaultData setUpDefaultData];
     }
     
+    [self setUpFromGeoFence];
+    
     return YES;
+}
+
+- (void)setUpFromGeoFence {
+    self.userLocationManagement = [[DTAUserLocationManagement alloc] init];
+    [self.userLocationManagement setUpLocationManagementAndRegions];
 }
 
 - (void)setUpDefaultBars {
@@ -37,14 +43,11 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
-- (void)setUpFromGeoFence {
-    self.userLocationManagement = [[DTAUserLocationManagement alloc] init];
-    [self.userLocationManagement setUpLocationManagementAndRegions];
-}
-
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     [self respondToReturnFromDTAApp];
 }
+
+
 
 - (void)respondToReturnFromDTAApp
 {
@@ -65,7 +68,6 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     [UIApplication sharedApplication].applicationIconBadgeNumber = application.applicationIconBadgeNumber - 1;
-
 }
 
 @end
